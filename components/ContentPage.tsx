@@ -8,6 +8,23 @@ const localeLabels: Record<Locale, string> = {
   ar: "العربية"
 };
 
+const pageImages: Partial<Record<SiteSlug, string>> = {
+  services: "/images/generated/engineering-site-team.svg",
+  "owners-engineering-amo": "/images/generated/engineering-site-team.svg",
+  "electrical-mep-engineering": "/images/generated/electrical-substation.svg",
+  "local-engineering-partner-morocco": "/images/generated/industrial-facility-exterior.svg",
+  sectors: "/images/generated/industrial-mechanical-room.svg",
+  experience: "/images/generated/logistics-warehouse.svg",
+  about: "/images/generated/yunes-salimi-portrait.svg",
+  contact: "/images/generated/industrial-mechanical-room.svg"
+};
+
+const projectImages = [
+  "/images/generated/industrial-facility-exterior.svg",
+  "/images/generated/logistics-warehouse.svg",
+  "/images/generated/hospitality-courtyard.svg"
+];
+
 function Arrow() {
   return (
     <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18">
@@ -114,6 +131,8 @@ function Footer({ locale, site }: { locale: Locale; site: SiteContent }) {
 }
 
 export function ContentPage({ locale, page, site }: { locale: Locale; page: SitePage; site: SiteContent }) {
+  const pageImage = pageImages[page.slug];
+
   return (
     <>
       <a className="skip-link" href="#main-content">{site.navigation.skip}</a>
@@ -126,11 +145,17 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
               <h1>{page.title}</h1>
               <p className="content-lead">{page.lead}</p>
             </div>
-            <div className="hero-drawing" aria-hidden="true">
-              <span>SE / {page.slug.toUpperCase()}</span>
-              <i />
-              <b>MOROCCO</b>
-            </div>
+            {pageImage ? (
+              <div aria-hidden="true" style={{ overflow: "hidden", minHeight: 360, border: "1px solid rgba(216,197,165,.35)", background: "#0b1826" }}>
+                <img src={pageImage} alt="" width="640" height="400" style={{ width: "100%", height: "100%", minHeight: 360, objectFit: "cover" }} />
+              </div>
+            ) : (
+              <div className="hero-drawing" aria-hidden="true">
+                <span>SE / {page.slug.toUpperCase()}</span>
+                <i />
+                <b>MOROCCO</b>
+              </div>
+            )}
           </div>
         </section>
 
@@ -151,7 +176,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
           <section className="content-section content-section--porcelain">
             <div className="container profile-layout">
               <div className="profile-image">
-                <img src="/images/placeholders/founder-portrait-4x5.svg" alt="" width="960" height="1200" />
+                <img src="/images/generated/yunes-salimi-portrait.svg" alt="" width="560" height="700" />
               </div>
               <div>
                 <p className="eyebrow">{page.profile.eyebrow}</p>
@@ -215,7 +240,9 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
               <div className="project-grid">
                 {page.projects.map((project, index) => (
                   <article key={project.title} className="project-card">
-                    <div className="project-visual" aria-hidden="true"><span>0{index + 1}</span><i /><b>{project.sector}</b></div>
+                    <div aria-hidden="true" style={{ overflow: "hidden", minHeight: 360, background: "#0b1826" }}>
+                      <img src={projectImages[index] ?? projectImages[0]} alt="" width="640" height="400" style={{ width: "100%", height: "100%", minHeight: 360, objectFit: "cover" }} />
+                    </div>
                     <div className="project-copy">
                       <p className="eyebrow">{project.location}</p>
                       <h3>{project.title}</h3>
