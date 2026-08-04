@@ -3,6 +3,7 @@ import { Manrope, Noto_Sans_Arabic } from "next/font/google";
 import { notFound } from "next/navigation";
 import { isLocale, locales } from "@/lib/home-content";
 import "@/styles/globals.css";
+import "@/styles/content-pages.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
