@@ -1,0 +1,92 @@
+{
+  "locale": "en",
+  "direction": "ltr",
+  "seo": {
+    "title": "Salimi Engineering | Engineering Support in Morocco",
+    "description": "Founder-led engineering coordination, owner’s representation and local project delivery support in Morocco."
+  },
+  "navigation": {
+    "services": "Services",
+    "approach": "Approach",
+    "founder": "Founder",
+    "contact": "Contact",
+    "cta": "Discuss a Project",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Founder-led engineering in Morocco",
+    "title": "Engineering clarity for projects that need local control.",
+    "summary": "Salimi Engineering supports international and Moroccan clients with owner’s representation, electrical and MEP engineering, and disciplined local project delivery.",
+    "primaryCta": "Discuss a Project",
+    "secondaryCta": "Explore Services",
+    "trust": "Direct founder involvement · Project-specific specialist teams"
+  },
+  "audiences": [
+    "International investors",
+    "Engineering companies",
+    "EPC contractors",
+    "Developers",
+    "Industrial clients"
+  ],
+  "services": {
+    "eyebrow": "Core services",
+    "title": "Three ways to strengthen project delivery",
+    "summary": "Support is organised around the client’s actual risk, project stage and required technical depth.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Owner’s Engineering & AMO",
+        "text": "Independent technical support from project definition and design review through tendering, construction follow-up and handover."
+      },
+      {
+        "number": "02",
+        "title": "Electrical & MEP Engineering",
+        "text": "Design, technical review and multidisciplinary coordination for buildings, industrial facilities and infrastructure."
+      },
+      {
+        "number": "03",
+        "title": "Local Engineering Partner",
+        "text": "Local technical presence and structured reporting for international companies planning or delivering work in Morocco."
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "A focused delivery model",
+    "title": "Responsibility remains visible from brief to close-out.",
+    "items": [
+      {
+        "title": "Direct technical leadership",
+        "text": "Key assignments remain under the founder’s direct technical and client-facing oversight."
+      },
+      {
+        "title": "International working standards",
+        "text": "Structured reporting, clear interfaces and disciplined technical coordination."
+      },
+      {
+        "title": "Morocco-based execution",
+        "text": "Local presence for surveys, meetings, contractor coordination and project follow-up."
+      },
+      {
+        "title": "Specialists selected by scope",
+        "text": "Project teams are assembled around real engineering requirements rather than artificial permanent scale."
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "Founder-led by design",
+    "title": "One accountable technical lead, supported by the right specialists.",
+    "text": "Yunes Salimi is developing Salimi Engineering as a direct, technically accountable partner for clients working in Morocco. His detailed professional history and selected projects will be published only after factual verification.",
+    "quote": "The objective is not unnecessary organisational scale. It is clear technical leadership and the right expertise for the assignment."
+  },
+  "contact": {
+    "eyebrow": "Start with the project context",
+    "title": "Planning or delivering a project in Morocco?",
+    "text": "Share the project stage, technical challenge and support you require. Verified contact details and the secure enquiry form will be activated before public launch.",
+    "button": "Discuss a Project"
+  },
+  "footer": {
+    "descriptor": "Engineering, project advisory and local delivery in Morocco",
+    "status": "Foundation preview — not yet approved for advertising",
+    "rights": "All rights reserved."
+  }
+}

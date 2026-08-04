@@ -1,0 +1,92 @@
+{
+  "locale": "fr",
+  "direction": "ltr",
+  "seo": {
+    "title": "Salimi Engineering | Ingénierie et projets au Maroc",
+    "description": "Ingénierie, représentation du maître d’ouvrage et accompagnement local de projets au Maroc."
+  },
+  "navigation": {
+    "services": "Services",
+    "approach": "Méthode",
+    "founder": "Fondateur",
+    "contact": "Contact",
+    "cta": "Discuter de votre projet",
+    "language": "Langue"
+  },
+  "hero": {
+    "eyebrow": "Ingénierie pilotée par son fondateur au Maroc",
+    "title": "La clarté technique pour les projets qui exigent un contrôle local.",
+    "summary": "Salimi Engineering accompagne les clients internationaux et marocains en représentation du maître d’ouvrage, ingénierie électrique et MEP, et pilotage local des projets.",
+    "primaryCta": "Discuter de votre projet",
+    "secondaryCta": "Découvrir les services",
+    "trust": "Implication directe du fondateur · Équipes constituées selon le projet"
+  },
+  "audiences": [
+    "Investisseurs internationaux",
+    "Sociétés d’ingénierie",
+    "Entreprises EPC",
+    "Promoteurs",
+    "Clients industriels"
+  ],
+  "services": {
+    "eyebrow": "Services principaux",
+    "title": "Trois manières de sécuriser la réalisation du projet",
+    "summary": "L’accompagnement est organisé selon les risques du client, la phase du projet et la profondeur technique nécessaire.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Owner’s Engineering & AMO",
+        "text": "Assistance technique indépendante, de la définition du projet et la revue des études jusqu’aux appels d’offres, au suivi des travaux et à la réception."
+      },
+      {
+        "number": "02",
+        "title": "Ingénierie électrique & MEP",
+        "text": "Études, revue technique et coordination multidisciplinaire pour bâtiments, sites industriels et infrastructures."
+      },
+      {
+        "number": "03",
+        "title": "Partenaire d’ingénierie local",
+        "text": "Présence technique locale et reporting structuré pour les entreprises internationales actives au Maroc."
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Un modèle de réalisation ciblé",
+    "title": "La responsabilité reste visible, du besoin à la clôture.",
+    "items": [
+      {
+        "title": "Direction technique directe",
+        "text": "Les missions clés restent sous la supervision technique et client directe du fondateur."
+      },
+      {
+        "title": "Standards de travail internationaux",
+        "text": "Reporting structuré, interfaces claires et coordination technique disciplinée."
+      },
+      {
+        "title": "Exécution basée au Maroc",
+        "text": "Présence locale pour les visites, réunions, coordinations d’entreprises et le suivi du projet."
+      },
+      {
+        "title": "Spécialistes selon le périmètre",
+        "text": "Les équipes sont constituées autour des besoins réels du projet, sans simuler une taille permanente."
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "Une structure pilotée par son fondateur",
+    "title": "Un responsable technique clairement identifié, avec les spécialistes adaptés.",
+    "text": "Yunes Salimi développe Salimi Engineering comme partenaire directement responsable pour les clients actifs au Maroc. Son parcours détaillé et ses projets seront publiés uniquement après vérification factuelle.",
+    "quote": "L’objectif n’est pas une taille organisationnelle inutile, mais une direction technique claire et les compétences adaptées à la mission."
+  },
+  "contact": {
+    "eyebrow": "Commencer par le contexte du projet",
+    "title": "Vous préparez ou réalisez un projet au Maroc ?",
+    "text": "Présentez la phase du projet, l’enjeu technique et le soutien recherché. Les coordonnées vérifiées et le formulaire sécurisé seront activés avant le lancement public.",
+    "button": "Discuter de votre projet"
+  },
+  "footer": {
+    "descriptor": "Ingénierie, conseil projet et accompagnement local au Maroc",
+    "status": "Aperçu de fondation — non validé pour la publicité",
+    "rights": "Tous droits réservés."
+  }
+}
