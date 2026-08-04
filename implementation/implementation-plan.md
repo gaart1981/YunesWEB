@@ -5,6 +5,30 @@
 **Baseline commit:** `de79094` on `main`
 **Aligned to:** `/source_docs/16` §7 phase model, with a remediation phase inserted first.
 
+> **Revision — 2026-08-04, deployment audit.** Amended following `/implementation/current-state-and-deployment-audit.md` (audited at commit `4396f43`). Three changes, all evidence-driven:
+>
+> 1. **A new Phase 0 (Immediate containment) is inserted before R1.** The audit found no production URL recorded anywhere in the project. Netlify facts must be established before any further work is scheduled.
+> 2. **A fourth Critical issue was discovered:** the contact form cannot receive submissions. Netlify Forms does not auto-detect forms in modern Next.js, and the form is a Server Component with no `action` and no client handler. Added as R1.8.
+> 3. **Two prior assumptions were disproven and are recorded here so they are not re-raised:** Next.js 16 and Node 24 are both fully supported by Netlify, so neither is a deployment blocker. The original plan did not claim otherwise, but the possibility is now closed with evidence.
+>
+> Nothing else in this plan was invalidated by the audit. The phase order and the R2-first architecture argument were both confirmed correct.
+
+---
+
+## Phase 0 — Immediate containment
+
+**Objective:** Establish the actual deployment state. No further implementation should be scheduled until this is known.
+**Gate:** A production URL is documented and returns a verified HTTP status.
+
+| # | Task | Verification |
+|---|---|---|
+| 0.1 | Obtain from the Netlify dashboard: site existence and repository link; production URL; production branch; latest deploy ID, commit SHA and status; full deploy log; whether password protection is enabled | Facts recorded in `/implementation/` |
+| 0.2 | Record the exact URL the owner is opening and the exact browser result | Reproduction step documented |
+| 0.3 | Revoke the GitHub personal access token previously shared in plaintext; reissue as a fine-grained token stored only in Netlify environment variables | Old token invalid |
+| 0.4 | Suspend any public promotion until R1.8 is complete — the contact form currently loses every enquiry silently | No traffic driven to a broken form |
+
+**Estimated effort:** under 1 hour of owner time. **No credential may be pasted into chat.**
+
 ---
 
 ## 1. Planning basis
@@ -32,8 +56,11 @@ However, three Critical issues exist in the current `main` branch (invented cont
 | R1.5 | Generate and commit `package-lock.json` | repository root |
 | R1.6 | Verify Netlify deploy-preview build succeeds on Node 24 and record the deploy ID | Netlify |
 | R1.7 | Create `/implementation/decision-log.md` and record every R1 decision | `/implementation` |
+| R1.8 | **Fix the contact form.** Add `public/__forms.html` detection blueprint and a client-side handler POSTing URL-encoded data to it, **or** implement `netlify/functions/contact-enquiry.ts` (Doc 08 §19 Option A). Verified against OpenNext official guidance. | `public/__forms.html`, `components/ContentPage.tsx` or `netlify/functions/` |
+| R1.9 | Verify the root redirect in production. There is **no `/` route in the build** — the root depends entirely on the `netlify.toml` 302. Confirm `/` → `/en/` → `/en` resolves live. | `netlify.toml` |
+| R1.10 | Add `relationshipType` to the project model with the three mandatory values | `lib/site-content.ts`, `content/pages-shared.json` |
 
-**Estimated effort:** 0.5–1 day.
+**Estimated effort:** 1–2 days (revised upward from 0.5–1 day to cover R1.8–R1.10).
 **Risk if skipped:** Publishing invented contact and location data is a Critical issue under Doc 15 §32 and would block launch regardless of later work.
 
 ---

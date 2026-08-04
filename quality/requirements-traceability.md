@@ -8,6 +8,27 @@
 
 **`implemented` is not equivalent to `verified`.** Nothing in this matrix is marked `verified`, because no test suite, accessibility audit, visual review, deploy evidence or owner approval exists in the repository.
 
+> **Revision — 2026-08-04, deployment audit** (`/implementation/current-state-and-deployment-audit.md`, commit `4396f43`). Changes to this matrix, with reasons recorded rather than silently overwritten:
+>
+> | Row | Was | Now | Reason |
+> |---|---|---|---|
+> | H4 (contact delivery) | `blocked` — "not configured, not tested" | `blocked` — **root cause now identified** | Audit C-4 proved the form *cannot* work: no `public/__forms.html`, Server Component, no `action`, no client handler. Netlify Forms does not auto-detect forms in modern Next.js (OpenNext official guidance). |
+> | B2 (no critical vulnerabilities) | `blocked` | `blocked` — **advisory now precise** | RCE GHSA-9qr9-h5gf-34mp, vulnerable `>=16.0.0-canary.0 <16.0.7`; totals 1 critical + 2 high; fix available at `16.3.0`. |
+> | New: B18 | — | `implemented` | Production build verified to succeed — 39 routes prerendered. Previously untested. |
+> | New: B19 | — | `blocked` | No `/` route exists in the build; root depends entirely on a `netlify.toml` redirect. |
+> | New: L14 | — | `blocked` | No production URL recorded anywhere; repo-wide search returned 0 matches. |
+>
+> The prior matrix's three Critical entries (A1, A2, A3) were **independently re-verified and all remain accurate**. No status was improved by the audit; two were made more precise, and three new rows were added.
+
+### Rows added by the deployment audit
+
+| # | Requirement | Source | Implementation found | Status |
+|---|---|---|---|---|
+| B18 | Project builds for production | Doc 15 §33 Gate 1 | `next build` succeeds; 39 routes prerendered; TypeScript clean | implemented |
+| B19 | Root URL resolves to default locale | Doc 08 §9.2; Doc 12 §10 | **No `/` route in build output**; depends solely on `netlify.toml` 302 → then 308 to `/en` | blocked |
+| L14 | Production deployment exists and is reachable | Doc 15 §27 | **No production URL, site ID or deploy ID recorded anywhere** | blocked |
+| K7 | Netlify Forms detection compatible with Next.js | Doc 08 §19 | `public/__forms.html` absent; form is a Server Component with no action or handler | blocked |
+
 ---
 
 ## A. Content and factual integrity

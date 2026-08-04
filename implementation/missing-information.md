@@ -94,6 +94,26 @@
 | A7.5 | Google Ads conversion IDs (when campaigns begin) | Not yet required |
 | A7.6 | Netlify site ID and confirmation the repository is connected | **[VERIFY]** — reported by the owner in a prior record but not verified during this analysis |
 
+### A8. Deployment facts — blocking the "site does not open" diagnosis
+
+**Added 2026-08-04 following the deployment audit.** A repository-wide search for `netlify.app`, `NETLIFY_SITE` and `site_id` returned **zero results**. No production URL, deploy ID or site ID exists anywhere in the project. Until these are supplied, the reason the website does not open cannot be determined.
+
+All items below are readable in the Netlify dashboard. **None requires pasting a token into chat.**
+
+| # | Item | Why it is needed |
+|---|---|---|
+| A8.1 | Does a Netlify site exist, and is it linked to `gaart1981/YunesWEB`? | Distinguishes "no site" from "broken site" |
+| A8.2 | Production URL (`*.netlify.app` and any custom domain) | Nothing can be tested without it |
+| A8.3 | Production branch setting | Confirms whether `main` is deployed |
+| A8.4 | Latest production deploy ID, its commit SHA and its status | Detects stale or failed deploys |
+| A8.5 | Full deploy log of the most recent production build | Detects build failure causes |
+| A8.6 | Whether password protection or access control is enabled | Explains inaccessibility despite a successful deploy |
+| A8.7 | Whether Netlify Forms detection is enabled, and whether any form appears in the Forms tab | Expected: **no form detected** — see audit finding C-4 |
+| A8.8 | Custom domain DNS and HTTPS certificate status | Explains domain-level failure |
+| A8.9 | The exact URL the owner is typing, and the exact browser result | Distinguishes wrong-URL from broken-site |
+
+**Note on the root URL:** the build contains **no `/` route**. The bare domain works only because of a redirect in `netlify.toml`. If the owner is opening the bare domain and receiving nothing while `/en` would work, that is the likely explanation. Confirm A8.9 first.
+
 ---
 
 ## Section B — Decisions requiring project-owner confirmation
