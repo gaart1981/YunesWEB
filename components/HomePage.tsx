@@ -87,7 +87,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <p className="trust-note">{content.hero.trust}</p>
             </div>
             <div className="hero-media">
-              <img src="/images/placeholders/hero-engineering-16x10.svg" alt="" width="1600" height="1000" />
+              <img src="/images/generated/industrial-facility-exterior.svg" alt="" width="560" height="700" />
             </div>
           </div>
           <div className="datum" aria-hidden="true"><span>33.5731° N</span><span>7.5898° W</span><span>MOROCCO</span></div>
@@ -135,7 +135,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
 
         <section id="founder" className="section section--founder">
           <div className="container founder-grid">
-            <div className="founder-media"><img src="/images/placeholders/founder-portrait-4x5.svg" alt="" width="960" height="1200" /></div>
+            <div className="founder-media"><img src="/images/generated/yunes-salimi-portrait.svg" alt="" width="560" height="700" /></div>
             <div className="founder-copy">
               <p className="eyebrow">{content.founder.eyebrow}</p>
               <h2>{content.founder.title}</h2>
