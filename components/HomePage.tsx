@@ -1,11 +1,18 @@
 import Link from "next/link";
 import type { HomeContent, Locale } from "@/lib/home-content";
+import { getSiteContent } from "@/lib/site-content";
 
 const localeLabels: Record<Locale, string> = {
   en: "EN",
   fr: "FR",
   ar: "العربية"
 };
+
+const serviceSlugs = [
+  "owners-engineering-amo",
+  "electrical-mep-engineering",
+  "local-engineering-partner-morocco"
+] as const;
 
 function Arrow() {
   return (
@@ -15,67 +22,46 @@ function Arrow() {
   );
 }
 
-export function HomePage({
-  locale,
-  content
-}: {
-  locale: Locale;
-  content: HomeContent;
-}) {
+export function HomePage({ locale, content }: { locale: Locale; content: HomeContent }) {
+  const site = getSiteContent(locale);
+  const nav = site.navigation;
+
   return (
     <>
-      <a className="skip-link" href="#main-content">
-        {content.navigation.services}
-      </a>
-
+      <a className="skip-link" href="#main-content">{nav.skip}</a>
       <header className="site-header">
         <div className="header-inner">
           <Link href={`/${locale}/`} className="brand" aria-label="Salimi Engineering">
             <strong>SALIMI</strong>
             <span>ENGINEERING</span>
           </Link>
-
-          <nav className="desktop-nav" aria-label={content.navigation.language}>
-            <a href="#services">{content.navigation.services}</a>
-            <a href="#approach">{content.navigation.approach}</a>
-            <a href="#founder">{content.navigation.founder}</a>
-            <a href="#contact">{content.navigation.contact}</a>
+          <nav className="desktop-nav" aria-label={nav.language}>
+            <Link href={`/${locale}/services`}>{nav.services}</Link>
+            <Link href={`/${locale}/sectors`}>{nav.sectors}</Link>
+            <Link href={`/${locale}/experience`}>{nav.experience}</Link>
+            <Link href={`/${locale}/about`}>{nav.about}</Link>
           </nav>
-
           <div className="header-actions">
-            <div className="language-switcher" aria-label={content.navigation.language}>
+            <div className="language-switcher" aria-label={nav.language}>
               {(["en", "fr", "ar"] as Locale[]).map((item) => (
-                <Link
-                  key={item}
-                  href={`/${item}/`}
-                  lang={item}
-                  hrefLang={item}
-                  aria-current={item === locale ? "page" : undefined}
-                >
+                <Link key={item} href={`/${item}/`} lang={item} hrefLang={item} aria-current={item === locale ? "page" : undefined}>
                   {localeLabels[item]}
                 </Link>
               ))}
             </div>
-            <a className="button button--small" href="#contact">
-              {content.navigation.cta}
-            </a>
+            <Link className="button button--small" href={`/${locale}/contact`}>{nav.cta}</Link>
           </div>
-
           <details className="mobile-menu">
-            <summary aria-label={content.navigation.services}>
-              <span />
-              <span />
-            </summary>
+            <summary aria-label={nav.services}><span /><span /></summary>
             <nav>
-              <a href="#services">{content.navigation.services}</a>
-              <a href="#approach">{content.navigation.approach}</a>
-              <a href="#founder">{content.navigation.founder}</a>
-              <a href="#contact">{content.navigation.contact}</a>
+              <Link href={`/${locale}/services`}>{nav.services}</Link>
+              <Link href={`/${locale}/sectors`}>{nav.sectors}</Link>
+              <Link href={`/${locale}/experience`}>{nav.experience}</Link>
+              <Link href={`/${locale}/about`}>{nav.about}</Link>
+              <Link href={`/${locale}/contact`}>{nav.contact}</Link>
               <div className="language-switcher language-switcher--mobile">
                 {(["en", "fr", "ar"] as Locale[]).map((item) => (
-                  <Link key={item} href={`/${item}/`} lang={item} hrefLang={item}>
-                    {localeLabels[item]}
-                  </Link>
+                  <Link key={item} href={`/${item}/`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
                 ))}
               </div>
             </nav>
@@ -91,41 +77,26 @@ export function HomePage({
               <h1>{content.hero.title}</h1>
               <p className="hero-summary">{content.hero.summary}</p>
               <div className="hero-actions">
-                <a className="button button--sand" href="#contact">
-                  {content.hero.primaryCta}
-                  <Arrow />
-                </a>
-                <a className="text-link text-link--light" href="#services">
-                  {content.hero.secondaryCta}
-                  <Arrow />
-                </a>
+                <Link className="button button--sand" href={`/${locale}/contact`}>
+                  {content.hero.primaryCta}<Arrow />
+                </Link>
+                <Link className="text-link text-link--light" href={`/${locale}/services`}>
+                  {content.hero.secondaryCta}<Arrow />
+                </Link>
               </div>
               <p className="trust-note">{content.hero.trust}</p>
             </div>
-
             <div className="hero-media">
-              <img
-                src="/images/placeholders/hero-engineering-16x10.svg"
-                alt=""
-                width="1600"
-                height="1000"
-              />
+              <img src="/images/placeholders/hero-engineering-16x10.svg" alt="" width="1600" height="1000" />
             </div>
           </div>
-          <div className="datum" aria-hidden="true">
-            <span>33.5731° N</span>
-            <span>7.5898° W</span>
-            <span>MOROCCO</span>
-          </div>
+          <div className="datum" aria-hidden="true"><span>33.5731° N</span><span>7.5898° W</span><span>MOROCCO</span></div>
         </section>
 
         <section className="audience-section">
           <div className="container audience-grid">
             {content.audiences.map((audience, index) => (
-              <div key={audience} className="audience-item">
-                <span>0{index + 1}</span>
-                <p>{audience}</p>
-              </div>
+              <div key={audience} className="audience-item"><span>0{index + 1}</span><p>{audience}</p></div>
             ))}
           </div>
         </section>
@@ -133,23 +104,17 @@ export function HomePage({
         <section id="services" className="section section--light">
           <div className="container">
             <div className="section-heading section-heading--split">
-              <div>
-                <p className="eyebrow">{content.services.eyebrow}</p>
-                <h2>{content.services.title}</h2>
-              </div>
+              <div><p className="eyebrow">{content.services.eyebrow}</p><h2>{content.services.title}</h2></div>
               <p>{content.services.summary}</p>
             </div>
-
             <div className="service-grid">
-              {content.services.items.map((service) => (
-                <article key={service.number} className="service-card">
-                  <div className="card-index">
-                    <span>{service.number}</span>
-                    <i />
-                  </div>
+              {content.services.items.map((service, index) => (
+                <Link key={service.number} className="service-card" href={`/${locale}/${serviceSlugs[index]}`}>
+                  <div className="card-index"><span>{service.number}</span><i /></div>
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
-                </article>
+                  <span className="card-link">{nav.services}<Arrow /></span>
+                </Link>
               ))}
             </div>
           </div>
@@ -158,19 +123,11 @@ export function HomePage({
         <section id="approach" className="section section--dark">
           <div className="container">
             <div className="section-heading section-heading--split section-heading--inverse">
-              <div>
-                <p className="eyebrow eyebrow--sand">{content.approach.eyebrow}</p>
-                <h2>{content.approach.title}</h2>
-              </div>
+              <div><p className="eyebrow eyebrow--sand">{content.approach.eyebrow}</p><h2>{content.approach.title}</h2></div>
             </div>
-
             <div className="approach-grid">
               {content.approach.items.map((item, index) => (
-                <article key={item.title}>
-                  <span>0{index + 1}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </article>
+                <article key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></article>
               ))}
             </div>
           </div>
@@ -178,54 +135,33 @@ export function HomePage({
 
         <section id="founder" className="section section--founder">
           <div className="container founder-grid">
-            <div className="founder-media">
-              <img
-                src="/images/placeholders/founder-portrait-4x5.svg"
-                alt=""
-                width="960"
-                height="1200"
-              />
-            </div>
+            <div className="founder-media"><img src="/images/placeholders/founder-portrait-4x5.svg" alt="" width="960" height="1200" /></div>
             <div className="founder-copy">
               <p className="eyebrow">{content.founder.eyebrow}</p>
               <h2>{content.founder.title}</h2>
               <p>{content.founder.text}</p>
               <blockquote>{content.founder.quote}</blockquote>
+              <Link className="text-link" href={`/${locale}/about`}>{nav.about}<Arrow /></Link>
             </div>
           </div>
         </section>
 
         <section id="contact" className="contact-section">
           <div className="container contact-grid">
-            <div>
-              <p className="eyebrow eyebrow--sand">{content.contact.eyebrow}</p>
-              <h2>{content.contact.title}</h2>
-            </div>
-            <div>
-              <p>{content.contact.text}</p>
-              <span className="button button--sand button--disabled">
-                {content.contact.button}
-              </span>
-            </div>
+            <div><p className="eyebrow eyebrow--sand">{content.contact.eyebrow}</p><h2>{content.contact.title}</h2></div>
+            <div><p>{content.contact.text}</p><Link className="button button--sand" href={`/${locale}/contact`}>{content.contact.button}<Arrow /></Link></div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <div className="container footer-grid">
-          <div>
-            <div className="brand brand--footer">
-              <strong>SALIMI</strong>
-              <span>ENGINEERING</span>
-            </div>
-            <p>{content.footer.descriptor}</p>
-          </div>
-          <p className="footer-status">{content.footer.status}</p>
+        <div className="container footer-expanded">
+          <div><div className="brand brand--footer"><strong>SALIMI</strong><span>ENGINEERING</span></div><p>{nav.footerDescriptor}</p></div>
+          <div className="footer-contact"><span>{nav.address}</span><a href={`mailto:${nav.email}`}>{nav.email}</a><a href={`tel:${nav.phone.replace(/\s/g, "")}`}>{nav.phone}</a></div>
+          <nav className="footer-links"><Link href={`/${locale}/legal-notice`}>{nav.legal}</Link><Link href={`/${locale}/privacy-policy`}>{nav.privacy}</Link><Link href={`/${locale}/cookie-policy`}>{nav.cookies}</Link></nav>
         </div>
-        <div className="container footer-bottom">
-          <span>© {new Date().getFullYear()} Salimi Engineering</span>
-          <span>{content.footer.rights}</span>
-        </div>
+        <div className="container footer-preview-note">{nav.footerStatus}</div>
+        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Salimi Engineering</span><span>Morocco · Engineering & Project Advisory</span></div>
       </footer>
     </>
   );
