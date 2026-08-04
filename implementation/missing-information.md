@@ -1,16 +1,135 @@
 # Missing Information Register
 
-Required before public launch and advertising:
+**Updated:** 2026-08-04 (analysis cycle — no code changes made)
+**Rule:** Nothing in this register may be invented. Until supplied, each item stays out of production rendering or is held in draft JSON under `INFORMATION_NOT_AVAILABLE`, `REQUIRES_CONFIRMATION` or `TBD`. **These markers must never appear on a production public page.** (CLAUDE.md §4; Doc 16 §6)
 
-- official passport spelling of the founder’s name;
-- legal company name, form, registration and tax details;
-- registered address;
-- business email, telephone and LinkedIn URL;
-- verified founder CV and exact chronology;
-- selected project list, roles, dates and publication permissions;
-- authorised founder and project photography;
-- professional French and Arabic review;
-- contact-form recipient and email-provider credentials;
-- JSON-editor password hash and minimum-permission GitHub token;
-- analytics, Search Console and advertising identifiers;
-- confirmed canonical production domain.
+---
+
+## Section A — Blocking for public launch
+
+### A1. Founder identity and record
+
+| # | Item | Status | Needed for |
+|---|---|---|---|
+| A1.1 | Official passport spelling of the founder's full name | Missing | All pages, metadata, JSON-LD, `llms.txt` — Doc 15 §7.3 requires one exact spelling everywhere |
+| A1.2 | Professional CV | Missing | About page, founder biography |
+| A1.3 | Exact employment chronology and dates | Missing | Doc 05 §13.2 — "approximately 2001 to 2020" is currently unconfirmed |
+| A1.4 | Exact job titles held | Missing | Experience attribution |
+| A1.5 | Diplomas and certificates | Missing | Only publishable after verification |
+| A1.6 | Languages and proficiency levels | Missing | About page; multilingual coordination claim |
+| A1.7 | Confirmation of the title "Managing Director" | Requires confirmation | Depends on legal formation |
+| A1.8 | Whether professional work was performed **in Morocco** (not only origin/residence) | Requires confirmation | Doc 05 §3.3 — determines whether "in Morocco and Russia" may be used |
+| A1.9 | LinkedIn profile URL | Missing | `sameAs`, footer, contact |
+
+### A2. Legal and company identity
+
+| # | Item | Status |
+|---|---|---|
+| A2.1 | Legal company name and legal form | Missing |
+| A2.2 | Company registration number | Missing |
+| A2.3 | VAT / tax identifiers | Missing |
+| A2.4 | Registered office address | Missing — **currently invented in the repository as "Casablanca, Morocco"; must be removed** |
+| A2.5 | Professional licences and authorisations | Missing |
+| A2.6 | Professional insurance details | Missing |
+| A2.7 | Publication director and hosting provider (for Legal Notice) | Missing |
+| A2.8 | Legal notices required under Moroccan law | Missing — requires Moroccan legal advice |
+| A2.9 | Qualifications required to sign specific engineering documents in Morocco | Missing — determines whether the Doc 03 EM09 regulatory disclaimer is needed |
+| A2.10 | Legally reviewed Privacy Policy and Cookie Policy text | Missing — must match actual implementation |
+
+### A3. Contact information
+
+| # | Item | Status |
+|---|---|---|
+| A3.1 | Business email address | Missing — **currently invented as `hello@salimiengineering.ma`; must be removed** |
+| A3.2 | Business telephone number | Missing — **currently invented as `+212 5 20 00 00 00`; must be removed** |
+| A3.3 | Whether WhatsApp contact is approved | Requires decision |
+| A3.4 | Contact-form recipient address | Missing — blocks Phase 5 |
+| A3.5 | Email provider and API credentials | Missing — provision as Netlify environment variables only |
+| A3.6 | Physical location to display (city or service-area) | Requires confirmation |
+
+### A4. Project experience
+
+| # | Item | Status |
+|---|---|---|
+| A4.1 | List of 10–15 candidate projects | Missing |
+| A4.2 | Public-use permission for each project | Missing |
+| A4.3 | Project location and period per project | Missing |
+| A4.4 | Founder's exact role and scope of responsibility per project | Missing |
+| A4.5 | Project value and permission to publish it | Missing |
+| A4.6 | Client names and permission to name them | Missing |
+| A4.7 | Employer at the time of each project | Missing |
+| A4.8 | Relationship type per project (`founder_prior_experience` / `company_assignment` / `partner_assignment`) | Missing — **mandatory field, currently absent from the data model** |
+| A4.9 | Client or employer references | Missing |
+
+**Current state note:** the three "projects" on the Experience page are labelled *"Illustrative capability profile — not a claimed completed project."* This is a reasonable interim safeguard, but the label is **not** one of the three mandatory relationship values and the entries are not evidence. They must be replaced with verified records or removed before launch.
+
+### A5. Media and rights
+
+| # | Item | Status |
+|---|---|---|
+| A5.1 | Authorised founder portrait (4:5, ≥ 1600×2000) | Missing |
+| A5.2 | Authorised project photographs with written permission | Missing |
+| A5.3 | Drawings or diagrams cleared for publication | Missing |
+| A5.4 | Open Graph images (1200×630) | Missing |
+| A5.5 | Favicon and application icon set | Missing |
+| A5.6 | Completed `/content/shared/media-rights.json` register | Missing |
+
+### A6. Translation
+
+| # | Item | Status |
+|---|---|---|
+| A6.1 | Professional French review by a named reviewer | Not done — current French is working draft |
+| A6.2 | Professional Arabic review by a named reviewer | Not done — current Arabic is working draft |
+| A6.3 | Arabic keyword research by a qualified Arabic speaker | Not done — Doc 12 §4.3 forbids literal keyword translation |
+| A6.4 | Named translation reviewer per language | Missing — Doc 13 §30 requires assigned owners |
+
+### A7. Platform and credentials
+
+| # | Item | Status |
+|---|---|---|
+| A7.1 | Confirmed canonical production domain | Missing — blocks canonical URLs, `hreflang`, sitemap, JSON-LD `@id` values |
+| A7.2 | JSON-editor production password (≥ 14 characters) and its salted hash | Missing |
+| A7.3 | Minimum-permission GitHub token for the save function | Missing — **must be provisioned directly in Netlify, never in chat or the repository** |
+| A7.4 | GA4 measurement ID and Search Console access | Missing |
+| A7.5 | Google Ads conversion IDs (when campaigns begin) | Not yet required |
+| A7.6 | Netlify site ID and confirmation the repository is connected | **[VERIFY]** — reported by the owner in a prior record but not verified during this analysis |
+
+---
+
+## Section B — Decisions requiring project-owner confirmation
+
+These are **decisions**, not missing facts. Each needs an explicit answer before the dependent work proceeds.
+
+| # | Decision | Options | Blocks |
+|---|---|---|---|
+| B1 | Remove invented contact/address/phone data from `main` immediately, or keep the site offline until real data exists? | Remove now / take offline | Phase R1 |
+| B2 | Arabic public slugs: keep Latin-character slugs (Doc 02 §5 recommendation) or use Arabic slugs? | Latin (recommended) / Arabic | Route map, R2 |
+| B3 | Root redirect `/` → `/en/`: keep 302, or make it permanent (301)? | 302 now / 301 after business decision | Phase 6 |
+| B4 | `GPTBot` (OpenAI model-training crawler): allow or disallow? | Allow / Disallow | Phase 6 — Doc 13 §15 requires an explicit, recorded decision |
+| B5 | `ClaudeBot` (Anthropic training crawler): allow or disallow? | Allow / Disallow | Phase 6 — separate from search crawlers |
+| B6 | Contact delivery: Netlify Function + email provider (Option A) or Netlify Forms (Option B)? | A (more control) / B (simpler) | Phase 5 |
+| B7 | Editor commits: direct to `main`, or to a `content-updates` branch with manual merge? | Direct (simpler) / Branch (safer) | Phase 4 |
+| B8 | Which engagement formats in Doc 05 §7.3 are commercially intended? | Per-item confirmation | Services page content |
+| B9 | Which Electrical/MEP capabilities in Doc 05 §9.3 can actually be delivered? | Per-item confirmation | Doc 05 marks every item `REQUIRES_CONFIRMATION` |
+| B10 | Which of the seven sectors may be presented, and as experience or as capability? | Per-sector confirmation | Sectors page — Doc 02 §12 |
+| B11 | Is WhatsApp contact approved? | Yes / No | Contact page, analytics events |
+| B12 | Should the Experience page publish illustrative capability profiles at all, or wait for verified projects? | Publish labelled / wait | Experience page |
+| B13 | Analytics: GA4 now, or defer until traffic justifies it? | Now / defer | Phase 5, cookie policy |
+| B14 | Should the site launch publicly before verified project evidence exists? | Yes with limited claims / wait | Overall release timing |
+| B15 | Who is the named content owner, technical owner and crawler-policy owner? | Named individuals | Doc 13 §30 governance |
+
+---
+
+## Section C — Security action required
+
+**C1. Exposed GitHub personal access token.**
+
+A GitHub personal access token was transmitted in plain text in the chat session on 2026-08-04. Any credential shared this way must be considered compromised.
+
+**Required action:** revoke the token immediately at `https://github.com/settings/tokens`, then issue a replacement as a **fine-grained** token limited to Contents write access on `gaart1981/YunesWEB` only, and store it exclusively as a Netlify environment variable.
+
+**Verified:** the token is **not** present anywhere in the repository. Scans of the full tree for `github_pat_`, `ghp_`, `GITHUB_TOKEN`, `PASSWORD_HASH` and `leadline` returned zero matches. No secret has been committed.
+
+**C2. Critical dependency vulnerabilities.**
+
+`next@16.0.0` is flagged deprecated by npm and `npm audit` reports **critical** severity, including remote code execution in the React flight protocol (GHSA-9qr9-h5gf-34mp) and Server Actions source-code exposure. Doc 08 §4.3 forbids packages with unresolved critical vulnerabilities. Upgrade to the latest patched 16.x release (16.3.0 at the time of analysis).
