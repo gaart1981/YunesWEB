@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { isLocale, locales } from "@/lib/home-content";
 import "@/styles/globals.css";
 import "@/styles/content-pages.css";
+import "@/styles/marketing.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
