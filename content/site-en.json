@@ -1,1 +1,218 @@
-{"direction":"ltr","navigation":{"home":"Home","services":"Services","sectors":"Sectors","experience":"Experience","about":"About","contact":"Contact","cta":"Discuss a project","language":"Language","footerDescriptor":"Founder-led engineering and project advisory for international and Moroccan clients.","footerStatus":"Provisional demonstration content — replace contacts, legal data and project references before advertising.","legal":"Legal notice","privacy":"Privacy policy","cookies":"Cookie policy","address":"Casablanca, Morocco","email":"hello@salimiengineering.ma","phone":"+212 5 20 00 00 00","skip":"Skip to content"},"pages":{"services":{"seo":{"title":"Engineering Services in Morocco | Salimi Engineering","description":"Owner’s engineering, electrical and MEP engineering, and local project delivery support in Morocco."},"eyebrow":"Services","title":"Engineering support structured around project risk.","lead":"Salimi Engineering combines owner-side technical judgement, disciplined engineering coordination and local execution support for projects in Morocco.","facts":[{"value":"3","label":"Core service pillars"},{"value":"EN · FR · AR","label":"Working website languages"},{"value":"Founder-led","label":"Direct technical accountability"}]},"owners-engineering-amo":{"seo":{"title":"Owner’s Engineering & AMO Morocco | Salimi Engineering","description":"Independent owner-side engineering, design review, tender support and project delivery oversight in Morocco."},"eyebrow":"Owner’s Engineering & AMO","title":"Independent technical judgement on the owner’s side.","lead":"We help project owners structure decisions, challenge technical proposals and maintain control from early definition through handover.","facts":[{"value":"Owner-side","label":"Independent perspective"},{"value":"Stage-gated","label":"Decision and review process"},{"value":"Clear","label":"Reporting and accountability"}]},"electrical-mep-engineering":{"seo":{"title":"Electrical & MEP Engineering Morocco | Salimi Engineering","description":"Electrical design, MEP coordination, specifications and construction support for projects in Morocco."},"eyebrow":"Electrical & MEP Engineering","title":"Coordinated building services designed for construction.","lead":"Electrical and MEP packages are developed with attention to interfaces, maintainability, procurement and site conditions—not only drawings.","facts":[{"value":"MV / LV","label":"Power distribution"},{"value":"MEP","label":"Multidisciplinary coordination"},{"value":"Site-ready","label":"Constructability focus"}]},"local-engineering-partner-morocco":{"seo":{"title":"Local Engineering Partner in Morocco | Salimi Engineering","description":"Local engineering representation, surveys, coordination and reporting for international project teams in Morocco."},"eyebrow":"Local Engineering Partner","title":"International project requirements. Local execution in Morocco.","lead":"We provide a reliable technical interface for organisations that need local presence without building a permanent engineering office.","facts":[{"value":"Morocco","label":"Local project focus"},{"value":"EN / FR","label":"International coordination"},{"value":"Flexible","label":"Project-specific mobilisation"}]},"sectors":{"seo":{"title":"Engineering Sectors in Morocco | Salimi Engineering","description":"Engineering and project advisory support for industrial, logistics, hospitality, healthcare and commercial developments."},"eyebrow":"Sectors","title":"Engineering discipline applied across demanding project environments.","lead":"The delivery method remains consistent: understand operational priorities, control interfaces and keep technical decisions connected to construction reality.","facts":[{"value":"Industrial","label":"Production and utilities"},{"value":"Built environment","label":"Complex MEP assets"},{"value":"Infrastructure","label":"Site and logistics interfaces"}]},"experience":{"seo":{"title":"Selected Engineering Experience | Salimi Engineering","description":"Illustrative project capability profiles and founder-led engineering experience relevant to projects in Morocco."},"eyebrow":"Selected Experience","title":"Experience presented with clear attribution.","lead":"The profiles below are illustrative placeholders showing how future verified references will be presented. They are not client claims and must be replaced before advertising.","facts":[{"value":"Illustrative","label":"Current project profiles"},{"value":"Replaceable","label":"JSON-driven records"},{"value":"Transparent","label":"Attribution by project"}]},"about":{"seo":{"title":"About Yunes Salimi | Salimi Engineering","description":"Founder-led engineering and project advisory in Morocco with direct technical accountability."},"eyebrow":"About","title":"A founder-led engineering practice built around accountability.","lead":"Salimi Engineering is structured for clients who value direct technical involvement, clear communication and flexible specialist mobilisation.","facts":[{"value":"Yunes Salimi","label":"Founder and technical lead"},{"value":"Morocco","label":"Operating base"},{"value":"Direct","label":"Client access and accountability"}]},"contact":{"seo":{"title":"Contact Salimi Engineering | Morocco","description":"Discuss an engineering, owner’s representation or local project-support requirement in Morocco."},"eyebrow":"Contact","title":"Start with the project context.","lead":"Describe the asset, project stage, location and decisions that require support. The contact information shown is provisional demonstration data and will be replaced.","facts":[{"value":"Casablanca","label":"Provisional location"},{"value":"+212 5 20 00 00 00","label":"Provisional phone"},{"value":"hello@salimiengineering.ma","label":"Provisional email"}]},"legal-notice":{"seo":{"title":"Legal Notice | Salimi Engineering","description":"Provisional legal notice for the Salimi Engineering website."},"eyebrow":"Legal","title":"Legal notice","lead":"This page contains provisional demonstration information and must be replaced with verified legal company data before public advertising.","facts":[]},"privacy-policy":{"seo":{"title":"Privacy Policy | Salimi Engineering","description":"Provisional privacy information for website enquiries."},"eyebrow":"Privacy","title":"Privacy policy","lead":"This provisional policy explains the intended handling of website enquiry data and must be legally reviewed before advertising.","facts":[]},"cookie-policy":{"seo":{"title":"Cookie Policy | Salimi Engineering","description":"Provisional cookie policy for the Salimi Engineering website."},"eyebrow":"Cookies","title":"Cookie policy","lead":"The current demonstration site does not intentionally activate marketing analytics. This policy will be updated when consent-managed tools are configured.","facts":[]}}}
+{
+  "direction": "ltr",
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "sectors": "Sectors",
+    "experience": "Experience",
+    "about": "About Yunes",
+    "contact": "Contact",
+    "cta": "Call Yunes",
+    "language": "Language",
+    "footerDescriptor": "Electrical, ventilation, MEP coordination and project delivery support in Morocco.",
+    "footerStatus": "Direct engineering support in English, French and Arabic",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "address": "Morocco",
+    "email": "info@edsmaroc.com",
+    "phone": "+212 663 056 547",
+    "skip": "Skip to content"
+  },
+  "pages": {
+    "services": {
+      "seo": {"title": "Engineering Design & Site Supervision in Morocco | Salimi Engineering", "description": "Electrical and ventilation design, MEP coordination, owner-side engineering, contractor review and construction supervision in Morocco."},
+      "eyebrow": "Engineering services",
+      "title": "Bring Yunes the technical problem. Get a buildable answer.",
+      "lead": "Yunes can join at concept, design, tender, construction or handover stage—then calculate, design, coordinate, inspect and drive the technical actions needed to move the project forward.",
+      "facts": [{"value": "Design", "label": "Calculations and construction documents"}, {"value": "Control", "label": "Reviews, inspections and decisions"}, {"value": "Deliver", "label": "Testing, close-out and handover"}],
+      "sectionTitle": "Six ways Yunes can strengthen your project",
+      "sectionIntro": "Choose a focused mission or combine the services into one continuous technical assignment.",
+      "items": [
+        {"number": "01", "title": "Electrical engineering design", "text": "Load calculations, power distribution, lighting, socket and power layouts, single-line diagrams, equipment schedules, specifications and working drawings.", "href": "electrical-mep-engineering"},
+        {"number": "02", "title": "Ventilation and building services", "text": "Ventilation requirements, equipment and duct layouts, HVAC power and controls, maintenance access and coordination with architecture and structure.", "href": "electrical-mep-engineering"},
+        {"number": "03", "title": "MEP coordination", "text": "Coordinate electrical, ventilation, fire-safety and building interfaces; identify clashes; resolve technical rooms, routes, openings and access.", "href": "electrical-mep-engineering"},
+        {"number": "04", "title": "Owner-side engineering", "text": "Define requirements, review designs, compare technical offers, assess substitutions and changes, and advise the owner before decisions become costs.", "href": "owners-engineering-amo"},
+        {"number": "05", "title": "Design and construction supervision", "text": "Review submittals, answer site queries, inspect work, record non-conformities, follow corrections and verify tests.", "href": "owners-engineering-amo"},
+        {"number": "06", "title": "Local engineering support in Morocco", "text": "Site surveys, contractor meetings, technical reporting, recurring representation, commissioning follow-up and local issue resolution.", "href": "local-engineering-partner-morocco"}
+      ],
+      "processTitle": "A simple route from first call to controlled delivery",
+      "process": [
+        {"title": "Diagnose", "text": "Review the project stage, available documents, site conditions and the decision that must be made."},
+        {"title": "Define", "text": "Set a clear scope, deliverables, interfaces, responsibilities and reporting rhythm."},
+        {"title": "Execute", "text": "Design, coordinate, review or supervise with visible actions, owners and deadlines."},
+        {"title": "Close", "text": "Verify tests, outstanding issues, documentation and readiness for handover."}
+      ],
+      "cta": {"title": "Not sure which service you need?", "text": "Describe the technical problem. Yunes will identify the smallest useful intervention and the information required to start.", "button": "Call Yunes", "href": "tel:+212663056547"}
+    },
+    "owners-engineering-amo": {
+      "seo": {"title": "Owner’s Engineering & Technical Supervision Morocco | Salimi Engineering", "description": "Independent design review, tender analysis, construction inspection and technical representation for project owners in Morocco."},
+      "eyebrow": "Owner-side engineering and supervision",
+      "title": "Keep technical control—even without an internal engineering team.",
+      "lead": "Yunes works on the owner’s side: he checks what is proposed, identifies what is missing, documents the risks and follows the actions through design, construction, testing and handover.",
+      "facts": [{"value": "Independent", "label": "Owner-side technical judgement"}, {"value": "Documented", "label": "Decisions, risks and actions"}, {"value": "On site", "label": "Inspection and verification"}],
+      "sectionTitle": "What Yunes controls for the owner",
+      "sectionIntro": "The mission can start with one review or continue as technical representation throughout the project.",
+      "items": [
+        {"number": "01", "title": "Requirements and scope", "text": "Clarify operational needs, technical criteria, scope boundaries, responsibilities and missing inputs before design advances."},
+        {"number": "02", "title": "Design review", "text": "Check calculations, drawings, equipment selections, interfaces, maintainability, buildability and consistency between disciplines."},
+        {"number": "03", "title": "Tender and bid analysis", "text": "Prepare or review technical specifications, answer clarifications and compare contractor offers on scope, compliance and risk—not price alone."},
+        {"number": "04", "title": "Changes and substitutions", "text": "Assess proposed alternatives, hidden scope reductions, performance consequences, maintenance impact and technical justification."},
+        {"number": "05", "title": "Site inspections", "text": "Verify installation quality, conformity with approved documents, progress evidence, corrective actions and readiness for testing."},
+        {"number": "06", "title": "Commissioning and handover", "text": "Follow tests, punch lists, as-built records, operating documents and final technical acceptance."}
+      ],
+      "processTitle": "Typical owner-side intervention",
+      "process": [
+        {"title": "Review evidence", "text": "Collect drawings, specifications, offers, minutes, photos and current issues."},
+        {"title": "Identify exposure", "text": "Separate critical risks, design gaps, contractual ambiguity and execution defects."},
+        {"title": "Drive decisions", "text": "Issue concise recommendations, assign actions and track closure with the project team."},
+        {"title": "Verify result", "text": "Inspect the implemented solution and confirm the remaining risks to the owner."}
+      ],
+      "bulletTitle": "Deliverables the owner can use",
+      "bullets": ["Technical brief and responsibility matrix", "Design-review register with clear priorities", "Bid comparison and clarification log", "Change and substitution assessments", "Site inspection reports with photographic evidence", "Action list, snag list and commissioning follow-up"],
+      "cta": {"title": "Need an engineer who will challenge the project on your behalf?", "text": "Send the drawings, offer or site issue that concerns you. Yunes can begin with a focused independent review.", "button": "Discuss the issue", "href": "contact"}
+    },
+    "electrical-mep-engineering": {
+      "seo": {"title": "Electrical, Ventilation & MEP Design Morocco | Salimi Engineering", "description": "Electrical load calculations, distribution, lighting, ventilation, life safety, MEP coordination and construction drawings."},
+      "eyebrow": "Electrical, ventilation and MEP engineering",
+      "title": "Technical systems designed to be built, operated and maintained.",
+      "lead": "Yunes develops and coordinates engineering packages with the detail needed for procurement and construction—not just presentation drawings.",
+      "facts": [{"value": "Power", "label": "Loads, distribution and protection"}, {"value": "Air", "label": "Ventilation and HVAC interfaces"}, {"value": "MEP", "label": "Coordinated construction documents"}],
+      "sectionTitle": "Engineering scope from calculation to site support",
+      "sectionIntro": "The exact package is adapted to the project stage and the information already available.",
+      "items": [
+        {"number": "01", "title": "Electrical loads and distribution", "text": "Connected-load schedules, demand assessment, distribution architecture, panel schedules, incoming supplies, backup power and single-line diagrams."},
+        {"number": "02", "title": "Lighting and small power", "text": "Lighting layouts, switching, socket plans, workstation power, equipment supplies, emergency lighting and external lighting."},
+        {"number": "03", "title": "Ventilation and HVAC interfaces", "text": "Ventilation needs, equipment and route coordination, electrical supplies, controls, technical-room arrangement and maintenance access."},
+        {"number": "04", "title": "Low-current and life-safety systems", "text": "Structured cabling, data, security, fire detection, evacuation control and automation interfaces for fire-suppression systems."},
+        {"number": "05", "title": "MEP coordination", "text": "Coordinate services with architecture and structure, resolve clashes, openings, ceiling zones, plant rooms, equipment access and builder’s work."},
+        {"number": "06", "title": "Tender and construction support", "text": "Specifications, quantities, bid clarifications, shop-drawing review, technical queries, material substitutions, inspections and commissioning follow-up."}
+      ],
+      "processTitle": "How the design becomes construction-ready",
+      "process": [
+        {"title": "Basis", "text": "Confirm loads, occupancy, operation, standards, constraints and design assumptions."},
+        {"title": "Design", "text": "Develop calculations, diagrams, layouts, equipment selections and technical specifications."},
+        {"title": "Coordinate", "text": "Resolve interfaces with architecture, structure, equipment suppliers and other technical disciplines."},
+        {"title": "Support site", "text": "Review execution documents, answer queries, inspect key stages and follow testing."}
+      ],
+      "bulletTitle": "Typical engineering outputs",
+      "bullets": ["Electrical load schedules and design basis", "Power-distribution and single-line diagrams", "Lighting, socket and equipment-supply layouts", "Ventilation and HVAC interface layouts", "Fire alarm, evacuation and low-current system documents", "Technical specifications, equipment schedules and working drawings"],
+      "cta": {"title": "Need drawings that contractors can actually price and build?", "text": "Share the plans, equipment list and current design stage. Yunes will define the missing calculations, drawings and coordination work.", "button": "Request an engineering discussion", "href": "contact"}
+    },
+    "local-engineering-partner-morocco": {
+      "seo": {"title": "Local Engineer & Site Representative in Morocco | Salimi Engineering", "description": "Local surveys, contractor coordination, technical reporting, site supervision and commissioning support for international teams in Morocco."},
+      "eyebrow": "Local engineering partner in Morocco",
+      "title": "Your technical eyes, voice and follow-through on the ground.",
+      "lead": "For teams managing a Moroccan project from abroad, Yunes provides local engineering presence without the cost and delay of creating a permanent office.",
+      "facts": [{"value": "One visit", "label": "Survey or focused technical check"}, {"value": "Recurring", "label": "Local representation and reporting"}, {"value": "Full phase", "label": "Design, site or handover support"}],
+      "sectionTitle": "Choose the level of local support",
+      "sectionIntro": "The assignment is built around the decisions your remote team cannot make reliably without site evidence.",
+      "items": [
+        {"number": "01", "title": "One-time technical mission", "text": "Site survey, existing-condition check, document review, contractor assessment or a concise technical report on one defined problem."},
+        {"number": "02", "title": "Recurring local representation", "text": "Scheduled site visits, meetings, progress evidence, issue tracking and structured reports to the international project team."},
+        {"number": "03", "title": "Project-phase assignment", "text": "Dedicated support during design, tendering, construction, testing or handover, with clear scope and reporting lines."},
+        {"number": "04", "title": "Contractor and supplier coordination", "text": "Clarify technical requirements, follow submissions and actions, verify site information and escalate decisions with evidence."},
+        {"number": "05", "title": "Construction verification", "text": "Inspect critical installations, compare actual work with approved documents and follow non-conformities to closure."},
+        {"number": "06", "title": "Testing and handover support", "text": "Witness tests, follow punch lists, check documentation and report readiness to the remote client team."}
+      ],
+      "processTitle": "A reliable local reporting loop",
+      "process": [
+        {"title": "Mandate", "text": "Confirm authority, reporting line, visit frequency, required evidence and escalation rules."},
+        {"title": "Observe", "text": "Collect factual information from site, contractors, documents and technical meetings."},
+        {"title": "Act", "text": "Resolve local issues where authorised and escalate decisions that require client approval."},
+        {"title": "Report", "text": "Send concise status, risks, photographs, actions and recommendations."}
+      ],
+      "bulletTitle": "Useful when your team needs",
+      "bullets": ["A technical survey before investment or mobilisation", "A local interface with Moroccan contractors and consultants", "Independent confirmation of progress and quality", "Fast clarification of site conditions and technical constraints", "Regular reporting without a permanent local engineering office"],
+      "cta": {"title": "Managing a project in Morocco from another country?", "text": "A short call can define what Yunes should verify locally, how often he should attend and what your team needs reported.", "button": "WhatsApp Yunes", "href": "https://wa.me/212663056547"}
+    },
+    "sectors": {
+      "seo": {"title": "Engineering Experience by Sector | Salimi Engineering", "description": "Electrical, ventilation, MEP and technical supervision for commercial, industrial, infrastructure, residential and technical facilities."},
+      "eyebrow": "Project environments",
+      "title": "Different assets. The same requirement: systems that work on site.",
+      "lead": "Yunes applies detailed engineering and practical construction control across commercial, industrial, infrastructure, residential and technically demanding projects.",
+      "facts": [{"value": "Commercial", "label": "Offices and fit-out"}, {"value": "Industrial", "label": "Production loads and utilities"}, {"value": "Infrastructure", "label": "Distributed systems and reconstruction"}],
+      "sectionTitle": "Where Yunes’s combined design and site experience creates value",
+      "sectionIntro": "Each sector is presented through its real technical challenges, not a generic market label.",
+      "items": [
+        {"number": "01", "title": "Corporate offices and fit-out", "text": "Workstation power, lighting, data and structured cabling, life safety, HVAC supplies, phased fit-out and coordination inside occupied buildings."},
+        {"number": "02", "title": "Industrial and manufacturing", "text": "Production-equipment loads, distribution boards, machinery layouts, ventilation, utility interfaces, phased works and installation around operating processes."},
+        {"number": "03", "title": "Infrastructure and external lighting", "text": "Outdoor lighting, distributed power networks, reconstruction interfaces, existing-condition constraints, diagrams and equipment specifications."},
+        {"number": "04", "title": "Residential and private projects", "text": "Power, lighting, ventilation, security, smart-home interfaces, fire safety, discreet integration and construction-quality control."},
+        {"number": "05", "title": "Data and technical spaces", "text": "Power resilience, equipment supplies, cooling interfaces, fire suppression, monitoring, maintainability and operational continuity."}
+      ],
+      "bulletTitle": "Typical problems Yunes is called to resolve",
+      "bullets": ["Systems designed separately and colliding on site", "Contractor offers with missing or unclear technical scope", "Equipment substitutions with unassessed consequences", "Works installed without sufficient access or maintainability", "Testing and handover delayed by incomplete documentation"],
+      "cta": {"title": "Describe the asset and the technical risk—not just the sector.", "text": "Yunes will identify the calculations, checks, coordination and site presence required for that project context.", "button": "Discuss the project", "href": "contact"}
+    },
+    "experience": {
+      "seo": {"title": "Yunes Salimi Engineering Experience | Salimi Engineering", "description": "Selected prior professional experience in offices, industrial facilities, infrastructure, residential projects and complex technical systems."},
+      "eyebrow": "Selected prior professional experience",
+      "title": "Real engineering work across international project environments.",
+      "lead": "The examples below show the type and depth of work Yunes has performed: calculations, distribution diagrams, lighting and power layouts, life-safety systems, working documents and technical supervision.",
+      "facts": [{"value": "25 storeys", "label": "Office-building electrical systems"}, {"value": "7,000 m²", "label": "Call-centre engineering scope"}, {"value": "Commercial · Industrial · Infrastructure", "label": "Project environments"}],
+      "sectionTitle": "Selected project examples",
+      "projects": [
+        {"sector": "Corporate offices", "title": "Mail.ru office building", "location": "Russia", "scope": "Power distribution and lighting systems for a 25-storey office building.", "role": "Founder’s prior professional experience — electrical engineering design."},
+        {"sector": "Corporate and technical spaces", "title": "Beeline office building", "location": "Russia", "scope": "Power equipment and electrical lighting for a three-storey office building, plus a separate electrical design for the data-centre cooling system.", "role": "Founder’s prior professional experience — preliminary and construction design."},
+        {"sector": "Corporate offices", "title": "Microsoft office areas", "location": "Russia", "scope": "Power-distribution and lighting systems for office spaces in Microsoft’s main building.", "role": "Founder’s prior professional experience — electrical engineering design."},
+        {"sector": "Banking and offices", "title": "Tinkoff bank call-centre", "location": "Russia", "scope": "Load calculations, lighting, socket and equipment supplies, ventilation and air-conditioning power, single-line diagrams, specifications, fire alarm and fire-suppression automation.", "role": "Founder’s prior professional experience — coordinated working design."},
+        {"sector": "Banking and offices", "title": "Citibank call-centre", "location": "Ryazan, Russia · 7,000 m²", "scope": "Electrical loads, lighting, power layouts, HVAC supplies, distribution diagrams, equipment specifications, fire alarm, evacuation control and suppression-system automation.", "role": "Founder’s prior professional experience — coordinated electrical and life-safety design."},
+        {"sector": "Automotive manufacturing", "title": "Faurecia Automotive production facility", "location": "Kaluga Region, Russia", "scope": "Electrical-load calculations, power-distribution diagram and equipment layouts for plastic-component production machinery serving Renault, Peugeot and Citroën vehicles.", "role": "Founder’s prior professional experience — industrial electrical engineering."},
+        {"sector": "Transport infrastructure", "title": "Tram-track outdoor lighting", "location": "Moscow, Perm, Lipetsk, Kursk and other cities", "scope": "Outdoor-lighting plans, power-supply schematics for reconstructed sections and equipment/material specifications.", "role": "Founder’s prior professional experience — infrastructure lighting design."},
+        {"sector": "Private residential", "title": "Manor house technical systems", "location": "Switzerland", "scope": "Supervision and assessment of low-voltage, security, smart-home and fire-safety installation projects on behalf of the owner.", "role": "Founder’s prior professional experience — owner-side technical review and supervision."}
+      ],
+      "bulletTitle": "What this experience demonstrates",
+      "bullets": ["Ability to calculate and document complete electrical packages", "Experience with offices, data spaces, production equipment and infrastructure", "Coordination of electrical, HVAC, fire-safety and low-current interfaces", "Working-design detail suitable for procurement and construction", "Technical review and supervision from the owner’s perspective"],
+      "cta": {"title": "Need experience relevant to a specific technical problem?", "text": "Explain the asset, stage and system involved. Yunes can discuss the closest comparable work and the proposed method for your project.", "button": "Speak with Yunes", "href": "tel:+212663056547"}
+    },
+    "about": {
+      "seo": {"title": "About Yunes Salimi | Engineer & Project Delivery Consultant", "description": "Independent engineer combining electrical and ventilation design, MEP coordination, construction supervision and owner-side project support."},
+      "eyebrow": "About Yunes Salimi",
+      "title": "An engineer who understands the drawing, the contractor and the owner’s decision.",
+      "lead": "Yunes combines detailed technical design with construction coordination and owner-side control. Clients deal directly with the person analysing the problem and following the solution.",
+      "facts": [{"value": "Founder", "label": "Direct senior involvement"}, {"value": "Design + site", "label": "Technical continuity"}, {"value": "International", "label": "Varied project environments"}],
+      "profile": {"type": "profile", "eyebrow": "Founder and lead engineer", "title": "Yunes Salimi", "text": "Yunes Salimi is an independent multidisciplinary engineer and project delivery consultant based in Morocco. His work combines electrical and ventilation design, MEP coordination, technical specifications, contractor interface, construction supervision and support to project owners. His prior international assignments include corporate offices, an automotive production facility, infrastructure lighting, residential projects and complex low-current and life-safety systems.", "quote": "A technical solution is only successful when it is clear enough to price, coordinated enough to build and controlled enough to perform."},
+      "sectionTitle": "Why clients work directly with Yunes",
+      "sectionIntro": "The service is structured around personal technical responsibility rather than layers of account management.",
+      "items": [
+        {"number": "01", "title": "Design knowledge", "text": "He can read, calculate and develop the technical solution—not only coordinate other people’s documents."},
+        {"number": "02", "title": "Construction understanding", "text": "He checks buildability, sequencing, access, interfaces, substitutions and the practical consequences of site decisions."},
+        {"number": "03", "title": "Owner-side judgement", "text": "He translates technical issues into clear choices, risks and recommendations for non-specialist decision-makers."},
+        {"number": "04", "title": "Continuity to handover", "text": "The same technical lead can remain involved from early studies through inspections, testing and final close-out."}
+      ],
+      "processTitle": "The working relationship",
+      "process": [
+        {"title": "Direct access", "text": "The client speaks with Yunes, not a sales intermediary."},
+        {"title": "Clear scope", "text": "Each mission defines deliverables, authority, interfaces and response times."},
+        {"title": "Visible evidence", "text": "Decisions are supported by calculations, marked-up documents, photographs and action logs."},
+        {"title": "Specialists when needed", "text": "Additional disciplines can be mobilised for a defined scope while Yunes remains the technical interface."}
+      ],
+      "cta": {"title": "Start with a direct technical conversation.", "text": "A short discussion will show whether Yunes is the right person for the design, review, site or owner-side role you need.", "button": "Call Yunes", "href": "tel:+212663056547"}
+    },
+    "contact": {
+      "seo": {"title": "Contact Yunes Salimi | Engineering Support Morocco", "description": "Call or WhatsApp Yunes Salimi about electrical design, ventilation, MEP coordination, owner-side engineering or site supervision in Morocco."},
+      "eyebrow": "Contact Yunes directly",
+      "title": "What is the technical problem you need solved?",
+      "lead": "Call, use WhatsApp or send a short project brief. Include the location, project stage, available drawings and the decision or site issue that needs attention.",
+      "facts": [{"value": "+212 663 056 547", "label": "Call or WhatsApp"}, {"value": "info@edsmaroc.com", "label": "Email"}, {"value": "Morocco", "label": "Local project support"}],
+      "contact": {"type": "contact", "eyebrow": "Direct contact", "title": "Speak with Yunes Salimi", "intro": "The fastest start is a short call or WhatsApp message. For a written enquiry, describe the asset, location, current stage and the technical help required.", "email": "info@edsmaroc.com", "phone": "+212 663 056 547", "address": "Morocco", "form": {"name": "Name", "company": "Company", "email": "Business email", "service": "What do you need?", "message": "Project location, stage, available documents and technical problem", "submit": "Send project enquiry", "services": ["Electrical engineering design", "Ventilation and MEP coordination", "Owner-side technical review", "Construction supervision", "Local engineering support in Morocco", "Testing and handover support", "Other"]}},
+      "cta": {"title": "Prefer WhatsApp?", "text": "Send a short message with the project location and the issue. Yunes can then request the right drawings or arrange a call.", "button": "WhatsApp Yunes", "href": "https://wa.me/212663056547"}
+    },
+    "legal-notice": {
+      "seo": {"title": "Legal Notice | Salimi Engineering", "description": "Legal information for the Salimi Engineering website."},
+      "eyebrow": "Legal", "title": "Legal notice", "lead": "Information relating to the publisher and use of this website.", "facts": [],
+      "legal": [{"title": "Publisher", "paragraphs": ["Website brand: Salimi Engineering.", "Publication director and professional contact: Yunes Salimi, Morocco.", "Email: info@edsmaroc.com. Telephone: +212 663 056 547."]}, {"title": "Website information", "paragraphs": ["The website presents independent engineering and project-support services.", "Technical information is general and does not replace a project-specific proposal, calculation, contract or professional instruction."]}]
+    },
+    "privacy-policy": {
+      "seo": {"title": "Privacy Policy | Salimi Engineering", "description": "How project-enquiry information is handled."},
+      "eyebrow": "Privacy", "title": "Privacy policy", "lead": "How information submitted through the project-enquiry form is used.", "facts": [],
+      "legal": [{"title": "Information collected", "paragraphs": ["The enquiry form may collect your name, company, business email, requested service and project message.", "Do not send confidential drawings, personal identification information or sensitive commercial data through the first enquiry."]}, {"title": "Purpose", "paragraphs": ["The information is used only to review and respond to your project enquiry.", "You may request correction or deletion by contacting info@edsmaroc.com."]}]
+    },
+    "cookie-policy": {
+      "seo": {"title": "Cookie Policy | Salimi Engineering", "description": "Cookie and technical-storage information for the website."},
+      "eyebrow": "Cookies", "title": "Cookie policy", "lead": "Information about technical storage used by this website.", "facts": [],
+      "legal": [{"title": "Necessary technology", "paragraphs": ["The website may use strictly necessary platform and security mechanisms required to serve pages and process enquiries."]}, {"title": "Analytics", "paragraphs": ["Marketing or analytics technologies will be described here if they are introduced in the future."]}]
+    }
+  }
+}
