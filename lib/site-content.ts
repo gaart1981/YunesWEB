@@ -3,6 +3,11 @@ import en from "@/content/site-en.json";
 import fr from "@/content/site-fr.json";
 import ar from "@/content/site-ar.json";
 import type { Locale } from "@/lib/home-content";
+import {
+  applyCompanyVoice,
+  founderMessages,
+  founderMessageTitles
+} from "@/lib/brand-copy";
 
 export const pageSlugs = [
   "services",
@@ -124,12 +129,30 @@ export function isSiteSlug(value: string): value is SiteSlug {
 }
 
 export function getSiteContent(locale: Locale): SiteContent {
-  return sites[locale];
+  return applyCompanyVoice(sites[locale], locale);
 }
 
 export function getPageContent(locale: Locale, slug: SiteSlug): SitePage {
-  return {
-    ...shared[slug],
-    ...sites[locale].pages[slug]
-  };
+  const page = applyCompanyVoice(
+    {
+      ...shared[slug],
+      ...sites[locale].pages[slug]
+    } as SitePage,
+    locale
+  );
+
+  if (slug === "about") {
+    return {
+      ...page,
+      profile: {
+        type: page.profile?.type ?? "profile",
+        eyebrow: page.profile?.eyebrow ?? founderMessageTitles[locale],
+        title: founderMessageTitles[locale],
+        text: founderMessages[locale],
+        quote: page.profile?.quote ?? ""
+      }
+    };
+  }
+
+  return page;
 }
