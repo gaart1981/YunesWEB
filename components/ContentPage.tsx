@@ -9,9 +9,9 @@ const localeLabels: Record<Locale, string> = {
 };
 
 const whatsappLabels: Record<Locale, string> = {
-  en: "WhatsApp Yunes",
-  fr: "WhatsApp Yunes",
-  ar: "راسل يونس عبر واتساب"
+  en: "WhatsApp Salimi Engineering",
+  fr: "WhatsApp Salimi Engineering",
+  ar: "راسل Salimi Engineering عبر واتساب"
 };
 
 const pageImages: Partial<Record<SiteSlug, string>> = {
@@ -21,7 +21,7 @@ const pageImages: Partial<Record<SiteSlug, string>> = {
   "local-engineering-partner-morocco": "/images/generated/industrial-facility-exterior.svg",
   sectors: "/images/generated/industrial-mechanical-room.svg",
   experience: "/images/generated/logistics-warehouse.svg",
-  about: "/images/generated/yunes-salimi-portrait.svg",
+  about: "/images/generated/founder-portrait.svg",
   contact: "/images/generated/industrial-mechanical-room.svg"
 };
 
@@ -178,7 +178,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
         {page.profile && (
           <section className="content-section content-section--porcelain">
             <div className="container profile-layout">
-              <div className="profile-image"><img src="/images/generated/yunes-salimi-portrait.svg" alt="" width="560" height="700" /></div>
+              <div className="profile-image"><img src="/images/generated/founder-portrait.svg" alt="" width="560" height="700" /></div>
               <div><p className="eyebrow">{page.profile.eyebrow}</p><h2>{page.profile.title}</h2><p className="profile-text">{page.profile.text}</p><blockquote>{page.profile.quote}</blockquote></div>
             </div>
           </section>

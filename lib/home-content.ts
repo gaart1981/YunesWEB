@@ -1,6 +1,7 @@
 import en from "@/content/en/home.json";
 import fr from "@/content/fr/home.json";
 import ar from "@/content/ar/home.json";
+import { applyCompanyVoice } from "@/lib/brand-copy";
 
 export type Locale = "en" | "fr" | "ar";
 
@@ -19,5 +20,5 @@ export function isLocale(value: string): value is Locale {
 }
 
 export function getHomeContent(locale: Locale): HomeContent {
-  return contentByLocale[locale];
+  return applyCompanyVoice(contentByLocale[locale], locale);
 }
