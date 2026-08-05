@@ -2,91 +2,92 @@
   "locale": "en",
   "direction": "ltr",
   "seo": {
-    "title": "Salimi Engineering | Engineering Support in Morocco",
-    "description": "Founder-led engineering coordination, owner’s representation and local project delivery support in Morocco."
+    "title": "Electrical, MEP & Project Engineering in Morocco | Salimi Engineering",
+    "description": "Yunes Salimi designs electrical and ventilation systems, coordinates MEP, reviews contractors and supervises construction for projects in Morocco."
   },
   "navigation": {
     "services": "Services",
-    "approach": "Approach",
-    "founder": "Founder",
+    "approach": "How Yunes works",
+    "founder": "Yunes Salimi",
     "contact": "Contact",
-    "cta": "Discuss a Project",
+    "cta": "Call Yunes",
     "language": "Language"
   },
   "hero": {
-    "eyebrow": "Founder-led engineering in Morocco",
-    "title": "Engineering clarity for projects that need local control.",
-    "summary": "Salimi Engineering supports international and Moroccan clients with owner’s representation, electrical and MEP engineering, and disciplined local project delivery.",
-    "primaryCta": "Discuss a Project",
-    "secondaryCta": "Explore Services",
-    "trust": "Direct founder involvement · Project-specific specialist teams"
+    "eyebrow": "Independent engineer · Morocco",
+    "title": "Design the systems. Control the site. Deliver the project.",
+    "summary": "Yunes Salimi designs electrical and ventilation systems, coordinates MEP, reviews contractors and supervises construction for owners, developers and international project teams in Morocco.",
+    "primaryCta": "Call Yunes",
+    "secondaryCta": "See how he can help",
+    "whatsappCta": "WhatsApp Yunes",
+    "trust": "Electrical design · Ventilation · MEP coordination · Owner-side supervision"
   },
   "audiences": [
-    "International investors",
-    "Engineering companies",
-    "EPC contractors",
-    "Developers",
-    "Industrial clients"
+    "Need a complete technical design",
+    "Need a local engineer in Morocco",
+    "Need contractor proposals checked",
+    "Need construction quality controlled",
+    "Need systems tested and handed over"
   ],
   "services": {
-    "eyebrow": "Core services",
-    "title": "Three ways to strengthen project delivery",
-    "summary": "Support is organised around the client’s actual risk, project stage and required technical depth.",
+    "eyebrow": "What Yunes can take off your desk",
+    "title": "One engineer from technical problem to working result",
+    "summary": "Bring Yunes in for a focused review, a design package, recurring site representation or full technical support through construction and handover.",
     "items": [
       {
         "number": "01",
-        "title": "Owner’s Engineering & AMO",
-        "text": "Independent technical support from project definition and design review through tendering, construction follow-up and handover."
+        "title": "Owner-side engineering & supervision",
+        "text": "Define the scope, review designs and bids, challenge changes, inspect the works and give the owner clear technical recommendations."
       },
       {
         "number": "02",
-        "title": "Electrical & MEP Engineering",
-        "text": "Design, technical review and multidisciplinary coordination for buildings, industrial facilities and infrastructure."
+        "title": "Electrical, ventilation & MEP design",
+        "text": "Calculations, power distribution, lighting, ventilation layouts, life-safety interfaces, specifications and coordinated construction drawings."
       },
       {
         "number": "03",
-        "title": "Local Engineering Partner",
-        "text": "Local technical presence and structured reporting for international companies planning or delivering work in Morocco."
+        "title": "Local project and site support",
+        "text": "Site surveys, contractor coordination, technical meetings, progress evidence, issue resolution, testing and handover support in Morocco."
       }
     ]
   },
   "approach": {
-    "eyebrow": "A focused delivery model",
-    "title": "Responsibility remains visible from brief to close-out.",
+    "eyebrow": "A practical delivery sequence",
+    "title": "Design. Coordinate. Supervise. Deliver.",
     "items": [
       {
-        "title": "Direct technical leadership",
-        "text": "Key assignments remain under the founder’s direct technical and client-facing oversight."
+        "title": "Design",
+        "text": "Translate operational needs into calculations, layouts, diagrams, specifications and buildable technical solutions."
       },
       {
-        "title": "International working standards",
-        "text": "Structured reporting, clear interfaces and disciplined technical coordination."
+        "title": "Coordinate",
+        "text": "Resolve interfaces between electrical, ventilation, fire-safety, architecture, structure and contractors before they become site delays."
       },
       {
-        "title": "Morocco-based execution",
-        "text": "Local presence for surveys, meetings, contractor coordination and project follow-up."
+        "title": "Supervise",
+        "text": "Review submittals and substitutions, inspect works, record non-conformities and verify corrective actions."
       },
       {
-        "title": "Specialists selected by scope",
-        "text": "Project teams are assembled around real engineering requirements rather than artificial permanent scale."
+        "title": "Deliver",
+        "text": "Follow testing, commissioning, snag closure, documentation and handover until the systems are ready for operation."
       }
     ]
   },
   "founder": {
-    "eyebrow": "Founder-led by design",
-    "title": "One accountable technical lead, supported by the right specialists.",
-    "text": "Yunes Salimi is developing Salimi Engineering as a direct, technically accountable partner for clients working in Morocco. His detailed professional history and selected projects will be published only after factual verification.",
-    "quote": "The objective is not unnecessary organisational scale. It is clear technical leadership and the right expertise for the assignment."
+    "eyebrow": "Founder, lead engineer and project delivery consultant",
+    "title": "You speak directly with the engineer responsible for the answer.",
+    "text": "Yunes Salimi combines detailed engineering design with practical construction coordination and owner-side technical control. His prior international work includes corporate offices, an automotive production facility, transport-lighting infrastructure, residential projects and complex technical systems.",
+    "quote": "I do not stop at issuing drawings. I stay involved until the technical solution can be built, tested and handed over."
   },
   "contact": {
-    "eyebrow": "Start with the project context",
-    "title": "Planning or delivering a project in Morocco?",
-    "text": "Share the project stage, technical challenge and support you require. Verified contact details and the secure enquiry form will be activated before public launch.",
-    "button": "Discuss a Project"
+    "eyebrow": "A technical problem is enough to start",
+    "title": "Tell Yunes what is blocking your project.",
+    "text": "A first call can clarify the problem, the documents available, the site conditions and the fastest useful intervention.",
+    "button": "Discuss the project"
   },
   "footer": {
-    "descriptor": "Engineering, project advisory and local delivery in Morocco",
-    "status": "Foundation preview — not yet approved for advertising",
+    "descriptor": "Electrical, ventilation, MEP and project delivery engineering in Morocco",
+    "status": "Direct engineering support in English, French and Arabic",
     "rights": "All rights reserved."
   }
 }
