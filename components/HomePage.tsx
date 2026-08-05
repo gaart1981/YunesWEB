@@ -25,6 +25,8 @@ function Arrow() {
 export function HomePage({ locale, content }: { locale: Locale; content: HomeContent }) {
   const site = getSiteContent(locale);
   const nav = site.navigation;
+  const phoneHref = `tel:${nav.phone.replace(/\s/g, "")}`;
+  const whatsappHref = `https://wa.me/${nav.phone.replace(/[^\d]/g, "")}`;
 
   return (
     <>
@@ -49,7 +51,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
                 </Link>
               ))}
             </div>
-            <Link className="button button--small" href={`/${locale}/contact`}>{nav.cta}</Link>
+            <a className="button button--small" href={phoneHref}>{nav.cta}</a>
           </div>
           <details className="mobile-menu">
             <summary aria-label={nav.services}><span /><span /></summary>
@@ -59,6 +61,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <Link href={`/${locale}/experience`}>{nav.experience}</Link>
               <Link href={`/${locale}/about`}>{nav.about}</Link>
               <Link href={`/${locale}/contact`}>{nav.contact}</Link>
+              <a href={phoneHref}>{nav.cta}</a>
               <div className="language-switcher language-switcher--mobile">
                 {(["en", "fr", "ar"] as Locale[]).map((item) => (
                   <Link key={item} href={`/${item}/`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
@@ -70,30 +73,33 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
       </header>
 
       <main id="main-content">
-        <section className="hero">
+        <section className="hero hero--conversion">
           <div className="hero-grid">
             <div className="hero-copy">
               <p className="eyebrow eyebrow--sand">{content.hero.eyebrow}</p>
               <h1>{content.hero.title}</h1>
               <p className="hero-summary">{content.hero.summary}</p>
-              <div className="hero-actions">
-                <Link className="button button--sand" href={`/${locale}/contact`}>
+              <div className="hero-actions hero-actions--conversion">
+                <a className="button button--sand" href={phoneHref}>
                   {content.hero.primaryCta}<Arrow />
-                </Link>
+                </a>
+                <a className="button button--outline-light" href={whatsappHref} target="_blank" rel="noreferrer">
+                  {content.hero.whatsappCta}<Arrow />
+                </a>
                 <Link className="text-link text-link--light" href={`/${locale}/services`}>
                   {content.hero.secondaryCta}<Arrow />
                 </Link>
               </div>
-              <p className="trust-note">{content.hero.trust}</p>
+              <p className="trust-note trust-note--strong">{content.hero.trust}</p>
             </div>
             <div className="hero-media">
               <img src="/images/generated/industrial-facility-exterior.svg" alt="" width="560" height="700" />
             </div>
           </div>
-          <div className="datum" aria-hidden="true"><span>33.5731° N</span><span>7.5898° W</span><span>MOROCCO</span></div>
+          <div className="datum" aria-hidden="true"><span>DESIGN</span><span>SUPERVISION</span><span>MOROCCO</span></div>
         </section>
 
-        <section className="audience-section">
+        <section className="audience-section audience-section--problems">
           <div className="container audience-grid">
             {content.audiences.map((audience, index) => (
               <div key={audience} className="audience-item"><span>0{index + 1}</span><p>{audience}</p></div>
@@ -141,7 +147,10 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <h2>{content.founder.title}</h2>
               <p>{content.founder.text}</p>
               <blockquote>{content.founder.quote}</blockquote>
-              <Link className="text-link" href={`/${locale}/about`}>{nav.about}<Arrow /></Link>
+              <div className="founder-actions">
+                <a className="button" href={phoneHref}>{content.hero.primaryCta}<Arrow /></a>
+                <Link className="text-link" href={`/${locale}/about`}>{nav.about}<Arrow /></Link>
+              </div>
             </div>
           </div>
         </section>
@@ -149,7 +158,13 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
         <section id="contact" className="contact-section">
           <div className="container contact-grid">
             <div><p className="eyebrow eyebrow--sand">{content.contact.eyebrow}</p><h2>{content.contact.title}</h2></div>
-            <div><p>{content.contact.text}</p><Link className="button button--sand" href={`/${locale}/contact`}>{content.contact.button}<Arrow /></Link></div>
+            <div>
+              <p>{content.contact.text}</p>
+              <div className="hero-actions">
+                <Link className="button button--sand" href={`/${locale}/contact`}>{content.contact.button}<Arrow /></Link>
+                <a className="text-link text-link--light" href={whatsappHref} target="_blank" rel="noreferrer">{content.hero.whatsappCta}<Arrow /></a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -157,11 +172,11 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
       <footer className="site-footer">
         <div className="container footer-expanded">
           <div><div className="brand brand--footer"><strong>SALIMI</strong><span>ENGINEERING</span></div><p>{nav.footerDescriptor}</p></div>
-          <div className="footer-contact"><span>{nav.address}</span><a href={`mailto:${nav.email}`}>{nav.email}</a><a href={`tel:${nav.phone.replace(/\s/g, "")}`}>{nav.phone}</a></div>
+          <div className="footer-contact"><span>{nav.address}</span><a href={`mailto:${nav.email}`}>{nav.email}</a><a href={phoneHref}>{nav.phone}</a></div>
           <nav className="footer-links"><Link href={`/${locale}/legal-notice`}>{nav.legal}</Link><Link href={`/${locale}/privacy-policy`}>{nav.privacy}</Link><Link href={`/${locale}/cookie-policy`}>{nav.cookies}</Link></nav>
         </div>
         <div className="container footer-preview-note">{nav.footerStatus}</div>
-        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Salimi Engineering</span><span>Morocco · Engineering & Project Advisory</span></div>
+        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Salimi Engineering</span><span>Morocco · Engineering & Project Delivery</span></div>
       </footer>
     </>
   );
