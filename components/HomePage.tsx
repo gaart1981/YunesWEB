@@ -141,7 +141,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
 
         <section id="founder" className="section section--founder">
           <div className="container founder-grid">
-            <div className="founder-media"><img src="/images/generated/founder-portrait.svg" alt="" width="560" height="700" /></div>
+            <div className="founder-media"><img src="/images/people/younes-salimi-home.webp" alt="" width="560" height="700" /></div>
             <div className="founder-copy">
               <p className="eyebrow">{content.founder.eyebrow}</p>
               <h2>{content.founder.title}</h2>
