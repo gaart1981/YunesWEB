@@ -182,7 +182,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
         {page.profile && (
           <section className="content-section content-section--porcelain">
             <div className="container profile-layout">
-              <div className="profile-image"><img src="/images/people/younes-salimi-about.webp" alt="" width="560" height="700" /></div>
+              <div className="profile-image"><img src="/images/people/younes-salimi-about.webp" alt={page.profile.imageAlt} width="560" height="700" /></div>
               <div><p className="eyebrow">{page.profile.eyebrow}</p><h2>{page.profile.title}</h2><p className="profile-text">{page.profile.text}</p><blockquote>{page.profile.quote}</blockquote></div>
             </div>
           </section>

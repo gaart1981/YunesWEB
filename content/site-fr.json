@@ -21,198 +21,738 @@
   },
   "pages": {
     "services": {
-      "seo": {"title": "Études techniques et suivi de chantier au Maroc | Salimi Engineering", "description": "Études électriques et ventilation, coordination MEP, AMO technique, revue des entreprises et suivi des travaux au Maroc."},
+      "seo": {
+        "title": "Études techniques et suivi de chantier au Maroc | Salimi Engineering",
+        "description": "Études électriques et ventilation, coordination MEP, AMO technique, revue des entreprises et suivi des travaux au Maroc."
+      },
       "eyebrow": "Services d’ingénierie",
       "title": "Confiez à Yunes le problème technique. Obtenez une solution constructible.",
       "lead": "Yunes peut intervenir en conception, études, appel d’offres, chantier ou réception, puis calculer, concevoir, coordonner, inspecter et piloter les actions nécessaires.",
-      "facts": [{"value": "Concevoir", "label": "Calculs et documents d’exécution"}, {"value": "Contrôler", "label": "Revues, inspections et décisions"}, {"value": "Livrer", "label": "Essais, clôture et réception"}],
+      "facts": [
+        {
+          "value": "Concevoir",
+          "label": "Calculs et documents d’exécution"
+        },
+        {
+          "value": "Contrôler",
+          "label": "Revues, inspections et décisions"
+        },
+        {
+          "value": "Livrer",
+          "label": "Essais, clôture et réception"
+        }
+      ],
       "sectionTitle": "Six manières de renforcer votre projet",
       "sectionIntro": "Une mission ciblée ou un accompagnement technique continu, selon la phase et le besoin.",
       "items": [
-        {"number": "01", "title": "Études électriques", "text": "Bilans de puissance, distribution, éclairage, prises et alimentations, schémas unifilaires, tableaux, spécifications et plans d’exécution.", "href": "electrical-mep-engineering"},
-        {"number": "02", "title": "Ventilation et équipements techniques", "text": "Besoins de ventilation, implantation des équipements et gaines, alimentations HVAC, accès maintenance et coordination avec architecture et structure.", "href": "electrical-mep-engineering"},
-        {"number": "03", "title": "Coordination MEP", "text": "Coordination électricité, ventilation, sécurité incendie et bâtiment ; détection des conflits ; traitement des locaux techniques, passages et accès.", "href": "electrical-mep-engineering"},
-        {"number": "04", "title": "Ingénierie côté maître d’ouvrage", "text": "Définir les exigences, vérifier les études, comparer les offres, analyser les substitutions et sécuriser les décisions avant qu’elles ne deviennent des coûts.", "href": "owners-engineering-amo"},
-        {"number": "05", "title": "Visa, suivi et supervision", "text": "Examiner les documents d’exécution, répondre aux questions, inspecter les travaux, relever les écarts et suivre les corrections et essais.", "href": "owners-engineering-amo"},
-        {"number": "06", "title": "Appui local au Maroc", "text": "Relevés, réunions d’entreprises, reporting technique, représentation récurrente, mise en service et résolution des points locaux.", "href": "local-engineering-partner-morocco"}
+        {
+          "number": "01",
+          "title": "Études électriques",
+          "text": "Bilans de puissance, distribution, éclairage, prises et alimentations, schémas unifilaires, tableaux, spécifications et plans d’exécution.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "02",
+          "title": "Ventilation et équipements techniques",
+          "text": "Besoins de ventilation, implantation des équipements et gaines, alimentations HVAC, accès maintenance et coordination avec architecture et structure.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "03",
+          "title": "Coordination MEP",
+          "text": "Coordination électricité, ventilation, sécurité incendie et bâtiment ; détection des conflits ; traitement des locaux techniques, passages et accès.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "04",
+          "title": "Ingénierie côté maître d’ouvrage",
+          "text": "Définir les exigences, vérifier les études, comparer les offres, analyser les substitutions et sécuriser les décisions avant qu’elles ne deviennent des coûts.",
+          "href": "owners-engineering-amo"
+        },
+        {
+          "number": "05",
+          "title": "Visa, suivi et supervision",
+          "text": "Examiner les documents d’exécution, répondre aux questions, inspecter les travaux, relever les écarts et suivre les corrections et essais.",
+          "href": "owners-engineering-amo"
+        },
+        {
+          "number": "06",
+          "title": "Appui local au Maroc",
+          "text": "Relevés, réunions d’entreprises, reporting technique, représentation récurrente, mise en service et résolution des points locaux.",
+          "href": "local-engineering-partner-morocco"
+        }
       ],
       "processTitle": "Du premier échange à une livraison maîtrisée",
       "process": [
-        {"title": "Diagnostiquer", "text": "Examiner la phase, les documents, le site et la décision à prendre."},
-        {"title": "Définir", "text": "Fixer le périmètre, les livrables, les interfaces, les responsabilités et le rythme de reporting."},
-        {"title": "Exécuter", "text": "Concevoir, coordonner, vérifier ou superviser avec des actions, responsables et délais visibles."},
-        {"title": "Clôturer", "text": "Vérifier les essais, réserves, documents et la préparation à la réception."}
+        {
+          "title": "Diagnostiquer",
+          "text": "Examiner la phase, les documents, le site et la décision à prendre."
+        },
+        {
+          "title": "Définir",
+          "text": "Fixer le périmètre, les livrables, les interfaces, les responsabilités et le rythme de reporting."
+        },
+        {
+          "title": "Exécuter",
+          "text": "Concevoir, coordonner, vérifier ou superviser avec des actions, responsables et délais visibles."
+        },
+        {
+          "title": "Clôturer",
+          "text": "Vérifier les essais, réserves, documents et la préparation à la réception."
+        }
       ],
-      "cta": {"title": "Vous ne savez pas quelle mission commander ?", "text": "Décrivez le problème. Yunes identifiera l’intervention minimale utile et les informations nécessaires pour démarrer.", "button": "Appeler Yunes", "href": "tel:+212663056547"}
+      "cta": {
+        "title": "Vous ne savez pas quelle mission commander ?",
+        "text": "Décrivez le problème. Yunes identifiera l’intervention minimale utile et les informations nécessaires pour démarrer.",
+        "button": "Appeler Yunes",
+        "href": "tel:+212663056547"
+      }
     },
     "owners-engineering-amo": {
-      "seo": {"title": "AMO technique et supervision au Maroc | Salimi Engineering", "description": "Revue indépendante des études, analyse des offres, contrôle des travaux et représentation technique du maître d’ouvrage."},
+      "seo": {
+        "title": "AMO technique et supervision au Maroc | Salimi Engineering",
+        "description": "Revue indépendante des études, analyse des offres, contrôle des travaux et représentation technique du maître d’ouvrage."
+      },
       "eyebrow": "Ingénierie côté maître d’ouvrage",
       "title": "Gardez la maîtrise technique, même sans équipe d’ingénierie interne.",
       "lead": "Yunes vérifie les solutions proposées, identifie les manques, documente les risques et suit les actions jusqu’aux essais et à la réception.",
-      "facts": [{"value": "Indépendant", "label": "Jugement technique côté client"}, {"value": "Documenté", "label": "Décisions, risques et actions"}, {"value": "Sur site", "label": "Inspection et vérification"}],
+      "facts": [
+        {
+          "value": "Indépendant",
+          "label": "Jugement technique côté client"
+        },
+        {
+          "value": "Documenté",
+          "label": "Décisions, risques et actions"
+        },
+        {
+          "value": "Sur site",
+          "label": "Inspection et vérification"
+        }
+      ],
       "sectionTitle": "Ce que Yunes contrôle pour le maître d’ouvrage",
       "sectionIntro": "La mission peut commencer par une revue unique ou se poursuivre pendant toute la réalisation.",
       "items": [
-        {"number": "01", "title": "Besoins et périmètre", "text": "Clarifier les besoins d’exploitation, critères techniques, limites de lots, responsabilités et données manquantes."},
-        {"number": "02", "title": "Revue des études", "text": "Vérifier calculs, plans, équipements, interfaces, maintenance, constructibilité et cohérence entre disciplines."},
-        {"number": "03", "title": "Appels d’offres et analyse technique", "text": "Préparer ou contrôler les spécifications, traiter les questions et comparer les offres selon le périmètre, la conformité et le risque."},
-        {"number": "04", "title": "Modifications et substitutions", "text": "Évaluer les variantes proposées, réductions cachées, impacts de performance, maintenance et justification technique."},
-        {"number": "05", "title": "Inspections de chantier", "text": "Vérifier la qualité, la conformité aux documents visés, les preuves d’avancement, les corrections et la préparation aux essais."},
-        {"number": "06", "title": "Mise en service et réception", "text": "Suivre les essais, réserves, DOE, documents d’exploitation et l’acceptation technique finale."}
+        {
+          "number": "01",
+          "title": "Besoins et périmètre",
+          "text": "Clarifier les besoins d’exploitation, critères techniques, limites de lots, responsabilités et données manquantes."
+        },
+        {
+          "number": "02",
+          "title": "Revue des études",
+          "text": "Vérifier calculs, plans, équipements, interfaces, maintenance, constructibilité et cohérence entre disciplines."
+        },
+        {
+          "number": "03",
+          "title": "Appels d’offres et analyse technique",
+          "text": "Préparer ou contrôler les spécifications, traiter les questions et comparer les offres selon le périmètre, la conformité et le risque."
+        },
+        {
+          "number": "04",
+          "title": "Modifications et substitutions",
+          "text": "Évaluer les variantes proposées, réductions cachées, impacts de performance, maintenance et justification technique."
+        },
+        {
+          "number": "05",
+          "title": "Inspections de chantier",
+          "text": "Vérifier la qualité, la conformité aux documents visés, les preuves d’avancement, les corrections et la préparation aux essais."
+        },
+        {
+          "number": "06",
+          "title": "Mise en service et réception",
+          "text": "Suivre les essais, réserves, DOE, documents d’exploitation et l’acceptation technique finale."
+        }
       ],
       "processTitle": "Intervention type côté maître d’ouvrage",
       "process": [
-        {"title": "Collecter les preuves", "text": "Plans, CCTP, offres, comptes rendus, photos et points ouverts."},
-        {"title": "Qualifier les risques", "text": "Séparer les risques critiques, lacunes d’études, ambiguïtés contractuelles et défauts d’exécution."},
-        {"title": "Piloter les décisions", "text": "Formuler des recommandations courtes, attribuer les actions et suivre leur clôture."},
-        {"title": "Vérifier le résultat", "text": "Inspecter la solution réalisée et informer le maître d’ouvrage des risques résiduels."}
+        {
+          "title": "Collecter les preuves",
+          "text": "Plans, CCTP, offres, comptes rendus, photos et points ouverts."
+        },
+        {
+          "title": "Qualifier les risques",
+          "text": "Séparer les risques critiques, lacunes d’études, ambiguïtés contractuelles et défauts d’exécution."
+        },
+        {
+          "title": "Piloter les décisions",
+          "text": "Formuler des recommandations courtes, attribuer les actions et suivre leur clôture."
+        },
+        {
+          "title": "Vérifier le résultat",
+          "text": "Inspecter la solution réalisée et informer le maître d’ouvrage des risques résiduels."
+        }
       ],
       "bulletTitle": "Livrables directement exploitables",
-      "bullets": ["Programme technique et matrice de responsabilités", "Registre de revue des études avec priorités", "Comparatif d’offres et journal des clarifications", "Analyse des modifications et substitutions", "Rapports de visite avec preuves photographiques", "Liste d’actions, réserves et suivi de mise en service"],
-      "cta": {"title": "Besoin d’un ingénieur qui challenge le projet pour vous ?", "text": "Transmettez le plan, l’offre ou le problème chantier qui vous inquiète. Yunes peut commencer par une revue indépendante ciblée.", "button": "Présenter le problème", "href": "contact"}
+      "bullets": [
+        "Programme technique et matrice de responsabilités",
+        "Registre de revue des études avec priorités",
+        "Comparatif d’offres et journal des clarifications",
+        "Analyse des modifications et substitutions",
+        "Rapports de visite avec preuves photographiques",
+        "Liste d’actions, réserves et suivi de mise en service"
+      ],
+      "cta": {
+        "title": "Besoin d’un ingénieur qui challenge le projet pour vous ?",
+        "text": "Transmettez le plan, l’offre ou le problème chantier qui vous inquiète. Yunes peut commencer par une revue indépendante ciblée.",
+        "button": "Présenter le problème",
+        "href": "contact"
+      }
     },
     "electrical-mep-engineering": {
-      "seo": {"title": "Études électriques, ventilation et MEP au Maroc | Salimi Engineering", "description": "Bilans de puissance, distribution, éclairage, ventilation, sécurité incendie, coordination MEP et plans d’exécution."},
+      "seo": {
+        "title": "Études électriques, ventilation et MEP au Maroc | Salimi Engineering",
+        "description": "Bilans de puissance, distribution, éclairage, ventilation, sécurité incendie, coordination MEP et plans d’exécution."
+      },
       "eyebrow": "Électricité, ventilation et MEP",
       "title": "Des systèmes techniques conçus pour être construits, exploités et maintenus.",
       "lead": "Yunes développe et coordonne des dossiers d’ingénierie suffisamment détaillés pour le chiffrage, les achats et l’exécution.",
-      "facts": [{"value": "Énergie", "label": "Charges, distribution et protections"}, {"value": "Air", "label": "Ventilation et interfaces HVAC"}, {"value": "MEP", "label": "Documents d’exécution coordonnés"}],
+      "facts": [
+        {
+          "value": "Énergie",
+          "label": "Charges, distribution et protections"
+        },
+        {
+          "value": "Air",
+          "label": "Ventilation et interfaces HVAC"
+        },
+        {
+          "value": "MEP",
+          "label": "Documents d’exécution coordonnés"
+        }
+      ],
       "sectionTitle": "Du calcul à l’assistance chantier",
       "sectionIntro": "Le dossier est adapté à la phase du projet et aux documents déjà disponibles.",
       "items": [
-        {"number": "01", "title": "Bilans et distribution électrique", "text": "Tableaux de charges, foisonnement, architecture de distribution, tableaux, arrivées, secours et schémas unifilaires."},
-        {"number": "02", "title": "Éclairage et courants forts", "text": "Plans d’éclairage, commandes, prises, postes de travail, alimentations d’équipements, éclairage de sécurité et extérieur."},
-        {"number": "03", "title": "Ventilation et interfaces HVAC", "text": "Besoins de ventilation, équipements et cheminements, alimentations, automatismes, locaux techniques et accès maintenance."},
-        {"number": "04", "title": "Courants faibles et sécurité", "text": "Câblage structuré, données, sûreté, détection incendie, évacuation et interfaces d’automatisme des systèmes d’extinction."},
-        {"number": "05", "title": "Coordination MEP", "text": "Coordination avec architecture et structure, conflits, réservations, plafonds, locaux techniques, accès et travaux de gros œuvre associés."},
-        {"number": "06", "title": "Appels d’offres et chantier", "text": "Spécifications, quantités, questions, visa des plans, substitutions, inspections et suivi de mise en service."}
+        {
+          "number": "01",
+          "title": "Bilans et distribution électrique",
+          "text": "Tableaux de charges, foisonnement, architecture de distribution, tableaux, arrivées, secours et schémas unifilaires."
+        },
+        {
+          "number": "02",
+          "title": "Éclairage et courants forts",
+          "text": "Plans d’éclairage, commandes, prises, postes de travail, alimentations d’équipements, éclairage de sécurité et extérieur."
+        },
+        {
+          "number": "03",
+          "title": "Ventilation et interfaces HVAC",
+          "text": "Besoins de ventilation, équipements et cheminements, alimentations, automatismes, locaux techniques et accès maintenance."
+        },
+        {
+          "number": "04",
+          "title": "Courants faibles et sécurité",
+          "text": "Câblage structuré, données, sûreté, détection incendie, évacuation et interfaces d’automatisme des systèmes d’extinction."
+        },
+        {
+          "number": "05",
+          "title": "Coordination MEP",
+          "text": "Coordination avec architecture et structure, conflits, réservations, plafonds, locaux techniques, accès et travaux de gros œuvre associés."
+        },
+        {
+          "number": "06",
+          "title": "Appels d’offres et chantier",
+          "text": "Spécifications, quantités, questions, visa des plans, substitutions, inspections et suivi de mise en service."
+        }
       ],
       "processTitle": "Transformer l’étude en dossier constructible",
       "process": [
-        {"title": "Base de conception", "text": "Valider charges, occupation, exploitation, normes, contraintes et hypothèses."},
-        {"title": "Études", "text": "Produire calculs, schémas, plans, choix d’équipements et spécifications."},
-        {"title": "Coordination", "text": "Résoudre les interfaces avec architecture, structure, fournisseurs et autres lots techniques."},
-        {"title": "Assistance chantier", "text": "Viser les documents d’exécution, répondre aux questions, inspecter les étapes clés et suivre les essais."}
+        {
+          "title": "Base de conception",
+          "text": "Valider charges, occupation, exploitation, normes, contraintes et hypothèses."
+        },
+        {
+          "title": "Études",
+          "text": "Produire calculs, schémas, plans, choix d’équipements et spécifications."
+        },
+        {
+          "title": "Coordination",
+          "text": "Résoudre les interfaces avec architecture, structure, fournisseurs et autres lots techniques."
+        },
+        {
+          "title": "Assistance chantier",
+          "text": "Viser les documents d’exécution, répondre aux questions, inspecter les étapes clés et suivre les essais."
+        }
       ],
       "bulletTitle": "Livrables techniques types",
-      "bullets": ["Bilans de puissance et note de conception", "Schémas de distribution et unifilaires", "Plans d’éclairage, prises et alimentations", "Plans ventilation et interfaces HVAC", "Documents incendie, évacuation et courants faibles", "Spécifications, tableaux d’équipements et plans d’exécution"],
-      "cta": {"title": "Besoin de plans que les entreprises puissent réellement chiffrer et exécuter ?", "text": "Transmettez les plans, la liste d’équipements et la phase actuelle. Yunes définira les calculs, documents et coordinations manquants.", "button": "Demander un échange technique", "href": "contact"}
+      "bullets": [
+        "Bilans de puissance et note de conception",
+        "Schémas de distribution et unifilaires",
+        "Plans d’éclairage, prises et alimentations",
+        "Plans ventilation et interfaces HVAC",
+        "Documents incendie, évacuation et courants faibles",
+        "Spécifications, tableaux d’équipements et plans d’exécution"
+      ],
+      "cta": {
+        "title": "Besoin de plans que les entreprises puissent réellement chiffrer et exécuter ?",
+        "text": "Transmettez les plans, la liste d’équipements et la phase actuelle. Yunes définira les calculs, documents et coordinations manquants.",
+        "button": "Demander un échange technique",
+        "href": "contact"
+      }
     },
     "local-engineering-partner-morocco": {
-      "seo": {"title": "Ingénieur local et représentant chantier au Maroc | Salimi Engineering", "description": "Relevés, coordination des entreprises, reporting, supervision et mise en service pour équipes internationales au Maroc."},
+      "seo": {
+        "title": "Ingénieur local et représentant chantier au Maroc | Salimi Engineering",
+        "description": "Relevés, coordination des entreprises, reporting, supervision et mise en service pour équipes internationales au Maroc."
+      },
       "eyebrow": "Partenaire d’ingénierie local au Maroc",
       "title": "Vos yeux, votre voix technique et votre suivi sur place.",
       "lead": "Pour une équipe qui pilote le Maroc depuis l’étranger, Yunes apporte une présence locale sans créer un bureau permanent.",
-      "facts": [{"value": "Une visite", "label": "Relevé ou contrôle ciblé"}, {"value": "Récurrent", "label": "Représentation et reporting"}, {"value": "Une phase", "label": "Études, chantier ou réception"}],
+      "facts": [
+        {
+          "value": "Une visite",
+          "label": "Relevé ou contrôle ciblé"
+        },
+        {
+          "value": "Récurrent",
+          "label": "Représentation et reporting"
+        },
+        {
+          "value": "Une phase",
+          "label": "Études, chantier ou réception"
+        }
+      ],
       "sectionTitle": "Choisissez le niveau de présence locale",
       "sectionIntro": "La mission est centrée sur les décisions impossibles à fiabiliser à distance sans preuves terrain.",
       "items": [
-        {"number": "01", "title": "Mission technique ponctuelle", "text": "Visite, relevé, diagnostic de l’existant, revue documentaire, évaluation d’entreprise ou rapport court sur un point défini."},
-        {"number": "02", "title": "Représentation locale récurrente", "text": "Visites planifiées, réunions, preuves d’avancement, suivi des points ouverts et comptes rendus structurés."},
-        {"number": "03", "title": "Mission sur une phase projet", "text": "Appui dédié pendant les études, l’appel d’offres, les travaux, les essais ou la réception."},
-        {"number": "04", "title": "Coordination entreprises et fournisseurs", "text": "Clarifier les exigences, suivre les soumissions et actions, vérifier les données terrain et faire remonter les décisions."},
-        {"number": "05", "title": "Vérification des travaux", "text": "Inspecter les installations critiques, comparer l’exécuté aux documents visés et suivre les écarts jusqu’à clôture."},
-        {"number": "06", "title": "Essais et réception", "text": "Assister aux essais, suivre les réserves, vérifier la documentation et rendre compte de la préparation à la réception."}
+        {
+          "number": "01",
+          "title": "Mission technique ponctuelle",
+          "text": "Visite, relevé, diagnostic de l’existant, revue documentaire, évaluation d’entreprise ou rapport court sur un point défini."
+        },
+        {
+          "number": "02",
+          "title": "Représentation locale récurrente",
+          "text": "Visites planifiées, réunions, preuves d’avancement, suivi des points ouverts et comptes rendus structurés."
+        },
+        {
+          "number": "03",
+          "title": "Mission sur une phase projet",
+          "text": "Appui dédié pendant les études, l’appel d’offres, les travaux, les essais ou la réception."
+        },
+        {
+          "number": "04",
+          "title": "Coordination entreprises et fournisseurs",
+          "text": "Clarifier les exigences, suivre les soumissions et actions, vérifier les données terrain et faire remonter les décisions."
+        },
+        {
+          "number": "05",
+          "title": "Vérification des travaux",
+          "text": "Inspecter les installations critiques, comparer l’exécuté aux documents visés et suivre les écarts jusqu’à clôture."
+        },
+        {
+          "number": "06",
+          "title": "Essais et réception",
+          "text": "Assister aux essais, suivre les réserves, vérifier la documentation et rendre compte de la préparation à la réception."
+        }
       ],
       "processTitle": "Une boucle de reporting locale fiable",
       "process": [
-        {"title": "Mandat", "text": "Confirmer autorité, interlocuteurs, fréquence, preuves attendues et règles d’escalade."},
-        {"title": "Observer", "text": "Collecter les faits sur site, auprès des entreprises et dans les documents."},
-        {"title": "Agir", "text": "Résoudre localement les points autorisés et remonter les décisions nécessitant validation."},
-        {"title": "Rendre compte", "text": "Transmettre état, risques, photos, actions et recommandations de manière concise."}
+        {
+          "title": "Mandat",
+          "text": "Confirmer autorité, interlocuteurs, fréquence, preuves attendues et règles d’escalade."
+        },
+        {
+          "title": "Observer",
+          "text": "Collecter les faits sur site, auprès des entreprises et dans les documents."
+        },
+        {
+          "title": "Agir",
+          "text": "Résoudre localement les points autorisés et remonter les décisions nécessitant validation."
+        },
+        {
+          "title": "Rendre compte",
+          "text": "Transmettre état, risques, photos, actions et recommandations de manière concise."
+        }
       ],
       "bulletTitle": "Utile lorsque votre équipe a besoin",
-      "bullets": ["D’un relevé technique avant investissement ou mobilisation", "D’une interface locale avec entreprises et bureaux d’études marocains", "D’une confirmation indépendante de l’avancement et de la qualité", "D’une clarification rapide des contraintes du site", "D’un reporting régulier sans bureau d’ingénierie permanent"],
-      "cta": {"title": "Vous pilotez un projet au Maroc depuis l’étranger ?", "text": "Un échange court permet de définir ce que Yunes doit vérifier, la fréquence des visites et le reporting attendu.", "button": "WhatsApp Yunes", "href": "https://wa.me/212663056547"}
+      "bullets": [
+        "D’un relevé technique avant investissement ou mobilisation",
+        "D’une interface locale avec entreprises et bureaux d’études marocains",
+        "D’une confirmation indépendante de l’avancement et de la qualité",
+        "D’une clarification rapide des contraintes du site",
+        "D’un reporting régulier sans bureau d’ingénierie permanent"
+      ],
+      "cta": {
+        "title": "Vous pilotez un projet au Maroc depuis l’étranger ?",
+        "text": "Un échange court permet de définir ce que Yunes doit vérifier, la fréquence des visites et le reporting attendu.",
+        "button": "WhatsApp Yunes",
+        "href": "https://wa.me/212663056547"
+      }
     },
     "sectors": {
-      "seo": {"title": "Secteurs et expérience technique | Salimi Engineering", "description": "Électricité, ventilation, MEP et supervision pour bureaux, industrie, infrastructures, résidentiel et locaux techniques."},
+      "seo": {
+        "title": "Secteurs et expérience technique | Salimi Engineering",
+        "description": "Électricité, ventilation, MEP et supervision pour bureaux, industrie, infrastructures, résidentiel et locaux techniques."
+      },
       "eyebrow": "Environnements de projet",
       "title": "Des actifs différents. Une même exigence : des systèmes qui fonctionnent sur site.",
       "lead": "Yunes applique études détaillées et contrôle pratique de l’exécution aux projets tertiaires, industriels, d’infrastructure, résidentiels et techniques.",
-      "facts": [{"value": "Tertiaire", "label": "Bureaux et aménagements"}, {"value": "Industrie", "label": "Machines et utilités"}, {"value": "Infrastructure", "label": "Réseaux distribués et reconstruction"}],
+      "facts": [
+        {
+          "value": "Tertiaire",
+          "label": "Bureaux et aménagements"
+        },
+        {
+          "value": "Industrie",
+          "label": "Machines et utilités"
+        },
+        {
+          "value": "Infrastructure",
+          "label": "Réseaux distribués et reconstruction"
+        }
+      ],
       "sectionTitle": "Où l’association conception + chantier crée de la valeur",
       "sectionIntro": "Chaque secteur est décrit par ses enjeux techniques réels.",
       "items": [
-        {"number": "01", "title": "Bureaux et aménagements tertiaires", "text": "Postes de travail, éclairage, données, sécurité incendie, alimentations HVAC, phasage et coordination en site occupé."},
-        {"number": "02", "title": "Industrie et production", "text": "Charges process, tableaux, implantation machines, ventilation, interfaces utilités et travaux autour d’une exploitation existante."},
-        {"number": "03", "title": "Infrastructure et éclairage extérieur", "text": "Éclairage extérieur, réseaux distribués, reconstruction, contraintes de l’existant, schémas et spécifications."},
-        {"number": "04", "title": "Résidentiel et projets privés", "text": "Électricité, éclairage, ventilation, sûreté, smart home, incendie, intégration discrète et contrôle qualité."},
-        {"number": "05", "title": "Data et locaux techniques", "text": "Résilience électrique, alimentations, refroidissement, extinction, supervision, maintenance et continuité d’exploitation."}
+        {
+          "number": "01",
+          "title": "Bureaux et aménagements tertiaires",
+          "text": "Postes de travail, éclairage, données, sécurité incendie, alimentations HVAC, phasage et coordination en site occupé."
+        },
+        {
+          "number": "02",
+          "title": "Industrie et production",
+          "text": "Charges process, tableaux, implantation machines, ventilation, interfaces utilités et travaux autour d’une exploitation existante."
+        },
+        {
+          "number": "03",
+          "title": "Infrastructure et éclairage extérieur",
+          "text": "Éclairage extérieur, réseaux distribués, reconstruction, contraintes de l’existant, schémas et spécifications."
+        },
+        {
+          "number": "04",
+          "title": "Résidentiel et projets privés",
+          "text": "Électricité, éclairage, ventilation, sûreté, smart home, incendie, intégration discrète et contrôle qualité."
+        },
+        {
+          "number": "05",
+          "title": "Data et locaux techniques",
+          "text": "Résilience électrique, alimentations, refroidissement, extinction, supervision, maintenance et continuité d’exploitation."
+        }
       ],
       "bulletTitle": "Problèmes typiques à résoudre",
-      "bullets": ["Lots conçus séparément et incompatibles sur chantier", "Offres entreprises avec périmètres manquants", "Substitutions d’équipements sans analyse d’impact", "Installations sans accès ni maintenance suffisants", "Réception retardée par essais ou documents incomplets"],
-      "cta": {"title": "Décrivez l’actif et le risque technique, pas seulement le secteur.", "text": "Yunes identifiera les calculs, contrôles, coordinations et présence chantier nécessaires.", "button": "Discuter du projet", "href": "contact"}
+      "bullets": [
+        "Lots conçus séparément et incompatibles sur chantier",
+        "Offres entreprises avec périmètres manquants",
+        "Substitutions d’équipements sans analyse d’impact",
+        "Installations sans accès ni maintenance suffisants",
+        "Réception retardée par essais ou documents incomplets"
+      ],
+      "cta": {
+        "title": "Décrivez l’actif et le risque technique, pas seulement le secteur.",
+        "text": "Yunes identifiera les calculs, contrôles, coordinations et présence chantier nécessaires.",
+        "button": "Discuter du projet",
+        "href": "contact"
+      }
     },
     "experience": {
-      "seo": {"title": "Expérience de Yunes Salimi | Salimi Engineering", "description": "Expérience professionnelle antérieure en bureaux, industrie, infrastructure, résidentiel et systèmes techniques complexes."},
+      "seo": {
+        "title": "Expérience de Yunes Salimi | Salimi Engineering",
+        "description": "Expérience professionnelle antérieure en bureaux, industrie, infrastructure, résidentiel et systèmes techniques complexes."
+      },
       "eyebrow": "Expérience professionnelle internationale",
       "title": "Des missions d’ingénierie concrètes dans des contextes variés.",
       "lead": "Ces exemples montrent le niveau des travaux réalisés par Yunes : calculs, schémas, éclairage, distributions, systèmes de sécurité, plans d’exécution et supervision technique.",
-      "facts": [{"value": "25 étages", "label": "Installations d’un immeuble de bureaux"}, {"value": "7 000 m²", "label": "Dossier d’un centre d’appels"}, {"value": "Tertiaire · Industrie · Infrastructure", "label": "Environnements de projet"}],
+      "facts": [
+        {
+          "value": "25 étages",
+          "label": "Installations d’un immeuble de bureaux"
+        },
+        {
+          "value": "7 000 m²",
+          "label": "Dossier d’un centre d’appels"
+        },
+        {
+          "value": "Tertiaire · Industrie · Infrastructure",
+          "label": "Environnements de projet"
+        }
+      ],
       "sectionTitle": "Exemples de projets sélectionnés",
       "projects": [
-        {"sector": "Bureaux", "title": "Immeuble de bureaux Mail.ru", "location": "Russie", "scope": "Distribution électrique et éclairage d’un immeuble de bureaux de 25 étages.", "role": "Expérience professionnelle antérieure du fondateur — études électriques."},
-        {"sector": "Bureaux et locaux techniques", "title": "Immeuble de bureaux Beeline", "location": "Russie", "scope": "Équipements électriques et éclairage d’un immeuble de trois étages, plus étude séparée de l’alimentation du refroidissement du data center.", "role": "Expérience professionnelle antérieure du fondateur — études préliminaires et d’exécution."},
-        {"sector": "Bureaux", "title": "Espaces de bureaux Microsoft", "location": "Russie", "scope": "Distribution électrique et éclairage des espaces de bureaux du bâtiment principal.", "role": "Expérience professionnelle antérieure du fondateur — études électriques."},
-        {"sector": "Banque et tertiaire", "title": "Centre d’appels Tinkoff", "location": "Russie", "scope": "Bilans, éclairage, prises, alimentations HVAC, unifilaires, spécifications, détection incendie et automatismes d’extinction.", "role": "Expérience professionnelle antérieure du fondateur — études d’exécution coordonnées."},
-        {"sector": "Banque et tertiaire", "title": "Centre d’appels Citibank", "location": "Riazan, Russie · 7 000 m²", "scope": "Charges, éclairage, prises, HVAC, schémas, spécifications, incendie, évacuation et automatismes d’extinction.", "role": "Expérience professionnelle antérieure du fondateur — électricité et sécurité coordonnées."},
-        {"sector": "Industrie automobile", "title": "Site de production Faurecia Automotive", "location": "Région de Kalouga, Russie", "scope": "Calculs de charges, schéma de distribution et implantation des équipements pour la production de composants plastiques destinés à Renault, Peugeot et Citroën.", "role": "Expérience professionnelle antérieure du fondateur — ingénierie électrique industrielle."},
-        {"sector": "Infrastructure transport", "title": "Éclairage extérieur de voies de tramway", "location": "Moscou, Perm, Lipetsk, Koursk et autres villes", "scope": "Plans d’éclairage, schémas d’alimentation des sections reconstruites et spécifications équipements/matériaux.", "role": "Expérience professionnelle antérieure du fondateur — études d’éclairage d’infrastructure."},
-        {"sector": "Résidentiel privé", "title": "Systèmes techniques d’une propriété", "location": "Suisse", "scope": "Supervision et évaluation des projets basse tension, sûreté, smart home et sécurité incendie pour le compte du propriétaire.", "role": "Expérience professionnelle antérieure du fondateur — revue et supervision côté propriétaire."}
+        {
+          "sector": "Bureaux",
+          "title": "Immeuble de bureaux Mail.ru",
+          "location": "Russie",
+          "scope": "Distribution électrique et éclairage d’un immeuble de bureaux de 25 étages.",
+          "role": "Expérience professionnelle antérieure du fondateur — études électriques."
+        },
+        {
+          "sector": "Bureaux et locaux techniques",
+          "title": "Immeuble de bureaux Beeline",
+          "location": "Russie",
+          "scope": "Équipements électriques et éclairage d’un immeuble de trois étages, plus étude séparée de l’alimentation du refroidissement du data center.",
+          "role": "Expérience professionnelle antérieure du fondateur — études préliminaires et d’exécution."
+        },
+        {
+          "sector": "Bureaux",
+          "title": "Espaces de bureaux Microsoft",
+          "location": "Russie",
+          "scope": "Distribution électrique et éclairage des espaces de bureaux du bâtiment principal.",
+          "role": "Expérience professionnelle antérieure du fondateur — études électriques."
+        },
+        {
+          "sector": "Banque et tertiaire",
+          "title": "Centre d’appels Tinkoff",
+          "location": "Russie",
+          "scope": "Bilans, éclairage, prises, alimentations HVAC, unifilaires, spécifications, détection incendie et automatismes d’extinction.",
+          "role": "Expérience professionnelle antérieure du fondateur — études d’exécution coordonnées."
+        },
+        {
+          "sector": "Banque et tertiaire",
+          "title": "Centre d’appels Citibank",
+          "location": "Riazan, Russie · 7 000 m²",
+          "scope": "Charges, éclairage, prises, HVAC, schémas, spécifications, incendie, évacuation et automatismes d’extinction.",
+          "role": "Expérience professionnelle antérieure du fondateur — électricité et sécurité coordonnées."
+        },
+        {
+          "sector": "Industrie automobile",
+          "title": "Site de production Faurecia Automotive",
+          "location": "Région de Kalouga, Russie",
+          "scope": "Calculs de charges, schéma de distribution et implantation des équipements pour la production de composants plastiques destinés à Renault, Peugeot et Citroën.",
+          "role": "Expérience professionnelle antérieure du fondateur — ingénierie électrique industrielle."
+        },
+        {
+          "sector": "Infrastructure transport",
+          "title": "Éclairage extérieur de voies de tramway",
+          "location": "Moscou, Perm, Lipetsk, Koursk et autres villes",
+          "scope": "Plans d’éclairage, schémas d’alimentation des sections reconstruites et spécifications équipements/matériaux.",
+          "role": "Expérience professionnelle antérieure du fondateur — études d’éclairage d’infrastructure."
+        },
+        {
+          "sector": "Résidentiel privé",
+          "title": "Systèmes techniques d’une propriété",
+          "location": "Suisse",
+          "scope": "Supervision et évaluation des projets basse tension, sûreté, smart home et sécurité incendie pour le compte du propriétaire.",
+          "role": "Expérience professionnelle antérieure du fondateur — revue et supervision côté propriétaire."
+        }
       ],
       "bulletTitle": "Ce que cette expérience démontre",
-      "bullets": ["Capacité à calculer et documenter des dossiers électriques complets", "Expérience des bureaux, data, équipements industriels et infrastructures", "Coordination électricité, HVAC, incendie et courants faibles", "Niveau de détail adapté aux achats et à l’exécution", "Revue technique et supervision du point de vue du maître d’ouvrage"],
-      "cta": {"title": "Besoin d’une expérience comparable à votre problème ?", "text": "Présentez l’actif, la phase et le système. Yunes pourra expliquer les missions les plus proches et la méthode proposée.", "button": "Parler à Yunes", "href": "tel:+212663056547"}
+      "bullets": [
+        "Capacité à calculer et documenter des dossiers électriques complets",
+        "Expérience des bureaux, data, équipements industriels et infrastructures",
+        "Coordination électricité, HVAC, incendie et courants faibles",
+        "Niveau de détail adapté aux achats et à l’exécution",
+        "Revue technique et supervision du point de vue du maître d’ouvrage"
+      ],
+      "cta": {
+        "title": "Besoin d’une expérience comparable à votre problème ?",
+        "text": "Présentez l’actif, la phase et le système. Yunes pourra expliquer les missions les plus proches et la méthode proposée.",
+        "button": "Parler à Yunes",
+        "href": "tel:+212663056547"
+      }
     },
     "about": {
-      "seo": {"title": "À propos de Yunes Salimi | Ingénieur et consultant projet", "description": "Ingénieur indépendant associant études électriques et ventilation, coordination MEP, supervision et appui au maître d’ouvrage."},
+      "seo": {
+        "title": "À propos de Yunes Salimi | Ingénieur et consultant projet",
+        "description": "Ingénieur indépendant associant études électriques et ventilation, coordination MEP, supervision et appui au maître d’ouvrage."
+      },
       "eyebrow": "Yunes Salimi",
       "title": "Un ingénieur qui comprend le plan, l’entreprise et la décision du client.",
       "lead": "Yunes associe conception détaillée, coordination des travaux et contrôle côté maître d’ouvrage. Le client échange directement avec la personne qui analyse le problème et suit la solution.",
-      "facts": [{"value": "Fondateur", "label": "Implication senior directe"}, {"value": "Études + chantier", "label": "Continuité technique"}, {"value": "International", "label": "Environnements variés"}],
-      "profile": {"type": "profile", "eyebrow": "Fondateur et ingénieur référent", "title": "Yunes Salimi", "text": "Yunes Salimi est un ingénieur pluridisciplinaire indépendant et consultant en réalisation de projets basé au Maroc. Son activité associe études électriques et ventilation, coordination MEP, spécifications, interfaces entreprises, supervision des travaux et assistance au maître d’ouvrage. Ses missions internationales antérieures comprennent des bureaux, un site de production automobile, de l’éclairage d’infrastructure, des projets résidentiels et des systèmes courants faibles et sécurité complexes.", "quote": "Une solution technique réussit lorsqu’elle est assez claire pour être chiffrée, assez coordonnée pour être construite et assez contrôlée pour fonctionner."},
+      "facts": [
+        {
+          "value": "Fondateur",
+          "label": "Implication senior directe"
+        },
+        {
+          "value": "Études + chantier",
+          "label": "Continuité technique"
+        },
+        {
+          "value": "International",
+          "label": "Environnements variés"
+        }
+      ],
+      "profile": {
+        "type": "profile",
+        "eyebrow": "Fondateur et ingénieur référent",
+        "title": "Yunes Salimi",
+        "text": "Yunes Salimi est un ingénieur pluridisciplinaire indépendant et consultant en réalisation de projets basé au Maroc. Son activité associe études électriques et ventilation, coordination MEP, spécifications, interfaces entreprises, supervision des travaux et assistance au maître d’ouvrage. Ses missions internationales antérieures comprennent des bureaux, un site de production automobile, de l’éclairage d’infrastructure, des projets résidentiels et des systèmes courants faibles et sécurité complexes.",
+        "quote": "Une solution technique réussit lorsqu’elle est assez claire pour être chiffrée, assez coordonnée pour être construite et assez contrôlée pour fonctionner.",
+        "imageAlt": "Fondateur et ingénieur principal de Salimi Engineering, debout dans un intérieur de béton et de verre."
+      },
       "sectionTitle": "Pourquoi travailler directement avec Yunes",
       "sectionIntro": "Le service repose sur une responsabilité technique personnelle, sans couches commerciales inutiles.",
       "items": [
-        {"number": "01", "title": "Maîtrise des études", "text": "Il peut lire, calculer et développer la solution, pas seulement coordonner les documents des autres."},
-        {"number": "02", "title": "Compréhension du chantier", "text": "Il vérifie constructibilité, phasage, accès, interfaces, substitutions et conséquences des décisions terrain."},
-        {"number": "03", "title": "Jugement côté client", "text": "Il traduit les sujets techniques en choix, risques et recommandations compréhensibles par les décideurs."},
-        {"number": "04", "title": "Continuité jusqu’à la réception", "text": "Le même référent peut rester impliqué des premières études aux inspections, essais et clôture."}
+        {
+          "number": "01",
+          "title": "Maîtrise des études",
+          "text": "Il peut lire, calculer et développer la solution, pas seulement coordonner les documents des autres."
+        },
+        {
+          "number": "02",
+          "title": "Compréhension du chantier",
+          "text": "Il vérifie constructibilité, phasage, accès, interfaces, substitutions et conséquences des décisions terrain."
+        },
+        {
+          "number": "03",
+          "title": "Jugement côté client",
+          "text": "Il traduit les sujets techniques en choix, risques et recommandations compréhensibles par les décideurs."
+        },
+        {
+          "number": "04",
+          "title": "Continuité jusqu’à la réception",
+          "text": "Le même référent peut rester impliqué des premières études aux inspections, essais et clôture."
+        }
       ],
       "processTitle": "La relation de travail",
       "process": [
-        {"title": "Accès direct", "text": "Le client échange avec Yunes, pas avec un intermédiaire commercial."},
-        {"title": "Périmètre clair", "text": "Chaque mission définit livrables, autorité, interfaces et délais de réponse."},
-        {"title": "Preuves visibles", "text": "Les décisions s’appuient sur calculs, annotations, photos et listes d’actions."},
-        {"title": "Spécialistes si nécessaire", "text": "Des disciplines complémentaires peuvent être mobilisées sous l’interface technique de Yunes."}
+        {
+          "title": "Accès direct",
+          "text": "Le client échange avec Yunes, pas avec un intermédiaire commercial."
+        },
+        {
+          "title": "Périmètre clair",
+          "text": "Chaque mission définit livrables, autorité, interfaces et délais de réponse."
+        },
+        {
+          "title": "Preuves visibles",
+          "text": "Les décisions s’appuient sur calculs, annotations, photos et listes d’actions."
+        },
+        {
+          "title": "Spécialistes si nécessaire",
+          "text": "Des disciplines complémentaires peuvent être mobilisées sous l’interface technique de Yunes."
+        }
       ],
-      "cta": {"title": "Commencez par une conversation technique directe.", "text": "Un échange court permettra de vérifier si Yunes correspond au besoin d’études, revue, chantier ou AMO.", "button": "Appeler Yunes", "href": "tel:+212663056547"}
+      "cta": {
+        "title": "Commencez par une conversation technique directe.",
+        "text": "Un échange court permettra de vérifier si Yunes correspond au besoin d’études, revue, chantier ou AMO.",
+        "button": "Appeler Yunes",
+        "href": "tel:+212663056547"
+      }
     },
     "contact": {
-      "seo": {"title": "Contacter Yunes Salimi | Ingénierie au Maroc", "description": "Appelez ou contactez Yunes pour des études électriques, ventilation, MEP, AMO ou supervision au Maroc."},
+      "seo": {
+        "title": "Contacter Yunes Salimi | Ingénierie au Maroc",
+        "description": "Appelez ou contactez Yunes pour des études électriques, ventilation, MEP, AMO ou supervision au Maroc."
+      },
       "eyebrow": "Contact direct",
       "title": "Quel problème technique devez-vous résoudre ?",
       "lead": "Appelez, utilisez WhatsApp ou envoyez un bref descriptif avec le lieu, la phase, les plans disponibles et le point à traiter.",
-      "facts": [{"value": "+212 663 056 547", "label": "Téléphone et WhatsApp"}, {"value": "info@edsmaroc.com", "label": "Email"}, {"value": "Maroc", "label": "Appui local"}],
-      "contact": {"type": "contact", "eyebrow": "Coordonnées", "title": "Échanger avec Yunes Salimi", "intro": "Le plus rapide est un appel ou un message WhatsApp. Pour une demande écrite, indiquez le type d’actif, le lieu, la phase et l’aide recherchée.", "email": "info@edsmaroc.com", "phone": "+212 663 056 547", "address": "Maroc", "form": {"name": "Nom", "company": "Société", "email": "Email professionnel", "service": "Quel est votre besoin ?", "message": "Lieu, phase, documents disponibles et problème technique", "submit": "Envoyer la demande", "services": ["Études électriques", "Ventilation et coordination MEP", "Revue technique côté maître d’ouvrage", "Supervision des travaux", "Appui local au Maroc", "Essais et réception", "Autre"]}},
-      "cta": {"title": "Vous préférez WhatsApp ?", "text": "Envoyez le lieu du projet et le point à traiter. Yunes demandera ensuite les bons documents ou proposera un appel.", "button": "WhatsApp Yunes", "href": "https://wa.me/212663056547"}
+      "facts": [
+        {
+          "value": "+212 663 056 547",
+          "label": "Téléphone et WhatsApp"
+        },
+        {
+          "value": "info@edsmaroc.com",
+          "label": "Email"
+        },
+        {
+          "value": "Maroc",
+          "label": "Appui local"
+        }
+      ],
+      "contact": {
+        "type": "contact",
+        "eyebrow": "Coordonnées",
+        "title": "Échanger avec Yunes Salimi",
+        "intro": "Le plus rapide est un appel ou un message WhatsApp. Pour une demande écrite, indiquez le type d’actif, le lieu, la phase et l’aide recherchée.",
+        "email": "info@edsmaroc.com",
+        "phone": "+212 663 056 547",
+        "address": "Maroc",
+        "form": {
+          "name": "Nom",
+          "company": "Société",
+          "email": "Email professionnel",
+          "service": "Quel est votre besoin ?",
+          "message": "Lieu, phase, documents disponibles et problème technique",
+          "submit": "Envoyer la demande",
+          "services": [
+            "Études électriques",
+            "Ventilation et coordination MEP",
+            "Revue technique côté maître d’ouvrage",
+            "Supervision des travaux",
+            "Appui local au Maroc",
+            "Essais et réception",
+            "Autre"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Vous préférez WhatsApp ?",
+        "text": "Envoyez le lieu du projet et le point à traiter. Yunes demandera ensuite les bons documents ou proposera un appel.",
+        "button": "WhatsApp Yunes",
+        "href": "https://wa.me/212663056547"
+      }
     },
     "legal-notice": {
-      "seo": {"title": "Mentions légales | Salimi Engineering", "description": "Informations légales du site Salimi Engineering."},
-      "eyebrow": "Légal", "title": "Mentions légales", "lead": "Informations relatives à l’éditeur et à l’utilisation du site.", "facts": [],
-      "legal": [{"title": "Éditeur", "paragraphs": ["Marque du site : Salimi Engineering.", "Directeur de publication et contact professionnel : Yunes Salimi, Maroc.", "Email : info@edsmaroc.com. Téléphone : +212 663 056 547."]}, {"title": "Utilisation", "paragraphs": ["Le site présente des services indépendants d’ingénierie et d’accompagnement de projets.", "Les informations générales ne remplacent pas une proposition, un calcul, un contrat ou une instruction spécifique au projet."]}]
+      "seo": {
+        "title": "Mentions légales | Salimi Engineering",
+        "description": "Informations légales du site Salimi Engineering."
+      },
+      "eyebrow": "Légal",
+      "title": "Mentions légales",
+      "lead": "Informations relatives à l’éditeur et à l’utilisation du site.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Éditeur",
+          "paragraphs": [
+            "Marque du site : Salimi Engineering.",
+            "Directeur de publication et contact professionnel : Yunes Salimi, Maroc.",
+            "Email : info@edsmaroc.com. Téléphone : +212 663 056 547."
+          ]
+        },
+        {
+          "title": "Utilisation",
+          "paragraphs": [
+            "Le site présente des services indépendants d’ingénierie et d’accompagnement de projets.",
+            "Les informations générales ne remplacent pas une proposition, un calcul, un contrat ou une instruction spécifique au projet."
+          ]
+        }
+      ]
     },
     "privacy-policy": {
-      "seo": {"title": "Politique de confidentialité | Salimi Engineering", "description": "Traitement des informations transmises avec une demande de projet."},
-      "eyebrow": "Confidentialité", "title": "Politique de confidentialité", "lead": "Utilisation des informations envoyées via le formulaire.", "facts": [],
-      "legal": [{"title": "Données collectées", "paragraphs": ["Le formulaire peut collecter nom, société, email, service demandé et message projet.", "Ne transmettez pas de plans confidentiels, données personnelles sensibles ou informations commerciales critiques lors du premier contact."]}, {"title": "Finalité", "paragraphs": ["Les informations sont utilisées uniquement pour analyser et répondre à la demande.", "Vous pouvez demander correction ou suppression à info@edsmaroc.com."]}]
+      "seo": {
+        "title": "Politique de confidentialité | Salimi Engineering",
+        "description": "Traitement des informations transmises avec une demande de projet."
+      },
+      "eyebrow": "Confidentialité",
+      "title": "Politique de confidentialité",
+      "lead": "Utilisation des informations envoyées via le formulaire.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Données collectées",
+          "paragraphs": [
+            "Le formulaire peut collecter nom, société, email, service demandé et message projet.",
+            "Ne transmettez pas de plans confidentiels, données personnelles sensibles ou informations commerciales critiques lors du premier contact."
+          ]
+        },
+        {
+          "title": "Finalité",
+          "paragraphs": [
+            "Les informations sont utilisées uniquement pour analyser et répondre à la demande.",
+            "Vous pouvez demander correction ou suppression à info@edsmaroc.com."
+          ]
+        }
+      ]
     },
     "cookie-policy": {
-      "seo": {"title": "Politique cookies | Salimi Engineering", "description": "Informations sur les cookies et stockages techniques."},
-      "eyebrow": "Cookies", "title": "Politique relative aux cookies", "lead": "Informations sur les mécanismes techniques du site.", "facts": [],
-      "legal": [{"title": "Technologies nécessaires", "paragraphs": ["Le site peut utiliser les mécanismes strictement nécessaires à l’affichage, à la sécurité et au traitement des demandes."]}, {"title": "Mesure d’audience", "paragraphs": ["Toute technologie d’analyse ou de marketing ajoutée ultérieurement sera décrite ici."]}]
+      "seo": {
+        "title": "Politique cookies | Salimi Engineering",
+        "description": "Informations sur les cookies et stockages techniques."
+      },
+      "eyebrow": "Cookies",
+      "title": "Politique relative aux cookies",
+      "lead": "Informations sur les mécanismes techniques du site.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Technologies nécessaires",
+          "paragraphs": [
+            "Le site peut utiliser les mécanismes strictement nécessaires à l’affichage, à la sécurité et au traitement des demandes."
+          ]
+        },
+        {
+          "title": "Mesure d’audience",
+          "paragraphs": [
+            "Toute technologie d’analyse ou de marketing ajoutée ultérieurement sera décrite ici."
+          ]
+        }
+      ]
     }
   }
 }

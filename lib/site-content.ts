@@ -77,6 +77,7 @@ export type SharedPage = {
     title: string;
     text: string;
     quote: string;
+    imageAlt: string;
   };
   contact?: {
     type: string;
@@ -149,7 +150,8 @@ export function getPageContent(locale: Locale, slug: SiteSlug): SitePage {
         eyebrow: page.profile?.eyebrow ?? founderMessageTitles[locale],
         title: founderMessageTitles[locale],
         text: founderMessages[locale],
-        quote: page.profile?.quote ?? ""
+        quote: page.profile?.quote ?? "",
+        imageAlt: page.profile?.imageAlt ?? ""
       }
     };
   }
