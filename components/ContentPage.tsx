@@ -21,7 +21,11 @@ const pageImages: Partial<Record<SiteSlug, string>> = {
   "local-engineering-partner-morocco": "/images/generated/industrial-facility-exterior.svg",
   sectors: "/images/generated/industrial-mechanical-room.svg",
   experience: "/images/generated/logistics-warehouse.svg",
-  about: "/images/people/younes-salimi-about.webp",
+  // No hero image for "about": the founder portrait already appears in the
+  // profile block below, at its correct 4:5 ratio. Showing it twice on one
+  // page - and cropped into a 640x400 landscape frame up here - looked
+  // duplicated rather than deliberate. The hero falls back to the abstract
+  // SE / ABOUT drawing used elsewhere.
   contact: "/images/generated/industrial-mechanical-room.svg"
 };
 
