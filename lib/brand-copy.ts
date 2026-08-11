@@ -34,6 +34,14 @@ const replacements: Record<BrandLocale, Replacement[]> = {
     [/Publication director and professional contact: Yunes Salimi, Morocco\./g, "Professional contact: Salimi Engineering, Morocco."],
     [/His prior international work/g, "The founder’s prior international work"],
     [/His prior international assignments/g, "The founder’s prior international assignments"],
+    [/Yunes Salimi’s/g, "Salimi Engineering’s"],
+    [/Yunes Salimi's/g, "Salimi Engineering’s"],
+    [/Yunes’s/g, "Salimi Engineering’s"],
+    [/Yunes's/g, "Salimi Engineering’s"],
+    [/Younes Salimi/g, "Salimi Engineering"],
+    [/Yunes Salimi/g, "Salimi Engineering"],
+    [/Younes/g, "Salimi Engineering"],
+    [/Yunes/g, "Salimi Engineering"]
   ],
   fr: [
     [/À propos de Yunes Salimi/g, "À propos de Salimi Engineering"],
@@ -62,6 +70,10 @@ const replacements: Record<BrandLocale, Replacement[]> = {
     [/si Yunes correspond au besoin/g, "si Salimi Engineering correspond au besoin"],
     [/Directeur de publication et contact professionnel : Yunes Salimi, Maroc\./g, "Contact professionnel : Salimi Engineering, Maroc."],
     [/Son expérience internationale antérieure/g, "L’expérience internationale antérieure du fondateur"],
+    [/Yunes Salimi/g, "Salimi Engineering"],
+    [/Younes Salimi/g, "Salimi Engineering"],
+    [/Younes/g, "Salimi Engineering"],
+    [/Yunes/g, "Salimi Engineering"]
   ],
   ar: [
     [/اعرض المشكلة التقنية على يونس/g, "اعرض المشكلة التقنية على Salimi Engineering"],
@@ -103,7 +115,15 @@ const replacements: Record<BrandLocale, Replacement[]> = {
     [/العمل الذي نفذه يونس/g, "العمل الذي نفذه مؤسس Salimi Engineering"],
     [/مدير النشر والاتصال المهني: يونس السالمي، المغرب\./g, "جهة الاتصال المهنية: Salimi Engineering، المغرب."],
     [/ما الذي يجب على يونس التحقق منه محلياً وعدد مرات حضوره/g, "ما الذي يجب على Salimi Engineering التحقق منه محلياً وتواتر الحضور المطلوب"],
-    [/خبرته الدولية السابقة/g, "الخبرة الدولية السابقة للمؤسس"]
+    [/خبرته الدولية السابقة/g, "الخبرة الدولية السابقة للمؤسس"],
+    [/يونس السالمي/g, "Salimi Engineering"],
+    [/بيونس/g, "بـ Salimi Engineering"],
+    [/ليونس/g, "لـ Salimi Engineering"],
+    [/يونس/g, "Salimi Engineering"],
+    [/Younes Salimi/g, "Salimi Engineering"],
+    [/Yunes Salimi/g, "Salimi Engineering"],
+    [/Younes/g, "Salimi Engineering"],
+    [/Yunes/g, "Salimi Engineering"]
   ]
 };
 
