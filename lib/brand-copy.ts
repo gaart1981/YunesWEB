@@ -156,8 +156,8 @@ export function applyCompanyVoice<T>(value: T, locale: BrandLocale): T {
 }
 
 export const founderMessages: Record<BrandLocale, string> = {
-  en: "I am Yunes Salimi, founder and lead engineer of Salimi Engineering. I created the practice to give clients direct access to senior engineering judgement—from design and coordination to site supervision, commissioning and handover.",
-  fr: "Je suis Yunes Salimi, fondateur et ingénieur référent de Salimi Engineering. J’ai créé cette structure pour donner aux clients un accès direct à une expertise senior, des études et de la coordination jusqu’au suivi des travaux, à la mise en service et à la réception.",
+  en: "I am SALIMI Yunes, founder and lead engineer of Salimi Engineering. I created the practice to give clients direct access to senior engineering judgement—from design and coordination to site supervision, commissioning and handover.",
+  fr: "Je suis SALIMI Yunes, fondateur et ingénieur référent de Salimi Engineering. J’ai créé cette structure pour donner aux clients un accès direct à une expertise senior, des études et de la coordination jusqu’au suivi des travaux, à la mise en service et à la réception.",
   ar: "أنا يونس السالمي، مؤسس Salimi Engineering والمهندس المسؤول فيها. أنشأت هذه الممارسة لمنح العملاء وصولاً مباشراً إلى خبرة هندسية رفيعة، من التصميم والتنسيق إلى الإشراف على التنفيذ والتشغيل والتسليم."
 };
 
