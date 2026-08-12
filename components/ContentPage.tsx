@@ -213,6 +213,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
         {page.projects && (
           <section className="content-section"><div className="container">
             <h2>{page.sectionTitle}</h2>
+            {page.sectionIntro && <p className="section-intro attribution-note">{page.sectionIntro}</p>}
             <div className="project-grid">{page.projects.map((project, index) => (
               <article key={project.title} className="project-card">
                 <div className="project-photo" aria-hidden="true"><img src={projectImages[index % projectImages.length]} alt="" width="640" height="400" /></div>

@@ -451,7 +451,7 @@
         "title": "Yunes Salimi Engineering Experience | Salimi Engineering",
         "description": "Selected prior professional experience in offices, industrial facilities, infrastructure, residential projects and complex technical systems."
       },
-      "eyebrow": "Selected prior professional experience",
+      "eyebrow": "Selected professional experience",
       "title": "Real engineering work across international project environments.",
       "lead": "The examples below show the type and depth of work Yunes has performed: calculations, distribution diagrams, lighting and power layouts, life-safety systems, working documents and technical supervision.",
       "facts": [
@@ -469,62 +469,63 @@
         }
       ],
       "sectionTitle": "Selected project examples",
+      "sectionIntro": "Unless otherwise stated, the projects below reflect the founder’s professional experience in previous engineering roles, not assignments delivered by Salimi Engineering.",
       "projects": [
         {
           "sector": "Corporate offices",
           "title": "Mail.ru office building",
           "location": "Russia",
           "scope": "Power distribution and lighting systems for a 25-storey office building.",
-          "role": "Founder’s prior professional experience — electrical engineering design."
+          "role": "Electrical engineering design"
         },
         {
           "sector": "Corporate and technical spaces",
           "title": "Beeline office building",
           "location": "Russia",
           "scope": "Power equipment and electrical lighting for a three-storey office building, plus a separate electrical design for the data-centre cooling system.",
-          "role": "Founder’s prior professional experience — preliminary and construction design."
+          "role": "Preliminary and construction design"
         },
         {
           "sector": "Corporate offices",
           "title": "Microsoft office areas",
           "location": "Russia",
           "scope": "Power-distribution and lighting systems for office spaces in Microsoft’s main building.",
-          "role": "Founder’s prior professional experience — electrical engineering design."
+          "role": "Electrical engineering design"
         },
         {
           "sector": "Banking and offices",
           "title": "Tinkoff bank call-centre",
           "location": "Russia",
           "scope": "Load calculations, lighting, socket and equipment supplies, ventilation and air-conditioning power, single-line diagrams, specifications, fire alarm and fire-suppression automation.",
-          "role": "Founder’s prior professional experience — coordinated working design."
+          "role": "Coordinated working design"
         },
         {
           "sector": "Banking and offices",
           "title": "Citibank call-centre",
           "location": "Ryazan, Russia · 7,000 m²",
           "scope": "Electrical loads, lighting, power layouts, HVAC supplies, distribution diagrams, equipment specifications, fire alarm, evacuation control and suppression-system automation.",
-          "role": "Founder’s prior professional experience — coordinated electrical and life-safety design."
+          "role": "Coordinated electrical and life-safety design"
         },
         {
           "sector": "Automotive manufacturing",
           "title": "Faurecia Automotive production facility",
           "location": "Kaluga Region, Russia",
           "scope": "Electrical-load calculations, power-distribution diagram and equipment layouts for plastic-component production machinery serving Renault, Peugeot and Citroën vehicles.",
-          "role": "Founder’s prior professional experience — industrial electrical engineering."
+          "role": "Industrial electrical engineering"
         },
         {
           "sector": "Transport infrastructure",
           "title": "Tram-track outdoor lighting",
           "location": "Moscow, Perm, Lipetsk, Kursk and other cities",
           "scope": "Outdoor-lighting plans, power-supply schematics for reconstructed sections and equipment/material specifications.",
-          "role": "Founder’s prior professional experience — infrastructure lighting design."
+          "role": "Infrastructure lighting design"
         },
         {
           "sector": "Private residential",
           "title": "Manor house technical systems",
           "location": "Switzerland",
           "scope": "Supervision and assessment of low-voltage, security, smart-home and fire-safety installation projects on behalf of the owner.",
-          "role": "Founder’s prior professional experience — owner-side technical review and supervision."
+          "role": "Owner-side technical review and supervision"
         }
       ],
       "bulletTitle": "What this experience demonstrates",

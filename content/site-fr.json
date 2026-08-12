@@ -451,7 +451,7 @@
         "title": "Expérience de Yunes Salimi | Salimi Engineering",
         "description": "Expérience professionnelle antérieure en bureaux, industrie, infrastructure, résidentiel et systèmes techniques complexes."
       },
-      "eyebrow": "Expérience professionnelle internationale",
+      "eyebrow": "Expérience professionnelle sélectionnée",
       "title": "Des missions d’ingénierie concrètes dans des contextes variés.",
       "lead": "Ces exemples montrent le niveau des travaux réalisés par Yunes : calculs, schémas, éclairage, distributions, systèmes de sécurité, plans d’exécution et supervision technique.",
       "facts": [
@@ -469,62 +469,63 @@
         }
       ],
       "sectionTitle": "Exemples de projets sélectionnés",
+      "sectionIntro": "Sauf mention contraire, les projets ci-dessous reflètent l’expérience professionnelle du fondateur dans des fonctions d’ingénierie antérieures, et non des missions réalisées par Salimi Engineering.",
       "projects": [
         {
           "sector": "Bureaux",
           "title": "Immeuble de bureaux Mail.ru",
           "location": "Russie",
           "scope": "Distribution électrique et éclairage d’un immeuble de bureaux de 25 étages.",
-          "role": "Expérience professionnelle antérieure du fondateur — études électriques."
+          "role": "Études électriques"
         },
         {
           "sector": "Bureaux et locaux techniques",
           "title": "Immeuble de bureaux Beeline",
           "location": "Russie",
           "scope": "Équipements électriques et éclairage d’un immeuble de trois étages, plus étude séparée de l’alimentation du refroidissement du data center.",
-          "role": "Expérience professionnelle antérieure du fondateur — études préliminaires et d’exécution."
+          "role": "Études préliminaires et d’exécution"
         },
         {
           "sector": "Bureaux",
           "title": "Espaces de bureaux Microsoft",
           "location": "Russie",
           "scope": "Distribution électrique et éclairage des espaces de bureaux du bâtiment principal.",
-          "role": "Expérience professionnelle antérieure du fondateur — études électriques."
+          "role": "Études électriques"
         },
         {
           "sector": "Banque et tertiaire",
           "title": "Centre d’appels Tinkoff",
           "location": "Russie",
           "scope": "Bilans, éclairage, prises, alimentations HVAC, unifilaires, spécifications, détection incendie et automatismes d’extinction.",
-          "role": "Expérience professionnelle antérieure du fondateur — études d’exécution coordonnées."
+          "role": "Études d’exécution coordonnées"
         },
         {
           "sector": "Banque et tertiaire",
           "title": "Centre d’appels Citibank",
           "location": "Riazan, Russie · 7 000 m²",
           "scope": "Charges, éclairage, prises, HVAC, schémas, spécifications, incendie, évacuation et automatismes d’extinction.",
-          "role": "Expérience professionnelle antérieure du fondateur — électricité et sécurité coordonnées."
+          "role": "Électricité et sécurité coordonnées"
         },
         {
           "sector": "Industrie automobile",
           "title": "Site de production Faurecia Automotive",
           "location": "Région de Kalouga, Russie",
           "scope": "Calculs de charges, schéma de distribution et implantation des équipements pour la production de composants plastiques destinés à Renault, Peugeot et Citroën.",
-          "role": "Expérience professionnelle antérieure du fondateur — ingénierie électrique industrielle."
+          "role": "Ingénierie électrique industrielle"
         },
         {
           "sector": "Infrastructure transport",
           "title": "Éclairage extérieur de voies de tramway",
           "location": "Moscou, Perm, Lipetsk, Koursk et autres villes",
           "scope": "Plans d’éclairage, schémas d’alimentation des sections reconstruites et spécifications équipements/matériaux.",
-          "role": "Expérience professionnelle antérieure du fondateur — études d’éclairage d’infrastructure."
+          "role": "Études d’éclairage d’infrastructure"
         },
         {
           "sector": "Résidentiel privé",
           "title": "Systèmes techniques d’une propriété",
           "location": "Suisse",
           "scope": "Supervision et évaluation des projets basse tension, sûreté, smart home et sécurité incendie pour le compte du propriétaire.",
-          "role": "Expérience professionnelle antérieure du fondateur — revue et supervision côté propriétaire."
+          "role": "Revue et supervision côté propriétaire"
         }
       ],
       "bulletTitle": "Ce que cette expérience démontre",
