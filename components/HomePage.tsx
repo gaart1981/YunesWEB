@@ -5,7 +5,8 @@ import { getSiteContent } from "@/lib/site-content";
 const localeLabels: Record<Locale, string> = {
   en: "EN",
   fr: "FR",
-  ar: "العربية"
+  ar: "العربية",
+  ru: "RU"
 };
 
 const serviceSlugs = [

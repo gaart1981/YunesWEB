@@ -5,13 +5,15 @@ import type { SiteContent, SitePage, SiteSlug } from "@/lib/site-content";
 const localeLabels: Record<Locale, string> = {
   en: "EN",
   fr: "FR",
-  ar: "العربية"
+  ar: "العربية",
+  ru: "RU"
 };
 
 const whatsappLabels: Record<Locale, string> = {
   en: "WhatsApp Salimi Engineering",
   fr: "WhatsApp Salimi Engineering",
-  ar: "راسل Salimi Engineering عبر واتساب"
+  ar: "راسل Salimi Engineering عبر واتساب",
+  ru: "Написать в WhatsApp"
 };
 
 const pageImages: Partial<Record<SiteSlug, string>> = {

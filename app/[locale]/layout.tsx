@@ -7,7 +7,7 @@ import "@/styles/content-pages.css";
 import "@/styles/marketing.css";
 
 const manrope = Manrope({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   variable: "--font-latin",
   display: "swap"
 });

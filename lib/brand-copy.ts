@@ -1,4 +1,4 @@
-export type BrandLocale = "en" | "fr" | "ar";
+export type BrandLocale = "en" | "fr" | "ar" | "ru";
 
 type Replacement = readonly [RegExp, string];
 
@@ -75,6 +75,7 @@ const replacements: Record<BrandLocale, Replacement[]> = {
     [/Younes/g, "Salimi Engineering"],
     [/Yunes/g, "Salimi Engineering"]
   ],
+  ru: [],
   ar: [
     [/اعرض المشكلة التقنية على يونس/g, "اعرض المشكلة التقنية على Salimi Engineering"],
     [/يمكن ليونس الانضمام/g, "يمكن لـ Salimi Engineering التدخل"],
@@ -158,11 +159,13 @@ export function applyCompanyVoice<T>(value: T, locale: BrandLocale): T {
 export const founderMessages: Record<BrandLocale, string> = {
   en: "I am SALIMI Yunes, founder and lead engineer of Salimi Engineering. I created the practice to give clients direct access to senior engineering judgement—from design and coordination to site supervision, commissioning and handover.",
   fr: "Je suis SALIMI Yunes, fondateur et ingénieur référent de Salimi Engineering. J’ai créé cette structure pour donner aux clients un accès direct à une expertise senior, des études et de la coordination jusqu’au suivi des travaux, à la mise en service et à la réception.",
+  ru: "Меня зовут SALIMI Yunes, я основатель и ведущий инженер Salimi Engineering. Я создал эту практику, чтобы клиенты могли напрямую работать с инженером, отвечающим за решение, — от проектирования и координации до строительного контроля, пусконаладки и передачи объекта в эксплуатацию.",
   ar: "أنا يونس السالمي، مؤسس Salimi Engineering والمهندس المسؤول فيها. أنشأت هذه الممارسة لمنح العملاء وصولاً مباشراً إلى خبرة هندسية رفيعة، من التصميم والتنسيق إلى الإشراف على التنفيذ والتشغيل والتسليم."
 };
 
 export const founderMessageTitles: Record<BrandLocale, string> = {
   en: "A message from the founder",
   fr: "Un message du fondateur",
+  ru: "Слово основателя",
   ar: "رسالة من المؤسس"
 };
