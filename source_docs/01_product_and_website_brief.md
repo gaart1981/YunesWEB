@@ -1,8 +1,9 @@
 # Salimi Engineering — Product and Website Brief
 
 **Document ID:** SE-WEB-01  
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Approved working specification  
+**Updated:** 2026-08-12  
 **Target repository path:** `/source_docs/01_product_and_website_brief.md`  
 **Language of specification:** English  
 **Project:** Multilingual corporate website for Salimi Engineering  
@@ -17,7 +18,7 @@ This document defines the business purpose, positioning, audiences, goals, const
 
 It is the highest-level reference for all other website documents. If a later design, content or technical decision conflicts with this brief, this brief takes precedence unless it is formally revised.
 
-The website is not intended to present Salimi Engineering as a large established engineering corporation. It must present the company truthfully as a founder-led engineering and project advisory business based in Morocco, able to form project-specific specialist teams.
+The website is not intended to present Salimi Engineering as a large established engineering corporation or as a solo freelance practice. It must present the company truthfully as a small, founder-led engineering and project advisory bureau based in Morocco, able to take on focused assignments and medium-sized project scopes and to scale project-specific teams according to the work required.
 
 ---
 
@@ -37,11 +38,15 @@ The following facts are confirmed for the initial website concept:
   - engineering coordinator;
   - technical project leader.
 - Founder participated in significant Russian projects.
-- Initial business model:
-  - founder-led;
-  - low permanent overhead;
-  - specialist teams assembled according to project requirements;
-  - direct founder involvement in key assignments.
+- Confirmed business model:
+  - small founder-led engineering bureau;
+  - not a solo freelance practice;
+  - capable of focused assignments and medium-sized project scopes;
+  - delivery teams may be expanded by engaging or hiring engineers and project specialists according to required disciplines, workload and site presence;
+  - direct founder leadership of technical quality and the client relationship;
+  - exact permanent staff count remains unconfirmed and must not be implied.
+- Confirmed public business email:
+  - `info@salimiengineering.com`
 - Intended services:
   - engineering design;
   - electrical engineering;
@@ -91,7 +96,6 @@ The following information must not be invented. Until it is provided, it must be
 - permanent staff count;
 - exact service coverage by city or region;
 - phone number;
-- public email addresses;
 - LinkedIn profile URL;
 - legal notices required under Moroccan law;
 - professional qualifications required to sign specific engineering documents in Morocco.
@@ -137,7 +141,8 @@ The website must:
 - explain the company’s positioning within the first screen;
 - establish trust in Yunes Salimi as the accountable technical lead;
 - explain the three principal service families;
-- show how the company delivers projects without pretending to have a large permanent team;
+- make clear that Salimi Engineering is a small bureau rather than a solo freelancer;
+- explain that the bureau can scale a project team for focused assignments and medium-sized project scopes without pretending to maintain a large permanent organisation;
 - present selected professional experience transparently;
 - generate project enquiries;
 - support English, French and Arabic audiences;
@@ -178,23 +183,26 @@ The first release is not intended to provide:
 
 ### 6.1 Core positioning statement
 
-> Salimi Engineering is a Morocco-based, founder-led engineering and project advisory partner supporting international and local clients with engineering coordination, owner’s representation and local project delivery.
+> Salimi Engineering is a small, Morocco-based, founder-led engineering and project advisory bureau supporting international and local clients with engineering coordination, owner’s representation and local project delivery. It can take on focused assignments and medium-sized project scopes and scale the delivery team with the engineers and specialists required by each project.
 
 ### 6.2 Short brand description
 
-> International engineering experience. Local project delivery in Morocco. Direct founder involvement.
+> International engineering experience. Local project delivery in Morocco. A project team scaled to the assignment. Direct senior accountability.
 
 ### 6.3 Expanded positioning
 
-Salimi Engineering should be presented as a technically accountable, flexible and locally present partner. The company does not sell the appearance of corporate scale. It sells:
+Salimi Engineering should be presented as a technically accountable, flexible and locally present engineering bureau. The company does not sell the appearance of corporate scale and must not look like a solo freelance portfolio. It sells:
 
-- direct access to the founder;
+- direct senior accountability through the founder and lead engineer;
 - international project experience;
 - disciplined engineering coordination;
 - local understanding;
-- project-specific team formation;
+- the ability to form and expand a project team according to required disciplines, workload and site presence;
+- capability to handle focused assignments and medium-sized project scopes;
 - clear communication;
 - controlled technical delivery.
+
+The project team may include engineers and project specialists engaged or hired specifically for the assignment. This scalable model must not be presented as evidence of any fixed permanent headcount that has not been confirmed.
 
 ### 6.4 Positioning boundaries
 
@@ -203,8 +211,9 @@ The website must not describe Salimi Engineering as:
 - a market leader;
 - a large multidisciplinary group;
 - a contractor capable of executing any project;
+- a single-person freelance practice;
 - an established company with decades of corporate history;
-- an organisation with offices or staff not confirmed;
+- an organisation with offices or a permanent staff count not confirmed;
 - an authorised signatory for engineering disciplines not legally confirmed;
 - a participant in projects that only involved the founder in another employment context without clear disclosure.
 
@@ -277,7 +286,7 @@ Possible services:
 - Can it coordinate with local contractors and authorities?
 - Can it report in English or French?
 - Is the founder technically credible?
-- Can it assemble specialist resources?
+- Can it assemble and scale specialist resources for the required project scope?
 
 ### 8.2 International EPC contractors
 
@@ -347,9 +356,10 @@ The website must help a visitor complete one or more of the following jobs:
 - understand the founder’s experience;
 - identify a suitable service;
 - evaluate whether the company can act as a local partner;
+- understand whether the bureau can scale a team to the size and disciplines of the assignment;
 - review selected professional experience;
 - understand the delivery model;
-- contact the founder;
+- contact the founder or bureau;
 - submit an initial project brief;
 - share the website internally with decision-makers;
 - return later through a memorable brand and URL.
@@ -364,11 +374,12 @@ Trust must be built through evidence and transparency.
 
 - clear founder identity;
 - professional founder portrait;
-- honest description of the company’s size and delivery model;
+- honest description of the company’s size and scalable delivery model;
+- clear distinction between a small bureau and a solo freelance practice;
 - selected experience with role clarity;
 - specific service descriptions;
 - physical base in Morocco;
-- professional contact information;
+- professional contact information, including `info@salimiengineering.com`;
 - consistent English, French and Arabic versions;
 - valid legal information when available;
 - professional design;
@@ -437,7 +448,7 @@ Content must be:
 
 Prefer:
 
-> We support international project owners with local engineering coordination and technical representation in Morocco.
+> We support international project owners with local engineering coordination and technical representation in Morocco, scaling the project team to the scope required.
 
 Avoid:
 
@@ -452,7 +463,8 @@ The founder message should:
 - explain the company’s reason for existence;
 - state direct personal involvement;
 - describe international experience without exaggeration;
-- explain the project-specific team model;
+- explain the scalable project-specific team model;
+- make clear that Salimi Engineering is a bureau, not a one-person freelance offer;
 - invite serious project discussions.
 
 ---
@@ -497,7 +509,7 @@ Equivalent labels:
 
 - Explore Our Services
 - View Selected Experience
-- Contact Yunes Salimi
+- Contact Salimi Engineering
 - Request an Introductory Call
 - Send a Project Brief
 
@@ -577,7 +589,7 @@ The following content requires explicit approval before publication:
 - certifications;
 - authorisations;
 - insurance information;
-- personal contact details.
+- personal contact details other than already confirmed public business contact facts.
 
 ---
 
@@ -628,6 +640,7 @@ The site must:
 - not claim regulatory authority without proof;
 - not create fictitious testimonials;
 - not create fictitious team members;
+- not imply a permanent staff count that has not been confirmed;
 - not imply responsibility for projects beyond the founder’s actual role.
 
 ---
@@ -671,7 +684,9 @@ When trade-offs occur, use the following order:
 The first release is successful when:
 
 - the company positioning is immediately clear;
-- the founder is visible and credible;
+- the visitor understands that Salimi Engineering is a small engineering bureau, not a solo freelancer and not a fictional large organisation;
+- the scalable project-team model is understandable;
+- the founder is visible and credible as the accountable technical lead;
 - all three principal service pillars are explained;
 - the delivery model is honest and understandable;
 - selected experience can be published without ambiguity;

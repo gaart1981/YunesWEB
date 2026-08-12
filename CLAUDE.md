@@ -4,9 +4,11 @@ This file is the mandatory entry point for Claude Code and any delegated agents 
 
 ## 1. Project
 
-Build the production website for **Salimi Engineering**, a Morocco-based, founder-led engineering and project advisory company serving international and Moroccan clients.
+Build the production website for **Salimi Engineering**, a small Morocco-based, founder-led engineering and project advisory bureau serving international and Moroccan clients.
 
-The website must position the company as a credible, technically accountable boutique engineering partner—not as a large fictional corporation and not as a freelance portfolio.
+The website must position the company as a credible, technically accountable boutique engineering partner—not as a large fictional corporation, and not as a solo freelance portfolio. Salimi Engineering may take on focused assignments as well as medium-sized project scopes and scale the delivery team with engineers and project specialists according to the disciplines, workload and site presence required by each assignment.
+
+The founder and lead engineer remains directly accountable for technical quality and the client relationship while the project team may expand around the assignment. Do not imply a fixed permanent headcount unless it is separately confirmed.
 
 Primary audiences:
 
@@ -61,6 +63,12 @@ Record all material ambiguities and decisions. Do not silently override a specif
 
 - Brand name: **Salimi Engineering**.
 - Founder: **Yunes Salimi**; exact legal spelling must be verified before final publication.
+- Business model: **small founder-led engineering bureau**, not a solo freelance practice and not a fictional large consultancy.
+- Commercial scope: focused engineering assignments and **medium-sized project scopes** are within the intended positioning.
+- Team model: the delivery team may be expanded by engaging or hiring engineers and project specialists for the assignment according to required disciplines, workload and site presence.
+- Accountability: the founder and lead engineer remains responsible for technical quality and the client relationship while the delivery team scales around the project.
+- Exact permanent staff count remains unconfirmed and must not be invented.
+- Confirmed public business email: **info@salimiengineering.com**. The machine-readable source is `/content/business-facts.json`.
 - Languages: English, French and Arabic.
 - Arabic must be a complete RTL implementation.
 - The site must be fully responsive for smartphones, tablets and desktop screens.
@@ -100,6 +108,8 @@ Never invent or imply unavailable facts, including:
 - response times;
 - World Cup participation;
 - legal authority to sign engineering documents.
+
+The confirmed team model allows Salimi Engineering to engage or hire project-specific engineers and specialists. This does **not** confirm any particular permanent employee count, named team member, current payroll size or permanent multidisciplinary department.
 
 Use the internal markers below only in draft data and internal documents:
 
@@ -194,6 +204,7 @@ The site must feel:
 - deliberate;
 - internationally professional;
 - founder-led;
+- capable of scaling a project team without pretending to be a large permanent organisation;
 - premium without decorative luxury.
 
 Reject implementations that look like:
@@ -202,6 +213,7 @@ Reject implementations that look like:
 - a residential contractor website;
 - a technology start-up;
 - a fictional large consultancy;
+- a solo freelancer portfolio;
 - an unmodified component-library demo.
 
 Do not use:

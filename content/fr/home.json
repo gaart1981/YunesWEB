@@ -3,36 +3,36 @@
   "direction": "ltr",
   "seo": {
     "title": "Ingénierie électrique, MEP et suivi de projets au Maroc | Salimi Engineering",
-    "description": "Yunes Salimi conçoit les installations électriques et de ventilation, coordonne les lots MEP et supervise les travaux au Maroc."
+    "description": "Salimi Engineering est un bureau d’ingénierie au Maroc pour les études, le MEP, le suivi côté maître d’ouvrage et des équipes dimensionnées selon chaque mission."
   },
   "navigation": {
     "services": "Services",
-    "approach": "Méthode",
-    "founder": "Yunes Salimi",
+    "approach": "Notre méthode",
+    "founder": "Le bureau",
     "contact": "Contact",
-    "cta": "Appeler Yunes",
+    "cta": "Discuter du projet",
     "language": "Langue"
   },
   "hero": {
-    "eyebrow": "Ingénieur indépendant · Maroc",
+    "eyebrow": "Bureau d’ingénierie dirigé par son fondateur · Maroc",
     "title": "Concevoir les systèmes. Maîtriser le chantier. Livrer le projet.",
-    "summary": "Yunes Salimi conçoit les installations électriques et de ventilation, coordonne les lots MEP, analyse les offres des entreprises et supervise les travaux pour les maîtres d’ouvrage, promoteurs et équipes internationales au Maroc.",
-    "primaryCta": "Appeler Yunes",
-    "secondaryCta": "Voir comment il peut intervenir",
-    "whatsappCta": "Écrire sur WhatsApp",
-    "trust": "Études électriques · Ventilation · Coordination MEP · Suivi côté maître d’ouvrage"
+    "summary": "Salimi Engineering est un bureau d’ingénierie au Maroc qui accompagne maîtres d’ouvrage, promoteurs et équipes internationales en études, analyse des entreprises, supervision des travaux et réalisation de projets. L’équipe est dimensionnée selon les disciplines et la charge de chaque mission.",
+    "primaryCta": "Discuter du projet",
+    "secondaryCta": "Voir comment nous pouvons intervenir",
+    "whatsappCta": "WhatsApp Salimi Engineering",
+    "trust": "Bureau à taille humaine · Équipe dimensionnée au projet · Études · Suivi chantier"
   },
   "audiences": [
     "Besoin d’études techniques complètes",
-    "Besoin d’un ingénieur local au Maroc",
+    "Besoin d’une équipe d’ingénierie locale au Maroc",
     "Besoin de vérifier les offres des entreprises",
     "Besoin de contrôler la qualité des travaux",
     "Besoin d’essais et d’une réception maîtrisée"
   ],
   "services": {
-    "eyebrow": "Ce que Yunes peut prendre en charge",
-    "title": "Un ingénieur, du problème technique au résultat opérationnel",
-    "summary": "Yunes peut intervenir pour une revue ciblée, un dossier d’études, une représentation locale récurrente ou un accompagnement complet jusqu’à la réception.",
+    "eyebrow": "Ce que nous pouvons prendre en charge",
+    "title": "Un bureau d’ingénierie dimensionné selon le projet",
+    "summary": "D’une revue technique ciblée à une mission de projet de taille moyenne, nous constituons l’équipe selon les disciplines, la charge de travail et la présence requise sur site.",
     "items": [
       {
         "number": "01",
@@ -74,21 +74,21 @@
     ]
   },
   "founder": {
-    "eyebrow": "Fondateur, ingénieur référent et consultant en réalisation de projets",
-    "title": "Vous échangez directement avec l’ingénieur responsable de la réponse.",
-    "text": "Yunes Salimi associe conception détaillée, coordination pratique des travaux et contrôle technique côté maître d’ouvrage. Son expérience internationale comprend des immeubles de bureaux, un site de production automobile, des infrastructures d’éclairage, des projets résidentiels et des systèmes techniques complexes.",
-    "quote": "Je ne m’arrête pas à la remise des plans. Je reste impliqué jusqu’à ce que la solution puisse être construite, testée et réceptionnée.",
+    "eyebrow": "Bureau d’ingénierie dirigé par son fondateur",
+    "title": "La responsabilité senior reste directe, même quand l’équipe s’élargit.",
+    "text": "Salimi Engineering est dirigé par son fondateur et ingénieur référent, responsable de la qualité technique et de la relation client. Des ingénieurs et spécialistes projet sont mobilisés ou recrutés selon chaque mission, ce qui permet au bureau de prendre en charge des tâches ciblées comme des projets de taille moyenne.",
+    "quote": "L’équipe peut grandir avec le projet. La responsabilité technique reste claire.",
     "imageAlt": "Fondateur et ingénieur principal de Salimi Engineering, assis à un bureau dans un espace éclairé naturellement."
   },
   "contact": {
     "eyebrow": "Un problème technique suffit pour commencer",
-    "title": "Expliquez à Yunes ce qui bloque votre projet.",
+    "title": "Expliquez-nous ce qui bloque votre projet.",
     "text": "Un premier échange permet de clarifier le problème, les documents disponibles, les contraintes du site et l’intervention la plus utile.",
     "button": "Discuter du projet"
   },
   "footer": {
-    "descriptor": "Ingénierie électrique, ventilation, MEP et accompagnement de projets au Maroc",
-    "status": "Appui technique direct en français, anglais et arabe",
+    "descriptor": "Ingénierie, MEP, suivi côté maître d’ouvrage et réalisation de projets au Maroc",
+    "status": "Appui technique direct en français, anglais, arabe et russe",
     "rights": "Tous droits réservés."
   }
 }

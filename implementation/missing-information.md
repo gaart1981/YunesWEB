@@ -1,6 +1,6 @@
 # Missing Information Register
 
-**Updated:** 2026-08-04 (analysis cycle — no code changes made)
+**Updated:** 2026-08-12 (contact and positioning update only; other audit entries retain their prior status until separately reverified)
 **Rule:** Nothing in this register may be invented. Until supplied, each item stays out of production rendering or is held in draft JSON under `INFORMATION_NOT_AVAILABLE`, `REQUIRES_CONFIRMATION` or `TBD`. **These markers must never appear on a production public page.** (CLAUDE.md §4; Doc 16 §6)
 
 ---
@@ -28,7 +28,7 @@
 | A2.1 | Legal company name and legal form | Missing |
 | A2.2 | Company registration number | Missing |
 | A2.3 | VAT / tax identifiers | Missing |
-| A2.4 | Registered office address | Missing — **currently invented in the repository as "Casablanca, Morocco"; must be removed** |
+| A2.4 | Registered office address | Missing — prior repository values must not be treated as verified |
 | A2.5 | Professional licences and authorisations | Missing |
 | A2.6 | Professional insurance details | Missing |
 | A2.7 | Publication director and hosting provider (for Legal Notice) | Missing |
@@ -40,10 +40,10 @@
 
 | # | Item | Status |
 |---|---|---|
-| A3.1 | Business email address | Missing — **currently invented as `hello@salimiengineering.ma`; must be removed** |
-| A3.2 | Business telephone number | Missing — **currently invented as `+212 5 20 00 00 00`; must be removed** |
+| A3.1 | Business email address | **Confirmed: `info@salimiengineering.com` — owner confirmation 2026-08-12** |
+| A3.2 | Business telephone number | Current public number exists in repository but independent confirmation status has not been reverified in this update |
 | A3.3 | Whether WhatsApp contact is approved | Requires decision |
-| A3.4 | Contact-form recipient address | Missing — blocks Phase 5 |
+| A3.4 | Contact-form recipient address | Missing — a public business email does not by itself confirm form-delivery routing |
 | A3.5 | Email provider and API credentials | Missing — provision as Netlify environment variables only |
 | A3.6 | Physical location to display (city or service-area) | Requires confirmation |
 
@@ -61,13 +61,13 @@
 | A4.8 | Relationship type per project (`founder_prior_experience` / `company_assignment` / `partner_assignment`) | Missing — **mandatory field, currently absent from the data model** |
 | A4.9 | Client or employer references | Missing |
 
-**Current state note:** the three "projects" on the Experience page are labelled *"Illustrative capability profile — not a claimed completed project."* This is a reasonable interim safeguard, but the label is **not** one of the three mandatory relationship values and the entries are not evidence. They must be replaced with verified records or removed before launch.
+**Current state note:** project evidence and permissions require a separate current-state review before public launch. This update does not validate project claims or media rights.
 
 ### A5. Media and rights
 
 | # | Item | Status |
 |---|---|---|
-| A5.1 | Authorised founder portrait (4:5, ≥ 1600×2000) | Missing |
+| A5.1 | Authorised founder portrait | Portrait files are present; authorisation/rights status requires separate verification |
 | A5.2 | Authorised project photographs with written permission | Missing |
 | A5.3 | Drawings or diagrams cleared for publication | Missing |
 | A5.4 | Open Graph images (1200×630) | Missing |
@@ -96,23 +96,19 @@
 
 ### A8. Deployment facts — blocking the "site does not open" diagnosis
 
-**Added 2026-08-04 following the deployment audit.** A repository-wide search for `netlify.app`, `NETLIFY_SITE` and `site_id` returned **zero results**. No production URL, deploy ID or site ID exists anywhere in the project. Until these are supplied, the reason the website does not open cannot be determined.
-
-All items below are readable in the Netlify dashboard. **None requires pasting a token into chat.**
+**Added 2026-08-04 following the deployment audit.** These items were not reverified during the 2026-08-12 positioning/contact update.
 
 | # | Item | Why it is needed |
 |---|---|---|
 | A8.1 | Does a Netlify site exist, and is it linked to `gaart1981/YunesWEB`? | Distinguishes "no site" from "broken site" |
-| A8.2 | Production URL (`*.netlify.app` and any custom domain) | Nothing can be tested without it |
+| A8.2 | Production URL (`*.netlify.app` and any custom domain) | Needed for direct production testing |
 | A8.3 | Production branch setting | Confirms whether `main` is deployed |
 | A8.4 | Latest production deploy ID, its commit SHA and its status | Detects stale or failed deploys |
 | A8.5 | Full deploy log of the most recent production build | Detects build failure causes |
 | A8.6 | Whether password protection or access control is enabled | Explains inaccessibility despite a successful deploy |
-| A8.7 | Whether Netlify Forms detection is enabled, and whether any form appears in the Forms tab | Expected: **no form detected** — see audit finding C-4 |
+| A8.7 | Whether Netlify Forms detection is enabled, and whether any form appears in the Forms tab | Needed to verify form handling |
 | A8.8 | Custom domain DNS and HTTPS certificate status | Explains domain-level failure |
-| A8.9 | The exact URL the owner is typing, and the exact browser result | Distinguishes wrong-URL from broken-site |
-
-**Note on the root URL:** the build contains **no `/` route**. The bare domain works only because of a redirect in `netlify.toml`. If the owner is opening the bare domain and receiving nothing while `/en` would work, that is the likely explanation. Confirm A8.9 first.
+| A8.9 | The exact production URL and browser result | Distinguishes wrong-URL from broken-site |
 
 ---
 
@@ -122,7 +118,7 @@ These are **decisions**, not missing facts. Each needs an explicit answer before
 
 | # | Decision | Options | Blocks |
 |---|---|---|---|
-| B1 | Remove invented contact/address/phone data from `main` immediately, or keep the site offline until real data exists? | Remove now / take offline | Phase R1 |
+| B1 | Remaining unverified contact/address/phone data: verify, remove or keep site noindex? | Verify / remove / keep noindex | Public launch |
 | B2 | Arabic public slugs: keep Latin-character slugs (Doc 02 §5 recommendation) or use Arabic slugs? | Latin (recommended) / Arabic | Route map, R2 |
 | B3 | Root redirect `/` → `/en/`: keep 302, or make it permanent (301)? | 302 now / 301 after business decision | Phase 6 |
 | B4 | `GPTBot` (OpenAI model-training crawler): allow or disallow? | Allow / Disallow | Phase 6 — Doc 13 §15 requires an explicit, recorded decision |
@@ -148,8 +144,8 @@ A GitHub personal access token was transmitted in plain text in the chat session
 
 **Required action:** revoke the token immediately at `https://github.com/settings/tokens`, then issue a replacement as a **fine-grained** token limited to Contents write access on `gaart1981/YunesWEB` only, and store it exclusively as a Netlify environment variable.
 
-**Verified:** the token is **not** present anywhere in the repository. Scans of the full tree for `github_pat_`, `ghp_`, `GITHUB_TOKEN`, `PASSWORD_HASH` and `leadline` returned zero matches. No secret has been committed.
+**Verified in the 2026-08-04 audit:** the token was not present anywhere in the repository. This status was not rescanned during the present positioning/contact update.
 
-**C2. Critical dependency vulnerabilities.**
+**C2. Dependency-security status.**
 
-`next@16.0.0` is flagged deprecated by npm and `npm audit` reports **critical** severity, including remote code execution in the React flight protocol (GHSA-9qr9-h5gf-34mp) and Server Actions source-code exposure. Doc 08 §4.3 forbids packages with unresolved critical vulnerabilities. Upgrade to the latest patched 16.x release (16.3.0 at the time of analysis).
+The prior 2026-08-04 audit described vulnerabilities in `next@16.0.0`. The repository has since moved to a later Next.js version. Dependency-security status must be reverified with a current `npm audit`; the old vulnerability count must not be treated as current without rerunning the audit.

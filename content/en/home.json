@@ -3,36 +3,36 @@
   "direction": "ltr",
   "seo": {
     "title": "Electrical, MEP & Project Engineering in Morocco | Salimi Engineering",
-    "description": "Yunes Salimi designs electrical and ventilation systems, coordinates MEP, reviews contractors and supervises construction for projects in Morocco."
+    "description": "Salimi Engineering is a Morocco-based engineering bureau delivering electrical, MEP, owner-side and project support with teams scaled to each assignment."
   },
   "navigation": {
     "services": "Services",
-    "approach": "How Yunes works",
-    "founder": "Yunes Salimi",
+    "approach": "How we work",
+    "founder": "About the bureau",
     "contact": "Contact",
-    "cta": "Call Yunes",
+    "cta": "Discuss a project",
     "language": "Language"
   },
   "hero": {
-    "eyebrow": "Independent engineer · Morocco",
+    "eyebrow": "Founder-led engineering bureau · Morocco",
     "title": "Design the systems. Control the site. Deliver the project.",
-    "summary": "Yunes Salimi designs electrical and ventilation systems, coordinates MEP, reviews contractors and supervises construction for owners, developers and international project teams in Morocco.",
-    "primaryCta": "Call Yunes",
-    "secondaryCta": "See how he can help",
-    "whatsappCta": "WhatsApp Yunes",
-    "trust": "Electrical design · Ventilation · MEP coordination · Owner-side supervision"
+    "summary": "Salimi Engineering is a Morocco-based engineering bureau supporting owners, developers and international teams with design, contractor review, site supervision and project delivery. We scale the project team to the required disciplines and workload.",
+    "primaryCta": "Discuss a project",
+    "secondaryCta": "See how we can help",
+    "whatsappCta": "WhatsApp Salimi Engineering",
+    "trust": "Founder-led · Project-specific teams · Engineering design · Site supervision"
   },
   "audiences": [
     "Need a complete technical design",
-    "Need a local engineer in Morocco",
+    "Need a local engineering team in Morocco",
     "Need contractor proposals checked",
     "Need construction quality controlled",
     "Need systems tested and handed over"
   ],
   "services": {
-    "eyebrow": "What Yunes can take off your desk",
-    "title": "One engineer from technical problem to working result",
-    "summary": "Bring Yunes in for a focused review, a design package, recurring site representation or full technical support through construction and handover.",
+    "eyebrow": "What we can take off your desk",
+    "title": "An engineering bureau scaled to the project",
+    "summary": "From a focused technical review to a medium-sized project assignment, we build the delivery team around the required disciplines, workload and site presence.",
     "items": [
       {
         "number": "01",
@@ -74,21 +74,21 @@
     ]
   },
   "founder": {
-    "eyebrow": "Founder, lead engineer and project delivery consultant",
-    "title": "You speak directly with the engineer responsible for the answer.",
-    "text": "Yunes Salimi combines detailed engineering design with practical construction coordination and owner-side technical control. His prior international work includes corporate offices, an automotive production facility, transport-lighting infrastructure, residential projects and complex technical systems.",
-    "quote": "I do not stop at issuing drawings. I stay involved until the technical solution can be built, tested and handed over.",
+    "eyebrow": "Founder-led engineering bureau",
+    "title": "Senior accountability stays direct as the project team grows.",
+    "text": "Salimi Engineering is led by its founder and lead engineer, who remains responsible for technical quality and the client relationship. Engineers and project specialists are engaged or hired to match each assignment, allowing the bureau to handle focused tasks and medium-sized project scopes.",
+    "quote": "The team can grow with the project. Technical responsibility stays clear.",
     "imageAlt": "Founder and lead engineer of Salimi Engineering, seated at a desk in a naturally lit office."
   },
   "contact": {
     "eyebrow": "A technical problem is enough to start",
-    "title": "Tell Yunes what is blocking your project.",
+    "title": "Tell us what is blocking your project.",
     "text": "A first call can clarify the problem, the documents available, the site conditions and the fastest useful intervention.",
     "button": "Discuss the project"
   },
   "footer": {
-    "descriptor": "Electrical, ventilation, MEP and project delivery engineering in Morocco",
-    "status": "Direct engineering support in English, French and Arabic",
+    "descriptor": "Engineering, MEP, owner-side and project delivery support in Morocco",
+    "status": "Direct engineering support in English, French, Arabic and Russian",
     "rights": "All rights reserved."
   }
 }

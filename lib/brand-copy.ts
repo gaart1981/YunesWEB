@@ -1,9 +1,12 @@
+import businessFacts from "@/content/business-facts.json";
+
 export type BrandLocale = "en" | "fr" | "ar" | "ru";
 
 type Replacement = readonly [RegExp, string];
 
 const replacements: Record<BrandLocale, Replacement[]> = {
   en: [
+    [/Independent engineer/g, "Founder-led engineering bureau"],
     [/Yunes Salimi Engineering Experience/g, "Selected Engineering Experience"],
     [/About Yunes Salimi/g, "About Salimi Engineering"],
     [/About Yunes/g, "About Salimi Engineering"],
@@ -44,6 +47,7 @@ const replacements: Record<BrandLocale, Replacement[]> = {
     [/Yunes/g, "Salimi Engineering"]
   ],
   fr: [
+    [/Ingénieur indépendant/g, "Bureau d’ingénierie à taille humaine"],
     [/À propos de Yunes Salimi/g, "À propos de Salimi Engineering"],
     [/À propos de Yunes/g, "À propos de Salimi Engineering"],
     [/Contacter Yunes Salimi/g, "Contacter Salimi Engineering"],
@@ -75,8 +79,12 @@ const replacements: Record<BrandLocale, Replacement[]> = {
     [/Younes/g, "Salimi Engineering"],
     [/Yunes/g, "Salimi Engineering"]
   ],
-  ru: [],
+  ru: [
+    [/Независимый инженер/g, "Инженерное бюро"],
+    [/независимый инженер/g, "инженерное бюро"]
+  ],
   ar: [
+    [/مهندس مستقل/g, "مكتب هندسي متخصص"],
     [/اعرض المشكلة التقنية على يونس/g, "اعرض المشكلة التقنية على Salimi Engineering"],
     [/يمكن ليونس الانضمام/g, "يمكن لـ Salimi Engineering التدخل"],
     [/اتصل بيونس السالمي/g, "اتصل بـ Salimi Engineering"],
@@ -128,10 +136,17 @@ const replacements: Record<BrandLocale, Replacement[]> = {
   ]
 };
 
+function applyConfirmedBusinessFacts(value: string): string {
+  return value
+    .replace(/info@edsmaroc\.com/g, businessFacts.contact.email)
+    .replace(/hello@salimiengineering\.ma/g, businessFacts.contact.email);
+}
+
 function replaceString(value: string, locale: BrandLocale): string {
+  const confirmed = applyConfirmedBusinessFacts(value);
   return replacements[locale].reduce(
     (result, [pattern, replacement]) => result.replace(pattern, replacement),
-    value
+    confirmed
   );
 }
 
@@ -157,10 +172,10 @@ export function applyCompanyVoice<T>(value: T, locale: BrandLocale): T {
 }
 
 export const founderMessages: Record<BrandLocale, string> = {
-  en: "I am SALIMI Yunes, founder and lead engineer of Salimi Engineering. I created the practice to give clients direct access to senior engineering judgement—from design and coordination to site supervision, commissioning and handover.",
-  fr: "Je suis SALIMI Yunes, fondateur et ingénieur référent de Salimi Engineering. J’ai créé cette structure pour donner aux clients un accès direct à une expertise senior, des études et de la coordination jusqu’au suivi des travaux, à la mise en service et à la réception.",
-  ru: "Меня зовут SALIMI Yunes, я основатель и ведущий инженер Salimi Engineering. Я создал эту практику, чтобы клиенты могли напрямую работать с инженером, отвечающим за решение, — от проектирования и координации до строительного контроля, пусконаладки и передачи объекта в эксплуатацию.",
-  ar: "أنا يونس السالمي، مؤسس Salimi Engineering والمهندس المسؤول فيها. أنشأت هذه الممارسة لمنح العملاء وصولاً مباشراً إلى خبرة هندسية رفيعة، من التصميم والتنسيق إلى الإشراف على التنفيذ والتشغيل والتسليم."
+  en: "I am SALIMI Yunes, founder and lead engineer of Salimi Engineering. I lead the technical work and client relationship directly. For each assignment, we scale the delivery team with the engineers and project specialists required by the disciplines, workload and site needs, so the bureau can take on focused tasks as well as medium-sized project scopes.",
+  fr: "Je suis SALIMI Yunes, fondateur et ingénieur référent de Salimi Engineering. Je dirige directement le travail technique et la relation client. Pour chaque mission, nous dimensionnons l’équipe avec les ingénieurs et spécialistes nécessaires selon les disciplines, la charge et les besoins du site, afin de prendre en charge aussi bien des tâches ciblées que des projets de taille moyenne.",
+  ru: "Меня зовут SALIMI Yunes, я основатель и ведущий инженер Salimi Engineering. Я лично отвечаю за техническую часть и отношения с заказчиком. Под каждую задачу мы усиливаем команду инженерами и специалистами нужного профиля, а при необходимости привлекаем или нанимаем их под проект. Поэтому бюро может брать как точечные задачи, так и проекты среднего объёма.",
+  ar: "أنا يونس السالمي، مؤسس Salimi Engineering والمهندس المسؤول فيها. أقود العمل التقني والعلاقة مع العميل مباشرة. ولكل مهمة نُوسّع فريق التنفيذ بالمهندسين والمتخصصين المطلوبين بحسب التخصصات وحجم العمل واحتياجات الموقع، ما يسمح للمكتب بتنفيذ أعمال محددة وكذلك نطاقات مشاريع متوسطة الحجم."
 };
 
 export const founderMessageTitles: Record<BrandLocale, string> = {
