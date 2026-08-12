@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { HomeContent, Locale } from "@/lib/home-content";
+import { locales } from "@/lib/home-content";
 import { getSiteContent } from "@/lib/site-content";
 
 const localeLabels: Record<Locale, string> = {
@@ -46,7 +47,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
           </nav>
           <div className="header-actions">
             <div className="language-switcher" aria-label={nav.language}>
-              {(["en", "fr", "ar"] as Locale[]).map((item) => (
+              {locales.map((item) => (
                 <Link key={item} href={`/${item}/`} lang={item} hrefLang={item} aria-current={item === locale ? "page" : undefined}>
                   {localeLabels[item]}
                 </Link>
@@ -64,7 +65,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <Link href={`/${locale}/contact`}>{nav.contact}</Link>
               <a href={phoneHref}>{nav.cta}</a>
               <div className="language-switcher language-switcher--mobile">
-                {(["en", "fr", "ar"] as Locale[]).map((item) => (
+                {locales.map((item) => (
                   <Link key={item} href={`/${item}/`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
                 ))}
               </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/home-content";
+import { locales } from "@/lib/home-content";
 import type { SiteContent, SitePage, SiteSlug } from "@/lib/site-content";
 
 const localeLabels: Record<Locale, string> = {
@@ -82,7 +83,7 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
         </nav>
         <div className="header-actions">
           <div className="language-switcher" aria-label={nav.language}>
-            {(["en", "fr", "ar"] as Locale[]).map((item) => (
+            {locales.map((item) => (
               <Link key={item} href={`/${item}/${slug}`} lang={item} hrefLang={item} aria-current={item === locale ? "page" : undefined}>
                 {localeLabels[item]}
               </Link>
@@ -99,7 +100,7 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
             <a href={phoneHref}>{nav.cta}</a>
             <a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a>
             <div className="language-switcher language-switcher--mobile">
-              {(["en", "fr", "ar"] as Locale[]).map((item) => (
+              {locales.map((item) => (
                 <Link key={item} href={`/${item}/${slug}`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
               ))}
             </div>

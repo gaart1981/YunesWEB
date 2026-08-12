@@ -65,6 +65,9 @@ h2,
 h3 {
   line-height: 1.06;
   letter-spacing: -0.035em;
+  /* Safety net for long compound words (Russian, German, Arabic transliteration):
+     a heading must never overflow the viewport on a 360px screen. */
+  overflow-wrap: break-word;
 }
 
 h1 {
