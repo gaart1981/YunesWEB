@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { SITE_URL } from "@/lib/site-url";
 import { HomePage } from "@/components/HomePage";
 import { getHomeContent, isLocale, locales } from "@/lib/home-content";
 
@@ -17,6 +18,7 @@ export async function generateMetadata({
   const content = getHomeContent(locale);
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: content.seo.title,
     description: content.seo.description,
     robots: { index: false, follow: false },

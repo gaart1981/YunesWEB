@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { SITE_URL } from "@/lib/site-url";
 import { ContentPage } from "@/components/ContentPage";
 import { isLocale, locales } from "@/lib/home-content";
 import { getPageContent, getSiteContent, isSiteSlug, pageSlugs } from "@/lib/site-content";
@@ -13,6 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale) || !isSiteSlug(slug)) return {};
   const page = getPageContent(locale, slug);
   return {
+    metadataBase: new URL(SITE_URL),
     title: page.seo.title,
     description: page.seo.description,
     robots: { index: false, follow: false },
