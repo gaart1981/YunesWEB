@@ -15,9 +15,10 @@
     "privacy": "Политика конфиденциальности",
     "cookies": "Политика в отношении cookie",
     "address": "Марокко",
-    "email": "info@edsmaroc.com",
+    "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
-    "skip": "Перейти к содержимому"
+    "skip": "Перейти к содержимому",
+    "illustrativeImage": "Иллюстрация — не фотография объекта"
   },
   "pages": {
     "services": {
@@ -637,7 +638,7 @@
           "label": "Звонок или WhatsApp"
         },
         {
-          "value": "info@edsmaroc.com",
+          "value": "info@salimiengineering.com",
           "label": "Электронная почта"
         },
         {
@@ -650,7 +651,7 @@
         "eyebrow": "Прямой контакт",
         "title": "Связаться с Salimi Engineering",
         "intro": "Быстрее всего начать с короткого звонка или сообщения в WhatsApp. Для письменного запроса опишите объект, стадию и нужную помощь.",
-        "email": "info@edsmaroc.com",
+        "email": "info@salimiengineering.com",
         "phone": "+212 663 056 547",
         "address": "Марокко",
         "form": {
@@ -693,7 +694,7 @@
           "paragraphs": [
             "Бренд сайта: Salimi Engineering.",
             "Профессиональный контакт: Salimi Engineering, Марокко.",
-            "Электронная почта: info@edsmaroc.com. Телефон: +212 663 056 547."
+            "Электронная почта: info@salimiengineering.com. Телефон: +212 663 056 547."
           ]
         },
         {
@@ -726,7 +727,7 @@
           "title": "Цель обработки",
           "paragraphs": [
             "Данные используются исключительно для рассмотрения запроса и ответа на него.",
-            "Запросить исправление или удаление данных можно по адресу info@edsmaroc.com."
+            "Запросить исправление или удаление данных можно по адресу info@salimiengineering.com."
           ]
         }
       ]

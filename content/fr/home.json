@@ -14,13 +14,33 @@
     "language": "Langue"
   },
   "hero": {
-    "eyebrow": "Bureau d’ingénierie dirigé par son fondateur · Maroc",
-    "title": "Concevoir les systèmes. Maîtriser le chantier. Livrer le projet.",
-    "summary": "Salimi Engineering est un bureau d’ingénierie au Maroc qui accompagne maîtres d’ouvrage, promoteurs et équipes internationales en études, analyse des entreprises, supervision des travaux et réalisation de projets. L’équipe est dimensionnée selon les disciplines et la charge de chaque mission.",
-    "primaryCta": "Discuter du projet",
-    "secondaryCta": "Voir comment nous pouvons intervenir",
+    "eyebrow": "Ingénierie & assistance à maîtrise d’ouvrage · Maroc",
+    "title": "Appui en ingénierie pour vos projets au Maroc",
+    "summary": "Salimi Engineering est un bureau d’ingénierie dirigé par son fondateur, qui accompagne maîtres d’ouvrage, promoteurs, sociétés d’ingénierie et équipes projet internationales : ingénierie côté maître d’ouvrage, coordination CVC/électricité et exécution locale. L’équipe s’adapte au périmètre, la responsabilité technique senior reste directe.",
+    "primaryCta": "Discuter d’un projet",
+    "secondaryCta": "Voir les compétences",
     "whatsappCta": "WhatsApp Salimi Engineering",
-    "trust": "Bureau à taille humaine · Équipe dimensionnée au projet · Études · Suivi chantier"
+    "trust": "Ingénierie maître d’ouvrage · Électricité & MEP · Appui local"
+  },
+  "credibility": {
+    "items": [
+      {
+        "title": "Bureau d’ingénierie dirigé par son fondateur",
+        "text": "Une structure resserrée avec une responsabilité technique senior directe sur chaque mission."
+      },
+      {
+        "title": "Expérience de projets internationaux",
+        "text": "Travaux antérieurs sur des projets tertiaires, industriels, d’infrastructure et techniques."
+      },
+      {
+        "title": "Équipes constituées par projet",
+        "text": "Ingénieurs et spécialistes mobilisés selon les disciplines et la charge de travail."
+      },
+      {
+        "title": "Exécution depuis le Maroc",
+        "text": "Présence sur site, coordination des entreprises et représentation technique locale."
+      }
+    ]
   },
   "audiences": [
     "Besoin d’études techniques complètes",
@@ -90,5 +110,49 @@
     "descriptor": "Ingénierie, MEP, suivi côté maître d’ouvrage et réalisation de projets au Maroc",
     "status": "Appui technique direct en français, anglais, arabe et russe",
     "rights": "Tous droits réservés."
+  },
+  "experiencePreview": {
+    "eyebrow": "Références",
+    "title": "Expérience de projets sélectionnée",
+    "disclosure": "Sauf mention contraire, les exemples ci-dessous correspondent à l’expérience professionnelle antérieure du fondateur.",
+    "cta": "Voir toute l’expérience"
+  },
+  "delivery": {
+    "eyebrow": "Modèle d’exécution",
+    "title": "Une équipe constituée autour du périmètre",
+    "text": "Salimi Engineering fonctionne avec un noyau resserré et constitue l’équipe autour du périmètre réel. Ingénieurs et spécialistes sont mobilisés ou recrutés selon les disciplines, la charge et les besoins de chantier, tandis que la responsabilité technique senior et la relation client restent directes.",
+    "steps": [
+      {
+        "title": "Cadrage et périmètre",
+        "text": "Objectif technique, limites, interfaces et reporting sont définis avant toute mobilisation."
+      },
+      {
+        "title": "Ingénieur référent responsable",
+        "text": "SALIMI Yunes porte la responsabilité technique et la relation client de bout en bout."
+      },
+      {
+        "title": "Équipe mobilisée",
+        "text": "Ingénieurs de discipline et spécialistes sont engagés pour la mission lorsque nécessaire."
+      },
+      {
+        "title": "Présence sur site adaptée",
+        "text": "La fréquence des visites et la représentation locale sont définies par la mission."
+      },
+      {
+        "title": "Reporting et réception",
+        "text": "Décisions, non-conformités et actions sont documentées jusqu’aux essais et à la réception."
+      }
+    ],
+    "chain": [
+      "Client",
+      "Ingénieur référent",
+      "Équipe projet",
+      "Entreprises / chantier"
+    ]
+  },
+  "sectorsPreview": {
+    "eyebrow": "Environnements de projet",
+    "title": "Où ces missions s’appliquent",
+    "cta": "Tous les environnements"
   }
 }

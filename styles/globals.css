@@ -72,7 +72,7 @@ h3 {
 
 h1 {
   max-width: 12ch;
-  font-size: clamp(3rem, 6vw, 6.25rem);
+  font-size: clamp(2.125rem, 3.4vw, 3.5rem);
   font-weight: 600;
 }
 
@@ -317,7 +317,7 @@ html[dir="rtl"] .eyebrow {
 .hero {
   position: relative;
   display: flex;
-  min-height: calc(100vh - 82px);
+  min-height: 0;
   flex-direction: column;
   overflow: hidden;
   color: var(--white);
@@ -406,7 +406,7 @@ html[dir="rtl"] .eyebrow {
 }
 
 .audience-item {
-  min-height: 145px;
+  min-height: 0;
   padding: 25px 22px;
   border-inline-end: 1px solid var(--border);
 }
@@ -427,7 +427,7 @@ html[dir="rtl"] .eyebrow {
 }
 
 .section {
-  padding: clamp(82px, 10vw, 150px) 0;
+  padding: clamp(44px, 6vw, 96px) 0;
 }
 
 .section--light {
@@ -469,7 +469,7 @@ html[dir="rtl"] .eyebrow {
 
 .service-card {
   display: flex;
-  min-height: 420px;
+  min-height: 0;
   flex-direction: column;
   padding: 34px 34px 38px;
   border-inline-end: 1px solid var(--border);
@@ -511,7 +511,7 @@ html[dir="rtl"] .eyebrow {
 }
 
 .approach-grid article {
-  min-height: 345px;
+  min-height: 0;
   padding: 34px 28px 20px;
   border-inline-end: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -576,7 +576,7 @@ html[dir="rtl"] .eyebrow {
 }
 
 .contact-section {
-  padding: clamp(88px, 11vw, 155px) 0;
+  padding: clamp(44px, 6vw, 96px) 0;
   color: var(--white);
   background: var(--ink);
 }
@@ -842,4 +842,90 @@ html[dir="rtl"] .eyebrow {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* ==========================================================================
+   Trust redesign — "Quiet Engineering Authority"
+   Information-dense business composition. Premium comes from precision and
+   hierarchy, not from oversized type or empty space.
+   ========================================================================== */
+
+/* Compact, content-driven hero. Deliberately not 100vh: the credibility band
+   below must be reachable without a large scroll at 1440x900. */
+.hero--compact { padding-block: clamp(40px, 5vw, 72px); }
+.hero--compact .hero-grid { align-items: center; gap: clamp(28px, 4vw, 56px); }
+.hero--compact .hero-summary { max-width: 60ch; font-size: clamp(1rem, 1.1vw, 1.2rem); }
+.hero--compact .hero-media img { width: 100%; height: auto; }
+
+/* Credibility strip: real business signals, thin separators, no statistics. */
+.credibility-strip { background: var(--porcelain); border-block-end: 1px solid var(--line); }
+.credibility-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; padding-block: clamp(24px, 3vw, 40px);
+}
+.credibility-item { padding-inline: clamp(16px, 2vw, 28px); border-inline-start: 1px solid var(--line); }
+.credibility-item:first-child { border-inline-start: 0; padding-inline-start: 0; }
+.credibility-item h2 { font-size: 1rem; line-height: 1.3; margin: 0 0 6px; letter-spacing: -0.01em; }
+.credibility-item p { margin: 0; font-size: .9rem; line-height: 1.5; color: var(--steel); }
+
+/* Evidence rows: project facts first. Must stay credible with images removed. */
+.section--tight { padding: clamp(44px, 5.5vw, 84px) 0; }
+.evidence-rows { list-style: none; margin: 28px 0 24px; padding: 0; border-block-start: 1px solid var(--line); }
+.evidence-row { padding-block: 22px; border-block-end: 1px solid var(--line); }
+.evidence-row__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; }
+.evidence-row h3 { font-size: clamp(1.1rem, 1.5vw, 1.35rem); margin: 0; }
+.evidence-meta { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0; font-size: .82rem; color: var(--steel); }
+.evidence-meta span::before { content: "· "; }
+.evidence-meta span:first-child::before { content: ""; }
+.evidence-scope { max-width: 78ch; margin: 8px 0 6px; font-size: .95rem; line-height: 1.55; }
+.evidence-role { margin: 0; font-size: .82rem; color: var(--steel); }
+
+/* Delivery model: explanatory text beside a compact accountability chain. */
+.delivery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 64px); align-items: start; }
+.delivery-copy p { max-width: 62ch; }
+.delivery-chain {
+  list-style: none; display: flex; flex-wrap: wrap; gap: 8px;
+  margin: 24px 0 0; padding: 0; font-size: .82rem;
+}
+.delivery-chain li {
+  padding: 7px 12px; border: 1px solid rgba(246, 244, 239, .28); border-radius: 4px;
+}
+/* Direction-neutral separator so the chain mirrors correctly in Arabic. */
+.delivery-chain li + li { position: relative; }
+.delivery-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+.delivery-steps li {
+  counter-increment: step; padding: 16px 0; border-block-end: 1px solid rgba(246, 244, 239, .16);
+}
+.delivery-steps li:first-child { padding-block-start: 0; }
+.delivery-steps h3 {
+  font-size: 1rem; margin: 0 0 4px;
+}
+.delivery-steps h3::before {
+  content: counter(step, decimal-leading-zero); margin-inline-end: 10px;
+  color: var(--sand); font-variant-numeric: tabular-nums;
+}
+.delivery-steps p { margin: 0; font-size: .9rem; line-height: 1.5; opacity: .82; max-width: 52ch; }
+
+/* Sector matrix: compact rows rather than another card grid. */
+.sector-matrix {
+  list-style: none; margin: 28px 0 24px; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0;
+  border-block-start: 1px solid var(--line);
+}
+.sector-matrix li { padding: 18px 24px 18px 0; border-block-end: 1px solid var(--line); }
+.sector-matrix h3 { font-size: 1rem; margin: 0 0 5px; }
+.sector-matrix p { margin: 0; font-size: .88rem; line-height: 1.5; color: var(--steel); max-width: 44ch; }
+
+@media (max-width: 1000px) {
+  .credibility-grid { grid-template-columns: 1fr 1fr; gap: 20px 0; }
+  .credibility-item:nth-child(3) { border-inline-start: 0; padding-inline-start: 0; }
+  .delivery-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .credibility-grid { grid-template-columns: 1fr; }
+  .credibility-item { border-inline-start: 0; padding-inline-start: 0; }
+  .credibility-item + .credibility-item { border-block-start: 1px solid var(--line); padding-block-start: 16px; }
+  .evidence-row__head { gap: 4px; }
+  .sector-matrix li { padding-inline-end: 0; }
 }

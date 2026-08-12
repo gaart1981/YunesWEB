@@ -28,6 +28,7 @@ export type SiteSlug = (typeof pageSlugs)[number];
 
 export type Navigation = {
   home: string;
+  illustrativeImage: string;
   services: string;
   sectors: string;
   experience: string;

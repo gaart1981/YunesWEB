@@ -216,7 +216,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
             {page.sectionIntro && <p className="section-intro attribution-note">{page.sectionIntro}</p>}
             <div className="project-grid">{page.projects.map((project, index) => (
               <article key={project.title} className="project-card">
-                <div className="project-photo" aria-hidden="true"><img src={projectImages[index % projectImages.length]} alt="" width="640" height="400" /></div>
+                <figure className="project-photo"><img src={projectImages[index % projectImages.length]} alt="" width="640" height="400" /><figcaption>{site.navigation.illustrativeImage}</figcaption></figure>
                 <div className="project-copy"><p className="eyebrow">{project.location}</p><h3>{project.title}</h3><p>{project.scope}</p><small>{project.role}</small></div>
               </article>
             ))}</div>

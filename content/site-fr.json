@@ -15,9 +15,10 @@
     "privacy": "Confidentialité",
     "cookies": "Cookies",
     "address": "Maroc",
-    "email": "info@edsmaroc.com",
+    "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
-    "skip": "Aller au contenu"
+    "skip": "Aller au contenu",
+    "illustrativeImage": "Image d’illustration — pas le projet réel"
   },
   "pages": {
     "services": {
@@ -637,7 +638,7 @@
           "label": "Téléphone et WhatsApp"
         },
         {
-          "value": "info@edsmaroc.com",
+          "value": "info@salimiengineering.com",
           "label": "Email"
         },
         {
@@ -650,7 +651,7 @@
         "eyebrow": "Coordonnées",
         "title": "Échanger avec Yunes Salimi",
         "intro": "Le plus rapide est un appel ou un message WhatsApp. Pour une demande écrite, indiquez le type d’actif, le lieu, la phase et l’aide recherchée.",
-        "email": "info@edsmaroc.com",
+        "email": "info@salimiengineering.com",
         "phone": "+212 663 056 547",
         "address": "Maroc",
         "form": {
@@ -693,7 +694,7 @@
           "paragraphs": [
             "Marque du site : Salimi Engineering.",
             "Directeur de publication et contact professionnel : Yunes Salimi, Maroc.",
-            "Email : info@edsmaroc.com. Téléphone : +212 663 056 547."
+            "Email : info@salimiengineering.com. Téléphone : +212 663 056 547."
           ]
         },
         {
@@ -726,7 +727,7 @@
           "title": "Finalité",
           "paragraphs": [
             "Les informations sont utilisées uniquement pour analyser et répondre à la demande.",
-            "Vous pouvez demander correction ou suppression à info@edsmaroc.com."
+            "Vous pouvez demander correction ou suppression à info@salimiengineering.com."
           ]
         }
       ]

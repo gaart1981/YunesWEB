@@ -14,13 +14,33 @@
     "language": "Language"
   },
   "hero": {
-    "eyebrow": "Founder-led engineering bureau · Morocco",
-    "title": "Design the systems. Control the site. Deliver the project.",
-    "summary": "Salimi Engineering is a Morocco-based engineering bureau supporting owners, developers and international teams with design, contractor review, site supervision and project delivery. We scale the project team to the required disciplines and workload.",
+    "eyebrow": "Engineering & Project Advisory · Morocco",
+    "title": "Engineering support for projects in Morocco",
+    "summary": "Salimi Engineering is a founder-led engineering bureau supporting owners, developers, engineering firms and international project teams with owner-side engineering, MEP coordination and local project delivery. Project teams scale to the scope while senior technical accountability remains direct.",
     "primaryCta": "Discuss a project",
-    "secondaryCta": "See how we can help",
+    "secondaryCta": "View capabilities",
     "whatsappCta": "WhatsApp Salimi Engineering",
-    "trust": "Founder-led · Project-specific teams · Engineering design · Site supervision"
+    "trust": "Owner’s Engineering · Electrical & MEP · Local Project Support"
+  },
+  "credibility": {
+    "items": [
+      {
+        "title": "Founder-led engineering bureau",
+        "text": "A focused practice with direct senior technical accountability on every assignment."
+      },
+      {
+        "title": "International project experience",
+        "text": "Prior work on corporate, industrial, infrastructure and technical facility projects."
+      },
+      {
+        "title": "Project-specific teams",
+        "text": "Engineers and specialists are mobilised according to the disciplines and workload."
+      },
+      {
+        "title": "Morocco-based delivery",
+        "text": "Site presence, contractor coordination and local technical representation."
+      }
+    ]
   },
   "audiences": [
     "Need a complete technical design",
@@ -90,5 +110,49 @@
     "descriptor": "Engineering, MEP, owner-side and project delivery support in Morocco",
     "status": "Direct engineering support in English, French, Arabic and Russian",
     "rights": "All rights reserved."
+  },
+  "experiencePreview": {
+    "eyebrow": "Evidence",
+    "title": "Selected project experience",
+    "disclosure": "The examples below represent selected prior professional experience of the founder unless otherwise identified.",
+    "cta": "View full experience"
+  },
+  "delivery": {
+    "eyebrow": "Delivery model",
+    "title": "A project team built around the scope",
+    "text": "Salimi Engineering operates with a focused core and assembles the project team around the actual scope. Engineers and specialists are engaged or hired according to the disciplines, workload and site requirements, while senior technical accountability and the client relationship remain direct.",
+    "steps": [
+      {
+        "title": "Brief and scope",
+        "text": "We define the technical objective, boundaries, interfaces and reporting before mobilising."
+      },
+      {
+        "title": "Lead engineer accountable",
+        "text": "SALIMI Yunes holds technical responsibility and the client relationship throughout."
+      },
+      {
+        "title": "Team mobilised to scope",
+        "text": "Discipline engineers and specialists are engaged for the assignment where required."
+      },
+      {
+        "title": "Site presence as needed",
+        "text": "Inspection frequency and local representation are set by the assignment, not by a fixed template."
+      },
+      {
+        "title": "Reporting and handover",
+        "text": "Decisions, non-conformities and actions are documented through to testing and handover."
+      }
+    ],
+    "chain": [
+      "Client",
+      "Lead engineer",
+      "Project team",
+      "Contractors / site"
+    ]
+  },
+  "sectorsPreview": {
+    "eyebrow": "Project environments",
+    "title": "Where this work applies",
+    "cta": "All project environments"
   }
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { HomeContent, Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
-import { getSiteContent } from "@/lib/site-content";
+import { getPageContent, getSiteContent } from "@/lib/site-content";
 
 const localeLabels: Record<Locale, string> = {
   en: "EN",
@@ -26,6 +26,11 @@ function Arrow() {
 
 export function HomePage({ locale, content }: { locale: Locale; content: HomeContent }) {
   const site = getSiteContent(locale);
+  const experiencePage = getPageContent(locale, "experience");
+  const sectorsPage = getPageContent(locale, "sectors");
+  // Three projects spanning different environments: corporate, banking/technical, industrial.
+  const featuredProjects = (experiencePage.projects ?? []).filter((_, i) => [0, 4, 5].includes(i));
+  const previewSectors = (sectorsPage.items ?? []).slice(0, 5);
   const nav = site.navigation;
   const phoneHref = `tel:${nav.phone.replace(/\s/g, "")}`;
   const whatsappHref = `https://wa.me/${nav.phone.replace(/[^\d]/g, "")}`;
@@ -44,6 +49,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
             <Link href={`/${locale}/sectors`}>{nav.sectors}</Link>
             <Link href={`/${locale}/experience`}>{nav.experience}</Link>
             <Link href={`/${locale}/about`}>{nav.about}</Link>
+            <Link href={`/${locale}/contact`}>{nav.contact}</Link>
           </nav>
           <div className="header-actions">
             <div className="language-switcher" aria-label={nav.language}>
@@ -53,7 +59,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
                 </Link>
               ))}
             </div>
-            <a className="button button--small" href={phoneHref}>{nav.cta}</a>
+            <Link className="button button--small" href={`/${locale}/contact`}>{nav.cta}</Link>
           </div>
           <details className="mobile-menu">
             <summary aria-label={nav.services}><span /><span /></summary>
@@ -63,7 +69,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <Link href={`/${locale}/experience`}>{nav.experience}</Link>
               <Link href={`/${locale}/about`}>{nav.about}</Link>
               <Link href={`/${locale}/contact`}>{nav.contact}</Link>
-              <a href={phoneHref}>{nav.cta}</a>
+              <Link href={`/${locale}/contact`}>{nav.cta}</Link>
               <div className="language-switcher language-switcher--mobile">
                 {locales.map((item) => (
                   <Link key={item} href={`/${item}/`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
@@ -75,36 +81,35 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
       </header>
 
       <main id="main-content">
-        <section className="hero hero--conversion">
+        <section className="hero hero--compact">
           <div className="hero-grid">
             <div className="hero-copy">
               <p className="eyebrow eyebrow--sand">{content.hero.eyebrow}</p>
               <h1>{content.hero.title}</h1>
               <p className="hero-summary">{content.hero.summary}</p>
-              <div className="hero-actions hero-actions--conversion">
-                <a className="button button--sand" href={phoneHref}>
+              <div className="hero-actions">
+                <Link className="button button--sand" href={`/${locale}/contact`}>
                   {content.hero.primaryCta}<Arrow />
-                </a>
-                <a className="button button--outline-light" href={whatsappHref} target="_blank" rel="noreferrer">
-                  {content.hero.whatsappCta}<Arrow />
-                </a>
-                <Link className="text-link text-link--light" href={`/${locale}/services`}>
+                </Link>
+                <Link className="button button--outline-light" href={`/${locale}/services`}>
                   {content.hero.secondaryCta}<Arrow />
                 </Link>
               </div>
-              <p className="trust-note trust-note--strong">{content.hero.trust}</p>
+              <p className="trust-note">{content.hero.trust}</p>
             </div>
             <div className="hero-media">
-              <img src="/images/generated/industrial-facility-exterior.svg" alt="" width="560" height="700" />
+              <img src="/images/generated/industrial-facility-exterior.svg" alt="" width="560" height="620" />
             </div>
           </div>
-          <div className="datum" aria-hidden="true"><span>DESIGN</span><span>SUPERVISION</span><span>MOROCCO</span></div>
         </section>
 
-        <section className="audience-section audience-section--problems">
-          <div className="container audience-grid">
-            {content.audiences.map((audience, index) => (
-              <div key={audience} className="audience-item"><span>0{index + 1}</span><p>{audience}</p></div>
+        <section className="credibility-strip">
+          <div className="container credibility-grid">
+            {content.credibility.items.map((item) => (
+              <div key={item.title} className="credibility-item">
+                <h2>{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
             ))}
           </div>
         </section>
@@ -128,16 +133,74 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
           </div>
         </section>
 
-        <section id="approach" className="section section--dark">
+        <section id="experience" className="section section--light section--tight">
           <div className="container">
-            <div className="section-heading section-heading--split section-heading--inverse">
-              <div><p className="eyebrow eyebrow--sand">{content.approach.eyebrow}</p><h2>{content.approach.title}</h2></div>
+            <div className="section-heading">
+              <p className="eyebrow">{content.experiencePreview.eyebrow}</p>
+              <h2>{content.experiencePreview.title}</h2>
+              <p className="attribution-note">{content.experiencePreview.disclosure}</p>
             </div>
-            <div className="approach-grid">
-              {content.approach.items.map((item, index) => (
-                <article key={item.title}><span>0{index + 1}</span><h3>{item.title}</h3><p>{item.text}</p></article>
+            <ul className="evidence-rows">
+              {featuredProjects.map((project) => (
+                <li key={project.title} className="evidence-row">
+                  <div className="evidence-row__head">
+                    <h3>{project.title}</h3>
+                    <p className="evidence-meta">
+                      <span>{project.sector}</span>
+                      <span>{project.location}</span>
+                    </p>
+                  </div>
+                  <p className="evidence-scope">{project.scope}</p>
+                  <p className="evidence-role">{project.role}</p>
+                </li>
               ))}
+            </ul>
+            <Link className="text-link" href={`/${locale}/experience`}>
+              {content.experiencePreview.cta}<Arrow />
+            </Link>
+          </div>
+        </section>
+
+        <section id="delivery" className="section section--dark section--tight">
+          <div className="container delivery-grid">
+            <div className="delivery-copy">
+              <p className="eyebrow eyebrow--sand">{content.delivery.eyebrow}</p>
+              <h2>{content.delivery.title}</h2>
+              <p>{content.delivery.text}</p>
+              <ol className="delivery-chain" aria-label={content.delivery.title}>
+                {content.delivery.chain.map((node) => (
+                  <li key={node}>{node}</li>
+                ))}
+              </ol>
             </div>
+            <ol className="delivery-steps">
+              {content.delivery.steps.map((step) => (
+                <li key={step.title}>
+                  <h3>{step.title}</h3>
+                  <p>{step.text}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section id="sectors" className="section section--light section--tight">
+          <div className="container">
+            <div className="section-heading">
+              <p className="eyebrow">{content.sectorsPreview.eyebrow}</p>
+              <h2>{content.sectorsPreview.title}</h2>
+            </div>
+            <ul className="sector-matrix">
+              {previewSectors.map((sector) => (
+                <li key={sector.title}>
+                  <h3>{sector.title}</h3>
+                  <p>{sector.text}</p>
+                </li>
+              ))}
+            </ul>
+            <Link className="text-link" href={`/${locale}/sectors`}>
+              {content.sectorsPreview.cta}<Arrow />
+            </Link>
           </div>
         </section>
 
@@ -150,7 +213,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <p>{content.founder.text}</p>
               <blockquote>{content.founder.quote}</blockquote>
               <div className="founder-actions">
-                <a className="button" href={phoneHref}>{content.hero.primaryCta}<Arrow /></a>
+                <Link className="button" href={`/${locale}/contact`}>{content.hero.primaryCta}<Arrow /></Link>
                 <Link className="text-link" href={`/${locale}/about`}>{nav.about}<Arrow /></Link>
               </div>
             </div>

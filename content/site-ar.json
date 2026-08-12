@@ -15,9 +15,10 @@
     "privacy": "الخصوصية",
     "cookies": "ملفات الارتباط",
     "address": "المغرب",
-    "email": "info@edsmaroc.com",
+    "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
-    "skip": "انتقل إلى المحتوى"
+    "skip": "انتقل إلى المحتوى",
+    "illustrativeImage": "صورة توضيحية — ليست صورة المشروع الفعلي"
   },
   "pages": {
     "services": {
@@ -637,7 +638,7 @@
           "label": "هاتف وواتساب"
         },
         {
-          "value": "info@edsmaroc.com",
+          "value": "info@salimiengineering.com",
           "label": "البريد الإلكتروني"
         },
         {
@@ -650,7 +651,7 @@
         "eyebrow": "اتصال مباشر",
         "title": "تحدث مع يونس السالمي",
         "intro": "أسرع بداية هي مكالمة أو رسالة واتساب. وللطلب المكتوب، اذكر نوع الأصل والموقع والمرحلة والمساعدة المطلوبة.",
-        "email": "info@edsmaroc.com",
+        "email": "info@salimiengineering.com",
         "phone": "+212 663 056 547",
         "address": "المغرب",
         "form": {
@@ -693,7 +694,7 @@
           "paragraphs": [
             "اسم الموقع: Salimi Engineering.",
             "مدير النشر والاتصال المهني: يونس السالمي، المغرب.",
-            "البريد: info@edsmaroc.com. الهاتف: +212 663 056 547."
+            "البريد: info@salimiengineering.com. الهاتف: +212 663 056 547."
           ]
         },
         {
@@ -726,7 +727,7 @@
           "title": "الغرض",
           "paragraphs": [
             "تستخدم المعلومات فقط لمراجعة الطلب والرد عليه.",
-            "يمكن طلب التصحيح أو الحذف عبر info@edsmaroc.com."
+            "يمكن طلب التصحيح أو الحذف عبر info@salimiengineering.com."
           ]
         }
       ]
