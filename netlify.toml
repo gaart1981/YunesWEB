@@ -5,6 +5,45 @@
 [build.environment]
   NODE_VERSION = "24"
 
+# Language negotiation on the root URL only.
+#
+# Each language keeps its own crawlable URL and its own hreflang entry; nothing
+# is served from a shared address, which is what Doc 12 §7 forbids. This rule
+# only decides where a visitor typing the bare domain lands.
+#
+# 302, never 301: the destination varies by visitor, so it must not be cached
+# as permanent.
+#
+# Netlify matches the FIRST language in the Accept-Language header and ignores
+# q-weighting, and browsers usually send a regional tag - a French browser
+# sends "fr-FR", not "fr" - so the regional variants are listed explicitly.
+# Morocco's own fr-MA and ar-MA are included deliberately.
+#
+# Crawlers generally send no Accept-Language and therefore fall through to the
+# English rule; they reach the other languages from the sitemap and hreflang.
+
+[[redirects]]
+  from = "/"
+  to = "/fr/"
+  status = 302
+  force = true
+  conditions = {Language = ["fr", "fr-FR", "fr-BE", "fr-CA", "fr-CH", "fr-LU", "fr-MA"]}
+
+[[redirects]]
+  from = "/"
+  to = "/ar/"
+  status = 302
+  force = true
+  conditions = {Language = ["ar", "ar-MA", "ar-DZ", "ar-TN", "ar-EG", "ar-SA", "ar-AE", "ar-QA", "ar-KW"]}
+
+[[redirects]]
+  from = "/"
+  to = "/ru/"
+  status = 302
+  force = true
+  conditions = {Language = ["ru", "ru-RU", "ru-BY", "ru-KZ", "ru-UA"]}
+
+# Fallback. Must stay last: any visitor not matched above gets English.
 [[redirects]]
   from = "/"
   to = "/en/"

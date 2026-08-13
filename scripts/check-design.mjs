@@ -658,6 +658,45 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
   else ok();
 }
 
+
+/* ============================================================================
+   Root language negotiation. Guards the ordering and status, both of which
+   fail silently: a misordered fallback sends everyone to English, and a 301
+   would let a browser cache one visitor's language for the next.
+   ========================================================================== */
+if (existsSync("netlify.toml")) {
+  const toml = readFileSync("netlify.toml", "utf8");
+  const rootRules = [...toml.matchAll(/\[\[redirects\]\][\s\S]*?from = "\/"[\s\S]*?to = "(\/[a-z]{2}\/)"[\s\S]*?status = (\d+)([\s\S]*?)(?=\[\[|$)/g)]
+    .map((m) => ({ to: m[1], status: Number(m[2]), conditions: /Language = \[/.test(m[3]) }));
+
+  if (rootRules.length < 2) fail("i18n", "no language negotiation on the root URL");
+  else ok();
+
+  for (const rule of rootRules) {
+    if (rule.status !== 302)
+      fail("i18n", `root redirect to ${rule.to} uses ${rule.status}; must be 302, the target varies by visitor`);
+    else ok();
+  }
+
+  const last = rootRules[rootRules.length - 1];
+  if (!last || last.to !== "/en/" || last.conditions)
+    fail("i18n", "the final root rule must be the unconditional English fallback");
+  else ok();
+
+  /* Every non-default locale must be reachable by negotiation, and the
+     regional tags browsers actually send must be covered - a French browser
+     reports fr-FR, not fr. */
+  for (const [locale, regional] of [["fr", "fr-FR"], ["ar", "ar-MA"], ["ru", "ru-RU"]]) {
+    const rule = rootRules.find((r) => r.to === `/${locale}/`);
+    if (!rule) { fail("i18n", `no root rule for ${locale}`); continue; }
+    const block = toml.slice(toml.indexOf(`to = "/${locale}/"`));
+    const conditions = block.slice(0, block.indexOf("}") + 1);
+    if (!conditions.includes(`"${locale}"`) || !conditions.includes(`"${regional}"`))
+      fail("i18n", `${locale} negotiation misses "${locale}" or "${regional}"`);
+    else ok();
+  }
+}
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {
