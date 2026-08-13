@@ -28,10 +28,10 @@ const pageImages: Partial<Record<SiteSlug, string>> = {
   // technical register of the page without claiming any specific project.
   // Assignment follows what each page is about.
   services: "/images/graphics/production-facility.webp",
-  "owners-engineering-amo": "/images/graphics/section-drawing.svg",
+  "owners-engineering-amo": "/images/graphics/development-masterplan.webp",
   "electrical-mep-engineering": "/images/graphics/industrial-plant-systems.webp",
   "local-engineering-partner-morocco": "/images/graphics/production-facility.webp",
-  sectors: "/images/graphics/development-masterplan.webp",
+  sectors: "/images/graphics/project-environments.webp",
   contact: "/images/graphics/plant-room-services.webp"
 };
 

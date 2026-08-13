@@ -549,6 +549,7 @@ const APPROVED_RASTER = new Set([
   "development-masterplan.webp",
   "engineering-scope-sheet.webp",
   "plant-room-services.webp",
+  "project-environments.webp",
   "industrial-plant-systems.webp",
   "production-facility.webp"
 ]);
