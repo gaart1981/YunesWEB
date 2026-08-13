@@ -548,6 +548,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 const APPROVED_RASTER = new Set([
   "development-masterplan.webp",
   "engineering-scope-sheet.webp",
+  "plant-room-services.webp",
   "industrial-plant-systems.webp",
   "production-facility.webp"
 ]);

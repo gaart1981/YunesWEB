@@ -32,7 +32,7 @@ const pageImages: Partial<Record<SiteSlug, string>> = {
   "electrical-mep-engineering": "/images/graphics/industrial-plant-systems.webp",
   "local-engineering-partner-morocco": "/images/graphics/production-facility.webp",
   sectors: "/images/graphics/development-masterplan.webp",
-  contact: "/images/graphics/project-sequence.svg"
+  contact: "/images/graphics/plant-room-services.webp"
 };
 
 function Arrow() {
