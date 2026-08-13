@@ -1,0 +1,158 @@
+{
+  "locale": "es",
+  "direction": "ltr",
+  "seo": {
+    "title": "Ingeniería eléctrica e instalaciones en Marruecos | Salimi Engineering",
+    "description": "Proyecto de instalaciones, asistencia técnica a la propiedad y dirección de obra en Marruecos. Equipos dimensionados para cada encargo."
+  },
+  "navigation": {
+    "services": "Servicios",
+    "approach": "Cómo trabajamos",
+    "founder": "El estudio",
+    "contact": "Contacto",
+    "cta": "Hablemos del proyecto",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Ingeniería y asistencia a proyectos · Marruecos",
+    "title": "Su ingeniería en Marruecos",
+    "summary": "Salimi Engineering acompaña a promotores, propiedades, ingenierías y equipos internacionales: asistencia técnica a la propiedad, coordinación de instalaciones y seguimiento de obra en Marruecos. El equipo se dimensiona según el encargo y la responsabilidad técnica permanece directa.",
+    "primaryCta": "Hablemos del proyecto",
+    "secondaryCta": "Ver capacidades",
+    "whatsappCta": "WhatsApp Salimi Engineering",
+    "trust": "Asistencia a la propiedad · Electricidad e instalaciones · Apoyo local"
+  },
+  "credibility": {
+    "items": [
+      {
+        "title": "Estudio dirigido por su fundador",
+        "text": "Una estructura reducida con responsabilidad técnica directa en cada encargo."
+      },
+      {
+        "title": "Experiencia en proyectos internacionales",
+        "text": "Trabajos previos en edificios corporativos, industriales, infraestructura e instalaciones técnicas."
+      },
+      {
+        "title": "Equipos formados por proyecto",
+        "text": "Ingenieros y especialistas se incorporan según las disciplinas y la carga de trabajo."
+      },
+      {
+        "title": "Ejecución desde Marruecos",
+        "text": "Presencia en obra, coordinación de contratistas y representación técnica local."
+      }
+    ]
+  },
+  "audiences": [
+    "Necesita proyecto de ejecución",
+    "Necesita ingeniería local en Marruecos",
+    "Necesita revisar ofertas de contratistas",
+    "Necesita controlar la calidad en obra",
+    "Necesita pruebas y recepción de obra"
+  ],
+  "services": {
+    "eyebrow": "Lo que podemos asumir",
+    "title": "Una ingeniería a la medida del proyecto",
+    "summary": "Desde una revisión técnica puntual hasta un encargo de tamaño medio: el equipo se forma según las disciplinas necesarias, el volumen de trabajo y la presencia requerida en obra.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Asistencia a la propiedad y dirección de obra",
+        "text": "Definir el alcance, revisar proyectos y ofertas, cuestionar modificados, inspeccionar la ejecución y dar a la propiedad recomendaciones técnicas claras."
+      },
+      {
+        "number": "02",
+        "title": "Proyecto eléctrico, ventilación e instalaciones",
+        "text": "Cálculo de cargas, distribución eléctrica, iluminación, esquemas de ventilación, detección y protección contra incendios, mediciones y planos de ejecución coordinados."
+      },
+      {
+        "number": "03",
+        "title": "Apoyo local en proyecto y obra",
+        "text": "Levantamientos, coordinación de contratistas, reuniones técnicas, seguimiento documentado, resolución de incidencias, pruebas y recepción en Marruecos."
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Una secuencia contrastada",
+    "title": "Proyectar. Coordinar. Supervisar. Entregar.",
+    "items": [
+      {
+        "title": "Proyectar",
+        "text": "Traducimos las necesidades de explotación en cálculos, plantas, esquemas, mediciones y soluciones realmente construibles."
+      },
+      {
+        "title": "Coordinar",
+        "text": "Resolvemos las interferencias entre electricidad, ventilación, protección contra incendios, arquitectura, estructura y contratistas antes de que lleguen a obra."
+      },
+      {
+        "title": "Supervisar",
+        "text": "Revisamos documentación de aprobación y cambios de fabricante, inspeccionamos la ejecución, registramos no conformidades y verificamos su subsanación."
+      },
+      {
+        "title": "Entregar",
+        "text": "Acompañamos pruebas, puesta en marcha, cierre de repasos, documentación y recepción hasta dejar las instalaciones operativas."
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "Estudio dirigido por su fundador",
+    "title": "La responsabilidad técnica sigue siendo directa aunque crezca el equipo.",
+    "text": "Salimi Engineering está dirigido por su fundador e ingeniero responsable, que responde de la calidad técnica y de la relación con el cliente. Los ingenieros y especialistas se incorporan o contratan según cada encargo, lo que permite asumir tanto tareas acotadas como proyectos de tamaño medio.",
+    "quote": "El equipo puede crecer con el proyecto. La responsabilidad sigue siendo clara.",
+    "imageAlt": "Fundador e ingeniero responsable de Salimi Engineering, sentado a una mesa en una oficina con luz natural."
+  },
+  "contact": {
+    "eyebrow": "Basta con un problema técnico para empezar",
+    "title": "¿Qué está frenando su proyecto?",
+    "text": "Una primera llamada permite aclarar el problema, la documentación disponible, las condiciones de obra y la intervención más útil a corto plazo.",
+    "button": "Hablemos del proyecto"
+  },
+  "footer": {
+    "descriptor": "Ingeniería, instalaciones, asistencia a la propiedad y seguimiento de obra en Marruecos",
+    "status": "Comunicación técnica directa en inglés, francés y árabe",
+    "rights": "Todos los derechos reservados."
+  },
+  "experiencePreview": {
+    "eyebrow": "Referencias",
+    "title": "Experiencia de proyectos seleccionada",
+    "disclosure": "Salvo indicación en contrario, los ejemplos siguientes corresponden a la experiencia profesional previa del fundador.",
+    "cta": "Ver toda la experiencia"
+  },
+  "delivery": {
+    "eyebrow": "Modelo de trabajo",
+    "title": "Un equipo construido en torno al alcance",
+    "text": "Salimi Engineering trabaja con un núcleo reducido y forma el equipo alrededor del alcance real. Los ingenieros y especialistas se incorporan o contratan según las disciplinas, la carga de trabajo y las necesidades de obra, mientras la responsabilidad técnica y la relación con el cliente permanecen directas.",
+    "steps": [
+      {
+        "title": "Encargo y alcance",
+        "text": "Antes de movilizar definimos el objetivo técnico, los límites, las interfaces y el sistema de reporte."
+      },
+      {
+        "title": "Ingeniero responsable",
+        "text": "SALIMI Yunes asume la responsabilidad técnica y la relación con el cliente durante todo el encargo."
+      },
+      {
+        "title": "Equipo según alcance",
+        "text": "Los ingenieros de cada disciplina y los especialistas se incorporan cuando el encargo lo exige."
+      },
+      {
+        "title": "Presencia en obra según necesidad",
+        "text": "La frecuencia de visitas y el alcance de la representación los marca el encargo, no un paquete estándar."
+      },
+      {
+        "title": "Reporte y entrega",
+        "text": "Decisiones, no conformidades y acciones quedan documentadas hasta las pruebas y la recepción."
+      }
+    ],
+    "chain": [
+      "Cliente",
+      "Ingeniero responsable",
+      "Equipo de proyecto",
+      "Contratistas / obra"
+    ]
+  },
+  "sectorsPreview": {
+    "eyebrow": "Entornos de proyecto",
+    "title": "Dónde se aplica este trabajo",
+    "cta": "Todos los entornos"
+  }
+}

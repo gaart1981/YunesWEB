@@ -1,10 +1,14 @@
 import businessFacts from "@/content/business-facts.json";
 
-export type BrandLocale = "en" | "fr" | "ar" | "ru";
+export type BrandLocale = "en" | "fr" | "ar" | "ru" | "de" | "es";
 
 type Replacement = readonly [RegExp, string];
 
 const replacements: Record<BrandLocale, Replacement[]> = {
+  // German and Spanish content is authored directly in company voice, so no
+  // after-the-fact rewriting is needed - the same approach taken for Russian.
+  de: [],
+  es: [],
   en: [
     [/Independent engineer/g, "Founder-led engineering bureau"],
     [/Yunes Salimi Engineering Experience/g, "Selected Engineering Experience"],
@@ -174,6 +178,8 @@ export function applyCompanyVoice<T>(value: T, locale: BrandLocale): T {
 export const founderMessages: Record<BrandLocale, string> = {
   en: "I am SALIMI Yunes, founder and lead engineer of Salimi Engineering. I lead the technical work and client relationship directly. For each assignment, we scale the delivery team with the engineers and project specialists required by the disciplines, workload and site needs, so the bureau can take on focused tasks as well as medium-sized project scopes.",
   fr: "Je suis SALIMI Yunes, fondateur et ingénieur référent de Salimi Engineering. Je dirige directement le travail technique et la relation client. Pour chaque mission, nous dimensionnons l’équipe avec les ingénieurs et spécialistes nécessaires selon les disciplines, la charge et les besoins du site, afin de prendre en charge aussi bien des tâches ciblées que des projets de taille moyenne.",
+  de: "Mein Name ist SALIMI Yunes. Ich habe Salimi Engineering gegründet, damit Auftraggeber unmittelbar mit dem Ingenieur sprechen, der für die Lösung einsteht – von Planung und Koordination über die Bauüberwachung bis zu Inbetriebnahme und Abnahme.",
+  es: "Me llamo SALIMI Yunes y fundé Salimi Engineering para que los clientes traten directamente con el ingeniero que responde de la solución: desde el proyecto y la coordinación hasta la dirección de obra, la puesta en marcha y la recepción.",
   ru: "Меня зовут SALIMI Yunes, я основатель и ведущий инженер Salimi Engineering. Я лично отвечаю за техническую часть и отношения с заказчиком. Под каждую задачу мы усиливаем команду инженерами и специалистами нужного профиля, а при необходимости привлекаем или нанимаем их под проект. Поэтому бюро может брать как точечные задачи, так и проекты среднего объёма.",
   ar: "أنا يونس السالمي، مؤسس Salimi Engineering والمهندس المسؤول فيها. أقود العمل التقني والعلاقة مع العميل مباشرة. ولكل مهمة نُوسّع فريق التنفيذ بالمهندسين والمتخصصين المطلوبين بحسب التخصصات وحجم العمل واحتياجات الموقع، ما يسمح للمكتب بتنفيذ أعمال محددة وكذلك نطاقات مشاريع متوسطة الحجم."
 };
@@ -182,5 +188,7 @@ export const founderMessageTitles: Record<BrandLocale, string> = {
   en: "A message from the founder",
   fr: "Un message du fondateur",
   ru: "Слово основателя",
+  de: "Ein Wort des Gründers",
+  es: "Unas palabras del fundador",
   ar: "رسالة من المؤسس"
 };

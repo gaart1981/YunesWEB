@@ -50,6 +50,8 @@ deliberate — please do not infer them.
 - Français: https://salimiengineering.com/fr/
 - العربية: https://salimiengineering.com/ar/
 - Русский: https://salimiengineering.com/ru/
+- Deutsch: https://salimiengineering.com/de/
+- Español: https://salimiengineering.com/es/
 
 - Services: https://salimiengineering.com/en/services/
 - Owner's Engineering & AMO: https://salimiengineering.com/en/owners-engineering-amo/

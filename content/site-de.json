@@ -1,0 +1,953 @@
+{
+  "direction": "ltr",
+  "navigation": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "sectors": "Branchen",
+    "experience": "Erfahrung",
+    "about": "Über das Büro",
+    "contact": "Kontakt",
+    "cta": "Projekt besprechen",
+    "language": "Sprache",
+    "footerDescriptor": "Elektro- und Lüftungsplanung, TGA-Koordination und Projektbegleitung in Marokko.",
+    "footerStatus": "Direkte technische Abstimmung auf Englisch, Französisch und Arabisch",
+    "legal": "Impressum",
+    "privacy": "Datenschutz",
+    "cookies": "Cookie-Richtlinie",
+    "address": "Marokko",
+    "email": "info@salimiengineering.com",
+    "phone": "+212 663 056 547",
+    "skip": "Zum Inhalt springen",
+    "priorExperienceNote": "Ausgewählte frühere Berufserfahrung des Gründers.",
+    "recordScope": "Leistungsumfang",
+    "recordRole": "Rolle"
+  },
+  "pages": {
+    "services": {
+      "seo": {
+        "title": "Planung und Bauüberwachung in Marokko | Salimi Engineering",
+        "description": "Elektro- und Lüftungsplanung, TGA-Koordination, Bauherrenvertretung, Angebotsprüfung und Bauüberwachung in Marokko."
+      },
+      "eyebrow": "Ingenieurleistungen",
+      "title": "Technische Aufgabe schildern – ausführbare Lösung erhalten.",
+      "lead": "Salimi Engineering steigt in jeder Phase ein – Konzept, Planung, Ausschreibung, Bau oder Abnahme – und rechnet, plant, koordiniert, prüft und treibt die technischen Schritte voran, die das Projekt weiterbringen.",
+      "facts": [
+        {
+          "value": "Planung",
+          "label": "Berechnungen und Ausführungsunterlagen"
+        },
+        {
+          "value": "Kontrolle",
+          "label": "Prüfungen, Begehungen und Entscheidungen"
+        },
+        {
+          "value": "Übergabe",
+          "label": "Prüfungen, Mängelabarbeitung und Abnahme"
+        }
+      ],
+      "sectionTitle": "Sechs Ansatzpunkte, die Ihr Projekt stabiler machen",
+      "sectionIntro": "Einzeln beauftragen oder zu einer durchgehenden technischen Begleitung bündeln.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Elektrotechnische Planung",
+          "text": "Lastberechnungen, Energieverteilung, Beleuchtung, Steckdosen- und Kraftstrompläne, Übersichtsschaltpläne, Gerätelisten, Leistungsverzeichnisse und Ausführungspläne.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "02",
+          "title": "Lüftung und technische Gebäudeausrüstung",
+          "text": "Luftmengen, Geräte- und Kanalführung, Stromversorgung und Regelung der HLK-Anlagen, Wartungszugänge und Abstimmung mit Architektur und Tragwerk.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "03",
+          "title": "TGA-Koordination",
+          "text": "Abstimmung von Elektro, Lüftung, Brandschutz und Bauwerksschnittstellen; Kollisionen erkennen; Technikräume, Trassen, Durchbrüche und Zugänge klären.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "04",
+          "title": "Bauherrenvertretung",
+          "text": "Anforderungen festlegen, Planung prüfen, technische Angebote vergleichen, Fabrikatwechsel und Nachträge bewerten und den Bauherrn beraten, bevor Entscheidungen Kosten werden.",
+          "href": "owners-engineering-amo"
+        },
+        {
+          "number": "05",
+          "title": "Planungsprüfung und Bauüberwachung",
+          "text": "Freigabeunterlagen prüfen, Baustellenanfragen beantworten, Ausführung kontrollieren, Mängel erfassen, Nachbesserungen verfolgen und Prüfungen bestätigen.",
+          "href": "owners-engineering-amo"
+        },
+        {
+          "number": "06",
+          "title": "Technische Begleitung vor Ort in Marokko",
+          "text": "Bestandsaufnahmen, Termine mit Unternehmern, technische Berichte, regelmäßige Vertretung, Begleitung der Inbetriebnahme und Klärung vor Ort.",
+          "href": "local-engineering-partner-morocco"
+        }
+      ],
+      "processTitle": "Ein klarer Weg vom ersten Gespräch bis zur kontrollierten Übergabe",
+      "process": [
+        {
+          "title": "Einordnen",
+          "text": "Projektstand, vorhandene Unterlagen, Randbedingungen vor Ort und die anstehende Entscheidung bewerten."
+        },
+        {
+          "title": "Festlegen",
+          "text": "Leistungsumfang, Ergebnisse, Schnittstellen, Zuständigkeiten und Berichtsrhythmus verbindlich festlegen."
+        },
+        {
+          "title": "Durchführen",
+          "text": "Planen, koordinieren, prüfen oder überwachen – mit nachvollziehbaren Maßnahmen, Verantwortlichen und Terminen."
+        },
+        {
+          "title": "Abschließen",
+          "text": "Prüfungen, offene Punkte, Dokumentation und Abnahmereife bestätigen."
+        }
+      ],
+      "cta": {
+        "title": "Unklar, welche Leistung Sie brauchen?",
+        "text": "Schildern Sie das technische Problem. Wir bestimmen den kleinsten sinnvollen Schritt und die dafür nötigen Unterlagen.",
+        "button": "Projekt besprechen",
+        "href": "contact"
+      },
+      "engagementRoles": {
+        "title": "In welcher Rolle wir arbeiten",
+        "items": [
+          {
+            "title": "Berater des Bauherrn",
+            "text": "Wir vertreten Ihr technisches Interesse: Planung prüfen, Leistungsumfang hinterfragen, Angebote der Unternehmer nachrechnen."
+          },
+          {
+            "title": "Planungskapazität",
+            "text": "Wir liefern die Berechnungen, Pläne und Leistungsverzeichnisse, mit denen Ihr Projekt kalkuliert und gebaut werden kann."
+          },
+          {
+            "title": "Projektkoordination",
+            "text": "Wir klären Schnittstellen zwischen Gewerken, Planern und Unternehmern, bevor sie auf der Baustelle auftreten."
+          },
+          {
+            "title": "Partner vor Ort",
+            "text": "Wir übernehmen Begehungen, Koordination der Unternehmer und technische Vertretung in Marokko."
+          }
+        ]
+      },
+      "engagementFormats": {
+        "title": "Beauftragungsformen",
+        "items": [
+          {
+            "title": "Punktuelle Fachaufgabe",
+            "text": "Eine Prüfung, eine Begehung oder eine Zweitmeinung zu einer klar umrissenen Frage."
+          },
+          {
+            "title": "Definiertes Planungspaket",
+            "text": "Ein vereinbarter Planungsumfang in vereinbarter Detailtiefe."
+          },
+          {
+            "title": "Regelmäßige Vertretung vor Ort",
+            "text": "Geplante Begehungen und Berichte für Auftraggeber im Ausland."
+          },
+          {
+            "title": "Begleitung einer Projektphase",
+            "text": "Unterstützung in Planung, Ausschreibung, Bau oder Inbetriebnahme."
+          },
+          {
+            "title": "Mittelgroßer Projektumfang",
+            "text": "Ein größerer Umfang, bearbeitet von einem für den Auftrag zusammengestellten Team."
+          }
+        ]
+      },
+      "teamModel": {
+        "title": "Kapazität nach Umfang",
+        "text": "Das Büro arbeitet mit einem schlanken Kern und zieht Fachingenieure und Spezialisten je nach Auftrag hinzu. Die technische Gesamtverantwortung bleibt beim verantwortlichen Ingenieur.",
+        "points": [
+          "Umfang, Schnittstellen und Berichtswege vor Beginn vereinbart",
+          "Fachingenieure werden bei Bedarf für den Auftrag hinzugezogen",
+          "Präsenz vor Ort richtet sich nach dem Projekt, nicht nach einem Standardpaket",
+          "Ein verantwortlicher technischer Ansprechpartner durchgehend"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Erfahrung hinter diesen Leistungen"
+      }
+    },
+    "owners-engineering-amo": {
+      "seo": {
+        "title": "Bauherrenvertretung und Bauüberwachung in Marokko | Salimi Engineering",
+        "description": "Unabhängige Planungsprüfung, Angebotsvergleich, Bauüberwachung und technische Vertretung für Bauherren in Marokko."
+      },
+      "eyebrow": "Bauherrenvertretung und Bauüberwachung",
+      "title": "Technische Kontrolle behalten – auch ohne eigene Planungsabteilung.",
+      "lead": "Wir arbeiten auf der Seite des Bauherrn: prüfen, was vorgeschlagen wird, decken Lücken auf, dokumentieren Risiken und verfolgen die Maßnahmen über Planung, Bau, Prüfung und Abnahme.",
+      "facts": [
+        {
+          "value": "Unabhängig",
+          "label": "Technische Bewertung im Interesse des Bauherrn"
+        },
+        {
+          "value": "Dokumentiert",
+          "label": "Entscheidungen, Risiken und Maßnahmen"
+        },
+        {
+          "value": "Vor Ort",
+          "label": "Begehung und Nachweis"
+        }
+      ],
+      "sectionTitle": "Was wir für den Bauherrn kontrollieren",
+      "sectionIntro": "Der Auftrag kann mit einer einzelnen Prüfung beginnen und als technische Vertretung über das gesamte Projekt fortgeführt werden.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Anforderungen und Leistungsumfang",
+          "text": "Betriebliche Anforderungen, technische Kriterien, Leistungsgrenzen, Zuständigkeiten und fehlende Vorgaben klären, bevor die Planung weiterläuft."
+        },
+        {
+          "number": "02",
+          "title": "Planungsprüfung",
+          "text": "Berechnungen, Pläne, Gerätewahl, Schnittstellen, Wartbarkeit, Ausführbarkeit und Widerspruchsfreiheit zwischen den Gewerken prüfen."
+        },
+        {
+          "number": "03",
+          "title": "Ausschreibung und Angebotsvergleich",
+          "text": "Leistungsverzeichnisse erstellen oder prüfen, Bieterfragen beantworten und Angebote nach Umfang, Konformität und Risiko vergleichen – nicht allein nach Preis."
+        },
+        {
+          "number": "04",
+          "title": "Nachträge und Fabrikatwechsel",
+          "text": "Vorgeschlagene Alternativen, verdeckte Leistungskürzungen, Folgen für die Leistungsfähigkeit, Auswirkungen auf die Wartung und die technische Begründung bewerten."
+        },
+        {
+          "number": "05",
+          "title": "Begehungen auf der Baustelle",
+          "text": "Ausführungsqualität, Übereinstimmung mit den freigegebenen Unterlagen, Baufortschritt, Mängelbeseitigung und Prüfbereitschaft nachweisen."
+        },
+        {
+          "number": "06",
+          "title": "Inbetriebnahme und Abnahme",
+          "text": "Prüfungen, Mängellisten, Bestandsunterlagen, Betriebsdokumente und die technische Schlussabnahme begleiten."
+        }
+      ],
+      "processTitle": "Typischer Ablauf auf Bauherrenseite",
+      "process": [
+        {
+          "title": "Unterlagen sichten",
+          "text": "Pläne, Leistungsverzeichnisse, Angebote, Protokolle, Fotos und offene Punkte zusammentragen."
+        },
+        {
+          "title": "Risiken einordnen",
+          "text": "Kritische Risiken, Planungslücken, vertragliche Unschärfen und Ausführungsmängel voneinander trennen."
+        },
+        {
+          "title": "Entscheidungen treiben",
+          "text": "Knappe Empfehlungen aussprechen, Maßnahmen zuweisen und deren Erledigung mit dem Projektteam nachhalten."
+        },
+        {
+          "title": "Ergebnis prüfen",
+          "text": "Die umgesetzte Lösung begehen und dem Bauherrn die verbleibenden Risiken benennen."
+        }
+      ],
+      "bulletTitle": "Ergebnisse, mit denen der Bauherr arbeiten kann",
+      "bullets": [
+        "Technisches Anforderungsprofil und Zuständigkeitsmatrix",
+        "Prüfbericht zur Planung mit klarer Priorisierung",
+        "Angebotsvergleich und Protokoll der Bieterfragen",
+        "Bewertung von Nachträgen und Fabrikatwechseln",
+        "Begehungsberichte mit Fotodokumentation",
+        "Maßnahmenliste, Mängelliste und Begleitung der Inbetriebnahme"
+      ],
+      "cta": {
+        "title": "Brauchen Sie jemanden, der die Planung in Ihrem Interesse hinterfragt?",
+        "text": "Senden Sie uns die Pläne, das Angebot oder das Problem von der Baustelle. Wir beginnen mit einer gezielten unabhängigen Prüfung.",
+        "button": "Sachverhalt besprechen",
+        "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Diese Leistung passt, wenn",
+        "items": [
+          "Sie in ein Projekt investieren oder es umsetzen, ohne eigene Planungsabteilung.",
+          "Ein Angebot vollständig aussieht, Sie aber nicht prüfen können, was fehlt.",
+          "Fabrikatwechsel oder Nachträge vorgeschlagen werden und die Folgen unklar bleiben.",
+          "Auf der Baustelle gebaut wird und niemand unabhängig gegen die freigegebene Planung prüft.",
+          "Prüfungen und Abnahme näher rücken und die Dokumentation unvollständig ist."
+        ]
+      },
+      "relatedExperience": {
+        "title": "Einschlägige frühere Erfahrung"
+      }
+    },
+    "electrical-mep-engineering": {
+      "seo": {
+        "title": "Elektro-, Lüftungs- und TGA-Planung in Marokko | Salimi Engineering",
+        "description": "Lastberechnungen, Energieverteilung, Beleuchtung, Lüftung, Sicherheitstechnik, TGA-Koordination und Ausführungsplanung."
+      },
+      "eyebrow": "Elektro-, Lüftungs- und TGA-Planung",
+      "title": "Anlagen, die sich bauen, betreiben und warten lassen.",
+      "lead": "Wir erarbeiten und koordinieren Planungspakete in der Tiefe, die Vergabe und Ausführung verlangen – keine Präsentationspläne.",
+      "facts": [
+        {
+          "value": "Strom",
+          "label": "Lasten, Verteilung und Schutz"
+        },
+        {
+          "value": "Luft",
+          "label": "Lüftung und HLK-Schnittstellen"
+        },
+        {
+          "value": "TGA",
+          "label": "Koordinierte Ausführungsunterlagen"
+        }
+      ],
+      "sectionTitle": "Leistungsumfang von der Berechnung bis zur Baubegleitung",
+      "sectionIntro": "Der Umfang richtet sich nach Projektstand und vorhandenen Unterlagen.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Elektrische Lasten und Verteilung",
+          "text": "Anschlusswertlisten, Bedarfsermittlung, Verteilstruktur, Schaltschranklisten, Einspeisungen, Ersatzstromversorgung und Übersichtsschaltpläne."
+        },
+        {
+          "number": "02",
+          "title": "Beleuchtung und Kleinverbraucher",
+          "text": "Beleuchtungspläne, Schaltungen, Steckdosenpläne, Arbeitsplatzversorgung, Geräteanschlüsse, Sicherheits- und Außenbeleuchtung."
+        },
+        {
+          "number": "03",
+          "title": "Lüftung und HLK-Schnittstellen",
+          "text": "Luftmengen, Geräte- und Trassenkoordination, Stromversorgung, Regelung, Anordnung der Technikräume und Wartungszugänge."
+        },
+        {
+          "number": "04",
+          "title": "Schwachstrom- und Sicherheitsanlagen",
+          "text": "Strukturierte Verkabelung, Datentechnik, Sicherheitstechnik, Brandmeldeanlage, Sprachalarmierung und Ansteuerung der Löschanlagen."
+        },
+        {
+          "number": "05",
+          "title": "TGA-Koordination",
+          "text": "Abstimmung mit Architektur und Tragwerk, Kollisionen auflösen, Durchbrüche, Deckenbereiche, Technikräume, Gerätezugänge und Bauleistungen klären."
+        },
+        {
+          "number": "06",
+          "title": "Ausschreibung und Baubegleitung",
+          "text": "Leistungsverzeichnisse, Mengen, Bieterfragen, Prüfung von Werkstattplänen, technische Anfragen, Fabrikatwechsel, Begehungen und Begleitung der Inbetriebnahme."
+        }
+      ],
+      "processTitle": "Wie die Planung ausführungsreif wird",
+      "process": [
+        {
+          "title": "Grundlagen",
+          "text": "Lasten, Nutzung, Betrieb, Normen, Randbedingungen und Planungsannahmen bestätigen."
+        },
+        {
+          "title": "Planung",
+          "text": "Berechnungen, Schemata, Grundrisse, Gerätewahl und Leistungsverzeichnisse erarbeiten."
+        },
+        {
+          "title": "Koordinieren",
+          "text": "Schnittstellen zu Architektur, Tragwerk, Lieferanten und anderen Gewerken klären."
+        },
+        {
+          "title": "Baubegleitung",
+          "text": "Ausführungsunterlagen prüfen, Anfragen beantworten, wesentliche Bauzustände begehen und Prüfungen begleiten."
+        }
+      ],
+      "bulletTitle": "Typische Planungsergebnisse",
+      "bullets": [
+        "Anschlusswertlisten und Planungsgrundlagen",
+        "Verteilkonzepte und Übersichtsschaltpläne",
+        "Beleuchtungs-, Steckdosen- und Geräteanschlusspläne",
+        "Lüftungspläne und HLK-Schnittstellen",
+        "Unterlagen zu Brandmeldung, Sprachalarmierung und Schwachstrom",
+        "Leistungsverzeichnisse, Gerätelisten und Ausführungspläne"
+      ],
+      "cta": {
+        "title": "Brauchen Sie Pläne, die Unternehmer kalkulieren und bauen können?",
+        "text": "Senden Sie Grundrisse, Geräteliste und den aktuellen Planungsstand. Wir benennen die fehlenden Berechnungen, Pläne und Koordinationsleistungen.",
+        "button": "Fachgespräch anfragen",
+        "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Diese Leistung passt, wenn",
+        "items": [
+          "Sie Elektro- und TGA-Unterlagen brauchen, die für Vergabe und Ausführung taugen.",
+          "Gewerke getrennt geplant wurden und nun auf der Baustelle kollidieren.",
+          "Anschlusswerte, Verteilung oder Ersatzstromversorgung festzulegen sind.",
+          "Brandmeldung, Sprachalarmierung und Schwachstromschnittstellen abzustimmen sind.",
+          "Ein Unternehmer während der Ausführung technische Antworten benötigt."
+        ]
+      },
+      "teamModel": {
+        "title": "Wie das Planungsteam besetzt wird",
+        "text": "Elektro- und TGA-Umfänge betreffen meist mehrere Gewerke. Spezialisten werden je nach betroffenen Anlagen für den Auftrag hinzugezogen, während der verantwortliche Ingenieur die Planung koordiniert und dafür einsteht.",
+        "points": [
+          "Fachingenieure für die Anlagen im Leistungsumfang",
+          "Ein abgestimmter Unterlagensatz statt paralleler, unverbundener Planungen",
+          "Schnittstellenentscheidungen werden dokumentiert, nicht der Baustelle überlassen",
+          "Der verantwortliche Ingenieur steht für das gesamte Paket ein"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Einschlägige frühere Erfahrung"
+      }
+    },
+    "local-engineering-partner-morocco": {
+      "seo": {
+        "title": "Ingenieur und Bauvertretung vor Ort in Marokko | Salimi Engineering",
+        "description": "Bestandsaufnahmen, Koordination der Unternehmer, technische Berichte, Bauüberwachung und Begleitung der Inbetriebnahme für internationale Teams in Marokko."
+      },
+      "eyebrow": "Ingenieurpartner vor Ort in Marokko",
+      "title": "Ihre technischen Augen und Ihre Stimme auf der Baustelle.",
+      "lead": "Für Teams, die ein marokkanisches Projekt aus dem Ausland steuern, stellen wir technische Präsenz vor Ort sicher – ohne Kosten und Vorlauf einer eigenen Niederlassung.",
+      "facts": [
+        {
+          "value": "Einmalig",
+          "label": "Begehung oder gezielte Fachprüfung"
+        },
+        {
+          "value": "Regelmäßig",
+          "label": "Vertretung vor Ort und Berichte"
+        },
+        {
+          "value": "Ganze Phase",
+          "label": "Planung, Bau oder Abnahme"
+        }
+      ],
+      "sectionTitle": "Umfang der Begleitung vor Ort wählen",
+      "sectionIntro": "Der Auftrag richtet sich nach den Entscheidungen, die Ihr Team aus der Ferne ohne Nachweise von der Baustelle nicht belastbar treffen kann.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Einmalige Fachaufgabe",
+          "text": "Begehung, Bestandsaufnahme, Prüfung von Unterlagen, Bewertung eines Unternehmers oder ein knapper Fachbericht zu einer klar umrissenen Frage."
+        },
+        {
+          "number": "02",
+          "title": "Regelmäßige Vertretung vor Ort",
+          "text": "Geplante Begehungen, Besprechungen, Fortschrittsnachweise, Verfolgung offener Punkte und strukturierte Berichte an das internationale Projektteam."
+        },
+        {
+          "number": "03",
+          "title": "Begleitung einer Projektphase",
+          "text": "Feste Begleitung in Planung, Ausschreibung, Bau, Prüfung oder Abnahme – mit klarem Umfang und klaren Berichtswegen."
+        },
+        {
+          "number": "04",
+          "title": "Koordination von Unternehmern und Lieferanten",
+          "text": "Technische Anforderungen klären, Unterlagen und Maßnahmen nachhalten, Angaben von der Baustelle prüfen und Entscheidungen belegt nach oben geben."
+        },
+        {
+          "number": "05",
+          "title": "Kontrolle der Ausführung",
+          "text": "Kritische Installationen begehen, die Ausführung mit den freigegebenen Unterlagen abgleichen und Mängel bis zur Erledigung verfolgen."
+        },
+        {
+          "number": "06",
+          "title": "Begleitung von Prüfung und Abnahme",
+          "text": "Prüfungen beiwohnen, Mängellisten verfolgen, Dokumentation kontrollieren und dem Auftraggeber die Abnahmereife melden."
+        }
+      ],
+      "processTitle": "Ein verlässlicher Berichtskreislauf vor Ort",
+      "process": [
+        {
+          "title": "Mandat",
+          "text": "Befugnisse, Berichtsweg, Häufigkeit der Begehungen, erforderliche Nachweise und Eskalationsregeln festlegen."
+        },
+        {
+          "title": "Beobachten",
+          "text": "Fakten von der Baustelle, von Unternehmern, aus Unterlagen und Besprechungen zusammentragen."
+        },
+        {
+          "title": "Handeln",
+          "text": "Vor Ort im Rahmen der Befugnis entscheiden und alles Zustimmungspflichtige an den Auftraggeber geben."
+        },
+        {
+          "title": "Berichten",
+          "text": "Knapper Status, Risiken, Fotos, Maßnahmen und Empfehlungen."
+        }
+      ],
+      "bulletTitle": "Sinnvoll, wenn Ihr Team braucht",
+      "bullets": [
+        "Eine technische Bestandsaufnahme vor Investition oder Mobilisierung",
+        "Eine Schnittstelle zu marokkanischen Unternehmern und Planern",
+        "Unabhängige Bestätigung von Fortschritt und Qualität",
+        "Schnelle Klärung der Verhältnisse vor Ort und technischer Randbedingungen",
+        "Regelmäßige Berichte ohne eigene Niederlassung im Land"
+      ],
+      "cta": {
+        "title": "Steuern Sie ein Projekt in Marokko aus dem Ausland?",
+        "text": "Ein kurzes Gespräch klärt, was vor Ort zu prüfen ist, wie oft begangen wird und in welcher Form Ihr Team Berichte braucht.",
+        "button": "WhatsApp schreiben",
+        "href": "https://wa.me/212663056547"
+      },
+      "clientSituation": {
+        "title": "Diese Leistung passt, wenn",
+        "items": [
+          "Ihr Projekt liegt in Marokko, Ihr Team nicht.",
+          "Vor einer Investitions- oder Mobilisierungsentscheidung Fakten vor Ort zu prüfen sind.",
+          "Unternehmer einen technischen Ansprechpartner vor Ort brauchen, der im vereinbarten Rahmen entscheidet.",
+          "Berichte zu Fortschritt und Qualität eine Zentrale im Ausland in verwertbarer Form erreichen müssen.",
+          "Prüfung und Abnahme eine Anwesenheit verlangen, die Sie aus dem Ausland nicht leisten können."
+        ]
+      },
+      "teamModel": {
+        "title": "Kapazität vor Ort",
+        "text": "Die Präsenz richtet sich nach dem Auftrag: eine einzelne Begehung, ein fester Rhythmus oder durchgehende Begleitung während der Bauphase – bei Bedarf mit zusätzlichen Ingenieuren.",
+        "points": [
+          "Mandat, Berichtsweg und Eskalation schriftlich vereinbart",
+          "Häufigkeit der Begehungen nach Projektphase",
+          "Zusätzliche Ingenieure bei entsprechender Auslastung",
+          "Feststellungen belegt durch Fotos und schriftliche Berichte"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Einschlägige frühere Erfahrung"
+      }
+    },
+    "sectors": {
+      "seo": {
+        "title": "Projekterfahrung nach Branchen | Salimi Engineering",
+        "description": "Elektro, Lüftung, TGA und Bauüberwachung für Büro-, Industrie-, Infrastruktur-, Wohn- und Sonderbauten."
+      },
+      "eyebrow": "Projektumfelder",
+      "title": "Andere Bauwerke. Dieselbe Anforderung: Anlagen, die vor Ort funktionieren.",
+      "lead": "Detaillierte Planung und praxisnahe Bauüberwachung für Büro-, Industrie-, Infrastruktur-, Wohn- und technisch anspruchsvolle Projekte.",
+      "facts": [
+        {
+          "value": "Gewerbe",
+          "label": "Büros und Ausbau"
+        },
+        {
+          "value": "Industrie",
+          "label": "Produktionslasten und Medien"
+        },
+        {
+          "value": "Infrastruktur",
+          "label": "Verteilte Anlagen und Sanierung"
+        }
+      ],
+      "sectionTitle": "Wo Planungs- und Baustellenerfahrung zusammen den Unterschied machen",
+      "sectionIntro": "Jede Branche ist über ihre tatsächlichen technischen Schwierigkeiten beschrieben, nicht über ein Marktetikett.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Büroflächen und Ausbau",
+          "text": "Arbeitsplatzversorgung, Beleuchtung, Datentechnik und strukturierte Verkabelung, Sicherheitstechnik, HLK-Einspeisungen, Ausbau in Abschnitten und Koordination im laufenden Betrieb."
+        },
+        {
+          "number": "02",
+          "title": "Industrie und Fertigung",
+          "text": "Anschlusswerte der Produktionsanlagen, Verteilungen, Maschinenaufstellung, Lüftung, Medienschnittstellen, Bauabschnitte und Montage im laufenden Betrieb."
+        },
+        {
+          "number": "03",
+          "title": "Infrastruktur und Außenbeleuchtung",
+          "text": "Außenbeleuchtung, verteilte Energienetze, Sanierungsschnittstellen, Randbedingungen des Bestands, Schemata und Gerätespezifikationen."
+        },
+        {
+          "number": "04",
+          "title": "Wohn- und Privatprojekte",
+          "text": "Stromversorgung, Beleuchtung, Lüftung, Sicherheitstechnik, Smart-Home-Schnittstellen, Brandschutz, unauffällige Integration und Qualitätskontrolle."
+        },
+        {
+          "number": "05",
+          "title": "Rechenzentren und Technikräume",
+          "text": "Versorgungssicherheit, Geräteeinspeisungen, Kälteschnittstellen, Löschtechnik, Überwachung, Wartbarkeit und Betriebssicherheit."
+        }
+      ],
+      "bulletTitle": "Typische Probleme, zu denen wir gerufen werden",
+      "bullets": [
+        "Getrennt geplante Gewerke, die auf der Baustelle kollidieren",
+        "Angebote mit unvollständigem oder unklarem Leistungsumfang",
+        "Fabrikatwechsel ohne Bewertung der Folgen",
+        "Ausführung ohne ausreichende Zugänglichkeit und Wartbarkeit",
+        "Verzögerte Abnahme wegen unvollständiger Dokumentation"
+      ],
+      "cta": {
+        "title": "Beschreiben Sie das Bauwerk und das technische Risiko – nicht nur die Branche.",
+        "text": "Wir benennen die Berechnungen, Prüfungen, Koordination und Präsenz vor Ort, die dieser Fall verlangt.",
+        "button": "Projekt besprechen",
+        "href": "contact"
+      },
+      "relatedExperience": {
+        "title": "Frühere Erfahrung nach Projektumfeld"
+      }
+    },
+    "experience": {
+      "seo": {
+        "title": "Projekterfahrung | Salimi Engineering",
+        "description": "Ausgewählte frühere Berufserfahrung in Büro-, Industrie- und Infrastrukturbauten, Wohnprojekten und komplexer Anlagentechnik."
+      },
+      "eyebrow": "Ausgewählte Berufserfahrung",
+      "title": "Reale Ingenieurarbeit in internationalen Projektumfeldern.",
+      "lead": "Die folgenden Beispiele zeigen Art und Tiefe der geleisteten Arbeit: Berechnungen, Verteilkonzepte, Beleuchtungs- und Kraftstrompläne, Sicherheitstechnik, Ausführungsunterlagen und Bauüberwachung.",
+      "facts": [
+        {
+          "value": "25 Geschosse",
+          "label": "Elektroanlagen eines Bürogebäudes"
+        },
+        {
+          "value": "7.000 m²",
+          "label": "Planungsumfang eines Callcenters"
+        },
+        {
+          "value": "Gewerbe · Industrie · Infrastruktur",
+          "label": "Projektumfelder"
+        }
+      ],
+      "confidentiality": {
+        "title": "Warum hier keine Projektfotos stehen",
+        "text": "Wir veröffentlichen keine Pläne von Auftraggebern, keine Ausschreibungsunterlagen und keine Baustellenfotos. Was uns anvertraut wird, bleibt bei uns. Die folgenden Einträge nennen den Planungsumfang und die eigene Rolle – genau das, was ein Fachprüfer beurteilen kann – und nichts darüber hinaus."
+      },
+      "sectionTitle": "Ausgewählte Projektbeispiele",
+      "sectionIntro": "Wir trennen die frühere Berufserfahrung des Gründers von Aufträgen, die Salimi Engineering ausgeführt hat. Sofern nicht anders vermerkt, gehört ein Eintrag zur ersten Gruppe. Ihr Projekt würden wir ebenso beschreiben.",
+      "projects": [
+        {
+          "id": "mailru-office",
+          "sector": "Büroflächen",
+          "title": "Bürogebäude Mail.ru",
+          "location": "Russland",
+          "scope": "Energieverteilung und Beleuchtungsanlagen für ein 25-geschossiges Bürogebäude.",
+          "role": "Elektrotechnische Planung"
+        },
+        {
+          "id": "beeline-office",
+          "sector": "Büro- und Technikflächen",
+          "title": "Bürogebäude Beeline",
+          "location": "Russland",
+          "scope": "Starkstromanlagen und Beleuchtung für ein dreigeschossiges Bürogebäude sowie eine gesonderte Elektroplanung für die Kälteversorgung des Rechenzentrums.",
+          "role": "Entwurfs- und Ausführungsplanung"
+        },
+        {
+          "id": "microsoft-offices",
+          "sector": "Büroflächen",
+          "title": "Büroflächen Microsoft",
+          "location": "Russland",
+          "scope": "Energieverteilung und Beleuchtung für Büroflächen im Hauptgebäude von Microsoft.",
+          "role": "Elektrotechnische Planung"
+        },
+        {
+          "id": "tinkoff-callcentre",
+          "sector": "Banken und Büros",
+          "title": "Callcenter der Tinkoff-Bank",
+          "location": "Russland",
+          "scope": "Lastberechnungen, Beleuchtung, Steckdosen- und Geräteanschlüsse, Stromversorgung von Lüftung und Klimatisierung, Übersichtsschaltpläne, Leistungsverzeichnisse, Brandmeldeanlage und Ansteuerung der Löschtechnik.",
+          "role": "Koordinierte Ausführungsplanung"
+        },
+        {
+          "id": "citibank-callcentre",
+          "sector": "Banken und Büros",
+          "title": "Callcenter der Citibank",
+          "location": "Rjasan, Russland · 7.000 m²",
+          "scope": "Elektrische Lasten, Beleuchtung, Kraftstrompläne, HLK-Einspeisungen, Verteilkonzepte, Gerätespezifikationen, Brandmeldeanlage, Sprachalarmierung und Ansteuerung der Löschanlagen.",
+          "role": "Koordinierte Elektro- und Sicherheitstechnikplanung"
+        },
+        {
+          "id": "faurecia-plant",
+          "sector": "Automobilfertigung",
+          "title": "Produktionswerk Faurecia Automotive",
+          "location": "Region Kaluga, Russland",
+          "scope": "Lastberechnungen, Verteilkonzept und Geräteaufstellung für Fertigungsanlagen von Kunststoffkomponenten für Fahrzeuge von Renault, Peugeot und Citroën.",
+          "role": "Industrielle Elektroplanung"
+        },
+        {
+          "id": "tram-lighting",
+          "sector": "Verkehrsinfrastruktur",
+          "title": "Außenbeleuchtung von Straßenbahntrassen",
+          "location": "Moskau, Perm, Lipezk, Kursk und weitere Städte",
+          "scope": "Außenbeleuchtungspläne, Versorgungsschemata für sanierte Abschnitte sowie Geräte- und Materialspezifikationen.",
+          "role": "Planung von Infrastrukturbeleuchtung"
+        },
+        {
+          "id": "manor-systems",
+          "sector": "Privater Wohnbau",
+          "title": "Anlagentechnik eines Herrenhauses",
+          "location": "Schweiz",
+          "scope": "Überwachung und Bewertung der Planung von Schwachstrom-, Sicherheits-, Smart-Home- und Brandschutzanlagen im Auftrag des Eigentümers.",
+          "role": "Technische Prüfung und Überwachung für den Eigentümer"
+        }
+      ],
+      "bulletTitle": "Was diese Erfahrung belegt",
+      "bullets": [
+        "Fähigkeit, vollständige Elektropakete zu berechnen und zu dokumentieren",
+        "Erfahrung mit Büros, Rechenzentren, Produktionsanlagen und Infrastruktur",
+        "Koordination von Elektro-, HLK-, Brandschutz- und Schwachstromschnittstellen",
+        "Ausführungstiefe, die für Vergabe und Bau taugt",
+        "Technische Prüfung und Überwachung aus Sicht des Bauherrn"
+      ],
+      "cta": {
+        "title": "Suchen Sie Erfahrung zu einer konkreten technischen Aufgabe?",
+        "text": "Beschreiben Sie Bauwerk, Phase und Anlage. Wir besprechen die nächstliegende vergleichbare Arbeit und das vorgeschlagene Vorgehen.",
+        "button": "Kontakt aufnehmen",
+        "href": "contact"
+      }
+    },
+    "about": {
+      "seo": {
+        "title": "Über das Büro | Salimi Engineering",
+        "description": "Unabhängiges Ingenieurbüro für Elektro- und Lüftungsplanung, TGA-Koordination, Bauüberwachung und Unterstützung des Bauherrn."
+      },
+      "eyebrow": "Über Salimi Engineering",
+      "title": "Ein Büro, das den Plan, den Unternehmer und die Entscheidung des Bauherrn versteht.",
+      "lead": "Wir verbinden detaillierte Planung mit Baukoordination und Kontrolle im Interesse des Bauherrn. Der Kunde spricht direkt mit dem Ingenieur, der die Aufgabe analysiert und die Lösung verfolgt.",
+      "facts": [
+        {
+          "value": "Gründer",
+          "label": "Unmittelbare Einbindung der Leitung"
+        },
+        {
+          "value": "Planung und Baustelle",
+          "label": "Technische Durchgängigkeit"
+        },
+        {
+          "value": "International",
+          "label": "Unterschiedliche Projektumfelder"
+        }
+      ],
+      "profile": {
+        "type": "profile",
+        "eyebrow": "Gründer und verantwortlicher Ingenieur",
+        "title": "SALIMI Yunes",
+        "text": "Salimi Engineering ist ein unabhängiges, gewerkeübergreifendes Ingenieurbüro mit Sitz in Marokko. Die Arbeit umfasst Elektro- und Lüftungsplanung, TGA-Koordination, Leistungsverzeichnisse, die Schnittstelle zu den Unternehmern, Bauüberwachung und die Unterstützung von Bauherren. Die frühere internationale Erfahrung des Gründers umfasst Bürogebäude, ein Automobilwerk, Infrastrukturbeleuchtung, Wohnprojekte sowie komplexe Schwachstrom- und Sicherheitsanlagen.",
+        "quote": "Eine technische Lösung ist erst dann gelungen, wenn sie klar genug für die Kalkulation, abgestimmt genug für die Ausführung und kontrolliert genug für den Betrieb ist.",
+        "imageAlt": "Gründer und verantwortlicher Ingenieur von Salimi Engineering in einem Gebäude aus Beton und Glas."
+      },
+      "sectionTitle": "Warum Kunden direkt mit uns arbeiten",
+      "sectionIntro": "Die Leistung beruht auf persönlicher technischer Verantwortung, nicht auf Schichten von Kundenbetreuung.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Planungskompetenz",
+          "text": "Wir lesen, rechnen und entwickeln die technische Lösung selbst – nicht nur die Unterlagen anderer koordinieren."
+        },
+        {
+          "number": "02",
+          "title": "Baustellenverständnis",
+          "text": "Wir prüfen Ausführbarkeit, Bauablauf, Zugänglichkeit, Schnittstellen, Fabrikatwechsel und die praktischen Folgen von Entscheidungen auf der Baustelle."
+        },
+        {
+          "number": "03",
+          "title": "Sicht des Bauherrn",
+          "text": "Wir übersetzen technische Sachverhalte in klare Optionen, Risiken und Empfehlungen für Entscheider ohne Fachhintergrund."
+        },
+        {
+          "number": "04",
+          "title": "Durchgängigkeit bis zur Abnahme",
+          "text": "Dieselbe technische Leitung begleitet das Projekt von den ersten Studien über Begehungen und Prüfungen bis zum Abschluss."
+        }
+      ],
+      "processTitle": "Die Zusammenarbeit",
+      "process": [
+        {
+          "title": "Direkter Zugang",
+          "text": "Der Kunde spricht mit dem verantwortlichen Ingenieur, nicht mit einem Vertrieb."
+        },
+        {
+          "title": "Klarer Umfang",
+          "text": "Jeder Auftrag definiert Ergebnisse, Befugnisse, Schnittstellen und Reaktionszeiten."
+        },
+        {
+          "title": "Nachvollziehbare Nachweise",
+          "text": "Entscheidungen sind durch Berechnungen, kommentierte Unterlagen, Fotos und Maßnahmenlisten belegt."
+        },
+        {
+          "title": "Spezialisten bei Bedarf",
+          "text": "Weitere Gewerke werden für einen definierten Umfang hinzugezogen, technische Schnittstelle bleibt Salimi Engineering."
+        }
+      ],
+      "cta": {
+        "title": "Beginnen Sie mit einem direkten Fachgespräch.",
+        "text": "Ein kurzes Gespräch zeigt, ob wir für Planung, Prüfung, Baustelle oder Bauherrenvertretung die richtige Wahl sind.",
+        "button": "Projekt besprechen",
+        "href": "contact"
+      },
+      "companyModel": {
+        "title": "Was Salimi Engineering ist",
+        "text": "Ein kleines, inhabergeführtes Ingenieurbüro mit Sitz in Marokko. Es übernimmt klar umrissene Fachaufgaben und mittelgroße Projektumfänge und stellt das Team um die tatsächliche Arbeit herum zusammen, statt Kapazität vorzuhalten, die ein Projekt nicht braucht.",
+        "points": [
+          {
+            "title": "Inhabergeführt, kein Einzelkämpfer",
+            "text": "Ein schlanker Kern; die technische Gesamtverantwortung liegt beim verantwortlichen Ingenieur."
+          },
+          {
+            "title": "Teams nach Umfang",
+            "text": "Fachingenieure und Spezialisten werden für den Auftrag hinzugezogen oder eingestellt."
+          },
+          {
+            "title": "Klare Aufgaben und mittlere Umfänge",
+            "text": "Von der einzelnen Prüfung bis zur Projektphase mit einem eigens zusammengestellten Team."
+          },
+          {
+            "title": "Unmittelbare Verantwortung",
+            "text": "Kundenbeziehung und technische Verantwortung werden nicht an Zwischenstellen abgegeben."
+          }
+        ]
+      },
+      "clientWorkflow": {
+        "title": "Wie die Zusammenarbeit abläuft",
+        "items": [
+          {
+            "title": "Direkter Zugang",
+            "text": "Sie sprechen mit dem verantwortlichen Ingenieur, nicht mit einem Kundenbetreuer."
+          },
+          {
+            "title": "Definierter Umfang",
+            "text": "Ergebnisse, Befugnisse, Schnittstellen und Berichtswege werden vor Beginn vereinbart."
+          },
+          {
+            "title": "Dokumentierte Entscheidungen",
+            "text": "Feststellungen, Risiken und Maßnahmen werden nachvollziehbar festgehalten."
+          },
+          {
+            "title": "Berichte für Ihre Organisation",
+            "text": "Die Berichte sind so aufbereitet, dass eine Zentrale im Ausland damit arbeiten kann."
+          },
+          {
+            "title": "Präsenz nach Bedarf",
+            "text": "Die Anwesenheit richtet sich nach der Projektphase, nicht nach einem Standardpaket."
+          }
+        ]
+      }
+    },
+    "contact": {
+      "seo": {
+        "title": "Kontakt | Salimi Engineering Marokko",
+        "description": "Telefon oder WhatsApp für Elektro- und Lüftungsplanung, TGA-Koordination, Bauherrenvertretung und Bauüberwachung in Marokko."
+      },
+      "eyebrow": "Direkter Kontakt",
+      "title": "Welche technische Aufgabe steht an?",
+      "lead": "Rufen Sie an, schreiben Sie über WhatsApp oder senden Sie eine kurze Projektbeschreibung: Standort, Projektphase, vorhandene Pläne und die anstehende Entscheidung oder das Problem auf der Baustelle.",
+      "facts": [
+        {
+          "value": "+212 663 056 547",
+          "label": "Telefon oder WhatsApp"
+        },
+        {
+          "value": "info@salimiengineering.com",
+          "label": "E-Mail"
+        },
+        {
+          "value": "Marokko",
+          "label": "Projektbegleitung vor Ort"
+        }
+      ],
+      "contact": {
+        "type": "contact",
+        "eyebrow": "Direkter Kontakt",
+        "title": "Salimi Engineering kontaktieren",
+        "intro": "Am schnellsten geht ein kurzer Anruf oder eine WhatsApp-Nachricht. Für eine schriftliche Anfrage beschreiben Sie Bauwerk, Standort, Phase und die benötigte technische Unterstützung.",
+        "email": "info@salimiengineering.com",
+        "phone": "+212 663 056 547",
+        "address": "Marokko",
+        "form": {
+          "name": "Name",
+          "company": "Unternehmen",
+          "email": "Geschäftliche E-Mail",
+          "service": "Worum geht es?",
+          "message": "Standort, Phase, vorhandene Unterlagen und technische Aufgabe",
+          "submit": "Anfrage senden",
+          "services": [
+            "Elektrotechnische Planung",
+            "Lüftung und TGA-Koordination",
+            "Technische Prüfung für den Bauherrn",
+            "Bauüberwachung",
+            "Technische Begleitung vor Ort in Marokko",
+            "Begleitung von Prüfung und Abnahme",
+            "Sonstiges"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Lieber WhatsApp?",
+        "text": "Senden Sie eine kurze Nachricht mit Standort und Anliegen. Wir fordern dann die passenden Unterlagen an oder vereinbaren ein Gespräch.",
+        "button": "WhatsApp schreiben",
+        "href": "https://wa.me/212663056547"
+      },
+      "whatToSend": {
+        "title": "Was hilfreich ist",
+        "items": [
+          "Standort und Art des Bauwerks",
+          "Aktuelle Phase: Konzept, Planung, Ausschreibung, Bau oder Abnahme",
+          "Vorhandene Pläne, Leistungsverzeichnisse oder Angebote",
+          "Die Entscheidung oder das Problem, das technische Klärung braucht",
+          "Ihr Zeitrahmen und die weiteren Beteiligten"
+        ]
+      },
+      "privacyNote": "Die übermittelten Angaben werden ausschließlich zur Prüfung und Beantwortung Ihrer Anfrage verwendet. Bitte senden Sie mit einer Erstanfrage keine vertraulichen Pläne oder sensiblen Geschäftsdaten."
+    },
+    "legal-notice": {
+      "seo": {
+        "title": "Impressum | Salimi Engineering",
+        "description": "Rechtliche Angaben zur Website von Salimi Engineering."
+      },
+      "eyebrow": "Impressum",
+      "title": "Impressum",
+      "lead": "Angaben zum Anbieter und zur Nutzung dieser Website.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Anbieter",
+          "paragraphs": [
+            "Marke der Website: Salimi Engineering.",
+            "Verantwortlich und fachlicher Kontakt: SALIMI Yunes, Marokko.",
+            "E-Mail: info@salimiengineering.com. Telefon: +212 663 056 547."
+          ]
+        },
+        {
+          "title": "Zur Website",
+          "paragraphs": [
+            "Die Website stellt unabhängige Ingenieur- und Projektleistungen dar.",
+            "Die technischen Angaben sind allgemein und ersetzen kein projektbezogenes Angebot, keine Berechnung, keinen Vertrag und keine fachliche Anweisung."
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "seo": {
+        "title": "Datenschutz | Salimi Engineering",
+        "description": "Wie Angaben aus Projektanfragen behandelt werden."
+      },
+      "eyebrow": "Datenschutz",
+      "title": "Datenschutz",
+      "lead": "Wie über das Anfrageformular übermittelte Angaben verwendet werden.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Erhobene Angaben",
+          "paragraphs": [
+            "Das Formular kann Name, Unternehmen, geschäftliche E-Mail-Adresse, gewünschte Leistung und Projektbeschreibung erfassen.",
+            "Senden Sie mit der Erstanfrage keine vertraulichen Pläne, Ausweisdaten oder sensiblen Geschäftsdaten."
+          ]
+        },
+        {
+          "title": "Zweck",
+          "paragraphs": [
+            "Die Angaben werden ausschließlich zur Prüfung und Beantwortung Ihrer Anfrage verwendet.",
+            "Berichtigung oder Löschung können Sie unter info@salimiengineering.com verlangen."
+          ]
+        }
+      ]
+    },
+    "cookie-policy": {
+      "seo": {
+        "title": "Cookie-Richtlinie | Salimi Engineering",
+        "description": "Angaben zu Cookies und technischer Speicherung auf dieser Website."
+      },
+      "eyebrow": "Cookies",
+      "title": "Cookie-Richtlinie",
+      "lead": "Angaben zur technischen Speicherung auf dieser Website.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Notwendige Technik",
+          "paragraphs": [
+            "Die Website kann unbedingt erforderliche Plattform- und Sicherheitsmechanismen nutzen, um Seiten auszuliefern und Anfragen zu verarbeiten."
+          ]
+        },
+        {
+          "title": "Analyse",
+          "paragraphs": [
+            "Marketing- oder Analysetechnologien werden hier beschrieben, sobald sie eingesetzt werden."
+          ]
+        }
+      ]
+    }
+  }
+}

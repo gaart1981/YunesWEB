@@ -87,7 +87,7 @@ const REQUIRED = [
   ["founder", /id="founder"/],
   ["cta", /class="contact-section"/]
 ];
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   const file = join(OUT, locale, "index.html");
   if (!existsSync(file)) { fail("architecture", `${file} missing`); continue; }
   const html = readFileSync(file, "utf8");
@@ -123,7 +123,7 @@ const PAGE_CONTRACT = {
   "about": ["model-layout", "workflow-rows", "profile-layout"],
   "contact": ["what-to-send", "privacy-note"]
 };
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const [route, required] of Object.entries(PAGE_CONTRACT)) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) { fail("architecture", `${file} missing`); continue; }
@@ -136,7 +136,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 }
 
 /* --------------- §13 legal pages must not carry marketing hero actions */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["legal-notice", "privacy-policy", "cookie-policy"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -153,7 +153,7 @@ const BANNED_COPY = [
   /\bworld-class\b/i, /\bcutting-edge\b/i, /\bbest-in-class\b/i,
   /\bseamless\b/i, /\bunmatched\b/i, /\bguaranteed\b/i
 ];
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "services", "about", "contact", "experience"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -173,7 +173,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 
 /* Contact must be in the desktop nav on BOTH page types, and the header CTA
    must be a project action rather than a telephone link. */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "services", "about", "experience", "sectors", "contact"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -267,7 +267,7 @@ else ok();
    when clicked on a desktop browser, so a CTA styled as the main action but
    wired to tel: reads as a broken button. Phone numbers stay clickable in the
    footer and contact block, where they are presented as a number, not a CTA. */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "services", "experience", "about", "sectors", "contact",
                        "owners-engineering-amo", "electrical-mep-engineering",
                        "local-engineering-partner-morocco"]) {
@@ -319,7 +319,7 @@ if (existsSync(join(OUT, "icon.svg"))) {
   else ok();
 }
 
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "about", "contact", "services", "experience"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -493,7 +493,7 @@ if (darkShare > 0.32)
 else ok();
 
 /* Sand is an accent on dark only: it fails contrast on Porcelain (1.9:1). */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "services", "about"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -515,7 +515,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
    technical drawings that make no claim about any project.
    ========================================================================== */
 const ALLOWED_IMAGE_DIRS = ["/images/brand/", "/images/people/", "/images/graphics/"];
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "services", "about", "experience", "contact", "sectors",
                        "owners-engineering-amo", "electrical-mep-engineering",
                        "local-engineering-partner-morocco"]) {
@@ -573,7 +573,7 @@ for (const dir of ["graphics", "brand"]) {
 
 /* The confidentiality statement and the attribution standard must be present
    on every localised experience page. */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   const file = join(OUT, locale, "experience", "index.html");
   if (!existsSync(file)) continue;
   const html = readFileSync(file, "utf8");
@@ -624,7 +624,7 @@ if (navHover) {
    image rather than as a design element. */
 if (/hero-drawing/.test(css)) fail("imagery", "hero-drawing placeholder styles still present");
 else ok();
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["experience", "about", "legal-notice"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -637,7 +637,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 
 /* The WhatsApp link in internal page heroes must not use the reverse colour:
    those heroes are Porcelain, so white text is invisible. */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["services", "about", "sectors", "owners-engineering-amo"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -649,7 +649,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 }
 
 /* The contact page must not offer a call-to-action that navigates to itself. */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   const file = join(OUT, locale, "contact", "index.html");
   if (!existsSync(file)) continue;
   const main = readFileSync(file, "utf8").split("</header>")[1] ?? "";
@@ -686,7 +686,7 @@ if (existsSync("netlify.toml")) {
   /* Every non-default locale must be reachable by negotiation, and the
      regional tags browsers actually send must be covered - a French browser
      reports fr-FR, not fr. */
-  for (const [locale, regional] of [["fr", "fr-FR"], ["ar", "ar-MA"], ["ru", "ru-RU"]]) {
+  for (const [locale, regional] of [["fr", "fr-FR"], ["ar", "ar-MA"], ["ru", "ru-RU"], ["de", "de-DE"], ["es", "es-ES"]]) {
     const rule = rootRules.find((r) => r.to === `/${locale}/`);
     if (!rule) { fail("i18n", `no root rule for ${locale}`); continue; }
     const block = toml.slice(toml.indexOf(`to = "/${locale}/"`));
@@ -703,7 +703,7 @@ if (existsSync("netlify.toml")) {
    decorative: it must keep the visitor on the page they are reading, and each
    option must be announced in its own language.
    ========================================================================== */
-for (const locale of ["en", "fr", "ar", "ru"]) {
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   for (const route of ["", "services", "about", "experience"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
@@ -713,7 +713,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 
     /* Switching language must not send the visitor back to the homepage. */
     const suffix = route ? `/${route}/` : "/";
-    for (const other of ["en", "fr", "ar", "ru"]) {
+    for (const other of ["en", "fr", "ar", "ru", "de", "es"]) {
       if (!menu[0].includes(`href="/${other}${suffix}"`))
         fail("i18n", `/${locale}/${route}/: switcher does not offer ${other} on this page`);
       else ok();

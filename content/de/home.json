@@ -1,0 +1,158 @@
+{
+  "locale": "de",
+  "direction": "ltr",
+  "seo": {
+    "title": "Ingenieurbüro für Elektro- und TGA-Planung in Marokko | Salimi Engineering",
+    "description": "Elektro- und TGA-Planung, Bauherrenvertretung und Bauüberwachung in Marokko. Projektteams werden auf den jeweiligen Auftrag zugeschnitten."
+  },
+  "navigation": {
+    "services": "Leistungen",
+    "approach": "Arbeitsweise",
+    "founder": "Das Büro",
+    "contact": "Kontakt",
+    "cta": "Projekt besprechen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "eyebrow": "Ingenieur- und Projektberatung · Marokko",
+    "title": "Ihr Ingenieurbüro in Marokko",
+    "summary": "Salimi Engineering unterstützt Bauherren, Entwickler, Ingenieurgesellschaften und internationale Projektteams: Bauherrenvertretung, TGA-Koordination und Projektbegleitung vor Ort. Das Team wächst mit dem Auftrag – die technische Verantwortung bleibt in einer Hand.",
+    "primaryCta": "Projekt besprechen",
+    "secondaryCta": "Leistungen ansehen",
+    "whatsappCta": "WhatsApp Salimi Engineering",
+    "trust": "Bauherrenvertretung · Elektro & TGA · Begleitung vor Ort"
+  },
+  "credibility": {
+    "items": [
+      {
+        "title": "Inhabergeführtes Ingenieurbüro",
+        "text": "Eine schlanke Struktur mit unmittelbarer technischer Verantwortung in jedem Auftrag."
+      },
+      {
+        "title": "Internationale Projekterfahrung",
+        "text": "Frühere Arbeiten an Büro-, Industrie-, Infrastruktur- und technischen Sonderbauten."
+      },
+      {
+        "title": "Teams nach Projektbedarf",
+        "text": "Fachingenieure und Spezialisten werden nach Gewerken und Auslastung hinzugezogen."
+      },
+      {
+        "title": "Umsetzung vor Ort in Marokko",
+        "text": "Präsenz auf der Baustelle, Koordination der Unternehmer und technische Vertretung."
+      }
+    ]
+  },
+  "audiences": [
+    "Ausführungsplanung erforderlich",
+    "Ingenieur vor Ort in Marokko gesucht",
+    "Angebote der Unternehmer prüfen lassen",
+    "Ausführungsqualität überwachen lassen",
+    "Inbetriebnahme und Abnahme begleiten"
+  ],
+  "services": {
+    "eyebrow": "Was wir übernehmen",
+    "title": "Ein Ingenieurbüro im Maßstab Ihres Projekts",
+    "summary": "Von der punktuellen Fachprüfung bis zum mittelgroßen Projektauftrag: Das Team wird nach benötigten Gewerken, Umfang und Präsenz vor Ort zusammengestellt.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Bauherrenvertretung und Bauüberwachung",
+        "text": "Leistungsumfang definieren, Planung und Angebote prüfen, Nachträge hinterfragen, Ausführung überwachen und dem Bauherrn belastbare Empfehlungen geben."
+      },
+      {
+        "number": "02",
+        "title": "Elektro-, Lüftungs- und TGA-Planung",
+        "text": "Lastberechnungen, Energieverteilung, Beleuchtung, Lüftungskonzepte, Brandmelde- und Sicherheitstechnik, Leistungsverzeichnisse und koordinierte Ausführungsplanung."
+      },
+      {
+        "number": "03",
+        "title": "Projekt- und Baustellenbegleitung vor Ort",
+        "text": "Bestandsaufnahmen, Koordination der Unternehmer, Baubesprechungen, Fotodokumentation, Klärung offener Punkte, Prüfungen und Abnahme in Marokko."
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Ein belastbarer Ablauf",
+    "title": "Planen. Koordinieren. Überwachen. Übergeben.",
+    "items": [
+      {
+        "title": "Planen",
+        "text": "Betriebliche Anforderungen werden zu Berechnungen, Grundrissen, Schemata, Leistungsverzeichnissen und ausführbaren Lösungen."
+      },
+      {
+        "title": "Koordinieren",
+        "text": "Schnittstellen zwischen Elektro, Lüftung, Brandschutz, Architektur, Tragwerk und Unternehmern werden geklärt, bevor sie den Bauablauf stören."
+      },
+      {
+        "title": "Überwachen",
+        "text": "Freigabeunterlagen und Fabrikatwechsel prüfen, Ausführung kontrollieren, Mängel erfassen und deren Beseitigung bestätigen."
+      },
+      {
+        "title": "Übergeben",
+        "text": "Prüfungen, Inbetriebnahme, Mängelabarbeitung, Dokumentation und Übergabe bis zur Betriebsbereitschaft."
+      }
+    ]
+  },
+  "founder": {
+    "eyebrow": "Inhabergeführtes Ingenieurbüro",
+    "title": "Die technische Verantwortung bleibt direkt – auch wenn das Team wächst.",
+    "text": "Salimi Engineering wird von seinem Gründer und verantwortlichen Ingenieur geführt, der für technische Qualität und die Kundenbeziehung einsteht. Fachingenieure und Spezialisten werden je nach Auftrag hinzugezogen oder eingestellt – so lassen sich sowohl klar umrissene Aufgaben als auch mittelgroße Projektumfänge bearbeiten.",
+    "quote": "Das Team wächst mit dem Projekt. Die Verantwortung bleibt eindeutig.",
+    "imageAlt": "Gründer und verantwortlicher Ingenieur von Salimi Engineering an einem Schreibtisch in einem natürlich belichteten Büro."
+  },
+  "contact": {
+    "eyebrow": "Eine technische Frage genügt als Anfang",
+    "title": "Woran hängt Ihr Projekt gerade?",
+    "text": "Ein erstes Gespräch klärt das Problem, die vorhandenen Unterlagen, die Randbedingungen vor Ort und den schnellsten sinnvollen Schritt.",
+    "button": "Projekt besprechen"
+  },
+  "footer": {
+    "descriptor": "Elektro- und TGA-Planung, Bauherrenvertretung und Projektbegleitung in Marokko",
+    "status": "Direkte technische Abstimmung auf Englisch, Französisch und Arabisch",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "experiencePreview": {
+    "eyebrow": "Nachweise",
+    "title": "Ausgewählte Projekterfahrung",
+    "disclosure": "Sofern nicht anders angegeben, handelt es sich bei den folgenden Beispielen um die frühere berufliche Erfahrung des Gründers.",
+    "cta": "Gesamte Erfahrung ansehen"
+  },
+  "delivery": {
+    "eyebrow": "Leistungsmodell",
+    "title": "Ein Team, das sich am Umfang orientiert",
+    "text": "Salimi Engineering arbeitet mit einem schlanken Kern und stellt das Projektteam um den tatsächlichen Umfang herum zusammen. Fachingenieure und Spezialisten werden nach Gewerken, Auslastung und Anforderungen der Baustelle hinzugezogen oder eingestellt – die technische Verantwortung und der Kundenkontakt bleiben unmittelbar.",
+    "steps": [
+      {
+        "title": "Aufgabe und Umfang",
+        "text": "Vor der Mobilisierung werden technisches Ziel, Grenzen, Schnittstellen und Berichtswege festgelegt."
+      },
+      {
+        "title": "Verantwortlicher Ingenieur",
+        "text": "SALIMI Yunes trägt durchgehend die technische Verantwortung und führt die Kundenbeziehung."
+      },
+      {
+        "title": "Team nach Umfang",
+        "text": "Fachingenieure und Spezialisten werden bei Bedarf für den Auftrag hinzugezogen."
+      },
+      {
+        "title": "Präsenz nach Bedarf",
+        "text": "Häufigkeit der Begehungen und Umfang der Vertretung richten sich nach dem Auftrag, nicht nach einem Standardpaket."
+      },
+      {
+        "title": "Berichte und Übergabe",
+        "text": "Entscheidungen, Mängel und Maßnahmen werden bis zu Prüfung und Übergabe dokumentiert."
+      }
+    ],
+    "chain": [
+      "Auftraggeber",
+      "Verantwortlicher Ingenieur",
+      "Projektteam",
+      "Unternehmer / Baustelle"
+    ]
+  },
+  "sectorsPreview": {
+    "eyebrow": "Projektumfelder",
+    "title": "Wo diese Arbeit greift",
+    "cta": "Alle Projektumfelder"
+  }
+}

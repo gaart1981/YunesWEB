@@ -11,7 +11,9 @@ const whatsappLabels: Record<Locale, string> = {
   en: "WhatsApp Salimi Engineering",
   fr: "WhatsApp Salimi Engineering",
   ar: "راسل Salimi Engineering عبر واتساب",
-  ru: "Написать в WhatsApp"
+  ru: "Написать в WhatsApp",
+  de: "WhatsApp schreiben",
+  es: "Escribir por WhatsApp"
 };
 
 // Abstract technical drawings only. These are decorative: they carry no claim

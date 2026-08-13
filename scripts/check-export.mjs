@@ -18,7 +18,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { join, posix } from "node:path";
 
 const OUT = process.argv[2] ?? "out";
-const LOCALES = ["en", "fr", "ar", "ru"];
+const LOCALES = ["en", "fr", "ar", "ru", "de", "es"];
 const ROUTES = [
   "",
   "services",

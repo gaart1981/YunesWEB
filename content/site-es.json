@@ -1,0 +1,953 @@
+{
+  "direction": "ltr",
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "sectors": "Sectores",
+    "experience": "Experiencia",
+    "about": "El estudio",
+    "contact": "Contacto",
+    "cta": "Hablemos del proyecto",
+    "language": "Idioma",
+    "footerDescriptor": "Electricidad, ventilación, coordinación de instalaciones y seguimiento de obra en Marruecos.",
+    "footerStatus": "Comunicación técnica directa en inglés, francés y árabe",
+    "legal": "Aviso legal",
+    "privacy": "Política de privacidad",
+    "cookies": "Política de cookies",
+    "address": "Marruecos",
+    "email": "info@salimiengineering.com",
+    "phone": "+212 663 056 547",
+    "skip": "Ir al contenido",
+    "priorExperienceNote": "Experiencia profesional previa del fundador.",
+    "recordScope": "Alcance",
+    "recordRole": "Función"
+  },
+  "pages": {
+    "services": {
+      "seo": {
+        "title": "Ingeniería y dirección de obra en Marruecos | Salimi Engineering",
+        "description": "Proyecto eléctrico y de ventilación, coordinación de instalaciones, asistencia a la propiedad, revisión de ofertas y dirección de obra en Marruecos."
+      },
+      "eyebrow": "Servicios de ingeniería",
+      "title": "Plantee el problema técnico. Reciba una solución construible.",
+      "lead": "Salimi Engineering se incorpora en cualquier fase —anteproyecto, proyecto, licitación, obra o recepción— para calcular, proyectar, coordinar, inspeccionar e impulsar las acciones técnicas que hacen avanzar el proyecto.",
+      "facts": [
+        {
+          "value": "Proyecto",
+          "label": "Cálculos y documentación de ejecución"
+        },
+        {
+          "value": "Control",
+          "label": "Revisiones, inspecciones y decisiones"
+        },
+        {
+          "value": "Entrega",
+          "label": "Pruebas, cierre de repasos y recepción"
+        }
+      ],
+      "sectionTitle": "Seis formas de reforzar su proyecto",
+      "sectionIntro": "Contrate un encargo puntual o combine los servicios en una asistencia técnica continua.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Proyecto de instalación eléctrica",
+          "text": "Cálculo de cargas, distribución eléctrica, iluminación, planos de fuerza y tomas, esquemas unifilares, listados de equipos, mediciones y planos de ejecución.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "02",
+          "title": "Ventilación e instalaciones del edificio",
+          "text": "Caudales, trazado de equipos y conductos, alimentación y control de climatización, accesos de mantenimiento y coordinación con arquitectura y estructura.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "03",
+          "title": "Coordinación de instalaciones",
+          "text": "Coordinación de electricidad, ventilación, protección contra incendios e interfaces constructivas; detección de interferencias; resolución de cuartos técnicos, trazados, pasos y accesos.",
+          "href": "electrical-mep-engineering"
+        },
+        {
+          "number": "04",
+          "title": "Asistencia técnica a la propiedad",
+          "text": "Definir requisitos, revisar proyectos, comparar ofertas técnicas, valorar sustituciones y modificados, y asesorar a la propiedad antes de que las decisiones se conviertan en coste.",
+          "href": "owners-engineering-amo"
+        },
+        {
+          "number": "05",
+          "title": "Revisión de proyecto y dirección de obra",
+          "text": "Revisar documentación de aprobación, responder consultas de obra, inspeccionar la ejecución, registrar no conformidades, seguir correcciones y verificar pruebas.",
+          "href": "owners-engineering-amo"
+        },
+        {
+          "number": "06",
+          "title": "Apoyo técnico local en Marruecos",
+          "text": "Levantamientos, reuniones con contratistas, informes técnicos, representación periódica, seguimiento de la puesta en marcha y resolución de incidencias sobre el terreno.",
+          "href": "local-engineering-partner-morocco"
+        }
+      ],
+      "processTitle": "Un recorrido claro desde la primera llamada hasta la entrega controlada",
+      "process": [
+        {
+          "title": "Diagnosticar",
+          "text": "Valorar la fase del proyecto, la documentación disponible, las condiciones de obra y la decisión pendiente."
+        },
+        {
+          "title": "Definir",
+          "text": "Fijar alcance, entregables, interfaces, responsabilidades y ritmo de reporte."
+        },
+        {
+          "title": "Ejecutar",
+          "text": "Proyectar, coordinar, revisar o supervisar con acciones, responsables y plazos visibles."
+        },
+        {
+          "title": "Cerrar",
+          "text": "Verificar pruebas, puntos pendientes, documentación y disposición para la recepción."
+        }
+      ],
+      "cta": {
+        "title": "¿No sabe qué servicio necesita?",
+        "text": "Describa el problema técnico. Identificaremos la intervención mínima útil y la información necesaria para empezar.",
+        "button": "Hablemos del proyecto",
+        "href": "contact"
+      },
+      "engagementRoles": {
+        "title": "Con qué papel intervenimos",
+        "items": [
+          {
+            "title": "Asesor de la propiedad",
+            "text": "Representamos su interés técnico: revisamos el proyecto, cuestionamos el alcance y verificamos lo que proponen los contratistas."
+          },
+          {
+            "title": "Capacidad de ingeniería",
+            "text": "Producimos los cálculos, planos y mediciones que su proyecto necesita para poder valorarse y construirse."
+          },
+          {
+            "title": "Coordinación de proyecto",
+            "text": "Resolvemos las interfaces entre disciplinas, proyectistas y contratistas antes de que lleguen a obra."
+          },
+          {
+            "title": "Socio de ejecución local",
+            "text": "Aportamos inspección, coordinación de contratistas y representación técnica en Marruecos."
+          }
+        ]
+      },
+      "engagementFormats": {
+        "title": "Formatos de contratación",
+        "items": [
+          {
+            "title": "Encargo técnico puntual",
+            "text": "Una revisión, una visita a obra o una segunda opinión sobre una cuestión concreta."
+          },
+          {
+            "title": "Paquete de proyecto definido",
+            "text": "Un alcance de ingeniería acordado, entregado al nivel de detalle acordado."
+          },
+          {
+            "title": "Representación local periódica",
+            "text": "Visitas programadas a obra e informes para un cliente situado en el extranjero."
+          },
+          {
+            "title": "Encargo por fase de proyecto",
+            "text": "Apoyo durante proyecto, licitación, obra o puesta en marcha."
+          },
+          {
+            "title": "Alcance de proyecto medio",
+            "text": "Un alcance mayor ejecutado con un equipo formado para el encargo."
+          }
+        ]
+      },
+      "teamModel": {
+        "title": "Capacidad según alcance",
+        "text": "El estudio trabaja con un núcleo reducido e incorpora ingenieros y especialistas según el encargo. La responsabilidad técnica última permanece en el ingeniero responsable.",
+        "points": [
+          "Alcance, interfaces y reporte acordados antes de empezar",
+          "Ingenieros de cada disciplina incorporados cuando el encargo lo requiere",
+          "La presencia en obra la marca el proyecto, no un paquete fijo",
+          "Un único interlocutor técnico responsable de principio a fin"
+        ]
+      },
+      "relatedExperience": {
+        "title": "La experiencia detrás de estos servicios"
+      }
+    },
+    "owners-engineering-amo": {
+      "seo": {
+        "title": "Asistencia a la propiedad y dirección de obra en Marruecos | Salimi Engineering",
+        "description": "Revisión independiente de proyecto, análisis de ofertas, inspección de obra y representación técnica para promotores en Marruecos."
+      },
+      "eyebrow": "Asistencia a la propiedad y dirección de obra",
+      "title": "Mantenga el control técnico, aunque no tenga equipo propio de ingeniería.",
+      "lead": "Trabajamos del lado de la propiedad: comprobamos lo que se propone, detectamos lo que falta, documentamos los riesgos y seguimos las acciones a través de proyecto, obra, pruebas y recepción.",
+      "facts": [
+        {
+          "value": "Independiente",
+          "label": "Criterio técnico al servicio de la propiedad"
+        },
+        {
+          "value": "Documentado",
+          "label": "Decisiones, riesgos y acciones"
+        },
+        {
+          "value": "En obra",
+          "label": "Inspección y verificación"
+        }
+      ],
+      "sectionTitle": "Qué controlamos en nombre de la propiedad",
+      "sectionIntro": "El encargo puede empezar con una única revisión y prolongarse como representación técnica durante todo el proyecto.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Requisitos y alcance",
+          "text": "Aclarar necesidades de explotación, criterios técnicos, límites de alcance, responsabilidades y datos que faltan antes de que avance el proyecto."
+        },
+        {
+          "number": "02",
+          "title": "Revisión de proyecto",
+          "text": "Comprobar cálculos, planos, selección de equipos, interfaces, mantenibilidad, viabilidad constructiva y coherencia entre disciplinas."
+        },
+        {
+          "number": "03",
+          "title": "Licitación y análisis de ofertas",
+          "text": "Redactar o revisar pliegos técnicos, responder aclaraciones y comparar ofertas por alcance, cumplimiento y riesgo, no solo por precio."
+        },
+        {
+          "number": "04",
+          "title": "Modificados y sustituciones",
+          "text": "Valorar alternativas propuestas, reducciones encubiertas de alcance, consecuencias en prestaciones, impacto en mantenimiento y justificación técnica."
+        },
+        {
+          "number": "05",
+          "title": "Inspecciones en obra",
+          "text": "Verificar calidad de montaje, conformidad con la documentación aprobada, avance real, acciones correctoras y disposición para pruebas."
+        },
+        {
+          "number": "06",
+          "title": "Puesta en marcha y recepción",
+          "text": "Seguir pruebas, listas de repasos, planos as-built, documentación de explotación y recepción técnica final."
+        }
+      ],
+      "processTitle": "Intervención tipo del lado de la propiedad",
+      "process": [
+        {
+          "title": "Reunir evidencias",
+          "text": "Recopilar planos, pliegos, ofertas, actas, fotografías e incidencias abiertas."
+        },
+        {
+          "title": "Identificar la exposición",
+          "text": "Separar riesgos críticos, lagunas de proyecto, ambigüedad contractual y defectos de ejecución."
+        },
+        {
+          "title": "Impulsar decisiones",
+          "text": "Emitir recomendaciones concisas, asignar acciones y seguir su cierre con el equipo de proyecto."
+        },
+        {
+          "title": "Verificar el resultado",
+          "text": "Inspeccionar la solución ejecutada y comunicar a la propiedad los riesgos que permanecen."
+        }
+      ],
+      "bulletTitle": "Entregables que la propiedad puede utilizar",
+      "bullets": [
+        "Programa técnico y matriz de responsabilidades",
+        "Registro de revisión de proyecto con prioridades claras",
+        "Comparativo de ofertas y registro de aclaraciones",
+        "Valoración de modificados y sustituciones",
+        "Informes de visita con reportaje fotográfico",
+        "Lista de acciones, lista de repasos y seguimiento de la puesta en marcha"
+      ],
+      "cta": {
+        "title": "¿Necesita a alguien que cuestione el proyecto en su nombre?",
+        "text": "Envíe los planos, la oferta o la incidencia de obra que le preocupa. Podemos empezar con una revisión independiente y acotada.",
+        "button": "Plantear el caso",
+        "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Este servicio encaja cuando",
+        "items": [
+          "Invierte en un proyecto o lo ejecuta sin departamento propio de ingeniería.",
+          "Una oferta parece completa pero no puede verificar qué falta.",
+          "Se proponen sustituciones o modificados y las consecuencias no están claras.",
+          "La obra avanza y nadie independiente la contrasta con el proyecto aprobado.",
+          "Se acercan las pruebas y la recepción con la documentación incompleta."
+        ]
+      },
+      "relatedExperience": {
+        "title": "Experiencia previa relacionada"
+      }
+    },
+    "electrical-mep-engineering": {
+      "seo": {
+        "title": "Proyecto eléctrico, ventilación e instalaciones en Marruecos | Salimi Engineering",
+        "description": "Cálculo de cargas, distribución, iluminación, ventilación, protección contra incendios, coordinación de instalaciones y planos de ejecución."
+      },
+      "eyebrow": "Electricidad, ventilación e instalaciones",
+      "title": "Instalaciones proyectadas para construirse, explotarse y mantenerse.",
+      "lead": "Desarrollamos y coordinamos paquetes de ingeniería con el detalle que exigen la contratación y la ejecución, no planos de presentación.",
+      "facts": [
+        {
+          "value": "Potencia",
+          "label": "Cargas, distribución y protecciones"
+        },
+        {
+          "value": "Aire",
+          "label": "Ventilación e interfaces de climatización"
+        },
+        {
+          "value": "Instalaciones",
+          "label": "Documentación de ejecución coordinada"
+        }
+      ],
+      "sectionTitle": "Alcance de ingeniería, del cálculo al apoyo en obra",
+      "sectionIntro": "El alcance se adapta a la fase del proyecto y a la información ya disponible.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Cargas eléctricas y distribución",
+          "text": "Cuadros de potencias instaladas, estimación de demanda, arquitectura de distribución, listados de cuadros, acometidas, suministro de socorro y esquemas unifilares."
+        },
+        {
+          "number": "02",
+          "title": "Iluminación y fuerza",
+          "text": "Planos de iluminación, encendidos, tomas de corriente, alimentación de puestos de trabajo y equipos, alumbrado de emergencia y exterior."
+        },
+        {
+          "number": "03",
+          "title": "Ventilación e interfaces de climatización",
+          "text": "Caudales, coordinación de equipos y trazados, alimentación eléctrica, control, disposición de cuartos técnicos y accesos de mantenimiento."
+        },
+        {
+          "number": "04",
+          "title": "Corrientes débiles y protección contra incendios",
+          "text": "Cableado estructurado, datos, seguridad, detección de incendios, megafonía de evacuación e interfaces de automatización de los sistemas de extinción."
+        },
+        {
+          "number": "05",
+          "title": "Coordinación de instalaciones",
+          "text": "Coordinar instalaciones con arquitectura y estructura, resolver interferencias, pasos, zonas de falso techo, cuartos técnicos, accesos a equipos y ayudas de albañilería."
+        },
+        {
+          "number": "06",
+          "title": "Apoyo a licitación y obra",
+          "text": "Pliegos, mediciones, aclaraciones a licitadores, revisión de planos de taller, consultas técnicas, sustituciones de material, inspecciones y seguimiento de la puesta en marcha."
+        }
+      ],
+      "processTitle": "Cómo el proyecto llega a ser ejecutable",
+      "process": [
+        {
+          "title": "Bases",
+          "text": "Confirmar cargas, ocupación, régimen de explotación, normativa, condicionantes e hipótesis de partida."
+        },
+        {
+          "title": "Proyecto",
+          "text": "Desarrollar cálculos, esquemas, plantas, selección de equipos y pliegos técnicos."
+        },
+        {
+          "title": "Coordinar",
+          "text": "Resolver las interfaces con arquitectura, estructura, suministradores y el resto de disciplinas."
+        },
+        {
+          "title": "Apoyar la obra",
+          "text": "Revisar documentación de ejecución, responder consultas, inspeccionar hitos y seguir las pruebas."
+        }
+      ],
+      "bulletTitle": "Entregables habituales",
+      "bullets": [
+        "Cuadros de cargas y bases de diseño",
+        "Esquemas de distribución y unifilares",
+        "Planos de iluminación, tomas y alimentación de equipos",
+        "Planos de ventilación e interfaces de climatización",
+        "Documentación de detección, evacuación y corrientes débiles",
+        "Pliegos técnicos, listados de equipos y planos de ejecución"
+      ],
+      "cta": {
+        "title": "¿Necesita planos que un contratista pueda valorar y construir?",
+        "text": "Envíe las plantas, el listado de equipos y la fase actual. Definiremos los cálculos, planos y trabajos de coordinación que faltan.",
+        "button": "Solicitar una consulta técnica",
+        "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Este servicio encaja cuando",
+        "items": [
+          "Necesita documentación de instalaciones con detalle suficiente para valorar y ejecutar.",
+          "Las disciplinas se proyectaron por separado y ahora interfieren en obra.",
+          "Hay que establecer potencias, distribución o suministro de socorro.",
+          "Deben coordinarse detección, evacuación e interfaces de corrientes débiles.",
+          "Un contratista necesita respuesta a consultas técnicas durante la obra."
+        ]
+      },
+      "teamModel": {
+        "title": "Cómo se forma el equipo de ingeniería",
+        "text": "Los alcances de instalaciones suelen implicar más de una disciplina. Los especialistas se incorporan según los sistemas afectados, mientras el ingeniero responsable mantiene el proyecto coordinado y responde de él.",
+        "points": [
+          "Ingenieros de disciplina para los sistemas incluidos en el alcance",
+          "Un único conjunto documental coordinado, no proyectos paralelos sin relación",
+          "Las decisiones de interfaz se documentan, no se dejan a la obra",
+          "El ingeniero responsable responde del paquete completo"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Experiencia previa relacionada"
+      }
+    },
+    "local-engineering-partner-morocco": {
+      "seo": {
+        "title": "Ingeniero y representación en obra en Marruecos | Salimi Engineering",
+        "description": "Levantamientos, coordinación de contratistas, informes técnicos, dirección de obra y apoyo a la puesta en marcha para equipos internacionales en Marruecos."
+      },
+      "eyebrow": "Socio de ingeniería en Marruecos",
+      "title": "Sus ojos y su voz técnica sobre el terreno.",
+      "lead": "Para equipos que dirigen un proyecto marroquí desde el extranjero, aportamos presencia técnica local sin el coste ni la demora de abrir una oficina permanente.",
+      "facts": [
+        {
+          "value": "Una visita",
+          "label": "Levantamiento o comprobación puntual"
+        },
+        {
+          "value": "Periódico",
+          "label": "Representación local e informes"
+        },
+        {
+          "value": "Fase completa",
+          "label": "Proyecto, obra o recepción"
+        }
+      ],
+      "sectionTitle": "Elija el nivel de apoyo local",
+      "sectionIntro": "El encargo se construye alrededor de las decisiones que su equipo no puede tomar con fiabilidad sin evidencias de obra.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Encargo técnico puntual",
+          "text": "Visita, comprobación del estado existente, revisión documental, evaluación de un contratista o informe técnico breve sobre una cuestión concreta."
+        },
+        {
+          "number": "02",
+          "title": "Representación local periódica",
+          "text": "Visitas programadas, reuniones, evidencias de avance, seguimiento de incidencias e informes estructurados al equipo internacional."
+        },
+        {
+          "number": "03",
+          "title": "Encargo por fase de proyecto",
+          "text": "Apoyo dedicado durante proyecto, licitación, obra, pruebas o recepción, con alcance y líneas de reporte definidos."
+        },
+        {
+          "number": "04",
+          "title": "Coordinación de contratistas y suministradores",
+          "text": "Aclarar requisitos técnicos, seguir entregas y acciones, verificar información de obra y elevar decisiones con evidencias."
+        },
+        {
+          "number": "05",
+          "title": "Verificación de la ejecución",
+          "text": "Inspeccionar montajes críticos, contrastar lo ejecutado con la documentación aprobada y seguir las no conformidades hasta su cierre."
+        },
+        {
+          "number": "06",
+          "title": "Apoyo en pruebas y recepción",
+          "text": "Presenciar pruebas, seguir listas de repasos, comprobar documentación e informar de la disposición para recepción."
+        }
+      ],
+      "processTitle": "Un ciclo de reporte local fiable",
+      "process": [
+        {
+          "title": "Mandato",
+          "text": "Fijar atribuciones, línea de reporte, frecuencia de visitas, evidencias requeridas y reglas de escalado."
+        },
+        {
+          "title": "Observar",
+          "text": "Recoger información contrastada de la obra, los contratistas, la documentación y las reuniones técnicas."
+        },
+        {
+          "title": "Actuar",
+          "text": "Resolver sobre el terreno dentro del mandato y elevar lo que requiera aprobación del cliente."
+        },
+        {
+          "title": "Reportar",
+          "text": "Enviar estado, riesgos, fotografías, acciones y recomendaciones de forma concisa."
+        }
+      ],
+      "bulletTitle": "Útil cuando su equipo necesita",
+      "bullets": [
+        "Un levantamiento técnico antes de invertir o movilizar",
+        "Un interlocutor local con contratistas y proyectistas marroquíes",
+        "Confirmación independiente del avance y la calidad",
+        "Aclaración rápida de las condiciones de obra y los condicionantes técnicos",
+        "Reporte periódico sin abrir oficina técnica en el país"
+      ],
+      "cta": {
+        "title": "¿Dirige un proyecto en Marruecos desde otro país?",
+        "text": "Una llamada breve define qué verificar sobre el terreno, con qué frecuencia visitar la obra y en qué forma necesita los informes su equipo.",
+        "button": "Escribir por WhatsApp",
+        "href": "https://wa.me/212663056547"
+      },
+      "clientSituation": {
+        "title": "Este servicio encaja cuando",
+        "items": [
+          "Su proyecto está en Marruecos y su equipo no.",
+          "Necesita contrastar datos de obra antes de decidir una inversión o una movilización.",
+          "Los contratistas necesitan un interlocutor técnico local con capacidad de decidir dentro de un mandato.",
+          "Los informes de avance y calidad deben llegar a una sede en el extranjero en formato utilizable.",
+          "Las pruebas y la recepción exigen una presencia que no puede cubrir desde otro país."
+        ]
+      },
+      "teamModel": {
+        "title": "Capacidad local",
+        "text": "La presencia local se dimensiona según el encargo: una visita única, un ritmo programado o apoyo continuo durante la fase de obra, con ingenieros adicionales cuando la carga lo exige.",
+        "points": [
+          "Mandato, línea de reporte y escalado acordados por escrito",
+          "Frecuencia de visitas según la fase del proyecto",
+          "Ingenieros adicionales cuando la carga de obra lo requiere",
+          "Hallazgos documentados con fotografías e informes escritos"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Experiencia previa relacionada"
+      }
+    },
+    "sectors": {
+      "seo": {
+        "title": "Experiencia por sectores | Salimi Engineering",
+        "description": "Electricidad, ventilación, instalaciones y dirección técnica en edificios terciarios, industriales, infraestructura, residencial e instalaciones técnicas."
+      },
+      "eyebrow": "Entornos de proyecto",
+      "title": "Activos distintos. La misma exigencia: instalaciones que funcionen en obra.",
+      "lead": "Aplicamos ingeniería detallada y control práctico de obra en proyectos terciarios, industriales, de infraestructura, residenciales y técnicamente exigentes.",
+      "facts": [
+        {
+          "value": "Terciario",
+          "label": "Oficinas y acondicionamiento"
+        },
+        {
+          "value": "Industrial",
+          "label": "Cargas de producción y suministros"
+        },
+        {
+          "value": "Infraestructura",
+          "label": "Redes distribuidas y rehabilitación"
+        }
+      ],
+      "sectionTitle": "Dónde aporta valor combinar proyecto y obra",
+      "sectionIntro": "Cada sector se describe por sus dificultades técnicas reales, no por una etiqueta de mercado.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Oficinas y acondicionamiento",
+          "text": "Alimentación de puestos, iluminación, datos y cableado estructurado, protección contra incendios, suministros de climatización, obra por fases y coordinación en edificios ocupados."
+        },
+        {
+          "number": "02",
+          "title": "Industria y fabricación",
+          "text": "Potencias de maquinaria, cuadros de distribución, implantación de equipos, ventilación, interfaces de suministros, obra por fases y montaje junto a procesos en marcha."
+        },
+        {
+          "number": "03",
+          "title": "Infraestructura y alumbrado exterior",
+          "text": "Alumbrado exterior, redes de distribución, interfaces de rehabilitación, condicionantes del estado existente, esquemas y especificaciones de equipos."
+        },
+        {
+          "number": "04",
+          "title": "Residencial y proyectos privados",
+          "text": "Electricidad, iluminación, ventilación, seguridad, domótica, protección contra incendios, integración discreta y control de calidad de ejecución."
+        },
+        {
+          "number": "05",
+          "title": "Centros de datos y locales técnicos",
+          "text": "Respaldo eléctrico, alimentación de equipos, interfaces de refrigeración, extinción, monitorización, mantenibilidad y continuidad de servicio."
+        }
+      ],
+      "bulletTitle": "Problemas habituales que nos piden resolver",
+      "bullets": [
+        "Instalaciones proyectadas por separado que chocan en obra",
+        "Ofertas con alcance técnico incompleto o ambiguo",
+        "Sustituciones de equipos sin evaluar sus consecuencias",
+        "Montajes ejecutados sin acceso ni mantenibilidad suficientes",
+        "Pruebas y recepción retrasadas por documentación incompleta"
+      ],
+      "cta": {
+        "title": "Describa el activo y el riesgo técnico, no solo el sector.",
+        "text": "Identificaremos los cálculos, comprobaciones, coordinación y presencia en obra que exige ese contexto.",
+        "button": "Hablemos del proyecto",
+        "href": "contact"
+      },
+      "relatedExperience": {
+        "title": "Experiencia previa por entorno de proyecto"
+      }
+    },
+    "experience": {
+      "seo": {
+        "title": "Experiencia en proyectos | Salimi Engineering",
+        "description": "Experiencia profesional previa en oficinas, instalaciones industriales, infraestructura, proyectos residenciales y sistemas técnicos complejos."
+      },
+      "eyebrow": "Experiencia profesional seleccionada",
+      "title": "Trabajo de ingeniería real en entornos de proyecto internacionales.",
+      "lead": "Los ejemplos siguientes muestran el tipo y la profundidad del trabajo realizado: cálculos, esquemas de distribución, planos de iluminación y fuerza, sistemas de protección contra incendios, documentación de ejecución y dirección técnica.",
+      "facts": [
+        {
+          "value": "25 plantas",
+          "label": "Instalación eléctrica de un edificio de oficinas"
+        },
+        {
+          "value": "7.000 m²",
+          "label": "Alcance de ingeniería de un centro de llamadas"
+        },
+        {
+          "value": "Terciario · Industrial · Infraestructura",
+          "label": "Entornos de proyecto"
+        }
+      ],
+      "confidentiality": {
+        "title": "Por qué aquí no hay fotografías de obra",
+        "text": "No publicamos planos de clientes, documentación de licitación ni fotografías de obra. Lo que se nos confía permanece con nosotros. Las fichas siguientes describen el alcance de ingeniería y la función desempeñada —lo que un técnico puede valorar realmente— y nada más."
+      },
+      "sectionTitle": "Ejemplos de proyectos seleccionados",
+      "sectionIntro": "Separamos la experiencia profesional previa del fundador de los encargos ejecutados por Salimi Engineering. Salvo indicación en contrario, la ficha pertenece a la primera categoría. Su proyecto se describiría del mismo modo.",
+      "projects": [
+        {
+          "id": "mailru-office",
+          "sector": "Oficinas corporativas",
+          "title": "Edificio de oficinas de Mail.ru",
+          "location": "Rusia",
+          "scope": "Distribución eléctrica e iluminación de un edificio de oficinas de 25 plantas.",
+          "role": "Proyecto de instalación eléctrica"
+        },
+        {
+          "id": "beeline-office",
+          "sector": "Oficinas y locales técnicos",
+          "title": "Edificio de oficinas de Beeline",
+          "location": "Rusia",
+          "scope": "Equipos de fuerza e iluminación de un edificio de oficinas de tres plantas y proyecto eléctrico independiente para la refrigeración del centro de datos.",
+          "role": "Proyecto básico y de ejecución"
+        },
+        {
+          "id": "microsoft-offices",
+          "sector": "Oficinas corporativas",
+          "title": "Oficinas de Microsoft",
+          "location": "Rusia",
+          "scope": "Distribución eléctrica e iluminación de las oficinas del edificio principal de Microsoft.",
+          "role": "Proyecto de instalación eléctrica"
+        },
+        {
+          "id": "tinkoff-callcentre",
+          "sector": "Banca y oficinas",
+          "title": "Centro de llamadas del banco Tinkoff",
+          "location": "Rusia",
+          "scope": "Cálculo de cargas, iluminación, tomas y alimentación de equipos, potencia de ventilación y climatización, esquemas unifilares, pliegos, detección de incendios y automatización de la extinción.",
+          "role": "Proyecto de ejecución coordinado"
+        },
+        {
+          "id": "citibank-callcentre",
+          "sector": "Banca y oficinas",
+          "title": "Centro de llamadas de Citibank",
+          "location": "Riazán, Rusia · 7.000 m²",
+          "scope": "Cargas eléctricas, iluminación, planos de fuerza, suministros de climatización, esquemas de distribución, especificaciones de equipos, detección, megafonía de evacuación y automatización de extinción.",
+          "role": "Proyecto coordinado de electricidad y protección contra incendios"
+        },
+        {
+          "id": "faurecia-plant",
+          "sector": "Fabricación de automoción",
+          "title": "Planta de producción de Faurecia Automotive",
+          "location": "Región de Kaluga, Rusia",
+          "scope": "Cálculo de cargas, esquema de distribución e implantación de equipos para líneas de componentes plásticos destinados a vehículos Renault, Peugeot y Citroën.",
+          "role": "Ingeniería eléctrica industrial"
+        },
+        {
+          "id": "tram-lighting",
+          "sector": "Infraestructura de transporte",
+          "title": "Alumbrado exterior de líneas de tranvía",
+          "location": "Moscú, Perm, Lípetsk, Kursk y otras ciudades",
+          "scope": "Planos de alumbrado exterior, esquemas de suministro para tramos rehabilitados y especificaciones de equipos y materiales.",
+          "role": "Proyecto de alumbrado de infraestructura"
+        },
+        {
+          "id": "manor-systems",
+          "sector": "Residencial privado",
+          "title": "Instalaciones técnicas de una casa señorial",
+          "location": "Suiza",
+          "scope": "Supervisión y evaluación de los proyectos de corrientes débiles, seguridad, domótica y protección contra incendios por cuenta de la propiedad.",
+          "role": "Revisión y supervisión técnica para la propiedad"
+        }
+      ],
+      "bulletTitle": "Qué acredita esta experiencia",
+      "bullets": [
+        "Capacidad de calcular y documentar paquetes eléctricos completos",
+        "Experiencia en oficinas, centros de datos, maquinaria de producción e infraestructura",
+        "Coordinación de electricidad, climatización, incendios y corrientes débiles",
+        "Detalle de proyecto de ejecución apto para contratar y construir",
+        "Revisión y supervisión técnica desde la óptica de la propiedad"
+      ],
+      "cta": {
+        "title": "¿Busca experiencia aplicable a un problema técnico concreto?",
+        "text": "Explique el activo, la fase y el sistema afectado. Comentaremos el trabajo comparable más cercano y el método propuesto.",
+        "button": "Ponerse en contacto",
+        "href": "contact"
+      }
+    },
+    "about": {
+      "seo": {
+        "title": "El estudio | Salimi Engineering",
+        "description": "Ingeniería independiente que combina proyecto eléctrico y de ventilación, coordinación de instalaciones, dirección de obra y asistencia a la propiedad."
+      },
+      "eyebrow": "Sobre Salimi Engineering",
+      "title": "Una ingeniería que entiende el plano, al contratista y la decisión de la propiedad.",
+      "lead": "Combinamos proyecto técnico detallado con coordinación de obra y control del lado de la propiedad. El cliente trata directamente con quien analiza el problema y sigue la solución.",
+      "facts": [
+        {
+          "value": "Fundador",
+          "label": "Implicación directa del responsable"
+        },
+        {
+          "value": "Proyecto y obra",
+          "label": "Continuidad técnica"
+        },
+        {
+          "value": "Internacional",
+          "label": "Entornos de proyecto diversos"
+        }
+      ],
+      "profile": {
+        "type": "profile",
+        "eyebrow": "Fundador e ingeniero responsable",
+        "title": "SALIMI Yunes",
+        "text": "Salimi Engineering es una ingeniería independiente y multidisciplinar con sede en Marruecos. Su trabajo combina proyecto eléctrico y de ventilación, coordinación de instalaciones, pliegos técnicos, interlocución con contratistas, dirección de obra y asistencia a la propiedad. La experiencia internacional previa del fundador incluye oficinas corporativas, una planta de automoción, alumbrado de infraestructura, proyectos residenciales y sistemas complejos de corrientes débiles y protección contra incendios.",
+        "quote": "Una solución técnica solo funciona cuando es lo bastante clara para valorarse, lo bastante coordinada para construirse y lo bastante controlada para rendir.",
+        "imageAlt": "Fundador e ingeniero responsable de Salimi Engineering, en el interior de un edificio de hormigón y vidrio."
+      },
+      "sectionTitle": "Por qué los clientes tratan directamente con nosotros",
+      "sectionIntro": "El servicio se apoya en la responsabilidad técnica personal, no en capas de gestión comercial.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Conocimiento de proyecto",
+          "text": "Leemos, calculamos y desarrollamos la solución técnica, no solo coordinamos documentos ajenos."
+        },
+        {
+          "number": "02",
+          "title": "Conocimiento de obra",
+          "text": "Comprobamos viabilidad constructiva, secuencia, accesos, interfaces, sustituciones y las consecuencias prácticas de las decisiones en obra."
+        },
+        {
+          "number": "03",
+          "title": "Criterio del lado de la propiedad",
+          "text": "Traducimos las cuestiones técnicas en opciones, riesgos y recomendaciones claras para quien decide sin ser técnico."
+        },
+        {
+          "number": "04",
+          "title": "Continuidad hasta la recepción",
+          "text": "El mismo responsable técnico acompaña desde los primeros estudios hasta inspecciones, pruebas y cierre final."
+        }
+      ],
+      "processTitle": "La relación de trabajo",
+      "process": [
+        {
+          "title": "Acceso directo",
+          "text": "El cliente habla con el ingeniero responsable, no con un intermediario comercial."
+        },
+        {
+          "title": "Alcance claro",
+          "text": "Cada encargo define entregables, atribuciones, interfaces y plazos de respuesta."
+        },
+        {
+          "title": "Evidencia verificable",
+          "text": "Las decisiones se apoyan en cálculos, documentos anotados, fotografías y registros de acciones."
+        },
+        {
+          "title": "Especialistas cuando hacen falta",
+          "text": "Se incorporan otras disciplinas para un alcance definido, manteniendo Salimi Engineering como interlocutor técnico."
+        }
+      ],
+      "cta": {
+        "title": "Empecemos por una conversación técnica directa.",
+        "text": "Una charla breve mostrará si encajamos en el papel que necesita: proyecto, revisión, obra o asistencia a la propiedad.",
+        "button": "Hablemos del proyecto",
+        "href": "contact"
+      },
+      "companyModel": {
+        "title": "Qué es Salimi Engineering",
+        "text": "Una ingeniería pequeña dirigida por su fundador, con sede en Marruecos. Asume encargos técnicos acotados y proyectos de tamaño medio, y forma el equipo alrededor del trabajo real en lugar de mantener una estructura que el proyecto no necesita.",
+        "points": [
+          {
+            "title": "Dirigida por su fundador, no unipersonal",
+            "text": "Un núcleo reducido con la responsabilidad técnica última en el ingeniero responsable."
+          },
+          {
+            "title": "Equipos formados según el alcance",
+            "text": "Los ingenieros de cada disciplina y los especialistas se incorporan o contratan para el encargo."
+          },
+          {
+            "title": "Encargos acotados y alcances medios",
+            "text": "Desde una única revisión hasta una fase de proyecto ejecutada con un equipo formado al efecto."
+          },
+          {
+            "title": "Responsabilidad directa",
+            "text": "La relación con el cliente y la responsabilidad técnica no se delegan en intermediarios."
+          }
+        ]
+      },
+      "clientWorkflow": {
+        "title": "Cómo se trabaja con el estudio",
+        "items": [
+          {
+            "title": "Acceso directo",
+            "text": "Habla con el ingeniero responsable del trabajo, no con un gestor de cuentas."
+          },
+          {
+            "title": "Alcance definido",
+            "text": "Entregables, atribuciones, interfaces y reporte se acuerdan antes de empezar."
+          },
+          {
+            "title": "Decisiones documentadas",
+            "text": "Hallazgos, riesgos y acciones quedan registrados para poder revisarse y auditarse."
+          },
+          {
+            "title": "Reporte adaptado a su organización",
+            "text": "Los informes se preparan en un formato con el que una sede en el extranjero pueda actuar."
+          },
+          {
+            "title": "Presencia en obra según necesidad",
+            "text": "La presencia la marca la fase del proyecto, no un paquete estándar."
+          }
+        ]
+      }
+    },
+    "contact": {
+      "seo": {
+        "title": "Contacto | Salimi Engineering Marruecos",
+        "description": "Teléfono o WhatsApp para proyecto eléctrico, ventilación, coordinación de instalaciones, asistencia a la propiedad o dirección de obra en Marruecos."
+      },
+      "eyebrow": "Contacto directo",
+      "title": "¿Qué problema técnico necesita resolver?",
+      "lead": "Llame, escriba por WhatsApp o envíe una descripción breve: ubicación, fase del proyecto, planos disponibles y la decisión o incidencia de obra que requiere atención.",
+      "facts": [
+        {
+          "value": "+212 663 056 547",
+          "label": "Teléfono o WhatsApp"
+        },
+        {
+          "value": "info@salimiengineering.com",
+          "label": "Correo electrónico"
+        },
+        {
+          "value": "Marruecos",
+          "label": "Apoyo local al proyecto"
+        }
+      ],
+      "contact": {
+        "type": "contact",
+        "eyebrow": "Contacto directo",
+        "title": "Contactar con Salimi Engineering",
+        "intro": "Lo más rápido es una llamada breve o un mensaje de WhatsApp. Para una consulta escrita, describa el activo, la ubicación, la fase actual y la ayuda técnica necesaria.",
+        "email": "info@salimiengineering.com",
+        "phone": "+212 663 056 547",
+        "address": "Marruecos",
+        "form": {
+          "name": "Nombre",
+          "company": "Empresa",
+          "email": "Correo profesional",
+          "service": "¿Qué necesita?",
+          "message": "Ubicación, fase, documentación disponible y problema técnico",
+          "submit": "Enviar consulta",
+          "services": [
+            "Proyecto de instalación eléctrica",
+            "Ventilación y coordinación de instalaciones",
+            "Revisión técnica para la propiedad",
+            "Dirección de obra",
+            "Apoyo técnico local en Marruecos",
+            "Apoyo en pruebas y recepción",
+            "Otro"
+          ]
+        }
+      },
+      "cta": {
+        "title": "¿Prefiere WhatsApp?",
+        "text": "Envíe un mensaje breve con la ubicación y la cuestión. Le pediremos los planos adecuados o concertaremos una llamada.",
+        "button": "Escribir por WhatsApp",
+        "href": "https://wa.me/212663056547"
+      },
+      "whatToSend": {
+        "title": "Qué conviene incluir",
+        "items": [
+          "Ubicación y tipo de instalación",
+          "Fase actual: anteproyecto, proyecto, licitación, obra o recepción",
+          "Planos, pliegos u ofertas de contratistas ya disponibles",
+          "La decisión o incidencia de obra que requiere criterio técnico",
+          "Su calendario y quién más participa"
+        ]
+      },
+      "privacyNote": "La información enviada se utiliza únicamente para estudiar y responder su consulta. No envíe planos confidenciales ni datos comerciales sensibles en un primer contacto."
+    },
+    "legal-notice": {
+      "seo": {
+        "title": "Aviso legal | Salimi Engineering",
+        "description": "Información legal del sitio web de Salimi Engineering."
+      },
+      "eyebrow": "Aviso legal",
+      "title": "Aviso legal",
+      "lead": "Información sobre el titular y el uso de este sitio web.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Titular",
+          "paragraphs": [
+            "Marca del sitio: Salimi Engineering.",
+            "Responsable de la publicación y contacto profesional: SALIMI Yunes, Marruecos.",
+            "Correo: info@salimiengineering.com. Teléfono: +212 663 056 547."
+          ]
+        },
+        {
+          "title": "Sobre el sitio",
+          "paragraphs": [
+            "El sitio presenta servicios independientes de ingeniería y apoyo a proyectos.",
+            "La información técnica es de carácter general y no sustituye a una propuesta, un cálculo, un contrato o una instrucción profesional para un proyecto concreto."
+          ]
+        }
+      ]
+    },
+    "privacy-policy": {
+      "seo": {
+        "title": "Política de privacidad | Salimi Engineering",
+        "description": "Cómo se tratan los datos de las consultas de proyecto."
+      },
+      "eyebrow": "Privacidad",
+      "title": "Política de privacidad",
+      "lead": "Cómo se utilizan los datos enviados mediante el formulario de consulta.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Datos recogidos",
+          "paragraphs": [
+            "El formulario puede recoger nombre, empresa, correo profesional, servicio solicitado y descripción del proyecto.",
+            "No envíe planos confidenciales, documentos de identidad ni datos comerciales sensibles en la primera consulta."
+          ]
+        },
+        {
+          "title": "Finalidad",
+          "paragraphs": [
+            "Los datos se utilizan únicamente para estudiar y responder su consulta.",
+            "Puede solicitar rectificación o supresión escribiendo a info@salimiengineering.com."
+          ]
+        }
+      ]
+    },
+    "cookie-policy": {
+      "seo": {
+        "title": "Política de cookies | Salimi Engineering",
+        "description": "Información sobre cookies y almacenamiento técnico del sitio."
+      },
+      "eyebrow": "Cookies",
+      "title": "Política de cookies",
+      "lead": "Información sobre el almacenamiento técnico que utiliza este sitio.",
+      "facts": [],
+      "legal": [
+        {
+          "title": "Tecnología necesaria",
+          "paragraphs": [
+            "El sitio puede utilizar mecanismos de plataforma y seguridad estrictamente necesarios para servir páginas y tramitar consultas."
+          ]
+        },
+        {
+          "title": "Analítica",
+          "paragraphs": [
+            "Las tecnologías de marketing o analítica se describirán aquí si se implantan en el futuro."
+          ]
+        }
+      ]
+    }
+  }
+}

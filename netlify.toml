@@ -43,6 +43,20 @@
   force = true
   conditions = {Language = ["ru", "ru-RU", "ru-BY", "ru-KZ", "ru-UA"]}
 
+[[redirects]]
+  from = "/"
+  to = "/de/"
+  status = 302
+  force = true
+  conditions = {Language = ["de", "de-DE", "de-AT", "de-CH", "de-LU"]}
+
+[[redirects]]
+  from = "/"
+  to = "/es/"
+  status = 302
+  force = true
+  conditions = {Language = ["es", "es-ES", "es-MX", "es-AR", "es-CO", "es-CL", "es-PE"]}
+
 # Fallback. Must stay last: any visitor not matched above gets English.
 [[redirects]]
   from = "/"

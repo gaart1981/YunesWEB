@@ -3,6 +3,8 @@ import en from "@/content/site-en.json";
 import fr from "@/content/site-fr.json";
 import ar from "@/content/site-ar.json";
 import ru from "@/content/site-ru.json";
+import de from "@/content/site-de.json";
+import es from "@/content/site-es.json";
 import type { Locale } from "@/lib/home-content";
 import {
   applyCompanyVoice,
@@ -136,7 +138,9 @@ const sites: Record<Locale, SiteContent> = {
   en: en as SiteContent,
   fr: fr as SiteContent,
   ar: ar as SiteContent,
-  ru: ru as SiteContent
+  ru: ru as SiteContent,
+  de: de as SiteContent,
+  es: es as SiteContent
 };
 
 const shared = sharedPages as Record<SiteSlug, SharedPage>;

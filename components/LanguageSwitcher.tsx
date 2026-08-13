@@ -19,14 +19,18 @@ const AUTONYMS: Record<Locale, string> = {
   en: "English",
   fr: "Français",
   ar: "العربية",
-  ru: "Русский"
+  ru: "Русский",
+  de: "Deutsch",
+  es: "Español"
 };
 
 const CODES: Record<Locale, string> = {
   en: "EN",
   fr: "FR",
   ar: "AR",
-  ru: "RU"
+  ru: "RU",
+  de: "DE",
+  es: "ES"
 };
 
 function Globe() {
