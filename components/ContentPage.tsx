@@ -32,6 +32,11 @@ const pageImages: Partial<Record<SiteSlug, string>> = {
   "electrical-mep-engineering": "/images/graphics/industrial-plant-systems.webp",
   "local-engineering-partner-morocco": "/images/graphics/production-facility.webp",
   sectors: "/images/graphics/project-environments.webp",
+  about: "/images/graphics/lead-engineer-scope.webp",
+  // Experience carries a hero illustration only. The project records
+  // themselves stay image-free: an image beside a record is what would read
+  // as a depiction of that project.
+  experience: "/images/graphics/project-documentation.webp",
   contact: "/images/graphics/plant-room-services.webp"
 };
 

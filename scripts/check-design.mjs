@@ -528,13 +528,13 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
         fail("imagery", `/${locale}/${route}/: image outside the allowed set -> ${src}`);
       else ok();
     }
-    /* The experience page carries no imagery at all beyond the brand. */
+    /* Experience may carry a hero illustration, but the project records must
+       not. An image beside a record reads as a depiction of that project,
+       which is the misattribution the whole page is built to avoid. */
     if (route === "experience") {
-      const nonBrand = [...html.matchAll(/<img src="([^"]+)"/g)]
-        .map((m) => m[1])
-        .filter((src) => !src.startsWith("/images/brand/"));
-      if (nonBrand.length)
-        fail("imagery", `/${locale}/experience/: page carries imagery -> ${nonBrand.join(", ")}`);
+      const list = html.match(/<div class="record-list">[\s\S]*?<\/section>/);
+      if (list && /<img/.test(list[0]))
+        fail("imagery", `/${locale}/experience/: project records carry imagery`);
       else ok();
     }
   }
@@ -550,6 +550,8 @@ const APPROVED_RASTER = new Set([
   "engineering-scope-sheet.webp",
   "plant-room-services.webp",
   "project-environments.webp",
+  "lead-engineer-scope.webp",
+  "project-documentation.webp",
   "industrial-plant-systems.webp",
   "production-facility.webp"
 ]);
