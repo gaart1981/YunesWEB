@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/BrandLogo";
 import type { Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import type { SiteContent, SitePage, SiteSlug } from "@/lib/site-content";
@@ -72,9 +73,8 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link href={`/${locale}/`} className="brand" aria-label="Salimi Engineering">
-          <strong>SALIMI</strong>
-          <span>ENGINEERING</span>
+        <Link href={`/${locale}/`} className="brand" aria-label="Salimi Engineering — Home">
+          <BrandLogo variant="primary" tone="navy" className="brand-logo brand-logo--header" />
         </Link>
         <nav className="desktop-nav" aria-label={nav.language}>
           {links.map(([href, label]) => (
@@ -120,7 +120,7 @@ function Footer({ locale, site }: { locale: Locale; site: SiteContent }) {
     <footer className="site-footer">
       <div className="container footer-expanded">
         <div>
-          <div className="brand brand--footer"><strong>SALIMI</strong><span>ENGINEERING</span></div>
+          <Link href={`/${locale}/`} className="footer-brand-link" aria-label="Salimi Engineering — Home"><BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--footer" /></Link>
           <p>{nav.footerDescriptor}</p>
         </div>
         <div className="footer-contact">

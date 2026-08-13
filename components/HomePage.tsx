@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/BrandLogo";
 import type { HomeContent, Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import { getPageContent, getSiteContent } from "@/lib/site-content";
@@ -40,9 +41,8 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
       <a className="skip-link" href="#main-content">{nav.skip}</a>
       <header className="site-header">
         <div className="header-inner">
-          <Link href={`/${locale}/`} className="brand" aria-label="Salimi Engineering">
-            <strong>SALIMI</strong>
-            <span>ENGINEERING</span>
+          <Link href={`/${locale}/`} className="brand" aria-label="Salimi Engineering — Home">
+            <BrandLogo variant="primary" tone="navy" className="brand-logo brand-logo--header" />
           </Link>
           <nav className="desktop-nav" aria-label={nav.language}>
             <Link href={`/${locale}/services`}>{nav.services}</Link>
@@ -236,7 +236,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
 
       <footer className="site-footer">
         <div className="container footer-expanded">
-          <div><div className="brand brand--footer"><strong>SALIMI</strong><span>ENGINEERING</span></div><p>{nav.footerDescriptor}</p></div>
+          <div><Link href={`/${locale}/`} className="footer-brand-link" aria-label="Salimi Engineering — Home"><BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--footer" /></Link><p>{nav.footerDescriptor}</p></div>
           <div className="footer-contact"><span>{nav.address}</span><a href={`mailto:${nav.email}`}>{nav.email}</a><a href={phoneHref}>{nav.phone}</a></div>
           <nav className="footer-links"><Link href={`/${locale}/legal-notice`}>{nav.legal}</Link><Link href={`/${locale}/privacy-policy`}>{nav.privacy}</Link><Link href={`/${locale}/cookie-policy`}>{nav.cookies}</Link></nav>
         </div>

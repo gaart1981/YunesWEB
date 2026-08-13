@@ -127,22 +127,32 @@ h3 {
 
 .brand {
   display: inline-flex;
-  flex-direction: column;
-  min-width: max-content;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
   color: var(--ink);
   line-height: 1;
 }
 
-.brand strong {
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+/* Approved identity assets. The wordmark is vector artwork: it is never
+   mirrored, recoloured or animated, and it carries no box, border or shadow. */
+.brand-logo {
+  display: block;
+  height: auto;
 }
 
-.brand span {
-  margin-top: 5px;
-  font-size: 0.57rem;
-  letter-spacing: 0.18em;
+.brand-logo--header {
+  width: 158px;
+  max-width: none;
+}
+
+.footer-brand-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.brand-logo--footer {
+  width: 180px;
 }
 
 .desktop-nav {
@@ -614,10 +624,6 @@ html[dir="rtl"] .eyebrow {
   gap: 70px;
 }
 
-.brand--footer {
-  color: var(--white);
-}
-
 .footer-grid p {
   max-width: 38ch;
   margin-top: 22px;
@@ -810,6 +816,10 @@ html[dir="rtl"] .eyebrow {
   .header-inner,
   .hero-grid {
     width: calc(100% - 40px);
+  }
+
+  .brand-logo--header {
+    width: 136px;
   }
 
   .hero-actions {

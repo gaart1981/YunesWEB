@@ -305,6 +305,105 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
   }
 }
 
+
+/* ============================================================================
+   Brand identity guards (branding implementation spec §14).
+   ========================================================================== */
+const BRAND_ASSETS = [
+  "salimi-engineering-primary-navy.svg",
+  "salimi-engineering-primary-white.svg",
+  "salimi-engineering-horizontal-navy.svg",
+  "salimi-engineering-mark-navy.svg",
+  "salimi-engineering-mark-white.svg"
+];
+for (const asset of BRAND_ASSETS) {
+  if (existsSync(join(OUT, "images", "brand", asset))) ok();
+  else fail("brand", `approved asset missing from export: ${asset}`);
+}
+if (existsSync(join(OUT, "icon.svg"))) ok();
+else fail("brand", "app icon (favicon) missing from export");
+
+/* The favicon must be the compact mark, never the full wordmark. */
+if (existsSync(join(OUT, "icon.svg"))) {
+  const icon = readFileSync(join(OUT, "icon.svg"), "utf8");
+  if (/SALIMI|ENGINEERING/.test(icon.replace(/<title[\s\S]*?<\/title>|<desc[\s\S]*?<\/desc>/g, "")))
+    fail("brand", "favicon contains the full wordmark; it must be the compact mark only");
+  else ok();
+}
+
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["", "about", "contact", "services", "experience"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+
+    /* Header and footer wordmarks are present and reference approved assets. */
+    const logos = [...html.matchAll(/<img src="\/images\/brand\/([^"]+)"/g)].map((m) => m[1]);
+    if (!logos.includes("salimi-engineering-primary-navy.svg"))
+      fail("brand", `/${locale}/${route}/: header wordmark missing`);
+    else ok();
+    if (!logos.includes("salimi-engineering-primary-white.svg"))
+      fail("brand", `/${locale}/${route}/: footer reverse wordmark missing`);
+    else ok();
+
+    /* Restraint: exactly two brand marks per page - header and footer. No
+       decorative logos in hero, cards, founder or contact sections. */
+    if (logos.length !== 2)
+      fail("brand", `/${locale}/${route}/: ${logos.length} brand marks rendered, expected 2`);
+    else ok();
+
+    /* Legacy text-built logo must not come back. */
+    if (/<strong>SALIMI<\/strong>/.test(html) || /brand--footer/.test(html))
+      fail("brand", `/${locale}/${route}/: legacy text-built logo markup still renders`);
+    else ok();
+
+    /* The link around the logo carries the accessible name; the image must not
+       announce the brand a second time. */
+    const brandLink = html.match(/<a[^>]*class="brand"[^>]*>/);
+    if (!brandLink || !/aria-label="Salimi Engineering/.test(brandLink[0]))
+      fail("brand", `/${locale}/${route}/: brand link has no accessible name`);
+    else ok();
+    for (const m of html.matchAll(/<img src="\/images\/brand\/[^"]+"([^>]*)>/g)) {
+      if (!/aria-hidden="true"/.test(m[1]) || !/alt=""/.test(m[1]))
+        fail("brand", `/${locale}/${route}/: brand image is not hidden from assistive tech`);
+      else ok();
+    }
+  }
+}
+
+/* Arabic must never mirror the artwork. */
+const rtlMirrors = css.match(/html\[dir="rtl"\][^{]*\{[^}]*transform:\s*scaleX\(-1\)/g) ?? [];
+for (const rule of rtlMirrors) {
+  if (/\.brand/.test(rule))
+    fail("brand", "an RTL rule mirrors the brand logo");
+  else ok();
+}
+if (/\.brand-logo[^{]*\{[^}]*scaleX\(-1\)/.test(css))
+  fail("brand", ".brand-logo is mirrored");
+else ok();
+
+/* Header height must not have grown to fit the logo. */
+const headerAfterLogo = css.match(/\.header-inner\s*\{[^}]*height:\s*(\d+)px/);
+if (headerAfterLogo && Number(headerAfterLogo[1]) !== 74)
+  fail("brand", `header height changed to ${headerAfterLogo[1]}px; must stay 74px`);
+else ok();
+
+/* Logo widths must stay inside the approved ranges. */
+const widthOf = (selector) => {
+  const m = css.match(new RegExp(`\\${selector}\\s*\\{[^}]*width:\\s*(\\d+)px`));
+  return m ? Number(m[1]) : null;
+};
+const headerW = widthOf(".brand-logo--header");
+if (headerW === null) fail("brand", "header logo width not declared");
+else if (headerW < 150 || headerW > 165)
+  fail("brand", `header logo ${headerW}px outside the approved 150-165px`);
+else ok();
+const footerW = widthOf(".brand-logo--footer");
+if (footerW === null) fail("brand", "footer logo width not declared");
+else if (footerW < 165 || footerW > 190)
+  fail("brand", `footer logo ${footerW}px outside the approved 165-190px`);
+else ok();
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {
