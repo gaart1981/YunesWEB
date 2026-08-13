@@ -528,13 +528,15 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
         fail("imagery", `/${locale}/${route}/: image outside the allowed set -> ${src}`);
       else ok();
     }
-    /* Experience may carry a hero illustration, but the project records must
-       not. An image beside a record reads as a depiction of that project,
-       which is the misattribution the whole page is built to avoid. */
+    /* The experience page carries no imagery at all beyond the brand. Even a
+       hero illustration sits above project records and invites the reader to
+       connect the two, which is the misattribution the page exists to avoid. */
     if (route === "experience") {
-      const list = html.match(/<div class="record-list">[\s\S]*?<\/section>/);
-      if (list && /<img/.test(list[0]))
-        fail("imagery", `/${locale}/experience/: project records carry imagery`);
+      const nonBrand = [...html.matchAll(/<img src="([^"]+)"/g)]
+        .map((m) => m[1])
+        .filter((src) => !src.startsWith("/images/brand/"));
+      if (nonBrand.length)
+        fail("imagery", `/${locale}/experience/: page carries imagery -> ${nonBrand.join(", ")}`);
       else ok();
     }
   }
@@ -550,7 +552,6 @@ const APPROVED_RASTER = new Set([
   "engineering-scope-sheet.webp",
   "plant-room-services.webp",
   "project-environments.webp",
-  "lead-engineer-scope.webp",
   "project-documentation.webp",
   "industrial-plant-systems.webp",
   "production-facility.webp"
@@ -630,6 +631,30 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
       fail("imagery", `/${locale}/${route}/: placeholder panel still rendered`);
     else ok();
   }
+}
+
+
+/* The WhatsApp link in internal page heroes must not use the reverse colour:
+   those heroes are Porcelain, so white text is invisible. */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["services", "about", "sectors", "owners-engineering-amo"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const hero = readFileSync(file, "utf8").match(/<section class="content-hero[\s\S]*?<\/section>/);
+    if (hero && /text-link--light/.test(hero[0]))
+      fail("contrast", `/${locale}/${route}/: reverse-coloured link on the light hero`);
+    else ok();
+  }
+}
+
+/* The contact page must not offer a call-to-action that navigates to itself. */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  const file = join(OUT, locale, "contact", "index.html");
+  if (!existsSync(file)) continue;
+  const main = readFileSync(file, "utf8").split("</header>")[1] ?? "";
+  if (/class="button[^"]*"[^>]*href="\/[a-z]{2}\/contact\/"/.test(main))
+    fail("cta", `/${locale}/contact/: page links to itself from a primary button`);
+  else ok();
 }
 
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);

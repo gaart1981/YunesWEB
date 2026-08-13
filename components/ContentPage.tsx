@@ -32,11 +32,7 @@ const pageImages: Partial<Record<SiteSlug, string>> = {
   "electrical-mep-engineering": "/images/graphics/industrial-plant-systems.webp",
   "local-engineering-partner-morocco": "/images/graphics/production-facility.webp",
   sectors: "/images/graphics/project-environments.webp",
-  about: "/images/graphics/lead-engineer-scope.webp",
-  // Experience carries a hero illustration only. The project records
-  // themselves stay image-free: an image beside a record is what would read
-  // as a depiction of that project.
-  experience: "/images/graphics/project-documentation.webp",
+  about: "/images/graphics/project-documentation.webp",
   contact: "/images/graphics/plant-room-services.webp"
 };
 
@@ -156,10 +152,10 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
               <p className="eyebrow">{page.eyebrow}</p>
               <h1>{page.title}</h1>
               <p className="content-lead">{page.lead}</p>
-              {!page.legal && (
+              {!page.legal && page.slug !== "contact" && (
                 <div className="hero-actions content-hero-actions">
                   <Link className="button button--sand" href={`/${locale}/contact`}>{site.navigation.cta}<Arrow /></Link>
-                  <a className="text-link text-link--light" href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}<Arrow /></a>
+                  <a className="text-link" href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}<Arrow /></a>
                 </div>
               )}
             </div>
