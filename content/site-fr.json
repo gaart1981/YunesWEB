@@ -595,6 +595,7 @@
       "sectionIntro": "Sauf mention contraire, les projets ci-dessous reflètent l’expérience professionnelle du fondateur dans des fonctions d’ingénierie antérieures, et non des missions réalisées par Salimi Engineering.",
       "projects": [
         {
+          "id": "mailru-office",
           "sector": "Bureaux",
           "title": "Immeuble de bureaux Mail.ru",
           "location": "Russie",
@@ -602,6 +603,7 @@
           "role": "Études électriques"
         },
         {
+          "id": "beeline-office",
           "sector": "Bureaux et locaux techniques",
           "title": "Immeuble de bureaux Beeline",
           "location": "Russie",
@@ -609,6 +611,7 @@
           "role": "Études préliminaires et d’exécution"
         },
         {
+          "id": "microsoft-offices",
           "sector": "Bureaux",
           "title": "Espaces de bureaux Microsoft",
           "location": "Russie",
@@ -616,6 +619,7 @@
           "role": "Études électriques"
         },
         {
+          "id": "tinkoff-callcentre",
           "sector": "Banque et tertiaire",
           "title": "Centre d’appels Tinkoff",
           "location": "Russie",
@@ -623,6 +627,7 @@
           "role": "Études d’exécution coordonnées"
         },
         {
+          "id": "citibank-callcentre",
           "sector": "Banque et tertiaire",
           "title": "Centre d’appels Citibank",
           "location": "Riazan, Russie · 7 000 m²",
@@ -630,6 +635,7 @@
           "role": "Électricité et sécurité coordonnées"
         },
         {
+          "id": "faurecia-plant",
           "sector": "Industrie automobile",
           "title": "Site de production Faurecia Automotive",
           "location": "Région de Kalouga, Russie",
@@ -637,6 +643,7 @@
           "role": "Ingénierie électrique industrielle"
         },
         {
+          "id": "tram-lighting",
           "sector": "Infrastructure transport",
           "title": "Éclairage extérieur de voies de tramway",
           "location": "Moscou, Perm, Lipetsk, Koursk et autres villes",
@@ -644,6 +651,7 @@
           "role": "Études d’éclairage d’infrastructure"
         },
         {
+          "id": "manor-systems",
           "sector": "Résidentiel privé",
           "title": "Systèmes techniques d’une propriété",
           "location": "Suisse",

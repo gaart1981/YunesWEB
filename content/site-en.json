@@ -595,6 +595,7 @@
       "sectionIntro": "Unless otherwise stated, the projects below reflect the founder’s professional experience in previous engineering roles, not assignments delivered by Salimi Engineering.",
       "projects": [
         {
+          "id": "mailru-office",
           "sector": "Corporate offices",
           "title": "Mail.ru office building",
           "location": "Russia",
@@ -602,6 +603,7 @@
           "role": "Electrical engineering design"
         },
         {
+          "id": "beeline-office",
           "sector": "Corporate and technical spaces",
           "title": "Beeline office building",
           "location": "Russia",
@@ -609,6 +611,7 @@
           "role": "Preliminary and construction design"
         },
         {
+          "id": "microsoft-offices",
           "sector": "Corporate offices",
           "title": "Microsoft office areas",
           "location": "Russia",
@@ -616,6 +619,7 @@
           "role": "Electrical engineering design"
         },
         {
+          "id": "tinkoff-callcentre",
           "sector": "Banking and offices",
           "title": "Tinkoff bank call-centre",
           "location": "Russia",
@@ -623,6 +627,7 @@
           "role": "Coordinated working design"
         },
         {
+          "id": "citibank-callcentre",
           "sector": "Banking and offices",
           "title": "Citibank call-centre",
           "location": "Ryazan, Russia · 7,000 m²",
@@ -630,6 +635,7 @@
           "role": "Coordinated electrical and life-safety design"
         },
         {
+          "id": "faurecia-plant",
           "sector": "Automotive manufacturing",
           "title": "Faurecia Automotive production facility",
           "location": "Kaluga Region, Russia",
@@ -637,6 +643,7 @@
           "role": "Industrial electrical engineering"
         },
         {
+          "id": "tram-lighting",
           "sector": "Transport infrastructure",
           "title": "Tram-track outdoor lighting",
           "location": "Moscow, Perm, Lipetsk, Kursk and other cities",
@@ -644,6 +651,7 @@
           "role": "Infrastructure lighting design"
         },
         {
+          "id": "manor-systems",
           "sector": "Private residential",
           "title": "Manor house technical systems",
           "location": "Switzerland",

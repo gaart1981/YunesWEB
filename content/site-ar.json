@@ -595,6 +595,7 @@
       "sectionIntro": "ما لم يُذكر خلاف ذلك، تعكس المشاريع أدناه الخبرة المهنية للمؤسس في أدوار هندسية سابقة، وليست مهامّ نفّذتها Salimi Engineering.",
       "projects": [
         {
+          "id": "mailru-office",
           "sector": "مكاتب شركات",
           "title": "مبنى مكاتب Mail.ru",
           "location": "روسيا",
@@ -602,6 +603,7 @@
           "role": "تصميم كهربائي"
         },
         {
+          "id": "beeline-office",
           "sector": "مكاتب ومساحات تقنية",
           "title": "مبنى مكاتب Beeline",
           "location": "روسيا",
@@ -609,6 +611,7 @@
           "role": "تصميم أولي وتنفيذي"
         },
         {
+          "id": "microsoft-offices",
           "sector": "مكاتب شركات",
           "title": "مساحات مكاتب Microsoft",
           "location": "روسيا",
@@ -616,6 +619,7 @@
           "role": "تصميم كهربائي"
         },
         {
+          "id": "tinkoff-callcentre",
           "sector": "بنوك ومكاتب",
           "title": "مركز اتصالات Tinkoff",
           "location": "روسيا",
@@ -623,6 +627,7 @@
           "role": "تصميم تنفيذي منسق"
         },
         {
+          "id": "citibank-callcentre",
           "sector": "بنوك ومكاتب",
           "title": "مركز اتصالات Citibank",
           "location": "ريازان، روسيا · 7,000 م²",
@@ -630,6 +635,7 @@
           "role": "تصميم كهربائي وسلامة منسق"
         },
         {
+          "id": "faurecia-plant",
           "sector": "صناعة السيارات",
           "title": "منشأة Faurecia Automotive",
           "location": "منطقة كالوغا، روسيا",
@@ -637,6 +643,7 @@
           "role": "هندسة كهربائية صناعية"
         },
         {
+          "id": "tram-lighting",
           "sector": "بنية تحتية للنقل",
           "title": "إنارة خارجية لمسارات الترام",
           "location": "موسكو وبيرم وليبيتسك وكورسك ومدن أخرى",
@@ -644,6 +651,7 @@
           "role": "تصميم إنارة البنية التحتية"
         },
         {
+          "id": "manor-systems",
           "sector": "سكن خاص",
           "title": "أنظمة تقنية لمنزل خاص",
           "location": "سويسرا",

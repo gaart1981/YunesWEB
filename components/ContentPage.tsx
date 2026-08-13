@@ -3,6 +3,7 @@ import type { Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import type { SiteContent, SitePage, SiteSlug } from "@/lib/site-content";
 import { getPageContent } from "@/lib/site-content";
+import { getRelatedExperience } from "@/lib/related-experience";
 
 const localeLabels: Record<Locale, string> = {
   en: "EN",
@@ -59,13 +60,13 @@ function destination(locale: Locale, href: string) {
 
 function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: SiteContent }) {
   const nav = site.navigation;
-  const phoneHref = `tel:${nav.phone.replace(/\s/g, "")}`;
   const whatsappHref = `https://wa.me/${nav.phone.replace(/[^\d]/g, "")}`;
   const links = [
     ["services", nav.services],
     ["sectors", nav.sectors],
     ["experience", nav.experience],
-    ["about", nav.about]
+    ["about", nav.about],
+    ["contact", nav.contact]
   ] as const;
 
   return (
@@ -90,15 +91,14 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
               </Link>
             ))}
           </div>
-          <a className="button button--small" href={phoneHref}>{nav.cta}</a>
+          <Link className="button button--small" href={`/${locale}/contact`}>{nav.cta}</Link>
         </div>
         <details className="mobile-menu">
           <summary aria-label={nav.services}><span /><span /></summary>
           <nav>
             <Link href={`/${locale}/`}>{nav.home}</Link>
             {links.map(([href, label]) => <Link key={href} href={`/${locale}/${href}`}>{label}</Link>)}
-            <Link href={`/${locale}/contact`}>{nav.contact}</Link>
-            <a href={phoneHref}>{nav.cta}</a>
+            <Link href={`/${locale}/contact`}>{nav.cta}</Link>
             <a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a>
             <div className="language-switcher language-switcher--mobile">
               {locales.map((item) => (
@@ -147,7 +147,7 @@ function Footer({ locale, site }: { locale: Locale; site: SiteContent }) {
 export function ContentPage({ locale, page, site }: { locale: Locale; page: SitePage; site: SiteContent }) {
   const pageImage = pageImages[page.slug];
   const experienceRecords = getPageContent(locale, "experience").projects ?? [];
-  const relatedProjects = page.relatedExperience ? experienceRecords.slice(0, 3) : [];
+  const relatedProjects = page.relatedExperience ? getRelatedExperience(page.slug, experienceRecords) : [];
   const phoneHref = `tel:${site.navigation.phone.replace(/\s/g, "")}`;
   const whatsappHref = `https://wa.me/${site.navigation.phone.replace(/[^\d]/g, "")}`;
 

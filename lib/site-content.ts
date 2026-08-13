@@ -57,6 +57,7 @@ export type CardItem = {
 
 export type ProcessItem = { title: string; text: string };
 export type ProjectItem = {
+  id: string;
   sector: string;
   title: string;
   location: string;

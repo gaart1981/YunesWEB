@@ -264,3 +264,94 @@ node scripts/check-design.mjs   PASS — 292 assertions
 Browser automation cannot run: Playwright's browser download is refused by the sandbox network policy. Therefore **no screenshots, no viewport verification, no Lighthouse scores, no contrast measurement, no keyboard-navigation trace, and no Arabic visual-flow confirmation.** These remain the only outstanding items, and none can be closed from inside this environment.
 
 Nothing has been pushed or merged. All work is local on `redesign/trust-engineering-bureau`.
+
+---
+
+## 13. Third pass — whole-site consistency corrections
+
+Independent review of the pushed branch found that the redesign was applied to the homepage and to page *content* architecture, but several global patterns had survived. All eight points are corrected below.
+
+### 1. Internal-page header now matches the homepage
+
+`ContentPage.tsx` had a different header interaction model from `HomePage.tsx`:
+
+| | Before | After |
+|---|---|---|
+| Contact in desktop nav | **absent** | present |
+| Header CTA target | `tel:` | `/{locale}/contact` |
+| Mobile menu CTA | `tel:` | `/{locale}/contact` |
+
+The duplicate Contact link in the mobile menu was removed, since Contact is now part of the shared `links` list. The unused `phoneHref` in the header scope was deleted. Telephone and WhatsApp remain available on the Contact page and in the footer, as the specification intends.
+
+### 2. Header height
+
+`.header-inner` was `82px`. Now `74px`, inside the 72–76px target. The mobile menu is positioned with `top`, which was hard-coded to the old `82px` and would have opened with an 8px gap — it is now `74px` and an assertion binds the two values together so they cannot drift apart again.
+
+### 3. Typography
+
+| Element | Before | After | Target |
+|---|---|---|---|
+| Global H2 | `clamp(2.25rem, 4vw, 4.15rem)` → up to 66px | `clamp(1.75rem, 2.6vw, 3rem)` → 28–48px | 34–48px desktop |
+| Founder blockquote | `clamp(1.3rem, 2.2vw, 2rem)` → up to 32px | `clamp(1.05rem, 1.4vw, 1.5rem)` → up to 24px | accent, not a second heading |
+
+The blockquote measure widened from 27ch to 34ch and its top margin dropped from 44px to 28px, so the reduction reads as deliberate rather than shrunken.
+
+### 4. Hero density
+
+`.hero-media` had `min-height: 520px` in `globals.css` **and** `min-height: 360px` in `marketing.css`. Both are gone. The frame is now driven by `aspect-ratio`, changed from `4 / 5` to `4 / 3`: at a ~40% column the portrait ratio alone produced a ~620px block, which kept the credibility strip below the fold regardless of the min-height removal. No `100vh` behaviour was reintroduced.
+
+### 5. Fixed card heights
+
+Removed: `.content-card` 355px, `.process-grid article` 340px, `.content-card` 270px (mobile), `.project-card` 360px, `.fact-grid > div` 142px, `.hero-drawing` 360px → 240px, `.content-hero-media` 360px, `.project-photo` 360px.
+
+`marketing.css` was the file that kept several of these alive. It had not been audited in the first two passes — the design check now reads all three stylesheets, which is how the surviving `.hero-media` rule was found.
+
+Padding now carries the structure: `.content-card` 26px/28px, `.process-grid article` 26px/24px.
+
+### 6. Service and process heading spacing
+
+Two `margin-top: 72px` rules reduced to `40px`, and `.process-grid h3` from 38px to 18px.
+
+### 7. Related experience is now genuinely related
+
+Previously every page rendered `experienceRecords.slice(0, 3)` — Owner's Engineering, Electrical & MEP, Local Partner, Sectors and Services all showed the same first three records. On pages whose purpose is credibility, that is filler rather than evidence.
+
+Two changes:
+
+1. **Stable ids** added to all eight project records in all four locales (`mailru-office`, `beeline-office`, `microsoft-offices`, `tinkoff-callcentre`, `citibank-callcentre`, `faurecia-plant`, `tram-lighting`, `manor-systems`). Titles and sectors are localised; ids are not, so the mapping is locale-independent.
+2. **`lib/related-experience.ts`** maps each page to the records that actually fit its scope, with the rationale recorded in the file.
+
+| Page | Records | Why |
+|---|---|---|
+| Owner's Engineering & AMO | Manor house, Citibank, Tinkoff | the explicit owner-side review/supervision record, plus two coordinated sets an owner's engineer would sign off |
+| Electrical & MEP | Citibank, Tinkoff, Beeline | load calculations, life-safety, coordinated multi-discipline document sets |
+| Local Partner | Faurecia, Tram lighting, Manor house | industrial site work, distributed multi-city infrastructure, on-site supervision |
+| Sectors | Mail.ru, Faurecia, Tram lighting | deliberately spans three different project environments |
+| Services | Mail.ru, Citibank, Faurecia | breadth across corporate, banking and industrial |
+
+No project was invented. The founder-attribution line renders above every list. Unknown ids are skipped rather than throwing, so a content rename degrades to fewer cards instead of breaking the build.
+
+### 8. New regression guards
+
+Each assertion exists because the matching defect shipped once already:
+
+- Contact present in desktop nav on **both** page types, across four locales and six routes;
+- header CTA resolves to Contact and is not a `tel:` link;
+- `.header-inner` height stays within 72–76px, **and** the mobile-menu `top` equals it;
+- global H2 ceiling does not exceed 48px;
+- `.content-card` 355px, `.process-grid` 340px and any large fixed `.hero-media` height are absent;
+- `ContentPage.tsx` contains no `experienceRecords.slice(`;
+- the rendered related-experience sets across the five pages are **not all identical**.
+
+### Third-pass results
+
+```
+npx tsc --noEmit                PASS (exit 0)
+npm run build                   PASS — 51 routes
+node scripts/check-export.mjs   PASS — 48 pages, 2619 assertions
+node scripts/check-design.mjs   PASS — 353 assertions
+```
+
+Design assertions 292 → **353**; export assertions 2575 → **2619**. No assertion was relaxed. The new hero-media guard failed on its first run and exposed the un-audited `marketing.css`, which is the defect it was written to catch.
+
+Browser-rendered QA remains blocked by the sandbox network policy — unchanged from §9.

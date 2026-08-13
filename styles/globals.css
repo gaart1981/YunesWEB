@@ -78,7 +78,7 @@ h1 {
 
 h2 {
   max-width: 16ch;
-  font-size: clamp(2.25rem, 4vw, 4.15rem);
+  font-size: clamp(1.75rem, 2.6vw, 3rem);
   font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ h3 {
   align-items: center;
   gap: 32px;
   width: min(1440px, calc(100% - clamp(40px, 8vw, 144px)));
-  height: 82px;
+  height: 74px;
   margin-inline: auto;
 }
 
@@ -372,8 +372,8 @@ html[dir="rtl"] .eyebrow {
 .hero-media {
   position: relative;
   overflow: hidden;
-  min-height: 520px;
-  aspect-ratio: 4 / 5;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
   border: 1px solid rgba(216, 197, 165, 0.28);
 }
 
@@ -497,7 +497,7 @@ html[dir="rtl"] .eyebrow {
 }
 
 .service-card h3 {
-  margin-top: 72px;
+  margin-top: 40px;
 }
 
 .service-card p {
@@ -530,7 +530,7 @@ html[dir="rtl"] .eyebrow {
 }
 
 .approach-grid h3 {
-  margin-top: 72px;
+  margin-top: 40px;
 }
 
 .approach-grid p {
@@ -567,11 +567,11 @@ html[dir="rtl"] .eyebrow {
 }
 
 .founder-copy blockquote {
-  max-width: 27ch;
-  margin: 44px 0 0;
-  padding-inline-start: 28px;
+  max-width: 34ch;
+  margin: 28px 0 0;
+  padding-inline-start: 24px;
   border-inline-start: 2px solid var(--sand);
-  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  font-size: clamp(1.05rem, 1.4vw, 1.5rem);
   line-height: 1.4;
 }
 
@@ -655,7 +655,7 @@ html[dir="rtl"] .eyebrow {
   .mobile-menu[open] nav {
     position: absolute;
     inset-inline: 0;
-    top: 82px;
+    top: 74px;
     display: flex;
     flex-direction: column;
     gap: 20px;

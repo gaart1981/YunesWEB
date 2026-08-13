@@ -5,27 +5,27 @@
 .content-hero-grid{position:relative;z-index:1;display:grid;min-height:0;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);align-items:center;gap:clamp(56px,9vw,140px);padding-block:clamp(48px,5.5vw,80px)}
 .content-hero h1{max-width:14ch;margin-bottom:30px;font-size:clamp(2.125rem,3.2vw,3.25rem)}
 .content-lead{max-width:65ch;margin-bottom:0;color:#c7d0d6;font-size:clamp(1.08rem,1.6vw,1.3rem)}
-.hero-drawing{position:relative;display:flex;min-height:360px;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid rgba(216,197,165,.35);background:linear-gradient(135deg,rgba(47,100,128,.15),transparent 60%),rgba(255,255,255,.02)}
+.hero-drawing{position:relative;display:flex;min-height:240px;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid rgba(216,197,165,.35);background:linear-gradient(135deg,rgba(47,100,128,.15),transparent 60%),rgba(255,255,255,.02)}
 .hero-drawing::before,.hero-drawing::after{position:absolute;content:"";border:1px solid rgba(216,197,165,.25)}
 .hero-drawing::before{inset:18% 12% 20% 30%}.hero-drawing::after{inset:38% 28% 9% 9%;transform:rotate(-8deg)}
 .hero-drawing span,.hero-drawing b{position:relative;z-index:1;color:var(--sand);font-size:.68rem;letter-spacing:.14em}.hero-drawing i{position:relative;z-index:1;width:42%;height:1px;background:var(--sand);transform:rotate(-32deg)}
 .fact-strip{background:var(--porcelain);border-bottom:1px solid var(--border)}.fact-grid{display:grid;grid-template-columns:repeat(3,1fr)}
-.fact-grid>div{min-height:142px;padding:30px;border-inline-end:1px solid var(--border)}.fact-grid>div:first-child{padding-inline-start:0}.fact-grid>div:last-child{border-inline-end:0}
+.fact-grid>div{min-height:0;padding:24px 30px;border-inline-end:1px solid var(--border)}.fact-grid>div:first-child{padding-inline-start:0}.fact-grid>div:last-child{border-inline-end:0}
 .fact-grid strong{display:block;color:var(--ink);font-size:clamp(1.45rem,2.5vw,2.3rem);font-weight:600}.fact-grid span{display:block;margin-top:8px;color:var(--steel);font-size:.82rem}
 .content-section{padding: clamp(56px,10vw, 100px) 0;background:var(--white)}.content-section--dark{color:var(--white);background:var(--slate)}.content-section--porcelain{background:var(--porcelain)}
 .content-heading{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);align-items:end;gap:80px;margin-bottom:64px}.content-heading>p{max-width:60ch;margin-bottom:0;color:var(--steel)}
 .content-card-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--border);border-inline-start:1px solid var(--border)}
-.content-card{display:flex;min-height:355px;flex-direction:column;padding:34px;border-inline-end:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--white)}
+.content-card{display:flex;min-height:0;flex-direction:column;padding:34px;border-inline-end:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--white)}
 .content-card--link{transition:background 180ms ease,transform 180ms ease}.content-card--link:hover{background:var(--porcelain);transform:translateY(-3px)}
 .content-card h3{max-width:19ch;margin-top:58px}.content-card p{max-width:54ch;color:var(--steel)}
 .card-link{display:inline-flex;align-items:center;gap:10px;margin-top:auto;padding-top:28px;color:var(--copper);font-size:.82rem;font-weight:700}.card-link svg path{fill:none;stroke:currentColor;stroke-width:1.7}
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:65px;border-top:1px solid rgba(255,255,255,.16)}
-.process-grid article{min-height:340px;padding:34px 28px;border-inline-end:1px solid rgba(255,255,255,.16)}.process-grid article:first-child{padding-inline-start:0}.process-grid article:last-child{padding-inline-end:0;border-inline-end:0}
+.process-grid article{min-height:0;padding:34px 28px;border-inline-end:1px solid rgba(255,255,255,.16)}.process-grid article:first-child{padding-inline-start:0}.process-grid article:last-child{padding-inline-end:0;border-inline-end:0}
 .process-grid span{color:var(--sand);font-size:.7rem;font-weight:700}.process-grid h3{margin-top:68px}.process-grid p{color:#bdc6cc}
 .list-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(70px,10vw,150px)}
 .evidence-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--border)}.evidence-list li{display:grid;grid-template-columns:58px 1fr;align-items:start;gap:20px;padding:24px 0;border-bottom:1px solid var(--border)}
 .evidence-list span{color:var(--copper);font-size:.72rem;font-weight:700}.evidence-list p{margin:0;font-size:1.03rem}
-.project-grid{display:grid;gap:34px;margin-top:60px}.project-card{display:grid;grid-template-columns:minmax(280px,.75fr) minmax(0,1.25fr);min-height:360px;border:1px solid var(--border)}
+.project-grid{display:grid;gap:34px;margin-top:60px}.project-card{display:grid;grid-template-columns:minmax(280px,.75fr) minmax(0,1.25fr);min-height:0;border:1px solid var(--border)}
 .project-visual{position:relative;display:flex;overflow:hidden;flex-direction:column;justify-content:space-between;padding:28px;color:var(--white);background:linear-gradient(135deg,rgba(47,100,128,.36),transparent),var(--ink)}
 .project-visual::before,.project-visual::after{position:absolute;content:"";border:1px solid rgba(216,197,165,.3)}.project-visual::before{inset:18% -10% 18% 22%;transform:rotate(12deg)}.project-visual::after{inset:34% 30% -18% -10%;transform:rotate(-10deg)}
 .project-visual span,.project-visual b,.project-visual i{position:relative;z-index:1}.project-visual span,.project-visual b{color:var(--sand);font-size:.72rem;letter-spacing:.12em}.project-visual i{width:45%;height:1px;background:var(--sand)}
@@ -41,7 +41,7 @@
 .footer-expanded{display:grid;grid-template-columns:1.2fr .8fr .6fr;gap:60px}.footer-expanded p{max-width:42ch;margin-top:22px;color:#aeb9c1}.footer-contact,.footer-links{display:grid;align-content:start;gap:10px;color:#bdc6cc;font-size:.86rem}.footer-contact a:hover,.footer-links a:hover{color:var(--white)}.footer-preview-note{margin-top:45px;padding:18px 20px;color:var(--sand);border:1px solid rgba(216,197,165,.24);font-size:.78rem}
 @media(max-width:1000px){.content-hero-grid{grid-template-columns:1fr 320px}.process-grid{grid-template-columns:1fr 1fr}.process-grid article:nth-child(2){border-inline-end:0}.process-grid article:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.16)}.footer-expanded{grid-template-columns:1fr 1fr}.footer-links{grid-column:1/-1;grid-template-columns:repeat(3,max-content)}}
 @media(max-width:800px){.content-hero-grid,.content-heading,.list-layout,.project-card,.profile-layout,.contact-page-grid,.legal-layout,.page-cta-grid{grid-template-columns:1fr}.content-hero-grid{min-height:auto;padding-block:44px 40px}.content-hero h1{font-size:clamp(2rem,7.5vw,2.6rem)}.hero-drawing{min-height:230px}.fact-grid{grid-template-columns:1fr}.fact-grid>div,.fact-grid>div:first-child{min-height:100px;padding:22px 0;border-inline-end:0;border-bottom:1px solid var(--border)}.content-heading{gap:20px}.content-card-grid{grid-template-columns:1fr}.content-card{min-height:0}.process-grid{grid-template-columns:1fr}.process-grid article,.process-grid article:first-child,.process-grid article:last-child{min-height:auto;padding:30px 0;border-inline-end:0;border-bottom:1px solid rgba(255,255,255,.16)}.process-grid h3{margin-top:38px}.project-card{min-height:0}.project-visual{min-height:240px}.profile-image{max-width:520px}.project-form{grid-template-columns:1fr}.form-wide{grid-column:auto}.page-cta-grid{justify-items:start}.footer-expanded{grid-template-columns:1fr}.footer-links{grid-column:auto;grid-template-columns:1fr}}
-@media(max-width:500px){.content-card{min-height:270px;padding:28px 22px}.project-form{padding:24px 18px}.hero-drawing{min-height:190px}}
+@media(max-width:500px){.content-card{min-height:0;padding:24px 20px}.project-form{padding:24px 18px}.hero-drawing{min-height:170px}}
 
 /* Section-level attribution note on the experience page. Legible rather than
    fine print: the disclosure has to be readable to do its job. */
@@ -120,3 +120,9 @@
 .content-hero--reference .content-hero-grid{padding-block:clamp(36px,4vw,56px)}
 .content-hero--reference h1{max-width:22ch;font-size:clamp(1.6rem,2.4vw,2.25rem)}
 .content-hero--reference .content-lead{max-width:64ch}
+
+/* Content-driven card rhythm. Cards are information panels, not equal-height
+   presentation tiles, so padding carries the structure instead of a floor. */
+.content-card{padding:26px 28px}
+.process-grid article{padding:26px 24px}
+.process-grid h3{margin-top:18px}
