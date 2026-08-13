@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/site-url";
 import { ContentPage } from "@/components/ContentPage";
 import { isLocale, locales } from "@/lib/home-content";
 import { getPageContent, getSiteContent, isSiteSlug, pageSlugs } from "@/lib/site-content";
+import { JsonLd, pageGraph } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => pageSlugs.map((slug) => ({ locale, slug })));
@@ -17,7 +18,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(SITE_URL),
     title: page.seo.title,
     description: page.seo.description,
-    robots: { index: false, follow: false },
     alternates: {
       canonical: `/${locale}/${slug}`,
       languages: {
@@ -32,7 +32,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: page.seo.title,
       description: page.seo.description,
       siteName: "Salimi Engineering",
-      type: "website"
+      type: "website",
+      url: `/${locale}/${slug}/`,
+      locale,
+      images: [{ url: "/images/brand/og-salimi-engineering.png", width: 1200, height: 630 }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.seo.title,
+      description: page.seo.description,
+      images: ["/images/brand/og-salimi-engineering.png"]
     }
   };
 }
@@ -40,5 +49,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function PublicContentPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   if (!isLocale(locale) || !isSiteSlug(slug)) notFound();
-  return <ContentPage locale={locale} page={getPageContent(locale, slug)} site={getSiteContent(locale)} />;
+  const page = getPageContent(locale, slug);
+  return (
+    <>
+      <JsonLd data={pageGraph(locale, slug, page.title, page.seo.description)} />
+      <ContentPage locale={locale} page={page} site={getSiteContent(locale)} />
+    </>
+  );
 }

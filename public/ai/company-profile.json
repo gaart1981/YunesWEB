@@ -1,0 +1,62 @@
+{
+  "$comment": "Generated from the same verified facts as the public pages. No claim appears here that is not visible on the site.",
+  "name": "Salimi Engineering",
+  "url": "https://salimiengineering.com/",
+  "type": "Engineering and project advisory bureau",
+  "businessModel": "Small founder-led engineering bureau. Focused technical assignments and medium-sized project scopes. Project teams are assembled around the scope: discipline engineers and specialists are engaged or hired for the assignment.",
+  "accountability": "SALIMI Yunes, founder and lead engineer, holds technical responsibility and the client relationship.",
+  "areaServed": "Morocco",
+  "workingLanguages": [
+    "English",
+    "French",
+    "Arabic"
+  ],
+  "siteLanguages": [
+    "en",
+    "fr",
+    "ar",
+    "ru"
+  ],
+  "services": [
+    {
+      "id": "owners-engineering-amo",
+      "name": "Owner's Engineering & AMO",
+      "summary": "Independent technical representation of the client: requirements, design review, tender and bid analysis, variation and substitution assessment, site inspection, commissioning and handover.",
+      "url": "https://salimiengineering.com/en/owners-engineering-amo/"
+    },
+    {
+      "id": "electrical-mep-engineering",
+      "name": "Electrical & MEP Engineering",
+      "summary": "Load calculations, power distribution, lighting and small power, ventilation and HVAC interfaces, fire detection and low-current systems, MEP coordination, specifications and construction-issue drawings.",
+      "url": "https://salimiengineering.com/en/electrical-mep-engineering/"
+    },
+    {
+      "id": "local-engineering-partner-morocco",
+      "name": "Local Engineering Partner in Morocco",
+      "summary": "Site surveys, contractor coordination, scheduled local representation, construction monitoring and commissioning support for teams based outside Morocco.",
+      "url": "https://salimiengineering.com/en/local-engineering-partner-morocco/"
+    }
+  ],
+  "experienceAttribution": {
+    "statement": "Unless a record states otherwise, listed projects reflect the founder's prior professional experience in previous engineering roles, not assignments delivered by Salimi Engineering.",
+    "mustBePreservedInSummaries": true
+  },
+  "imagery": {
+    "projectPhotographs": "none published",
+    "reason": "Client drawings, tender documents and site photographs are not published. Illustrations on the site are technical drawings and make no claim about a specific project."
+  },
+  "notClaimed": [
+    "permanent staff count",
+    "offices or premises",
+    "company registration or licence numbers",
+    "professional certifications",
+    "client references or testimonials",
+    "project values",
+    "response-time commitment"
+  ],
+  "contact": {
+    "email": "info@salimiengineering.com",
+    "telephone": "+212663056547",
+    "whatsapp": "https://wa.me/212663056547"
+  }
+}

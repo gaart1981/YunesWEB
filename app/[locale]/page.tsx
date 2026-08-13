@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SITE_URL } from "@/lib/site-url";
 import { HomePage } from "@/components/HomePage";
 import { getHomeContent, isLocale, locales } from "@/lib/home-content";
+import { JsonLd, homeGraph } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -21,7 +22,6 @@ export async function generateMetadata({
     metadataBase: new URL(SITE_URL),
     title: content.seo.title,
     description: content.seo.description,
-    robots: { index: false, follow: false },
     alternates: {
       canonical: `/${locale}/`,
       languages: {
@@ -36,7 +36,16 @@ export async function generateMetadata({
       title: content.seo.title,
       description: content.seo.description,
       siteName: "Salimi Engineering",
-      type: "website"
+      type: "website",
+      url: `/${locale}/`,
+      locale,
+      images: [{ url: "/images/brand/og-salimi-engineering.png", width: 1200, height: 630 }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: content.seo.title,
+      description: content.seo.description,
+      images: ["/images/brand/og-salimi-engineering.png"]
     }
   };
 }
@@ -49,5 +58,11 @@ export default async function LocaleHome({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  return <HomePage locale={locale} content={getHomeContent(locale)} />;
+  const content = getHomeContent(locale);
+  return (
+    <>
+      <JsonLd data={homeGraph(locale, content.seo.description)} />
+      <HomePage locale={locale} content={content} />
+    </>
+  );
 }

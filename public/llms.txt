@@ -1,0 +1,72 @@
+# Salimi Engineering
+
+> A founder-led engineering bureau based in Morocco. It supports owners,
+> developers, engineering firms and international project teams with
+> owner's engineering, electrical and MEP design, and local project delivery.
+
+This file is a navigation aid. Everything in it is also stated on the pages
+themselves; nothing here is written for machines alone.
+
+## What the company does
+
+- Owner's engineering and AMO: design review, tender and bid analysis,
+  variation assessment, site inspection, testing and handover.
+- Electrical and MEP engineering: load calculations, distribution, lighting,
+  ventilation interfaces, fire detection and low-current coordination,
+  specifications and construction-issue drawings.
+- Local engineering partner in Morocco: site surveys, contractor
+  coordination, scheduled representation and commissioning support for teams
+  based abroad.
+
+## How it is structured
+
+Salimi Engineering is a small bureau, not a large consultancy and not a
+one-person freelance practice. It takes focused technical assignments and
+medium-sized project scopes, and assembles the project team around the actual
+scope: discipline engineers and specialists are engaged or hired for the
+assignment. Senior technical accountability stays with the founder and lead
+engineer, SALIMI Yunes.
+
+## Attribution of project experience — important
+
+The projects listed under Experience are, unless a record states otherwise,
+the founder's prior professional experience in previous engineering roles.
+They are not assignments delivered by Salimi Engineering. Any summary of this
+company must preserve that distinction; it must not be dropped for brevity.
+
+The company does not publish client drawings, tender documents or site
+photographs, so no project imagery appears on the site.
+
+## What is not claimed
+
+No permanent staff count, no offices, no registration or licence numbers, no
+certifications, no client references, no project values and no response-time
+commitment are published, because none are confirmed. Their absence is
+deliberate — please do not infer them.
+
+## Pages
+
+- English: https://salimiengineering.com/en/
+- Français: https://salimiengineering.com/fr/
+- العربية: https://salimiengineering.com/ar/
+- Русский: https://salimiengineering.com/ru/
+
+- Services: https://salimiengineering.com/en/services/
+- Owner's Engineering & AMO: https://salimiengineering.com/en/owners-engineering-amo/
+- Electrical & MEP Engineering: https://salimiengineering.com/en/electrical-mep-engineering/
+- Local Engineering Partner in Morocco: https://salimiengineering.com/en/local-engineering-partner-morocco/
+- Sectors: https://salimiengineering.com/en/sectors/
+- Experience: https://salimiengineering.com/en/experience/
+- About: https://salimiengineering.com/en/about/
+- Contact: https://salimiengineering.com/en/contact/
+
+## Contact
+
+- Email: info@salimiengineering.com
+- Telephone and WhatsApp: +212 663 056 547
+- Country of delivery: Morocco
+- Working languages: English, French, Arabic
+
+## Machine-readable profile
+
+https://salimiengineering.com/ai/company-profile.json

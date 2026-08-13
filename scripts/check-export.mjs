@@ -189,19 +189,78 @@ for (const page of pages) {
 }
 notes.push(`canonical email check ran across ${pages.length} pages`);
 
-/* ------------------------------------------ indexing policy must not drift */
+/* ---------------------------------------------- launch indexing policy */
+/* The site is live. These assertions replace the pre-launch ones: they now
+   guard the opposite failure - shipping a change that silently de-indexes
+   the site, which is far harder to notice than a blocked launch. */
 const robots = join(OUT, "robots.txt");
 if (existsSync(robots)) {
   const body = readFileSync(robots, "utf8");
-  notes.push(`robots.txt: ${body.replace(/\s+/g, " ").trim()}`);
-  if (!/Disallow:\s*\//.test(body))
-    fail("indexing", "robots.txt no longer disallows crawling — pre-launch policy changed");
+  notes.push(`robots.txt: ${body.replace(/\s+/g, " ").trim().slice(0, 120)}`);
+  if (/Disallow:\s*\/\s*$/m.test(body))
+    fail("indexing", "robots.txt still blocks the whole site");
+  else ok();
+  for (const path of ["/editjson/", "/api/"]) {
+    if (!body.includes(path)) fail("indexing", `robots.txt no longer protects ${path}`);
+    else ok();
+  }
+  if (!/Sitemap:/i.test(body)) fail("indexing", "robots.txt does not declare the sitemap");
   else ok();
 }
-const homeMeta = pages.find((p) => p.locale === "en" && p.route === "");
-if (homeMeta && !/name="robots"[^>]*noindex/.test(homeMeta.html))
-  fail("indexing", "page-level noindex missing — pre-launch policy changed");
-else ok();
+
+for (const page of pages) {
+  if (/name="robots"[^>]*noindex/.test(page.html))
+    fail("indexing", `${page.file}: page is noindex`);
+  else ok();
+  if (!/<link rel="canonical" href="https:\/\//.test(page.html))
+    fail("indexing", `${page.file}: canonical is missing or not absolute`);
+  else ok();
+  if (!/hrefLang="x-default"/.test(page.html))
+    fail("indexing", `${page.file}: hreflang cluster incomplete`);
+  else ok();
+  if (!/application\/ld\+json/.test(page.html))
+    fail("indexing", `${page.file}: no structured data`);
+  else ok();
+  if (!/property="og:image"/.test(page.html))
+    fail("indexing", `${page.file}: no Open Graph image`);
+  else ok();
+}
+
+const sitemapFile = join(OUT, "sitemap.xml");
+if (!existsSync(sitemapFile)) fail("indexing", "sitemap.xml missing from the export");
+else {
+  const xml = readFileSync(sitemapFile, "utf8");
+  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  if (urls.length !== pages.length)
+    fail("indexing", `sitemap lists ${urls.length} URLs, expected ${pages.length}`);
+  else ok();
+  for (const bad of ["/editjson", "/api/", "/preview"]) {
+    if (urls.some((u) => u.includes(bad)))
+      fail("indexing", `sitemap exposes ${bad}`);
+    else ok();
+  }
+  notes.push(`sitemap.xml: ${urls.length} URLs`);
+}
+
+for (const asset of ["llms.txt", "ai/company-profile.json"]) {
+  if (existsSync(join(OUT, asset))) ok();
+  else fail("indexing", `${asset} missing from the export`);
+}
+
+/* The founder-attribution rule must survive into the machine-readable layer:
+   an AI summary that drops it is the failure mode Doc 13 §13 describes. */
+if (existsSync(join(OUT, "ai", "company-profile.json"))) {
+  const profile = JSON.parse(readFileSync(join(OUT, "ai", "company-profile.json"), "utf8"));
+  if (!profile.experienceAttribution?.statement)
+    fail("truth", "AI profile omits the founder-attribution statement");
+  else ok();
+}
+if (existsSync(join(OUT, "llms.txt"))) {
+  const llms = readFileSync(join(OUT, "llms.txt"), "utf8");
+  if (!/prior professional experience/i.test(llms))
+    fail("truth", "llms.txt omits the founder-attribution statement");
+  else ok();
+}
 
 /* ------------------------------------------------------------------ report */
 console.log(`\nStatic export QA — ${pages.length} pages, ${checks} assertions passed`);

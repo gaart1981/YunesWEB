@@ -553,6 +553,7 @@ const APPROVED_RASTER = new Set([
   "plant-room-services.webp",
   "project-environments.webp",
   "project-documentation.webp",
+  "og-salimi-engineering.png",
   "industrial-plant-systems.webp",
   "production-facility.webp"
 ]);
