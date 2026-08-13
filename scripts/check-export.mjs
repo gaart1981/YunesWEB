@@ -128,43 +128,70 @@ for (const page of pages) {
   }
 }
 
-/* --------------------------------- 22.6 contact form structure vs blueprint */
+/* ------------------------- 22.6 contact form: delivery-consistent or absent */
+/* The form is currently withheld pending Netlify Forms configuration. This
+   check no longer requires a form to exist - it requires that whatever exists
+   can actually deliver, and that the contact page is never a dead end.
+   Whichever state the site is in, the failure mode it guards is the same: a
+   form that accepts a submission and silently drops it. */
 const blueprintPath = join(OUT, "__forms.html");
-if (!existsSync(blueprintPath)) {
-  fail("form", "public/__forms.html blueprint is missing from the export");
+const contactPages = LOCALES
+  .map((locale) => ({ locale, file: pageFor(locale, "contact") }))
+  .filter(({ file }) => existsSync(file))
+  .map(({ locale, file }) => ({ locale, file, html: readFileSync(file, "utf8") }));
+
+const withForm = contactPages.filter(({ html }) => /<form[\s>]/.test(html));
+
+if (withForm.length === 0) {
+  /* No form rendered: the blueprint must not be left behind, or Netlify
+     registers a form the site does not show. */
+  if (existsSync(blueprintPath))
+    fail("form", "public/__forms.html remains although no form is rendered");
+  else ok();
+  notes.push("contact form withheld — delivery not configured");
 } else {
-  const blueprint = readFileSync(blueprintPath, "utf8");
-  const names = (html) =>
-    new Set([...html.matchAll(/<(?:input|select|textarea)[^>]*name="([^"]+)"/g)].map((m) => m[1]));
-  const blueprintNames = names(blueprint);
-  if (!blueprint.includes('name="project-enquiry"'))
-    fail("form", "blueprint form-name is not project-enquiry");
+  if (withForm.length !== contactPages.length)
+    fail("form", "the form renders in some locales but not others");
   else ok();
 
-  for (const locale of LOCALES) {
-    const file = pageFor(locale, "contact");
-    if (!existsSync(file)) continue;
-    const html = readFileSync(file, "utf8");
-    const form = html.match(/<form[\s\S]*?<\/form>/);
-    if (!form) { fail("form", `${file}: no <form> rendered`); continue; }
-    if (!form[0].includes('name="project-enquiry"'))
-      fail("form", `${file}: form name is not project-enquiry`);
-    else ok();
-    if (!/data-netlify="true"/.test(form[0]))
-      fail("form", `${file}: missing data-netlify attribute`);
+  if (!existsSync(blueprintPath)) {
+    fail("form", "a form is rendered but public/__forms.html is missing, so Netlify cannot detect it");
+  } else {
+    const blueprint = readFileSync(blueprintPath, "utf8");
+    const names = (html) =>
+      new Set([...html.matchAll(/<(?:input|select|textarea)[^>]*name="([^"]+)"/g)].map((m) => m[1]));
+    const blueprintNames = names(blueprint);
+    if (!blueprint.includes('name="project-enquiry"'))
+      fail("form", "blueprint form-name is not project-enquiry");
     else ok();
 
-    const rendered = names(form[0]);
-    for (const field of rendered) {
-      if (!blueprintNames.has(field))
-        fail("form", `${file}: field "${field}" is not declared in __forms.html`);
+    for (const { file, html } of withForm) {
+      const form = html.match(/<form[\s\S]*?<\/form>/);
+      if (!form) continue;
+      if (!form[0].includes('name="project-enquiry"'))
+        fail("form", `${file}: form name is not project-enquiry`);
+      else ok();
+      if (!/data-netlify="true"/.test(form[0]))
+        fail("form", `${file}: missing data-netlify attribute`);
+      else ok();
+      for (const field of names(form[0])) {
+        if (!blueprintNames.has(field))
+          fail("form", `${file}: field "${field}" is not declared in __forms.html`);
+        else ok();
+      }
+      const labels = (form[0].match(/<label/g) ?? []).length;
+      if (labels < 4) fail("form", `${file}: only ${labels} labels found on the form`);
       else ok();
     }
-    // Labels must be associated for accessibility (§19).
-    const labels = (form[0].match(/<label/g) ?? []).length;
-    if (labels < 4) fail("form", `${file}: only ${labels} labels found on the form`);
-    else ok();
   }
+}
+
+/* Whether or not a form exists, the contact page must offer a working route. */
+for (const { file, html } of contactPages) {
+  const reachable =
+    /href="mailto:/.test(html) && /href="tel:/.test(html) && /wa\.me\//.test(html);
+  if (!reachable) fail("form", `${file}: no working contact route on the contact page`);
+  else ok();
 }
 
 /* ------------------------------------------------------ structural sanity */

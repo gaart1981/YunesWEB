@@ -360,22 +360,18 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
                   <ul>{page.whatToSend.items.map((item) => <li key={item}>{item}</li>)}</ul>
                 </div>
               )}
-            </div>
-            <form className="project-form" name="project-enquiry" method="POST" action={`/${locale}/contact/`} data-netlify="true" netlify-honeypot="company-website">
-              <input type="hidden" name="form-name" value="project-enquiry" />
-              <p className="honeypot"><label>Website<input name="company-website" /></label></p>
-              <label><span>{page.contact.form.name}</span><input name="name" autoComplete="name" required /></label>
-              <label><span>{page.contact.form.company}</span><input name="company" autoComplete="organization" required /></label>
-              <label><span>{page.contact.form.email}</span><input name="email" type="email" autoComplete="email" required /></label>
-              <label><span>{page.contact.form.service}</span><select name="service" required defaultValue=""><option value="" disabled>—</option>{page.contact.form.services.map((service) => <option key={service}>{service}</option>)}</select></label>
-              <label className="form-wide"><span>{page.contact.form.message}</span><textarea name="message" rows={7} required /></label>
-              <button className="button form-wide" type="submit">{page.contact.form.submit}<Arrow /></button>
               {page.privacyNote && (
-                <p className="privacy-note form-wide">
+                <p className="privacy-note">
                   {page.privacyNote} <Link href={`/${locale}/privacy-policy`}>{site.navigation.privacy}</Link>
                 </p>
               )}
-            </form>
+            </div>
+            {/* The enquiry form is withheld until Netlify Forms delivery is
+                configured and verified. A form that accepts a submission and
+                delivers nothing is worse than no form: the visitor believes
+                they have made contact. Email, phone and WhatsApp below all
+                work. To restore, re-render this block and put back
+                public/__forms.html with matching field names. */}
           </div></section>
         )}
 
