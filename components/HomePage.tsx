@@ -213,6 +213,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
                 <Link className="button button--sand" href={`/${locale}/contact`}>{content.contact.button}<Arrow /></Link>
                 <a className="text-link text-link--light" href={whatsappHref} target="_blank" rel="noreferrer">{content.hero.whatsappCta}<Arrow /></a>
               </div>
+              <p className="response-note response-note--light">{content.contact.responseTime}</p>
             </div>
           </div>
         </section>

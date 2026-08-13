@@ -104,7 +104,8 @@
     "eyebrow": "A technical problem is enough to start",
     "title": "Tell us what is blocking your project.",
     "text": "A first call can clarify the problem, the documents available, the site conditions and the fastest useful intervention.",
-    "button": "Discuss the project"
+    "button": "Discuss the project",
+    "responseTime": "We reply within one working day"
   },
   "footer": {
     "descriptor": "Engineering, MEP, owner-side and project delivery support in Morocco",

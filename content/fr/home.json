@@ -104,7 +104,8 @@
     "eyebrow": "Un problème technique suffit pour commencer",
     "title": "Expliquez-nous ce qui bloque votre projet.",
     "text": "Un premier échange permet de clarifier le problème, les documents disponibles, les contraintes du site et l’intervention la plus utile.",
-    "button": "Discuter du projet"
+    "button": "Discuter du projet",
+    "responseTime": "Nous répondons sous un jour ouvré"
   },
   "footer": {
     "descriptor": "Ingénierie, MEP, suivi côté maître d’ouvrage et réalisation de projets au Maroc",

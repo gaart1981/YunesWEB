@@ -104,7 +104,8 @@
     "eyebrow": "Basta con un problema técnico para empezar",
     "title": "¿Qué está frenando su proyecto?",
     "text": "Una primera llamada permite aclarar el problema, la documentación disponible, las condiciones de obra y la intervención más útil a corto plazo.",
-    "button": "Hablemos del proyecto"
+    "button": "Hablemos del proyecto",
+    "responseTime": "Respondemos en un día laborable"
   },
   "footer": {
     "descriptor": "Ingeniería, instalaciones, asistencia a la propiedad y seguimiento de obra en Marruecos",

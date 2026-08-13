@@ -20,7 +20,8 @@
     "skip": "Перейти к содержимому",
     "priorExperienceNote": "Предыдущий профессиональный опыт основателя.",
     "recordScope": "Объём работ",
-    "recordRole": "Роль"
+    "recordRole": "Роль",
+    "responseTime": "Отвечаем в течение рабочего дня"
   },
   "pages": {
     "services": {

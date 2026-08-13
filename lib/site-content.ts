@@ -30,6 +30,7 @@ export type SiteSlug = (typeof pageSlugs)[number];
 
 export type Navigation = {
   home: string;
+  responseTime: string;
   recordScope: string;
   recordRole: string;
   priorExperienceNote: string;

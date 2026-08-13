@@ -737,6 +737,25 @@ for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
   }
 }
 
+
+/* The response commitment is a promise, not decoration. It must appear beside
+   the contact actions in every language, or some visitors get the reassurance
+   and others do not. Confirmed by the owner on 2026-08-13 and recorded in
+   implementation/missing-information.md §D1. */
+for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
+  for (const route of ["", "contact"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+    const notes = [...html.matchAll(/class="response-note[^"]*">([^<]+)</g)].map((m) => m[1].trim());
+    if (!notes.length)
+      fail("trust", `/${locale}/${route}/: response commitment missing`);
+    else if (notes.some((n) => !n))
+      fail("trust", `/${locale}/${route}/: response commitment is empty`);
+    else ok();
+  }
+}
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {

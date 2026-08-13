@@ -20,7 +20,8 @@
     "skip": "Zum Inhalt springen",
     "priorExperienceNote": "Ausgewählte frühere Berufserfahrung des Gründers.",
     "recordScope": "Leistungsumfang",
-    "recordRole": "Rolle"
+    "recordRole": "Rolle",
+    "responseTime": "Antwort innerhalb eines Werktags"
   },
   "pages": {
     "services": {

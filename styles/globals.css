@@ -1069,3 +1069,31 @@ html[dir="rtl"] .lang-menu__list a[aria-current="true"] {
 @media (max-width: 800px) {
   .lang-menu { display: none; }
 }
+
+/* Response commitment. Sits directly under the action it qualifies, because
+   the doubt it answers — "is anyone still there?" — occurs at the moment of
+   clicking, not earlier. Quiet by design: a promise shouted looks like a
+   sales claim, a promise stated plainly reads as a working practice. */
+.response-note {
+  margin: 14px 0 0;
+  color: var(--steel);
+  font-size: 0.86rem;
+  letter-spacing: 0.01em;
+}
+
+.response-note::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-inline-end: 9px;
+  border-radius: 50%;
+  background: var(--copper);
+  vertical-align: middle;
+}
+
+.response-note--light {
+  color: #c3ccd3;
+}
+
+.response-note--light::before { background: var(--sand); }

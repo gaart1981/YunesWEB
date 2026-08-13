@@ -149,3 +149,26 @@ A GitHub personal access token was transmitted in plain text in the chat session
 **C2. Dependency-security status.**
 
 The prior 2026-08-04 audit described vulnerabilities in `next@16.0.0`. The repository has since moved to a later Next.js version. Dependency-security status must be reverified with a current `npm audit`; the old vulnerability count must not be treated as current without rerunning the audit.
+
+---
+
+## Section D — Confirmed by the owner, previously withheld
+
+| # | Item | Status | Confirmed |
+|---|---|---|---|
+| D1 | Response-time commitment: **within one working day** | **Confirmed** | 2026-08-13 |
+
+Doc 03 §11 (CON04) and Doc 11 §20 both required that no response-time promise
+be published until confirmed. The owner has now confirmed it, so the line is
+published beside the contact actions in all six languages.
+
+Two things follow from that, and they are commitments rather than copy:
+
+1. It must hold across time zones. "One working day" was chosen over a fixed
+   number of hours precisely so it survives a visitor writing from Mexico or
+   the Gulf, and survives a day spent on site.
+2. If it stops being true, it must come out of `content/site-*.json` →
+   `navigation.responseTime` and `content/*/home.json` → `contact.responseTime`.
+   A published promise that is not kept damages trust more than no promise at
+   all — which is why it was withheld until now.
+

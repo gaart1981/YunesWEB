@@ -144,9 +144,12 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
                     /* On the contact page the project CTA would navigate to the
                        page the visitor is already on, so WhatsApp takes the
                        primary slot - here it is the actual next step. */
-                    <a className="button button--sand" href={whatsappHref} target="_blank" rel="noreferrer">
-                      {whatsappLabels[locale]}<Arrow />
-                    </a>
+                    <>
+                      <a className="button button--sand" href={whatsappHref} target="_blank" rel="noreferrer">
+                        {whatsappLabels[locale]}<Arrow />
+                      </a>
+                      <p className="response-note">{site.navigation.responseTime}</p>
+                    </>
                   ) : (
                     <>
                       <Link className="button button--sand" href={`/${locale}/contact`}>{site.navigation.cta}<Arrow /></Link>
@@ -340,6 +343,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
             <div className="contact-details">
               <p className="eyebrow">{page.contact.eyebrow}</p><h2>{page.contact.title}</h2><p>{page.contact.intro}</p>
               <address><span>{page.contact.address}</span><a href={`mailto:${page.contact.email}`}>{page.contact.email}</a><a href={phoneHref}>{page.contact.phone}</a><a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a></address>
+              <p className="response-note">{site.navigation.responseTime}</p>
               {page.whatToSend && (
                 <div className="what-to-send">
                   <h3>{page.whatToSend.title}</h3>

@@ -104,7 +104,8 @@
     "eyebrow": "Eine technische Frage genügt als Anfang",
     "title": "Woran hängt Ihr Projekt gerade?",
     "text": "Ein erstes Gespräch klärt das Problem, die vorhandenen Unterlagen, die Randbedingungen vor Ort und den schnellsten sinnvollen Schritt.",
-    "button": "Projekt besprechen"
+    "button": "Projekt besprechen",
+    "responseTime": "Antwort innerhalb eines Werktags"
   },
   "footer": {
     "descriptor": "Elektro- und TGA-Planung, Bauherrenvertretung und Projektbegleitung in Marokko",
