@@ -10,9 +10,8 @@ type BrandLogoProps = {
  * redrawn, re-typed or rasterised here.
  *
  * The logo is decorative at the markup level — every use sits inside a link
- * that already carries a localised accessible name, so
- * the image is hidden from assistive technology to avoid announcing the brand
- * twice.
+ * that already carries a localised accessible name, so the image is hidden
+ * from assistive technology to avoid announcing the brand twice.
  *
  * No "use client": this has no client-side behaviour.
  */
@@ -30,14 +29,15 @@ export function BrandLogo({
         ? "/images/brand/salimi-engineering-horizontal-navy.svg"
         : `/images/brand/salimi-engineering-primary-${suffix}.svg`;
 
-  // Intrinsic viewBox dimensions, so the browser reserves the correct aspect
-  // ratio before the SVG loads and the header does not shift.
+  // Keep the HTML intrinsic ratio in sync with the actual SVG masters.
+  // The previous 640x180 primary dimensions survived after the artwork was
+  // tightened to 470x150, which could reserve the wrong aspect ratio.
   const dimensions =
     variant === "mark"
       ? { width: 100, height: 100 }
       : variant === "horizontal"
-        ? { width: 900, height: 100 }
-        : { width: 640, height: 180 };
+        ? { width: 720, height: 100 }
+        : { width: 470, height: 150 };
 
   return (
     <img
