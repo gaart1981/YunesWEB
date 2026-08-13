@@ -540,16 +540,27 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
   }
 }
 
-/* Photorealistic AI imagery must not return. Those files were SVG wrappers
-   around embedded raster data; a data:image payload is the signature. */
+/* Photorealistic imagery must not return. The removed AI files were SVG
+   wrappers around embedded raster data, so any SVG carrying a data:image
+   payload is rejected. Raster files are allowed only as approved line
+   illustrations, listed explicitly so a photograph cannot be dropped in
+   under a neutral filename. */
+const APPROVED_RASTER = new Set([
+  "development-masterplan.webp",
+  "industrial-plant-systems.webp",
+  "production-facility.webp"
+]);
 for (const dir of ["graphics", "brand"]) {
   const base = join(OUT, "images", dir);
   if (!existsSync(base)) continue;
   for (const file of readdirSync(base)) {
-    const body = readFileSync(join(base, file), "utf8");
-    if (/data:image\//.test(body))
-      fail("imagery", `${dir}/${file} embeds raster image data`);
-    else ok();
+    if (file.endsWith(".svg")) {
+      if (/data:image\//.test(readFileSync(join(base, file), "utf8")))
+        fail("imagery", `${dir}/${file} embeds raster image data`);
+      else ok();
+    } else if (!APPROVED_RASTER.has(file)) {
+      fail("imagery", `${dir}/${file} is a raster file outside the approved illustration set`);
+    } else ok();
   }
 }
 

@@ -9,7 +9,7 @@
 .content-hero h1{max-width:15ch}
 .content-lead{font-size:clamp(1.12rem,1.55vw,1.32rem);line-height:1.62}
 .content-hero-actions{margin-top:34px}
-.content-hero-media{overflow:hidden;aspect-ratio:16/10;border:1px solid rgba(216,197,165,.35);background:#0b1826}
+.content-hero-media{overflow:hidden;aspect-ratio:4/3;border:1px solid var(--border);background:#efece5}
 .content-hero-media img{width:100%;height:100%;object-fit:cover}
 .contact-details address a{font-size:1.08rem}
 .project-card:nth-child(even){background:var(--porcelain)}
@@ -25,7 +25,7 @@
   .founder-actions{align-items:stretch}
   .founder-actions .button{width:100%}
   .content-hero-actions{align-items:flex-start}
-  .content-hero-media{aspect-ratio:16/10}
+  .content-hero-media{aspect-ratio:4/3}
   .project-photo{aspect-ratio:16/10}
 }
 @media(max-width:500px){

@@ -24,11 +24,14 @@ const whatsappLabels: Record<Locale, string> = {
 // about a specific project and cannot be mistaken for site photography.
 // Nothing on this site presents an image as evidence of work performed.
 const pageImages: Partial<Record<SiteSlug, string>> = {
-  services: "/images/graphics/section-drawing.svg",
+  // Line illustrations only. Each is a drawing, not a photograph: it sets the
+  // technical register of the page without claiming any specific project.
+  // Assignment follows what each page is about.
+  services: "/images/graphics/production-facility.webp",
   "owners-engineering-amo": "/images/graphics/section-drawing.svg",
-  "electrical-mep-engineering": "/images/graphics/single-line-diagram.svg",
-  "local-engineering-partner-morocco": "/images/graphics/project-sequence.svg",
-  sectors: "/images/graphics/airflow-schematic.svg",
+  "electrical-mep-engineering": "/images/graphics/industrial-plant-systems.webp",
+  "local-engineering-partner-morocco": "/images/graphics/production-facility.webp",
+  sectors: "/images/graphics/development-masterplan.webp",
   contact: "/images/graphics/project-sequence.svg"
 };
 
@@ -157,7 +160,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
             </div>
             {pageImage && (
               <div className="content-hero-media" aria-hidden="true">
-                <img src={pageImage} alt="" width="640" height="400" />
+                <img src={pageImage} alt="" width="1448" height="1086" />
               </div>
             )}
           </div>
