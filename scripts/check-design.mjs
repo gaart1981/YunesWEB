@@ -339,11 +339,11 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 
     /* Header and footer wordmarks are present and reference approved assets. */
     const logos = [...html.matchAll(/<img src="\/images\/brand\/([^"]+)"/g)].map((m) => m[1]);
-    if (!logos.includes("salimi-engineering-primary-navy.svg"))
-      fail("brand", `/${locale}/${route}/: header wordmark missing`);
+    if (logos.filter((l) => l === "salimi-engineering-primary-white.svg").length !== 2)
+      fail("brand", `/${locale}/${route}/: header and footer must both use the white wordmark`);
     else ok();
-    if (!logos.includes("salimi-engineering-primary-white.svg"))
-      fail("brand", `/${locale}/${route}/: footer reverse wordmark missing`);
+    if (logos.includes("salimi-engineering-primary-navy.svg"))
+      fail("brand", `/${locale}/${route}/: header still uses the navy wordmark on the dark header`);
     else ok();
 
     /* Restraint: exactly two brand marks per page - header and footer. No
@@ -360,7 +360,7 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
     /* The link around the logo carries the accessible name; the image must not
        announce the brand a second time. */
     const brandLink = html.match(/<a[^>]*class="brand"[^>]*>/);
-    if (!brandLink || !/aria-label="Salimi Engineering/.test(brandLink[0]))
+    if (!brandLink || !/aria-label="[^"]*Salimi Engineering"/.test(brandLink[0]))
       fail("brand", `/${locale}/${route}/: brand link has no accessible name`);
     else ok();
     for (const m of html.matchAll(/<img src="\/images\/brand\/[^"]+"([^>]*)>/g)) {
@@ -395,14 +395,81 @@ const widthOf = (selector) => {
 };
 const headerW = widthOf(".brand-logo--header");
 if (headerW === null) fail("brand", "header logo width not declared");
-else if (headerW < 150 || headerW > 165)
-  fail("brand", `header logo ${headerW}px outside the approved 150-165px`);
+else if (headerW < 136 || headerW > 146)
+  fail("brand", `header logo ${headerW}px outside the approved 136-146px`);
 else ok();
 const footerW = widthOf(".brand-logo--footer");
 if (footerW === null) fail("brand", "footer logo width not declared");
-else if (footerW < 165 || footerW > 190)
-  fail("brand", `footer logo ${footerW}px outside the approved 165-190px`);
+else if (footerW < 160 || footerW > 180)
+  fail("brand", `footer logo ${footerW}px outside the approved 160-180px`);
 else ok();
+
+
+/* ---- Brand correction pass v1.1: master geometry and dark header --------- */
+const brandFile = (n) => join("public", "images", "brand", n);
+const readBrand = (n) => (existsSync(brandFile(n)) ? readFileSync(brandFile(n), "utf8") : "");
+
+for (const n of ["salimi-engineering-primary-navy.svg", "salimi-engineering-primary-white.svg"]) {
+  const svg = readBrand(n);
+  if (!svg) { fail("brand", `${n} missing`); continue; }
+  if (!svg.includes('viewBox="12 10 470 150"'))
+    fail("brand", `${n}: viewBox is not the corrected "12 10 470 150"`);
+  else ok();
+  if (!svg.includes("matrix(1.92 0 0 1.6 -143.56 -110)"))
+    fail("brand", `${n}: ENGINEERING group is missing the approved transform`);
+  else ok();
+}
+
+const horiz = readBrand("salimi-engineering-horizontal-navy.svg");
+if (!horiz) fail("brand", "horizontal master missing");
+else {
+  if (!horiz.includes('viewBox="0 0 720 100"')) fail("brand", "horizontal viewBox not 0 0 720 100");
+  else ok();
+  if (!horiz.includes('<rect x="370"')) fail("brand", "horizontal divider is not at x=370");
+  else ok();
+  if (!horiz.includes("matrix(1.35 0 0 1.25 -296.6 -20)"))
+    fail("brand", "horizontal ENGINEERING transform missing");
+  else ok();
+  if (!horiz.includes("translate(4 -13) scale(.72)"))
+    fail("brand", "horizontal SALIMI group transform changed");
+  else ok();
+}
+
+for (const n of ["salimi-engineering-mark-navy.svg", "salimi-engineering-mark-white.svg"]) {
+  const svg = readBrand(n);
+  if (!svg.includes("M80 17 H42") || !svg.includes("C81 88 72 95 58 95"))
+    fail("brand", `${n}: compact mark is not the approved architectural S geometry`);
+  else ok();
+}
+if (existsSync("app/icon.svg") && readFileSync("app/icon.svg", "utf8") === readBrand("salimi-engineering-mark-navy.svg")) ok();
+else fail("brand", "app/icon.svg is not byte-identical to the navy mark");
+
+if (/\.site-header\s*\{[^}]*background:\s*rgba\(11,\s*24,\s*38/.test(css)) ok();
+else fail("brand", "header background is not Engineering Navy");
+
+const mobileHeader = css.match(/@media \(max-width: 800px\)[\s\S]{0,240}?\.header-inner\s*\{[^}]*height:\s*(\d+)px/);
+if (mobileHeader && Number(mobileHeader[1]) !== 70)
+  fail("brand", `mobile header height ${mobileHeader[1]}px; must stay 70px`);
+else ok();
+
+const mobileLogo = css.match(/@media \(max-width: 500px\)[\s\S]*?\.brand-logo--header\s*\{[^}]*width:\s*(\d+)px/);
+if (!mobileLogo) fail("brand", "mobile logo width not declared");
+else if (Number(mobileLogo[1]) < 118 || Number(mobileLogo[1]) > 130)
+  fail("brand", `mobile logo ${mobileLogo[1]}px outside the approved 118-130px`);
+else ok();
+
+for (const f of ["components/HomePage.tsx", "components/ContentPage.tsx"]) {
+  if (!existsSync(f)) continue;
+  if (/aria-label="Salimi Engineering — Home"/.test(readFileSync(f, "utf8")))
+    fail("brand", `${f}: hardcoded English-only brand aria-label remains`);
+  else ok();
+}
+for (const locale of ["fr", "ar", "ru"]) {
+  const file = join(OUT, locale, "index.html");
+  if (!existsSync(file)) continue;
+  if (/aria-label="[^"]*— Salimi Engineering"/.test(readFileSync(file, "utf8"))) ok();
+  else fail("brand", `/${locale}/: brand link label is not localised`);
+}
 
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");

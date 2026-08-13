@@ -10,7 +10,7 @@ type BrandLogoProps = {
  * redrawn, re-typed or rasterised here.
  *
  * The logo is decorative at the markup level — every use sits inside a link
- * that already carries an accessible name ("Salimi Engineering — Home"), so
+ * that already carries a localised accessible name, so
  * the image is hidden from assistive technology to avoid announcing the brand
  * twice.
  *

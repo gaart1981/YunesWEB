@@ -73,8 +73,8 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link href={`/${locale}/`} className="brand" aria-label="Salimi Engineering — Home">
-          <BrandLogo variant="primary" tone="navy" className="brand-logo brand-logo--header" />
+        <Link href={`/${locale}/`} className="brand" aria-label={`${nav.home} — Salimi Engineering`}>
+          <BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--header" />
         </Link>
         <nav className="desktop-nav" aria-label={nav.language}>
           {links.map(([href, label]) => (
@@ -120,7 +120,7 @@ function Footer({ locale, site }: { locale: Locale; site: SiteContent }) {
     <footer className="site-footer">
       <div className="container footer-expanded">
         <div>
-          <Link href={`/${locale}/`} className="footer-brand-link" aria-label="Salimi Engineering — Home"><BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--footer" /></Link>
+          <Link href={`/${locale}/`} className="footer-brand-link" aria-label={`${nav.home} — Salimi Engineering`}><BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--footer" /></Link>
           <p>{nav.footerDescriptor}</p>
         </div>
         <div className="footer-contact">

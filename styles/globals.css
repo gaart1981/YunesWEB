@@ -111,8 +111,8 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(246, 244, 239, 0.94);
-  border-bottom: 1px solid rgba(11, 24, 38, 0.08);
+  background: rgba(11, 24, 38, 0.97);
+  border-bottom: 1px solid rgba(216, 197, 165, 0.14);
   backdrop-filter: blur(16px);
 }
 
@@ -142,7 +142,7 @@ h3 {
 }
 
 .brand-logo--header {
-  width: 158px;
+  width: 140px;
   max-width: none;
 }
 
@@ -152,7 +152,7 @@ h3 {
 }
 
 .brand-logo--footer {
-  width: 180px;
+  width: 170px;
 }
 
 .desktop-nav {
@@ -163,13 +163,21 @@ h3 {
 }
 
 .desktop-nav a {
-  color: var(--steel);
+  color: #c4ced5;
   font-size: 0.88rem;
   font-weight: 600;
 }
 
 .desktop-nav a:hover {
-  color: var(--ink);
+  color: var(--white);
+}
+
+.desktop-nav a[aria-current="page"] {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--sand);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 
 .header-actions {
@@ -819,7 +827,7 @@ html[dir="rtl"] .eyebrow {
   }
 
   .brand-logo--header {
-    width: 136px;
+    width: 124px;
   }
 
   .hero-actions {
@@ -938,4 +946,31 @@ html[dir="rtl"] .eyebrow {
   .credibility-item + .credibility-item { border-block-start: 1px solid var(--line); padding-block-start: 16px; }
   .evidence-row__head { gap: 4px; }
   .sector-matrix li { padding-inline-end: 0; }
+}
+
+/* Header sits on Engineering Navy, so its controls need reverse treatment.
+   Scoped to .site-header / .header-actions so the light mobile menu, the
+   footer and every other button keep their existing styling. */
+.header-actions > .language-switcher a {
+  color: #aeb9c1;
+}
+
+.header-actions > .language-switcher a[aria-current="page"] {
+  color: var(--white);
+  text-decoration-color: var(--sand);
+}
+
+.site-header .button--small {
+  color: var(--ink);
+  background: var(--sand);
+  border-color: var(--sand);
+}
+
+.site-header .button--small:hover {
+  color: var(--ink);
+  background: var(--white);
+}
+
+.mobile-menu summary span {
+  background: var(--white);
 }
