@@ -164,20 +164,23 @@ h3 {
   margin-inline: auto;
 }
 
+/* The header is Porcelain, so navigation uses dark text. These colours were
+   left over from the dark header: #c4ced5 was barely visible on light, and
+   the white hover made links disappear completely under the cursor. */
 .desktop-nav a {
-  color: #c4ced5;
+  color: var(--steel);
   font-size: 0.88rem;
   font-weight: 600;
 }
 
 .desktop-nav a:hover {
-  color: var(--white);
+  color: var(--ink);
 }
 
 .desktop-nav a[aria-current="page"] {
-  color: var(--white);
+  color: var(--ink);
   text-decoration: underline;
-  text-decoration-color: var(--sand);
+  text-decoration-color: var(--copper);
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }

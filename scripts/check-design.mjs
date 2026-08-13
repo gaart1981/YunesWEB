@@ -567,6 +567,55 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
   else ok();
 }
 
+
+/* Header legibility. When the header moved from Navy to Porcelain the nav
+   kept its reverse colours: links were #c4ced5 at 1.47:1 and the hover was
+   pure white at 1.09:1 - invisible, and worse under the cursor than at rest.
+   These assertions pin the light-header treatment. */
+const contrast = (hex, bg) => {
+  const lum = (h) => {
+    const v = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255)
+      .map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+    return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2];
+  };
+  const [a, b] = [lum(hex), lum(bg)].sort((x, y) => y - x);
+  return (a + 0.05) / (b + 0.05);
+};
+const TOKENS = { "--steel": "#53616d", "--ink": "#0f1e33", "--copper": "#7c4e2f", "--white": "#ffffff" };
+const HEADER_BG = "#f7f5f1";
+const navRule = css.match(/\.desktop-nav a\s*\{[^}]*color:\s*([^;]+);/);
+if (!navRule) fail("header", "cannot read .desktop-nav a colour");
+else {
+  const raw = navRule[1].trim();
+  const hex = raw.startsWith("#") ? raw : TOKENS[raw.replace(/var\(|\)/g, "").trim()];
+  if (!hex) fail("header", `nav link colour ${raw} is not a known token`);
+  else if (contrast(hex, HEADER_BG) < 4.5)
+    fail("header", `nav link ${hex} is ${contrast(hex, HEADER_BG).toFixed(2)}:1 on the header, under 4.5:1`);
+  else ok();
+}
+const navHover = css.match(/\.desktop-nav a:hover\s*\{[^}]*color:\s*([^;]+);/);
+if (navHover) {
+  const raw = navHover[1].trim();
+  const hex = raw.startsWith("#") ? raw : TOKENS[raw.replace(/var\(|\)/g, "").trim()];
+  if (hex && contrast(hex, HEADER_BG) < 4.5)
+    fail("header", `nav hover ${hex} is ${contrast(hex, HEADER_BG).toFixed(2)}:1 - links vanish under the cursor`);
+  else ok();
+}
+
+/* The SE / PAGE / MOROCCO placeholder panel is gone. It read as a missing
+   image rather than as a design element. */
+if (/hero-drawing/.test(css)) fail("imagery", "hero-drawing placeholder styles still present");
+else ok();
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["experience", "about", "legal-notice"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    if (/hero-drawing/.test(readFileSync(file, "utf8")))
+      fail("imagery", `/${locale}/${route}/: placeholder panel still rendered`);
+    else ok();
+  }
+}
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {

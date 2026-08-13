@@ -143,7 +143,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
       <Header locale={locale} slug={page.slug} site={site} />
       <main id="main-content">
         <section className={page.legal ? "content-hero content-hero--reference" : "content-hero"}>
-          <div className="container content-hero-grid">
+          <div className={`container content-hero-grid${pageImage ? "" : " content-hero-grid--wide"}`}>
             <div>
               <p className="eyebrow">{page.eyebrow}</p>
               <h1>{page.title}</h1>
@@ -155,12 +155,10 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
                 </div>
               )}
             </div>
-            {pageImage ? (
+            {pageImage && (
               <div className="content-hero-media" aria-hidden="true">
                 <img src={pageImage} alt="" width="640" height="400" />
               </div>
-            ) : (
-              <div className="hero-drawing" aria-hidden="true"><span>SE / {page.slug.toUpperCase()}</span><i /><b>MOROCCO</b></div>
             )}
           </div>
         </section>
