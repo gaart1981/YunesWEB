@@ -42,7 +42,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
       <header className="site-header">
         <div className="header-inner">
           <Link href={`/${locale}/`} className="brand" aria-label={`${nav.home} — Salimi Engineering`}>
-            <BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--header" />
+            <BrandLogo variant="primary" tone="navy" className="brand-logo brand-logo--header" />
           </Link>
           <nav className="desktop-nav" aria-label={nav.language}>
             <Link href={`/${locale}/services`}>{nav.services}</Link>
@@ -161,10 +161,10 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
           </div>
         </section>
 
-        <section id="delivery" className="section section--dark section--tight">
+        <section id="delivery" className="section section--warm section--tight">
           <div className="container delivery-grid">
             <div className="delivery-copy">
-              <p className="eyebrow eyebrow--sand">{content.delivery.eyebrow}</p>
+              <p className="eyebrow">{content.delivery.eyebrow}</p>
               <h2>{content.delivery.title}</h2>
               <p>{content.delivery.text}</p>
               <ol className="delivery-chain" aria-label={content.delivery.title}>

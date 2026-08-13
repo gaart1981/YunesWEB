@@ -74,7 +74,7 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
     <header className="site-header">
       <div className="header-inner">
         <Link href={`/${locale}/`} className="brand" aria-label={`${nav.home} — Salimi Engineering`}>
-          <BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--header" />
+          <BrandLogo variant="primary" tone="navy" className="brand-logo brand-logo--header" />
         </Link>
         <nav className="desktop-nav" aria-label={nav.language}>
           {links.map(([href, label]) => (
@@ -159,7 +159,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
         <section className={page.legal ? "content-hero content-hero--reference" : "content-hero"}>
           <div className="container content-hero-grid">
             <div>
-              <p className="eyebrow eyebrow--sand">{page.eyebrow}</p>
+              <p className="eyebrow">{page.eyebrow}</p>
               <h1>{page.title}</h1>
               <p className="content-lead">{page.lead}</p>
               {!page.legal && (
@@ -247,7 +247,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
         )}
 
         {page.process && (
-          <section className="content-section content-section--dark"><div className="container">
+          <section className="content-section content-section--warm"><div className="container">
             <h2>{page.processTitle}</h2>
             <div className="process-grid">{page.process.map((item, index) => <article key={item.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
           </div></section>

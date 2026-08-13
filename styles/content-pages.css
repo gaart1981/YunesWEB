@@ -1,11 +1,11 @@
 /* Public content pages */
 .desktop-nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--sand);text-underline-offset:8px}
-.content-hero{position:relative;overflow:hidden;color:var(--white);background:var(--ink)}
-.content-hero::before{position:absolute;inset:0;content:"";background-image:linear-gradient(rgba(216,197,165,.065) 1px,transparent 1px),linear-gradient(90deg,rgba(216,197,165,.065) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to right,black,transparent 82%)}
+.content-hero{position:relative;overflow:hidden;color:var(--ink);background:var(--porcelain);border-block-end:1px solid var(--border)}
+.content-hero::before{position:absolute;inset:0;content:"";background-image:linear-gradient(rgba(15,30,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(15,30,51,.05) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to right,black,transparent 82%)}
 .content-hero-grid{position:relative;z-index:1;display:grid;min-height:0;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);align-items:center;gap:clamp(56px,9vw,140px);padding-block:clamp(48px,5.5vw,80px)}
 .content-hero h1{max-width:14ch;margin-bottom:30px;font-size:clamp(2.125rem,3.2vw,3.25rem)}
-.content-lead{max-width:65ch;margin-bottom:0;color:#c7d0d6;font-size:clamp(1.08rem,1.6vw,1.3rem)}
-.hero-drawing{position:relative;display:flex;min-height:240px;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid rgba(216,197,165,.35);background:linear-gradient(135deg,rgba(47,100,128,.15),transparent 60%),rgba(255,255,255,.02)}
+.content-lead{max-width:65ch;margin-bottom:0;color:var(--steel);font-size:clamp(1.08rem,1.6vw,1.3rem)}
+.hero-drawing{position:relative;display:flex;min-height:240px;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid var(--border);background:linear-gradient(135deg,rgba(200,178,138,.16),transparent 60%),var(--linen)}
 .hero-drawing::before,.hero-drawing::after{position:absolute;content:"";border:1px solid rgba(216,197,165,.25)}
 .hero-drawing::before{inset:18% 12% 20% 30%}.hero-drawing::after{inset:38% 28% 9% 9%;transform:rotate(-8deg)}
 .hero-drawing span,.hero-drawing b{position:relative;z-index:1;color:var(--sand);font-size:.68rem;letter-spacing:.14em}.hero-drawing i{position:relative;z-index:1;width:42%;height:1px;background:var(--sand);transform:rotate(-32deg)}

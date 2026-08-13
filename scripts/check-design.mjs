@@ -339,11 +339,14 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
 
     /* Header and footer wordmarks are present and reference approved assets. */
     const logos = [...html.matchAll(/<img src="\/images\/brand\/([^"]+)"/g)].map((m) => m[1]);
-    if (logos.filter((l) => l === "salimi-engineering-primary-white.svg").length !== 2)
-      fail("brand", `/${locale}/${route}/: header and footer must both use the white wordmark`);
+    /* The header sits on Porcelain and the footer on Navy, so each takes the
+       wordmark tone that is legible against it. A single tone on both would
+       leave one of them invisible. */
+    if (!logos.includes("salimi-engineering-primary-navy.svg"))
+      fail("brand", `/${locale}/${route}/: header must use the navy wordmark on the light header`);
     else ok();
-    if (logos.includes("salimi-engineering-primary-navy.svg"))
-      fail("brand", `/${locale}/${route}/: header still uses the navy wordmark on the dark header`);
+    if (!logos.includes("salimi-engineering-primary-white.svg"))
+      fail("brand", `/${locale}/${route}/: footer must use the white reverse wordmark`);
     else ok();
 
     /* Restraint: exactly two brand marks per page - header and footer. No
@@ -444,8 +447,11 @@ for (const n of ["salimi-engineering-mark-navy.svg", "salimi-engineering-mark-wh
 if (existsSync("app/icon.svg") && readFileSync("app/icon.svg", "utf8") === readBrand("salimi-engineering-mark-navy.svg")) ok();
 else fail("brand", "app/icon.svg is not byte-identical to the navy mark");
 
-if (/\.site-header\s*\{[^}]*background:\s*rgba\(11,\s*24,\s*38/.test(css)) ok();
-else fail("brand", "header background is not Engineering Navy");
+/* The sticky header is Porcelain, not Navy. A permanently dark bar on every
+   page was the largest single contributor to the site reading as heavy; the
+   hairline border below now does the separating work. */
+if (/\.site-header\s*\{[^}]*background:\s*rgba\(247,\s*245,\s*241/.test(css)) ok();
+else fail("brand", "header background is not Porcelain");
 
 const mobileHeader = css.match(/@media \(max-width: 800px\)[\s\S]{0,240}?\.header-inner\s*\{[^}]*height:\s*(\d+)px/);
 if (mobileHeader && Number(mobileHeader[1]) !== 70)
@@ -469,6 +475,48 @@ for (const locale of ["fr", "ar", "ru"]) {
   if (!existsSync(file)) continue;
   if (/aria-label="[^"]*— Salimi Engineering"/.test(readFileSync(file, "utf8"))) ok();
   else fail("brand", `/${locale}/: brand link label is not localised`);
+}
+
+
+/* Light/dark balance. The brand book (Doc 06 §5.5) asks for 55-65% Porcelain
+   and White against 20-30% Ink Navy. The site had drifted to 40-50% dark
+   surfaces, which is why it read as gloomy. This guard keeps the ratio from
+   creeping back one dark section at a time. */
+const DARK_SURFACE = ["hero hero--compact", "contact-section", "site-footer",
+                      "content-section--ink", "page-cta"];
+let darkTotal = 0;
+let blockTotal = 0;
+for (const route of ["", "services", "about", "experience", "contact", "sectors",
+                     "owners-engineering-amo", "electrical-mep-engineering"]) {
+  const file = join(OUT, "en", route, "index.html");
+  if (!existsSync(file)) continue;
+  const html = readFileSync(file, "utf8");
+  const blocks = [...html.matchAll(/<(?:section|header|footer)[^>]*class="([^"]*)"/g)].map((m) => m[1]);
+  const dark = blocks.filter((c) => DARK_SURFACE.some((k) => c.includes(k)));
+  blockTotal += blocks.length;
+  darkTotal += dark.length;
+  if (blocks.length && dark.length / blocks.length > 0.4)
+    fail("balance", `/en/${route}/: ${Math.round(dark.length / blocks.length * 100)}% dark surfaces, over the 40% per-page ceiling`);
+  else ok();
+}
+const darkShare = blockTotal ? darkTotal / blockTotal : 0;
+if (darkShare > 0.32)
+  fail("balance", `site is ${Math.round(darkShare * 100)}% dark surfaces, above the 20-30% target`);
+else ok();
+
+/* Sand is an accent on dark only: it fails contrast on Porcelain (1.9:1). */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["", "services", "about"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+    for (const m of html.matchAll(/<section class="([^"]*)"([\s\S]*?)<\/section>/g)) {
+      const onDark = DARK_SURFACE.some((k) => m[1].includes(k));
+      if (!onDark && /eyebrow--sand/.test(m[2]))
+        fail("contrast", `/${locale}/${route}/: sand eyebrow on a light surface (1.9:1)`);
+    }
+    ok();
+  }
 }
 
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);

@@ -1,13 +1,15 @@
 :root {
-  --ink: #0b1826;
-  --slate: #172532;
+  --ink: #0f1e33;
+  --slate: #1b2c44;
   --steel: #53616d;
-  --porcelain: #f6f4ef;
+  --porcelain: #f7f5f1;
+  --linen: #eee9e0;
   --white: #ffffff;
-  --sand: #d8c5a5;
+  --sand: #c8b28a;
   --copper: #7c4e2f;
   --tech: #2f6480;
-  --border: #d9d8d3;
+  --border: #dcdad4;
+  --mist: #8f969e;
   --container: 1240px;
   --radius: 8px;
 }
@@ -111,8 +113,8 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(11, 24, 38, 0.97);
-  border-bottom: 1px solid rgba(216, 197, 165, 0.14);
+  background: rgba(247, 245, 241, 0.94);
+  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(16px);
 }
 
@@ -452,9 +454,12 @@ html[dir="rtl"] .eyebrow {
   background: var(--white);
 }
 
-.section--dark {
-  color: var(--white);
-  background: var(--slate);
+/* Warm neutral tier. Sits between Porcelain and Navy so the page rhythm is
+   not a binary of white and near-black - the main reason the site read as
+   heavy. Used for the delivery/team model band. */
+.section--warm {
+  color: var(--ink);
+  background: var(--linen);
 }
 
 .section-heading {
@@ -906,13 +911,13 @@ html[dir="rtl"] .eyebrow {
   margin: 24px 0 0; padding: 0; font-size: .82rem;
 }
 .delivery-chain li {
-  padding: 7px 12px; border: 1px solid rgba(246, 244, 239, .28); border-radius: 4px;
+  padding: 7px 12px; border: 1px solid var(--border); border-radius: 4px;
 }
 /* Direction-neutral separator so the chain mirrors correctly in Arabic. */
 .delivery-chain li + li { position: relative; }
 .delivery-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
 .delivery-steps li {
-  counter-increment: step; padding: 16px 0; border-block-end: 1px solid rgba(246, 244, 239, .16);
+  counter-increment: step; padding: 16px 0; border-block-end: 1px solid var(--border);
 }
 .delivery-steps li:first-child { padding-block-start: 0; }
 .delivery-steps h3 {
@@ -920,9 +925,9 @@ html[dir="rtl"] .eyebrow {
 }
 .delivery-steps h3::before {
   content: counter(step, decimal-leading-zero); margin-inline-end: 10px;
-  color: var(--sand); font-variant-numeric: tabular-nums;
+  color: var(--copper); font-variant-numeric: tabular-nums;
 }
-.delivery-steps p { margin: 0; font-size: .9rem; line-height: 1.5; opacity: .82; max-width: 52ch; }
+.delivery-steps p { margin: 0; font-size: .9rem; line-height: 1.5; color: var(--steel); max-width: 52ch; }
 
 /* Sector matrix: compact rows rather than another card grid. */
 .sector-matrix {
@@ -948,29 +953,31 @@ html[dir="rtl"] .eyebrow {
   .sector-matrix li { padding-inline-end: 0; }
 }
 
-/* Header sits on Engineering Navy, so its controls need reverse treatment.
-   Scoped to .site-header / .header-actions so the light mobile menu, the
-   footer and every other button keep their existing styling. */
+/* The header sits on Porcelain, so its controls use the standard dark
+   treatment. A permanently dark sticky bar on every page was the single
+   largest contributor to the site reading as heavy; the hairline border below
+   now does the separating work instead of a block of navy. */
 .header-actions > .language-switcher a {
-  color: #aeb9c1;
+  color: var(--steel);
 }
 
 .header-actions > .language-switcher a[aria-current="page"] {
-  color: var(--white);
-  text-decoration-color: var(--sand);
+  color: var(--ink);
+  text-decoration-color: var(--copper);
 }
 
 .site-header .button--small {
+  color: var(--white);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.site-header .button--small:hover {
   color: var(--ink);
   background: var(--sand);
   border-color: var(--sand);
 }
 
-.site-header .button--small:hover {
-  color: var(--ink);
-  background: var(--white);
-}
-
 .mobile-menu summary span {
-  background: var(--white);
+  background: var(--ink);
 }
