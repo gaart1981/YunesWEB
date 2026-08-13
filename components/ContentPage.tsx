@@ -152,10 +152,21 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
               <p className="eyebrow">{page.eyebrow}</p>
               <h1>{page.title}</h1>
               <p className="content-lead">{page.lead}</p>
-              {!page.legal && page.slug !== "contact" && (
+              {!page.legal && (
                 <div className="hero-actions content-hero-actions">
-                  <Link className="button button--sand" href={`/${locale}/contact`}>{site.navigation.cta}<Arrow /></Link>
-                  <a className="text-link" href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}<Arrow /></a>
+                  {page.slug === "contact" ? (
+                    /* On the contact page the project CTA would navigate to the
+                       page the visitor is already on, so WhatsApp takes the
+                       primary slot - here it is the actual next step. */
+                    <a className="button button--sand" href={whatsappHref} target="_blank" rel="noreferrer">
+                      {whatsappLabels[locale]}<Arrow />
+                    </a>
+                  ) : (
+                    <>
+                      <Link className="button button--sand" href={`/${locale}/contact`}>{site.navigation.cta}<Arrow /></Link>
+                      <a className="text-link" href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}<Arrow /></a>
+                    </>
+                  )}
                 </div>
               )}
             </div>
