@@ -126,3 +126,27 @@
 .content-card{padding:26px 28px}
 .process-grid article{padding:26px 24px}
 .process-grid h3{margin-top:18px}
+
+/* ==========================================================================
+   Experience records. No imagery: nothing on this page may read as evidence
+   of work performed. The record is a technical document - scope and role in
+   labelled fields - because that is what a technical reviewer can assess and
+   what a photograph cannot prove.
+   ========================================================================== */
+.confidentiality{max-width:72ch}
+.confidentiality h2{font-size:clamp(1.2rem,1.7vw,1.45rem)}
+.confidentiality p{margin:0;color:var(--steel);line-height:1.65}
+
+.record-list{margin-top:34px;border-block-start:1px solid var(--border)}
+.record{padding:24px 0;border-block-end:1px solid var(--border)}
+.record__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px}
+.record__head h3{margin:0;font-size:clamp(1.08rem,1.5vw,1.3rem)}
+.record__meta{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;color:var(--steel);font-size:.82rem}
+.record__meta span::before{content:"· "}
+.record__meta span:first-child::before{content:""}
+.record__body{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,.38fr);gap:8px 40px;margin:14px 0 0}
+.record__body>div{display:grid;gap:3px}
+.record__body dt{color:var(--copper);font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+.record__body dd{margin:0;font-size:.94rem;line-height:1.55}
+.record__body>div:last-child dd{color:var(--steel)}
+@media(max-width:800px){.record__body{grid-template-columns:1fr;gap:12px}}

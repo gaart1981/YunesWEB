@@ -18,8 +18,9 @@
     "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
     "skip": "Aller au contenu",
-    "illustrativeImage": "Image d’illustration — pas le projet réel",
-    "priorExperienceNote": "Expérience professionnelle antérieure du fondateur."
+    "priorExperienceNote": "Expérience professionnelle antérieure du fondateur.",
+    "recordScope": "Périmètre",
+    "recordRole": "Rôle"
   },
   "pages": {
     "services": {
@@ -591,8 +592,12 @@
           "label": "Environnements de projet"
         }
       ],
+      "confidentiality": {
+        "title": "Pourquoi aucune photographie de chantier ici",
+        "text": "Nous ne publions ni plans de clients, ni pièces d'appel d'offres, ni photographies de chantier. Ce qui nous est confié le reste. Les références ci-dessous décrivent le périmètre technique et le rôle tenu — ce qu'un évaluateur technique peut réellement apprécier — et rien de plus."
+      },
       "sectionTitle": "Exemples de projets sélectionnés",
-      "sectionIntro": "Sauf mention contraire, les projets ci-dessous reflètent l’expérience professionnelle du fondateur dans des fonctions d’ingénierie antérieures, et non des missions réalisées par Salimi Engineering.",
+      "sectionIntro": "Nous distinguons l'expérience professionnelle antérieure du fondateur des missions réalisées par Salimi Engineering. Sauf mention contraire, une référence relève de la première catégorie. Votre projet serait décrit de la même manière.",
       "projects": [
         {
           "id": "mailru-office",

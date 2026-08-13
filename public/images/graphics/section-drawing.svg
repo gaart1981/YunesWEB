@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-labelledby="t">
+  <title id="t">Abstract building section drawing</title>
+  <rect width="640" height="400" fill="#eee9e0"/>
+  <g fill="none" stroke="#0f1e33" stroke-opacity=".08" stroke-width="1">
+    <path d="M40 0V400"/><path d="M80 0V400"/><path d="M120 0V400"/><path d="M160 0V400"/><path d="M200 0V400"/><path d="M240 0V400"/><path d="M280 0V400"/><path d="M320 0V400"/><path d="M360 0V400"/><path d="M400 0V400"/><path d="M440 0V400"/><path d="M480 0V400"/><path d="M520 0V400"/><path d="M560 0V400"/><path d="M600 0V400"/>
+    <path d="M0 40H640"/><path d="M0 80H640"/><path d="M0 120H640"/><path d="M0 160H640"/><path d="M0 200H640"/><path d="M0 240H640"/><path d="M0 280H640"/><path d="M0 320H640"/><path d="M0 360H640"/>
+  </g>
+  <g fill="none" stroke="#0f1e33" stroke-width="2.5">
+    <path d="M110 300h420"/>
+    <path d="M150 300V150l90-56 90 56v150"/>
+    <rect x="330" y="196" width="150" height="104"/>
+    <path d="M330 196l75-42 75 42"/>
+  </g>
+  <g fill="none" stroke="#0f1e33" stroke-width="2" opacity=".55">
+    <rect x="186" y="196" width="44" height="58"/><rect x="250" y="196" width="44" height="58"/>
+    <rect x="366" y="228" width="36" height="40"/><rect x="420" y="228" width="36" height="40"/>
+  </g>
+  <g stroke="#c8b28a" stroke-width="2.5"><path d="M110 336h420"/><path d="M110 330v12M530 330v12"/></g>
+  <g stroke="#53616d" stroke-width="1" stroke-dasharray="4 4"><path d="M150 150H90M330 154H90"/></g>
+</svg>

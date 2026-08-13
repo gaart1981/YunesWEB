@@ -28,7 +28,8 @@ export type SiteSlug = (typeof pageSlugs)[number];
 
 export type Navigation = {
   home: string;
-  illustrativeImage: string;
+  recordScope: string;
+  recordRole: string;
   priorExperienceNote: string;
   services: string;
   sectors: string;
@@ -83,6 +84,7 @@ export type SharedPage = {
   companyModel?: { title: string; text: string; points: { title: string; text: string }[] };
   whatToSend?: { title: string; items: string[] };
   privacyNote?: string;
+  confidentiality?: { title: string; text: string };
   relatedExperience?: { title: string };
   profile?: {
     type: string;

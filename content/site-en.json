@@ -18,8 +18,9 @@
     "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
     "skip": "Skip to content",
-    "illustrativeImage": "Illustrative image — not the actual project",
-    "priorExperienceNote": "Selected prior professional experience of the founder."
+    "priorExperienceNote": "Selected prior professional experience of the founder.",
+    "recordScope": "Scope",
+    "recordRole": "Role"
   },
   "pages": {
     "services": {
@@ -591,8 +592,12 @@
           "label": "Project environments"
         }
       ],
+      "confidentiality": {
+        "title": "Why there are no project photographs here",
+        "text": "We do not publish client drawings, tender documents or site photographs. Material shared with us stays with us. The records below describe the engineering scope and the role held — the detail a technical reviewer can actually assess — and nothing more."
+      },
       "sectionTitle": "Selected project examples",
-      "sectionIntro": "Unless otherwise stated, the projects below reflect the founder’s professional experience in previous engineering roles, not assignments delivered by Salimi Engineering.",
+      "sectionIntro": "We separate the founder's prior professional experience from assignments delivered by Salimi Engineering. Unless a record states otherwise, it belongs to the former. Your project would be described the same way.",
       "projects": [
         {
           "id": "mailru-office",

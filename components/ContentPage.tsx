@@ -20,31 +20,17 @@ const whatsappLabels: Record<Locale, string> = {
   ru: "Написать в WhatsApp"
 };
 
+// Abstract technical drawings only. These are decorative: they carry no claim
+// about a specific project and cannot be mistaken for site photography.
+// Nothing on this site presents an image as evidence of work performed.
 const pageImages: Partial<Record<SiteSlug, string>> = {
-  services: "/images/generated/engineering-site-team.svg",
-  "owners-engineering-amo": "/images/generated/engineering-site-team.svg",
-  "electrical-mep-engineering": "/images/generated/electrical-substation.svg",
-  "local-engineering-partner-morocco": "/images/generated/industrial-facility-exterior.svg",
-  sectors: "/images/generated/industrial-mechanical-room.svg",
-  experience: "/images/generated/logistics-warehouse.svg",
-  // No hero image for "about": the founder portrait already appears in the
-  // profile block below, at its correct 4:5 ratio. Showing it twice on one
-  // page - and cropped into a 640x400 landscape frame up here - looked
-  // duplicated rather than deliberate. The hero falls back to the abstract
-  // SE / ABOUT drawing used elsewhere.
-  contact: "/images/generated/industrial-mechanical-room.svg"
+  services: "/images/graphics/section-drawing.svg",
+  "owners-engineering-amo": "/images/graphics/section-drawing.svg",
+  "electrical-mep-engineering": "/images/graphics/single-line-diagram.svg",
+  "local-engineering-partner-morocco": "/images/graphics/project-sequence.svg",
+  sectors: "/images/graphics/airflow-schematic.svg",
+  contact: "/images/graphics/project-sequence.svg"
 };
-
-const projectImages = [
-  "/images/generated/industrial-facility-exterior.svg",
-  "/images/generated/logistics-warehouse.svg",
-  "/images/generated/engineering-site-team.svg",
-  "/images/generated/electrical-substation.svg",
-  "/images/generated/industrial-mechanical-room.svg",
-  "/images/generated/industrial-facility-exterior.svg",
-  "/images/generated/logistics-warehouse.svg",
-  "/images/generated/hospitality-courtyard.svg"
-];
 
 function Arrow() {
   return (
@@ -253,14 +239,29 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
           </div></section>
         )}
 
+        {page.confidentiality && (
+          <section className="content-section content-section--porcelain">
+            <div className="container confidentiality">
+              <h2>{page.confidentiality.title}</h2>
+              <p>{page.confidentiality.text}</p>
+            </div>
+          </section>
+        )}
+
         {page.projects && (
           <section className="content-section"><div className="container">
             <h2>{page.sectionTitle}</h2>
             {page.sectionIntro && <p className="section-intro attribution-note">{page.sectionIntro}</p>}
-            <div className="project-grid">{page.projects.map((project, index) => (
-              <article key={project.title} className="project-card">
-                <figure className="project-photo"><img src={projectImages[index % projectImages.length]} alt="" width="640" height="400" /><figcaption>{site.navigation.illustrativeImage}</figcaption></figure>
-                <div className="project-copy"><p className="eyebrow">{project.location}</p><h3>{project.title}</h3><p>{project.scope}</p><small>{project.role}</small></div>
+            <div className="record-list">{page.projects.map((project) => (
+              <article key={project.title} className="record">
+                <div className="record__head">
+                  <h3>{project.title}</h3>
+                  <p className="record__meta"><span>{project.sector}</span><span>{project.location}</span></p>
+                </div>
+                <dl className="record__body">
+                  <div><dt>{site.navigation.recordScope}</dt><dd>{project.scope}</dd></div>
+                  <div><dt>{site.navigation.recordRole}</dt><dd>{project.role}</dd></div>
+                </dl>
               </article>
             ))}</div>
           </div></section>

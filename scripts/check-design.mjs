@@ -15,7 +15,7 @@
  *
  * Usage: node scripts/check-design.mjs [outDir]
  */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const OUT = process.argv[2] ?? "out";
@@ -109,18 +109,6 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
   const header = html.match(/<header[\s\S]*?<\/header>/);
   if (header && /class="button button--small"[^>]*href="tel:/.test(header[0]))
     fail("architecture", `/${locale}/: header CTA still uses a telephone link`);
-  else ok();
-}
-
-/* ------------------------------ §18.2 illustrative imagery must be labelled */
-for (const locale of ["en", "fr", "ar", "ru"]) {
-  const file = join(OUT, locale, "experience", "index.html");
-  if (!existsSync(file)) continue;
-  const html = readFileSync(file, "utf8");
-  const imgs = (html.match(/class="project-photo"/g) ?? []).length;
-  const caps = (html.match(/<figcaption>/g) ?? []).length;
-  if (imgs && caps < imgs)
-    fail("imagery", `/${locale}/experience/: ${imgs} project visuals but ${caps} captions`);
   else ok();
 }
 
@@ -517,6 +505,66 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
     }
     ok();
   }
+}
+
+
+/* ============================================================================
+   Image policy. No image anywhere may function as evidence of work performed.
+   Photorealistic imagery was removed entirely: the only pictures on the site
+   are the brand wordmark, two real photographs of a real person, and abstract
+   technical drawings that make no claim about any project.
+   ========================================================================== */
+const ALLOWED_IMAGE_DIRS = ["/images/brand/", "/images/people/", "/images/graphics/"];
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["", "services", "about", "experience", "contact", "sectors",
+                       "owners-engineering-amo", "electrical-mep-engineering",
+                       "local-engineering-partner-morocco"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+    for (const m of html.matchAll(/<img src="([^"]+)"/g)) {
+      const src = m[1];
+      if (!ALLOWED_IMAGE_DIRS.some((d) => src.startsWith(d)))
+        fail("imagery", `/${locale}/${route}/: image outside the allowed set -> ${src}`);
+      else ok();
+    }
+    /* The experience page carries no imagery at all beyond the brand. */
+    if (route === "experience") {
+      const nonBrand = [...html.matchAll(/<img src="([^"]+)"/g)]
+        .map((m) => m[1])
+        .filter((src) => !src.startsWith("/images/brand/"));
+      if (nonBrand.length)
+        fail("imagery", `/${locale}/experience/: page carries imagery -> ${nonBrand.join(", ")}`);
+      else ok();
+    }
+  }
+}
+
+/* Photorealistic AI imagery must not return. Those files were SVG wrappers
+   around embedded raster data; a data:image payload is the signature. */
+for (const dir of ["graphics", "brand"]) {
+  const base = join(OUT, "images", dir);
+  if (!existsSync(base)) continue;
+  for (const file of readdirSync(base)) {
+    const body = readFileSync(join(base, file), "utf8");
+    if (/data:image\//.test(body))
+      fail("imagery", `${dir}/${file} embeds raster image data`);
+    else ok();
+  }
+}
+
+/* The confidentiality statement and the attribution standard must be present
+   on every localised experience page. */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  const file = join(OUT, locale, "experience", "index.html");
+  if (!existsSync(file)) continue;
+  const html = readFileSync(file, "utf8");
+  if (!/class="container confidentiality"/.test(html))
+    fail("imagery", `/${locale}/experience/: confidentiality statement missing`);
+  else ok();
+  if (!/class="section-intro attribution-note"/.test(html))
+    fail("imagery", `/${locale}/experience/: attribution statement missing`);
+  else ok();
 }
 
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
