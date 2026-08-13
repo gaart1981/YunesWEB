@@ -1097,3 +1097,9 @@ html[dir="rtl"] .lang-menu__list a[aria-current="true"] {
 }
 
 .response-note--light::before { background: var(--sand); }
+
+/* Compact variants of the response note, for the footer and the mobile menu
+   where it sits inside a list of contact lines rather than under an action. */
+.response-note--compact { margin-block-start: 8px; font-size: 0.76rem; }
+.response-note--compact::before { width: 5px; height: 5px; margin-inline-end: 7px; }
+.response-note--inline { flex-basis: 100%; margin-block-start: 4px; }

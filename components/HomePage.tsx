@@ -1,6 +1,15 @@
 import Link from "next/link";
 import { BrandLogo } from "@/components/BrandLogo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+
+const whatsappLabels: Record<Locale, string> = {
+  en: "WhatsApp Salimi Engineering",
+  fr: "WhatsApp Salimi Engineering",
+  ar: "راسل Salimi Engineering عبر واتساب",
+  ru: "Написать в WhatsApp",
+  de: "WhatsApp schreiben",
+  es: "Escribir por WhatsApp"
+};
 import type { HomeContent, Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import { getPageContent, getSiteContent } from "@/lib/site-content";
@@ -222,7 +231,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
       <footer className="site-footer">
         <div className="container footer-expanded">
           <div><Link href={`/${locale}/`} className="footer-brand-link" aria-label={`${nav.home} — Salimi Engineering`}><BrandLogo variant="primary" tone="white" className="brand-logo brand-logo--footer" /></Link><p>{nav.footerDescriptor}</p></div>
-          <div className="footer-contact"><span>{nav.address}</span><a href={`mailto:${nav.email}`}>{nav.email}</a><a href={phoneHref}>{nav.phone}</a></div>
+          <div className="footer-contact"><span>{nav.address}</span><a href={`mailto:${nav.email}`}>{nav.email}</a><a href={phoneHref}>{nav.phone}</a><a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a><p className="response-note response-note--compact response-note--light">{nav.responseTime}</p></div>
           <nav className="footer-links"><Link href={`/${locale}/legal-notice`}>{nav.legal}</Link><Link href={`/${locale}/privacy-policy`}>{nav.privacy}</Link><Link href={`/${locale}/cookie-policy`}>{nav.cookies}</Link></nav>
         </div>
         <div className="container footer-preview-note">{nav.footerStatus}</div>

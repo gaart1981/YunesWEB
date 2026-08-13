@@ -738,19 +738,25 @@ for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
 }
 
 
-/* The response commitment is a promise, not decoration. It must appear beside
-   the contact actions in every language, or some visitors get the reassurance
-   and others do not. Confirmed by the owner on 2026-08-13 and recorded in
-   implementation/missing-information.md §D1. */
+/* The response commitment is a promise, not decoration. Every WhatsApp link
+   must be accompanied by it: a visitor who clicks from the footer deserves
+   the same reassurance as one who clicks from the hero. Confirmed by the
+   owner on 2026-08-13, recorded in implementation/missing-information.md §D1.
+   Counting rather than spot-checking, because the gap that prompted this was
+   a single uncovered button at the foot of two pages. */
 for (const locale of ["en", "fr", "ar", "ru", "de", "es"]) {
-  for (const route of ["", "contact"]) {
+  for (const route of ["", "services", "about", "sectors", "experience", "contact",
+                       "owners-engineering-amo", "electrical-mep-engineering",
+                       "local-engineering-partner-morocco"]) {
     const file = join(OUT, locale, route, "index.html");
     if (!existsSync(file)) continue;
     const html = readFileSync(file, "utf8");
+    const whatsapp = (html.match(/<a[^>]+href="https:\/\/wa\.me\//g) ?? []).length;
     const notes = [...html.matchAll(/class="response-note[^"]*">([^<]+)</g)].map((m) => m[1].trim());
-    if (!notes.length)
-      fail("trust", `/${locale}/${route}/: response commitment missing`);
-    else if (notes.some((n) => !n))
+    if (whatsapp && notes.length < whatsapp)
+      fail("trust", `/${locale}/${route}/: ${whatsapp} WhatsApp links but ${notes.length} response commitments`);
+    else ok();
+    if (notes.some((n) => !n))
       fail("trust", `/${locale}/${route}/: response commitment is empty`);
     else ok();
   }

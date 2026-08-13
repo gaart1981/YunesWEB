@@ -80,6 +80,7 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
             {links.map(([href, label]) => <Link key={href} href={`/${locale}/${href}`}>{label}</Link>)}
             <Link href={`/${locale}/contact`}>{nav.cta}</Link>
             <a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a>
+            <p className="response-note response-note--compact">{nav.responseTime}</p>
             <LanguageSwitcher locale={locale} label={nav.language} path={`/${slug}/`} variant="inline" />
           </nav>
         </details>
@@ -104,6 +105,7 @@ function Footer({ locale, site }: { locale: Locale; site: SiteContent }) {
           <a href={`mailto:${nav.email}`}>{nav.email}</a>
           <a href={phoneHref}>{nav.phone}</a>
           <a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a>
+          <p className="response-note response-note--compact response-note--light">{nav.responseTime}</p>
         </div>
         <nav className="footer-links">
           <Link href={`/${locale}/legal-notice`}>{nav.legal}</Link>
@@ -154,6 +156,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
                     <>
                       <Link className="button button--sand" href={`/${locale}/contact`}>{site.navigation.cta}<Arrow /></Link>
                       <a className="text-link" href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}<Arrow /></a>
+                      <p className="response-note response-note--inline">{site.navigation.responseTime}</p>
                     </>
                   )}
                 </div>
@@ -371,6 +374,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
           <section className="page-cta"><div className="container page-cta-grid">
             <div><h2>{page.cta.title}</h2><p>{page.cta.text}</p></div>
             {/^(mailto:|tel:|https?:)/.test(page.cta.href) ? <a className="button button--sand" href={page.cta.href} target={page.cta.href.startsWith("http") ? "_blank" : undefined} rel={page.cta.href.startsWith("http") ? "noreferrer" : undefined}>{page.cta.button}<Arrow /></a> : <Link className="button button--sand" href={destination(locale, page.cta.href)}>{page.cta.button}<Arrow /></Link>}
+              {page.cta.href.includes("wa.me") && <p className="response-note response-note--light">{site.navigation.responseTime}</p>}
           </div></section>
         )}
       </main>
