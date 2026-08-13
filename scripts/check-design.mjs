@@ -274,6 +274,37 @@ if (signatures.size > 1 && distinct.size < 2)
   fail("evidence", "every page shows an identical related-experience set");
 else ok();
 
+
+/* No primary button may point at tel:. A telephone link does nothing visible
+   when clicked on a desktop browser, so a CTA styled as the main action but
+   wired to tel: reads as a broken button. Phone numbers stay clickable in the
+   footer and contact block, where they are presented as a number, not a CTA. */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["", "services", "experience", "about", "sectors", "contact",
+                       "owners-engineering-amo", "electrical-mep-engineering",
+                       "local-engineering-partner-morocco"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+    const telButtons = [...html.matchAll(/<a class="button[^"]*"[^>]*href="(tel:[^"]*)"/g)];
+    if (telButtons.length)
+      fail("cta", `/${locale}/${route}/: primary button links to ${telButtons[0][1]}`);
+    else ok();
+
+    /* Every anchor must have a non-empty href, and every button a type. */
+    for (const m of html.matchAll(/<a\b([^>]*)>/g)) {
+      const href = m[1].match(/href="([^"]*)"/);
+      if (!href || !href[1].trim())
+        fail("cta", `/${locale}/${route}/: anchor with no href -> ${m[1].slice(0, 60)}`);
+    }
+    for (const m of html.matchAll(/<button\b([^>]*)>/g)) {
+      if (!/type="(submit|button)"/.test(m[1]))
+        fail("cta", `/${locale}/${route}/: button without type -> ${m[1].slice(0, 60)}`);
+    }
+    ok();
+  }
+}
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {

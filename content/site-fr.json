@@ -107,7 +107,7 @@
         "title": "Vous ne savez pas quelle mission commander ?",
         "text": "Décrivez le problème. Yunes identifiera l’intervention minimale utile et les informations nécessaires pour démarrer.",
         "button": "Appeler Yunes",
-        "href": "tel:+212663056547"
+        "href": "contact"
       },
       "engagementRoles": {
         "title": "Comment intervenir avec Salimi Engineering",
@@ -671,7 +671,7 @@
         "title": "Besoin d’une expérience comparable à votre problème ?",
         "text": "Présentez l’actif, la phase et le système. Yunes pourra expliquer les missions les plus proches et la méthode proposée.",
         "button": "Parler à Yunes",
-        "href": "tel:+212663056547"
+        "href": "contact"
       }
     },
     "about": {
@@ -751,7 +751,7 @@
         "title": "Commencez par une conversation technique directe.",
         "text": "Un échange court permettra de vérifier si Yunes correspond au besoin d’études, revue, chantier ou AMO.",
         "button": "Appeler Yunes",
-        "href": "tel:+212663056547"
+        "href": "contact"
       },
       "companyModel": {
         "title": "Ce qu’est Salimi Engineering",

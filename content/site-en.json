@@ -107,7 +107,7 @@
         "title": "Not sure which service you need?",
         "text": "Describe the technical problem. Yunes will identify the smallest useful intervention and the information required to start.",
         "button": "Call Yunes",
-        "href": "tel:+212663056547"
+        "href": "contact"
       },
       "engagementRoles": {
         "title": "How Salimi Engineering can be engaged",
@@ -671,7 +671,7 @@
         "title": "Need experience relevant to a specific technical problem?",
         "text": "Explain the asset, stage and system involved. Yunes can discuss the closest comparable work and the proposed method for your project.",
         "button": "Speak with Yunes",
-        "href": "tel:+212663056547"
+        "href": "contact"
       }
     },
     "about": {
@@ -751,7 +751,7 @@
         "title": "Start with a direct technical conversation.",
         "text": "A short discussion will show whether Yunes is the right person for the design, review, site or owner-side role you need.",
         "button": "Call Yunes",
-        "href": "tel:+212663056547"
+        "href": "contact"
       },
       "companyModel": {
         "title": "What Salimi Engineering is",
