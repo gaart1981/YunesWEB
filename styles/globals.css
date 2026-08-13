@@ -984,3 +984,88 @@ html[dir="rtl"] .eyebrow {
 .mobile-menu summary span {
   background: var(--ink);
 }
+
+/* ==========================================================================
+   Language menu.
+   Built on <details>, so it opens, closes and takes keyboard focus with no
+   JavaScript — necessary on a static export. Each option carries lang and
+   hreflang so a screen reader pronounces "Français" in French rather than
+   reading it as English.
+   ========================================================================== */
+.lang-menu { position: relative; }
+
+.lang-menu > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--steel);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  list-style: none;
+  cursor: pointer;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.lang-menu > summary::-webkit-details-marker { display: none; }
+
+.lang-menu > summary:hover { color: var(--ink); border-color: var(--steel); }
+
+.lang-menu[open] > summary { color: var(--ink); border-color: var(--steel); }
+
+.lang-menu[open] .lang-chevron { transform: rotate(180deg); }
+
+.lang-chevron { transition: transform 180ms ease; }
+
+.lang-menu__list {
+  position: absolute;
+  z-index: 60;
+  inset-inline-end: 0;
+  min-width: 168px;
+  margin-block-start: 8px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(15, 30, 51, 0.12);
+}
+
+.lang-menu__list a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: var(--steel);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.lang-menu__list a:hover { color: var(--ink); background: var(--porcelain); }
+
+/* Current language is marked by weight and a rule, not by colour alone. */
+.lang-menu__list a[aria-current="true"] {
+  color: var(--ink);
+  font-weight: 650;
+  box-shadow: inset 2px 0 0 var(--copper);
+}
+
+.lang-menu__code {
+  min-width: 22px;
+  color: var(--copper);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Arabic sits in an RTL document; the inline-start shadow mirrors with it. */
+html[dir="rtl"] .lang-menu__list a[aria-current="true"] {
+  box-shadow: inset -2px 0 0 var(--copper);
+}
+
+@media (max-width: 800px) {
+  .lang-menu { display: none; }
+}

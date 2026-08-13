@@ -1,17 +1,11 @@
 import Link from "next/link";
 import { BrandLogo } from "@/components/BrandLogo";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import type { Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import type { SiteContent, SitePage, SiteSlug } from "@/lib/site-content";
 import { getPageContent } from "@/lib/site-content";
 import { getRelatedExperience } from "@/lib/related-experience";
-
-const localeLabels: Record<Locale, string> = {
-  en: "EN",
-  fr: "FR",
-  ar: "العربية",
-  ru: "RU"
-};
 
 const whatsappLabels: Record<Locale, string> = {
   en: "WhatsApp Salimi Engineering",
@@ -74,13 +68,7 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
           ))}
         </nav>
         <div className="header-actions">
-          <div className="language-switcher" aria-label={nav.language}>
-            {locales.map((item) => (
-              <Link key={item} href={`/${item}/${slug}`} lang={item} hrefLang={item} aria-current={item === locale ? "page" : undefined}>
-                {localeLabels[item]}
-              </Link>
-            ))}
-          </div>
+          <LanguageSwitcher locale={locale} label={nav.language} path={`/${slug}/`} />
           <Link className="button button--small" href={`/${locale}/contact`}>{nav.cta}</Link>
         </div>
         <details className="mobile-menu">
@@ -90,11 +78,7 @@ function Header({ locale, slug, site }: { locale: Locale; slug: SiteSlug; site: 
             {links.map(([href, label]) => <Link key={href} href={`/${locale}/${href}`}>{label}</Link>)}
             <Link href={`/${locale}/contact`}>{nav.cta}</Link>
             <a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a>
-            <div className="language-switcher language-switcher--mobile">
-              {locales.map((item) => (
-                <Link key={item} href={`/${item}/${slug}`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
-              ))}
-            </div>
+            <LanguageSwitcher locale={locale} label={nav.language} path={`/${slug}/`} variant="inline" />
           </nav>
         </details>
       </div>

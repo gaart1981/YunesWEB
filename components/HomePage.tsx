@@ -1,15 +1,9 @@
 import Link from "next/link";
 import { BrandLogo } from "@/components/BrandLogo";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import type { HomeContent, Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import { getPageContent, getSiteContent } from "@/lib/site-content";
-
-const localeLabels: Record<Locale, string> = {
-  en: "EN",
-  fr: "FR",
-  ar: "العربية",
-  ru: "RU"
-};
 
 const serviceSlugs = [
   "owners-engineering-amo",
@@ -52,13 +46,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
             <Link href={`/${locale}/contact`}>{nav.contact}</Link>
           </nav>
           <div className="header-actions">
-            <div className="language-switcher" aria-label={nav.language}>
-              {locales.map((item) => (
-                <Link key={item} href={`/${item}/`} lang={item} hrefLang={item} aria-current={item === locale ? "page" : undefined}>
-                  {localeLabels[item]}
-                </Link>
-              ))}
-            </div>
+            <LanguageSwitcher locale={locale} label={nav.language} path={"/"} />
             <Link className="button button--small" href={`/${locale}/contact`}>{nav.cta}</Link>
           </div>
           <details className="mobile-menu">
@@ -70,11 +58,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <Link href={`/${locale}/about`}>{nav.about}</Link>
               <Link href={`/${locale}/contact`}>{nav.contact}</Link>
               <Link href={`/${locale}/contact`}>{nav.cta}</Link>
-              <div className="language-switcher language-switcher--mobile">
-                {locales.map((item) => (
-                  <Link key={item} href={`/${item}/`} lang={item} hrefLang={item}>{localeLabels[item]}</Link>
-                ))}
-              </div>
+              <LanguageSwitcher locale={locale} label={nav.language} path={"/"} variant="inline" />
             </nav>
           </details>
         </div>

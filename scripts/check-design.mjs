@@ -697,6 +697,46 @@ if (existsSync("netlify.toml")) {
   }
 }
 
+
+/* ============================================================================
+   Language switcher. Guards the two things that make it usable rather than
+   decorative: it must keep the visitor on the page they are reading, and each
+   option must be announced in its own language.
+   ========================================================================== */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["", "services", "about", "experience"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+    const menu = html.match(/<details class="lang-menu[\s\S]*?<\/details>/);
+    if (!menu) { fail("i18n", `/${locale}/${route}/: language menu missing`); continue; }
+
+    /* Switching language must not send the visitor back to the homepage. */
+    const suffix = route ? `/${route}/` : "/";
+    for (const other of ["en", "fr", "ar", "ru"]) {
+      if (!menu[0].includes(`href="/${other}${suffix}"`))
+        fail("i18n", `/${locale}/${route}/: switcher does not offer ${other} on this page`);
+      else ok();
+    }
+
+    if (!/aria-current="true"/.test(menu[0]))
+      fail("i18n", `/${locale}/${route}/: current language not marked`);
+    else ok();
+
+    /* Each option carries lang so it is pronounced correctly, not read as
+       English. Flags are deliberately absent: a flag is a country, not a
+       language. */
+    for (const other of ["fr", "ar", "ru"]) {
+      if (!menu[0].includes(`lang="${other}"`))
+        fail("i18n", `/${locale}/${route}/: ${other} option has no lang attribute`);
+      else ok();
+    }
+    if (/🇫🇷|🇬🇧|🇸🇦|🇷🇺|flag/i.test(menu[0]))
+      fail("i18n", `/${locale}/${route}/: flag used to denote a language`);
+    else ok();
+  }
+}
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {
