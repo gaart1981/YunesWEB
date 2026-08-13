@@ -98,7 +98,7 @@ export function HomePage({ locale, content }: { locale: Locale; content: HomeCon
               <p className="trust-note">{content.hero.trust}</p>
             </div>
             <div className="hero-media">
-              <img src="/images/graphics/development-masterplan.webp" alt="" width="1448" height="1086" />
+              <img src="/images/graphics/engineering-scope-sheet.webp" alt="" width="1200" height="900" />
             </div>
           </div>
         </section>
