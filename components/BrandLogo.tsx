@@ -37,7 +37,7 @@ export function BrandLogo({
       ? { width: 100, height: 100 }
       : variant === "horizontal"
         ? { width: 720, height: 100 }
-        : { width: 470, height: 150 };
+        : { width: 470, height: 158 };
 
   return (
     <img

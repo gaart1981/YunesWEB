@@ -412,10 +412,10 @@ const readBrand = (n) => (existsSync(brandFile(n)) ? readFileSync(brandFile(n), 
 for (const n of ["salimi-engineering-primary-navy.svg", "salimi-engineering-primary-white.svg"]) {
   const svg = readBrand(n);
   if (!svg) { fail("brand", `${n} missing`); continue; }
-  if (!svg.includes('viewBox="12 10 470 150"'))
-    fail("brand", `${n}: viewBox is not the corrected "12 10 470 150"`);
+  if (!svg.includes('viewBox="12 10 470 158"'))
+    fail("brand", `${n}: viewBox is not the corrected "12 10 470 158"`);
   else ok();
-  if (!svg.includes("matrix(2.04917 0 0 1.53098 -170.5876 -100.0566)"))
+  if (!svg.includes("matrix(2.04917 0 0 1.53098 -170.5876 -89.2195)"))
     fail("brand", `${n}: ENGINEERING group is missing the approved transform`);
   else ok();
 }
