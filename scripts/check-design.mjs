@@ -415,7 +415,7 @@ for (const n of ["salimi-engineering-primary-navy.svg", "salimi-engineering-prim
   if (!svg.includes('viewBox="12 10 470 150"'))
     fail("brand", `${n}: viewBox is not the corrected "12 10 470 150"`);
   else ok();
-  if (!svg.includes("matrix(1.92 0 0 1.6 -143.56 -110)"))
+  if (!svg.includes("matrix(2.04917 0 0 1.53098 -170.5876 -100.0566)"))
     fail("brand", `${n}: ENGINEERING group is missing the approved transform`);
   else ok();
 }
