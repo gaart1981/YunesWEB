@@ -18,7 +18,8 @@
     "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
     "skip": "Skip to content",
-    "illustrativeImage": "Illustrative image — not the actual project"
+    "illustrativeImage": "Illustrative image — not the actual project",
+    "priorExperienceNote": "Selected prior professional experience of the founder."
   },
   "pages": {
     "services": {
@@ -107,6 +108,65 @@
         "text": "Describe the technical problem. Yunes will identify the smallest useful intervention and the information required to start.",
         "button": "Call Yunes",
         "href": "tel:+212663056547"
+      },
+      "engagementRoles": {
+        "title": "How Salimi Engineering can be engaged",
+        "items": [
+          {
+            "title": "Owner-side adviser",
+            "text": "We represent your technical interest: review designs, challenge scope and verify what contractors propose."
+          },
+          {
+            "title": "Engineering resource",
+            "text": "We produce the calculations, drawings and specifications your project needs to be priced and built."
+          },
+          {
+            "title": "Project coordinator",
+            "text": "We resolve interfaces between disciplines, consultants and contractors before they reach the site."
+          },
+          {
+            "title": "Local delivery partner",
+            "text": "We provide inspection, contractor coordination and technical representation in Morocco."
+          }
+        ]
+      },
+      "engagementFormats": {
+        "title": "Engagement formats",
+        "items": [
+          {
+            "title": "Focused technical mission",
+            "text": "A single review, site survey or second opinion on one defined question."
+          },
+          {
+            "title": "Defined design package",
+            "text": "An agreed engineering scope delivered to an agreed level of detail."
+          },
+          {
+            "title": "Recurring local representation",
+            "text": "Scheduled site attendance and reporting for a client based abroad."
+          },
+          {
+            "title": "Project-phase assignment",
+            "text": "Support through design, tender, construction or commissioning."
+          },
+          {
+            "title": "Medium-sized project scope",
+            "text": "A wider scope delivered with a project team assembled for the assignment."
+          }
+        ]
+      },
+      "teamModel": {
+        "title": "Capacity for the scope",
+        "text": "The bureau operates with a focused core and mobilises discipline engineers and specialists according to the assignment. Senior technical accountability stays with the lead engineer.",
+        "points": [
+          "Scope, interfaces and reporting agreed before mobilisation",
+          "Discipline engineers engaged for the assignment where required",
+          "Site attendance set by the project, not by a fixed template",
+          "One accountable technical contact throughout"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Experience behind these services"
       }
     },
     "owners-engineering-amo": {
@@ -198,6 +258,19 @@
         "text": "Send the drawings, offer or site issue that concerns you. Yunes can begin with a focused independent review.",
         "button": "Discuss the issue",
         "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Use this service when",
+        "items": [
+          "You are investing in or delivering a project without your own engineering department.",
+          "A contractor proposal looks complete but you cannot verify what is missing.",
+          "Substitutions or variations are being proposed and the consequences are unclear.",
+          "Work is progressing on site and nobody independent is checking it against the approved design.",
+          "Testing and handover are approaching and the documentation is incomplete."
+        ]
+      },
+      "relatedExperience": {
+        "title": "Related prior experience"
       }
     },
     "electrical-mep-engineering": {
@@ -289,6 +362,29 @@
         "text": "Share the plans, equipment list and current design stage. Yunes will define the missing calculations, drawings and coordination work.",
         "button": "Request an engineering discussion",
         "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Use this service when",
+        "items": [
+          "You need electrical and MEP documents detailed enough to price and build.",
+          "Disciplines were designed separately and now clash on site.",
+          "Equipment loads, distribution or standby power need to be established.",
+          "Fire detection, evacuation and low-current interfaces must be coordinated.",
+          "A contractor requires answers to technical queries during construction."
+        ]
+      },
+      "teamModel": {
+        "title": "How the engineering team is resourced",
+        "text": "Electrical and MEP scopes frequently require more than one discipline. Specialists are engaged for the assignment according to the systems involved, while the lead engineer keeps the design coordinated and accountable.",
+        "points": [
+          "Discipline engineers mobilised for the systems in scope",
+          "One coordinated document set rather than parallel unlinked designs",
+          "Interface decisions recorded, not left to the site",
+          "Lead engineer answerable for the complete package"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Related prior experience"
       }
     },
     "local-engineering-partner-morocco": {
@@ -379,6 +475,29 @@
         "text": "A short call can define what Yunes should verify locally, how often he should attend and what your team needs reported.",
         "button": "WhatsApp Yunes",
         "href": "https://wa.me/212663056547"
+      },
+      "clientSituation": {
+        "title": "Use this service when",
+        "items": [
+          "Your project is in Morocco and your team is not.",
+          "You need site facts verified before an investment or mobilisation decision.",
+          "Contractors need a local technical interface who can decide within an agreed mandate.",
+          "Progress and quality reports must reach a head office abroad in a usable form.",
+          "Testing and handover require attendance you cannot provide from another country."
+        ]
+      },
+      "teamModel": {
+        "title": "Local capacity",
+        "text": "Local presence is scaled to the assignment. Attendance can be a single mission, a scheduled rhythm or continuous support during a construction phase, with additional engineers engaged where the site workload requires it.",
+        "points": [
+          "Mandate, reporting line and escalation agreed in writing",
+          "Attendance frequency set by the project phase",
+          "Additional engineers engaged when site workload requires",
+          "Findings evidenced with photographs and written reports"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Related prior experience"
       }
     },
     "sectors": {
@@ -445,6 +564,9 @@
         "text": "Yunes will identify the calculations, checks, coordination and site presence required for that project context.",
         "button": "Discuss the project",
         "href": "contact"
+      },
+      "relatedExperience": {
+        "title": "Prior experience by project environment"
       }
     },
     "experience": {
@@ -622,6 +744,53 @@
         "text": "A short discussion will show whether Yunes is the right person for the design, review, site or owner-side role you need.",
         "button": "Call Yunes",
         "href": "tel:+212663056547"
+      },
+      "companyModel": {
+        "title": "What Salimi Engineering is",
+        "text": "A small founder-led engineering bureau based in Morocco. It takes focused technical assignments and medium-sized project scopes, and builds the project team around the actual work rather than maintaining capacity that a project does not need.",
+        "points": [
+          {
+            "title": "Founder-led, not one-person",
+            "text": "A focused core with senior technical accountability held by the lead engineer."
+          },
+          {
+            "title": "Teams built to the scope",
+            "text": "Discipline engineers and specialists are engaged or hired for the assignment."
+          },
+          {
+            "title": "Focused tasks and medium scopes",
+            "text": "From a single review to a project phase delivered with a mobilised team."
+          },
+          {
+            "title": "Direct accountability",
+            "text": "The client relationship and technical responsibility are not delegated to intermediaries."
+          }
+        ]
+      },
+      "clientWorkflow": {
+        "title": "How clients work with the bureau",
+        "items": [
+          {
+            "title": "Direct access",
+            "text": "You speak with the engineer responsible for the work, not an account manager."
+          },
+          {
+            "title": "Defined scope",
+            "text": "Deliverables, authority, interfaces and reporting are agreed before mobilisation."
+          },
+          {
+            "title": "Documented decisions",
+            "text": "Findings, risks and actions are recorded so they can be reviewed and audited."
+          },
+          {
+            "title": "Reporting to your structure",
+            "text": "Reports are produced in a form a head office abroad can act on."
+          },
+          {
+            "title": "Site presence as required",
+            "text": "Attendance is set by the project phase, not by a standard package."
+          }
+        ]
       }
     },
     "contact": {
@@ -677,7 +846,18 @@
         "text": "Send a short message with the project location and the issue. Yunes can then request the right drawings or arrange a call.",
         "button": "WhatsApp Yunes",
         "href": "https://wa.me/212663056547"
-      }
+      },
+      "whatToSend": {
+        "title": "What to include",
+        "items": [
+          "Project location and type of facility",
+          "Current stage: concept, design, tender, construction or handover",
+          "Drawings, specifications or contractor proposals already available",
+          "The decision or site problem that needs technical input",
+          "Your timescale and who else is involved"
+        ]
+      },
+      "privacyNote": "Information sent through this form is used only to review and answer your enquiry. Please do not send confidential drawings or sensitive commercial data with a first enquiry."
     },
     "legal-notice": {
       "seo": {

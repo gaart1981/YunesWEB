@@ -54,3 +54,69 @@
 .project-visual::after{position:absolute;inset-block-end:0;inset-inline-start:0;padding:4px 8px;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;color:var(--white);background:rgba(11,24,38,.72)}
 .project-photo{position:relative;margin:0}
 .project-photo figcaption{margin-block-start:6px;font-size:.72rem;letter-spacing:.02em;color:var(--steel)}
+
+/* ==========================================================================
+   Per-page information architecture (spec §7-§13).
+   Deliberately different shapes per section so pages stop reading as one
+   repeated card template.
+   ========================================================================== */
+
+/* D02 — client situation: a qualifying checklist, not a card grid. */
+.situation-layout{display:grid;grid-template-columns:minmax(0,.4fr) minmax(0,.6fr);gap:clamp(24px,4vw,64px);align-items:start}
+.situation-list{margin:0;padding:0;list-style:none;border-block-start:1px solid var(--border)}
+.situation-list li{position:relative;padding:14px 0 14px 26px;border-block-end:1px solid var(--border);font-size:.98rem;line-height:1.55;max-width:70ch}
+.situation-list li::before{position:absolute;inset-inline-start:0;top:14px;content:"";width:8px;height:8px;border:1px solid var(--copper);border-radius:1px}
+
+/* A02 — company model: statement plus supporting points. */
+.model-layout{display:grid;grid-template-columns:minmax(0,.45fr) minmax(0,.55fr);gap:clamp(24px,4vw,64px);align-items:start}
+.model-intro p{max-width:52ch;color:var(--steel)}
+.model-points{margin:0;padding:0;list-style:none;display:grid;gap:0;border-block-start:1px solid var(--border)}
+.model-points li{padding:16px 0;border-block-end:1px solid var(--border)}
+.model-points h3{margin:0 0 4px;font-size:1rem}
+.model-points p{margin:0;font-size:.92rem;line-height:1.55;color:var(--steel);max-width:56ch}
+
+/* S02 — engagement roles: compact 2x2. */
+.role-grid{margin:28px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.role-grid li{padding:20px clamp(16px,2vw,32px) 20px 0;border-block-start:1px solid var(--border)}
+.role-grid h3{margin:0 0 5px;font-size:1.02rem}
+.role-grid p{margin:0;font-size:.92rem;line-height:1.55;color:var(--steel);max-width:46ch}
+
+/* S04 — engagement formats and A05 — client workflow: labelled rows. */
+.format-rows,.workflow-rows{margin:26px 0 0;padding:0;list-style:none;border-block-start:1px solid var(--border)}
+.format-rows li,.workflow-rows li{display:grid;grid-template-columns:minmax(0,.32fr) minmax(0,.68fr);gap:clamp(12px,2vw,32px);padding:16px 0;border-block-end:1px solid var(--border)}
+.format-rows h3,.workflow-rows h3{margin:0;font-size:1rem}
+.format-rows p,.workflow-rows p{margin:0;font-size:.93rem;line-height:1.55;color:var(--steel);max-width:64ch}
+
+/* S05 / D06 — team model on a dark surface: capacity without headcount claims. */
+.content-section--ink{background:var(--ink);color:var(--porcelain)}
+.content-section--ink h2{color:var(--white)}
+.team-model-layout{display:grid;grid-template-columns:minmax(0,.5fr) minmax(0,.5fr);gap:clamp(24px,4vw,64px);align-items:start}
+.team-model-layout p{max-width:56ch;opacity:.85}
+.team-points{margin:0;padding:0;list-style:none}
+.team-points li{padding:12px 0;border-block-end:1px solid rgba(246,244,239,.16);font-size:.94rem;line-height:1.5}
+.team-points li:first-child{padding-block-start:0}
+
+/* C02 — what to send. */
+.what-to-send{margin-block-start:28px;padding-block-start:20px;border-block-start:1px solid var(--border)}
+.what-to-send h3{margin:0 0 10px;font-size:1rem}
+.what-to-send ul{margin:0;padding-inline-start:18px}
+.what-to-send li{margin-block-end:6px;font-size:.93rem;line-height:1.5;color:var(--steel)}
+.privacy-note{margin-block-start:14px;font-size:.85rem;line-height:1.5;color:var(--steel);max-width:70ch}
+
+/* §13 — legal pages are reference documents: readable measure, tight rhythm. */
+.legal-section{padding:clamp(28px,3.5vw,44px) 0}
+.legal-layout h2{font-size:clamp(1.25rem,1.8vw,1.5rem)}
+.legal-layout p{max-width:72ch;font-size:.98rem;line-height:1.65}
+
+@media(max-width:900px){
+  .situation-layout,.model-layout,.team-model-layout{grid-template-columns:1fr}
+  .role-grid{grid-template-columns:1fr}
+  .role-grid li{padding-inline-end:0}
+  .format-rows li,.workflow-rows li{grid-template-columns:1fr;gap:4px}
+}
+/* Reference pages (legal/privacy/cookies) use a smaller H1: they are documents,
+   not marketing pages, and long compound words such as "конфиденциальности"
+   must not need to break at 360px. */
+.content-hero--reference .content-hero-grid{padding-block:clamp(36px,4vw,56px)}
+.content-hero--reference h1{max-width:22ch;font-size:clamp(1.6rem,2.4vw,2.25rem)}
+.content-hero--reference .content-lead{max-width:64ch}

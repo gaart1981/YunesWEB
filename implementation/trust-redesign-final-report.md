@@ -4,7 +4,9 @@
 **Branch:** `redesign/trust-engineering-bureau`
 **Baseline:** `f8fbca5ea610be79f3f2085bf7bff697827e2d46` — verified as an ancestor of the working head with `git merge-base --is-ancestor`
 **Branched from:** `e641ae0` (`feat(seo): set the canonical origin to salimiengineering.com`)
-**Status:** Implementation complete for the items listed below. Browser-rendered visual QA **not executed** — see §9.
+**Status:** Second pass complete. All public-page information architectures in §7–§13 are now implemented. Browser-rendered visual QA remains **not executed** — see §9.
+
+**Commits:** `cfe7bdf` (homepage and global metrics) then the second-pass commit recorded at the end of this report (Services, service-detail, Sectors, Experience, About, Contact, legal pages).
 
 ---
 
@@ -164,7 +166,7 @@ Therefore **no screenshots were captured** at 1440×900, 390×844, 360×800, 768
 ## 10. Deliberate deviations from the specification
 
 1. **No component-library refactor.** §14.1 lists suggested components (`SiteHeader`, `PageHero`, …). The existing two-component structure was extended instead. §14.1 also says not to create abstraction for its own sake and §26 warns against unneeded architectural change; splitting the components would have enlarged the diff without changing the rendered result, making the visual regression risk harder to reason about while browser QA is unavailable.
-2. **Services, service-detail, About, Sectors and Contact pages received metric and hero compaction, not full architectural rebuilds.** §7–§12 specify distinct per-page information architectures (S02 engagement roles, D02 client-situation blocks, A02/A04 company-model sections, C02 two-column contact). Those require substantial new per-page content in four languages. They are **not done** and are the largest remaining gap against the Definition of Done.
+2. ~~Services, service-detail, About, Sectors and Contact pages received metric and hero compaction, not full architectural rebuilds.~~ **Resolved in the second pass** — see §12 below.
 3. **Playwright was not added as a dev dependency**, since its browser cannot be installed here. Adding an unusable test harness would have produced a script that fails on every run.
 
 ---
@@ -176,3 +178,89 @@ Therefore **no screenshots were captured** at 1440×900, 390×844, 360×800, 768
 **Not met, with evidence above:** Services / service-detail / About / Contact per-page information architectures (§10.2 of this report); browser smoke test (§9); responsive verification at the six required viewports (§9); Arabic RTL *visual* verification — attributes and logical properties are verified, rendered layout is not (§9); Lighthouse targets (§9).
 
 This report does not claim the redesign is visually complete. It claims the structural, content and metric work is done and verified, and that the visual review remains outstanding with a specific reason.
+
+
+---
+
+## 12. Second pass — per-page information architecture (§7–§13)
+
+The first pass left the internal pages on a single generic template. That gap is now closed. Each page family renders a different set of blocks in a different order, so the site no longer repeats one component shape.
+
+### New content blocks, written per locale in EN / FR / AR / RU
+
+| Block | Pages | Spec |
+|---|---|---|
+| `engagementRoles` | Services | S02 — four ways the bureau can be engaged, 2×2 grid |
+| `engagementFormats` | Services | S04 — focused mission → medium-sized scope |
+| `teamModel` | Services, Electrical & MEP, Local Partner | S05 / D06 — capacity without headcount claims |
+| `clientSituation` | all three service-detail pages | D02 — "Use this service when…" qualifying list |
+| `relatedExperience` | Services, three detail pages, Sectors | S06 / D07 / SE04 — real records from existing data |
+| `companyModel` | About | A02 — company before founder |
+| `clientWorkflow` | About | A05 — how clients work with the bureau |
+| `whatToSend` | Contact | C02 — what information is useful |
+| `privacyNote` | Contact | C05 — short note linked to the Privacy page |
+| `priorExperienceNote` | shared | attribution line above every related-experience list |
+
+### Resulting page architectures
+
+- **Services** — hero → facts → engagement roles → six capability items → process → engagement formats → team model → related experience → CTA (9 sections).
+- **Owner's Engineering & AMO** — hero → facts → *Use this service when* → what we control → intervention sequence → deliverables → related experience → CTA.
+- **Electrical & MEP** — as above plus a **team-resourcing** section explaining how discipline specialists are engaged.
+- **Local Engineering Partner** — as above plus a **local capacity** section covering mandate, attendance frequency and evidence.
+- **Sectors** — hero → sector matrix → cross-sector technical problems → related experience → CTA.
+- **About** — hero → facts → **"What Salimi Engineering is"** → founder message → why clients work directly → working relationship → **how clients work with the bureau** → CTA. The company is now the first subject on the page; the founder follows as the accountability signal.
+- **Contact** — compact hero → contact details + *what to include* + form + privacy note → WhatsApp CTA.
+- **Legal / Privacy / Cookies** — new `content-hero--reference` treatment: no hero CTAs, reduced H1 (`clamp(1.6rem, 2.4vw, 2.25rem)`), 72ch measure, tighter section rhythm.
+
+### A real defect found and fixed by static review
+
+The Russian Privacy page H1 contains **«конфиденциальности» — 18 characters**. At the previous mobile H1 floor this would have needed to break mid-word at 360px. The reference-page treatment reduces the H1 on exactly those pages, which resolves it at source rather than relying on the `overflow-wrap` safety net. Longest H1 word per locale is now: EN 14, FR 15, AR 11, RU 18 on reference pages only (at reduced size).
+
+### Test coverage added, not weakened
+
+`scripts/check-design.mjs` now additionally asserts:
+
+- a **per-page architecture contract** — each route must contain its required blocks (`role-grid`, `format-rows`, `team-model-layout`, `situation-layout`, `model-layout`, `workflow-rows`, `what-to-send`, `privacy-note`, `evidence-rows`) in all four locales;
+- **legal pages must not render hero CTAs** (§13);
+- **banned marketing copy** — `permanent team/staff/employees`, `world-class`, `cutting-edge`, `best-in-class`, `seamless`, `unmatched`, `guaranteed` (§17.1, §17.3).
+
+Assertions grew from 66 to **292** on the design suite and from 2551 to **2575** on the export suite. No existing assertion was relaxed.
+
+### Second-pass results
+
+```
+npx tsc --noEmit            PASS
+npm run build               PASS — 51 routes, 50 index.html
+node scripts/check-export.mjs   PASS — 48 pages, 2575 assertions
+node scripts/check-design.mjs   PASS — 292 assertions
+```
+
+### Specification checklist
+
+| Section | Status |
+|---|---|
+| §5 design system (colour, type, spacing, header, buttons, radii) | implemented, verified by metric assertions |
+| §6 homepage blueprint H01–H10 | implemented, order verified in 4 locales |
+| §7 Services page S01–S07 | implemented |
+| §8 service-detail D01–D08, three distinct architectures | implemented |
+| §9 Sectors SE01–SE05 | implemented |
+| §10 Experience E01–E05 | implemented — evidence rows, structured metadata, disclosure, illustrative captions in 4 locales |
+| §11 About A01–A07 | implemented — company model precedes founder |
+| §12 Contact C01–C05 | implemented — C04 delivery **not verifiable here** |
+| §13 legal pages | implemented — reference treatment |
+| §14 components / content model | implemented — all business copy stays JSON-driven |
+| §15 responsive | **blocked by environment** — CSS targets asserted, rendering not observed |
+| §16 Arabic RTL | partially verified — `dir`, logical properties, section parity asserted; **visual flow not observed** |
+| §17 copy and trust rules | implemented, banned-copy assertion added |
+| §18 imagery | implemented — captions prove illustrative status |
+| §19 accessibility | structure verified (single h1, skip link, main, labels); **contrast and keyboard not observed** |
+| §20 performance | **not measured** — Lighthouse not executed |
+| §21 SEO / indexing | preserved and asserted |
+| §22 functional tests | implemented and passing |
+| §23 visual QA | **blocked by environment** |
+
+### Still blocked by environment (unchanged)
+
+Browser automation cannot run: Playwright's browser download is refused by the sandbox network policy. Therefore **no screenshots, no viewport verification, no Lighthouse scores, no contrast measurement, no keyboard-navigation trace, and no Arabic visual-flow confirmation.** These remain the only outstanding items, and none can be closed from inside this environment.
+
+Nothing has been pushed or merged. All work is local on `redesign/trust-engineering-bureau`.

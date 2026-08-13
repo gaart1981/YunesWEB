@@ -29,6 +29,7 @@ export type SiteSlug = (typeof pageSlugs)[number];
 export type Navigation = {
   home: string;
   illustrativeImage: string;
+  priorExperienceNote: string;
   services: string;
   sectors: string;
   experience: string;
@@ -73,6 +74,15 @@ export type SharedPage = {
   bulletTitle?: string;
   bullets?: string[];
   projects?: ProjectItem[];
+  engagementRoles?: { title: string; items: { title: string; text: string }[] };
+  engagementFormats?: { title: string; items: { title: string; text: string }[] };
+  teamModel?: { title: string; text: string; points: string[] };
+  clientSituation?: { title: string; items: string[] };
+  clientWorkflow?: { title: string; items: { title: string; text: string }[] };
+  companyModel?: { title: string; text: string; points: { title: string; text: string }[] };
+  whatToSend?: { title: string; items: string[] };
+  privacyNote?: string;
+  relatedExperience?: { title: string };
   profile?: {
     type: string;
     eyebrow: string;

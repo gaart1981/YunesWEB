@@ -124,6 +124,59 @@ for (const locale of ["en", "fr", "ar", "ru"]) {
   else ok();
 }
 
+
+/* ------------------- §7-§12 per-page information architecture is distinct */
+const PAGE_CONTRACT = {
+  "services": ["role-grid", "format-rows", "team-model-layout", "evidence-rows"],
+  "owners-engineering-amo": ["situation-layout", "evidence-rows"],
+  "electrical-mep-engineering": ["situation-layout", "team-model-layout", "evidence-rows"],
+  "local-engineering-partner-morocco": ["situation-layout", "team-model-layout", "evidence-rows"],
+  "sectors": ["evidence-rows"],
+  "about": ["model-layout", "workflow-rows", "profile-layout"],
+  "contact": ["what-to-send", "privacy-note"]
+};
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const [route, required] of Object.entries(PAGE_CONTRACT)) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) { fail("architecture", `${file} missing`); continue; }
+    const html = readFileSync(file, "utf8");
+    for (const cls of required) {
+      if (html.includes(`"${cls}"`) || html.includes(`${cls} `) || html.includes(` ${cls}`)) ok();
+      else fail("architecture", `/${locale}/${route}/: missing required block "${cls}"`);
+    }
+  }
+}
+
+/* --------------- §13 legal pages must not carry marketing hero actions */
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["legal-notice", "privacy-policy", "cookie-policy"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const html = readFileSync(file, "utf8");
+    if (/content-hero-actions/.test(html))
+      fail("legal", `/${locale}/${route}/: reference page still renders hero CTAs`);
+    else ok();
+  }
+}
+
+/* ------------------- §17.3 no permanent-headcount or superlative claims */
+const BANNED_COPY = [
+  /\bpermanent (?:team|staff|employees)\b/i,
+  /\bworld-class\b/i, /\bcutting-edge\b/i, /\bbest-in-class\b/i,
+  /\bseamless\b/i, /\bunmatched\b/i, /\bguaranteed\b/i
+];
+for (const locale of ["en", "fr", "ar", "ru"]) {
+  for (const route of ["", "services", "about", "contact", "experience"]) {
+    const file = join(OUT, locale, route, "index.html");
+    if (!existsSync(file)) continue;
+    const text = readFileSync(file, "utf8").replace(/<[^>]+>/g, " ");
+    for (const re of BANNED_COPY) {
+      if (re.test(text)) fail("copy", `/${locale}/${route}/: banned marketing claim ${re}`);
+      else ok();
+    }
+  }
+}
+
 console.log(`\nDesign-metric QA — ${checks} assertions passed`);
 console.log("  note: browser rendering NOT executed (browser download blocked in this environment)");
 if (failures.length) {

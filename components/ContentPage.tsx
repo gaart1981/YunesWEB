@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/lib/home-content";
 import { locales } from "@/lib/home-content";
 import type { SiteContent, SitePage, SiteSlug } from "@/lib/site-content";
+import { getPageContent } from "@/lib/site-content";
 
 const localeLabels: Record<Locale, string> = {
   en: "EN",
@@ -145,6 +146,8 @@ function Footer({ locale, site }: { locale: Locale; site: SiteContent }) {
 
 export function ContentPage({ locale, page, site }: { locale: Locale; page: SitePage; site: SiteContent }) {
   const pageImage = pageImages[page.slug];
+  const experienceRecords = getPageContent(locale, "experience").projects ?? [];
+  const relatedProjects = page.relatedExperience ? experienceRecords.slice(0, 3) : [];
   const phoneHref = `tel:${site.navigation.phone.replace(/\s/g, "")}`;
   const whatsappHref = `https://wa.me/${site.navigation.phone.replace(/[^\d]/g, "")}`;
 
@@ -153,7 +156,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
       <a className="skip-link" href="#main-content">{site.navigation.skip}</a>
       <Header locale={locale} slug={page.slug} site={site} />
       <main id="main-content">
-        <section className="content-hero">
+        <section className={page.legal ? "content-hero content-hero--reference" : "content-hero"}>
           <div className="container content-hero-grid">
             <div>
               <p className="eyebrow eyebrow--sand">{page.eyebrow}</p>
@@ -161,7 +164,7 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
               <p className="content-lead">{page.lead}</p>
               {!page.legal && (
                 <div className="hero-actions content-hero-actions">
-                  <a className="button button--sand" href={phoneHref}>{site.navigation.cta}<Arrow /></a>
+                  <Link className="button button--sand" href={`/${locale}/contact`}>{site.navigation.cta}<Arrow /></Link>
                   <a className="text-link text-link--light" href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}<Arrow /></a>
                 </div>
               )}
@@ -180,6 +183,46 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
           <section className="fact-strip"><div className="container fact-grid">
             {page.facts.map((fact) => <div key={`${fact.value}-${fact.label}`}><strong>{fact.value}</strong><span>{fact.label}</span></div>)}
           </div></section>
+        )}
+
+        {page.clientSituation && (
+          <section className="content-section content-section--porcelain">
+            <div className="container situation-layout">
+              <h2>{page.clientSituation.title}</h2>
+              <ul className="situation-list">
+                {page.clientSituation.items.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {page.companyModel && (
+          <section className="content-section">
+            <div className="container model-layout">
+              <div className="model-intro">
+                <h2>{page.companyModel.title}</h2>
+                <p>{page.companyModel.text}</p>
+              </div>
+              <ul className="model-points">
+                {page.companyModel.points.map((point) => (
+                  <li key={point.title}><h3>{point.title}</h3><p>{point.text}</p></li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {page.engagementRoles && (
+          <section className="content-section content-section--porcelain">
+            <div className="container">
+              <h2>{page.engagementRoles.title}</h2>
+              <ul className="role-grid">
+                {page.engagementRoles.items.map((role) => (
+                  <li key={role.title}><h3>{role.title}</h3><p>{role.text}</p></li>
+                ))}
+              </ul>
+            </div>
+          </section>
         )}
 
         {page.profile && (
@@ -223,6 +266,46 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
           </div></section>
         )}
 
+        {page.engagementFormats && (
+          <section className="content-section content-section--porcelain">
+            <div className="container">
+              <h2>{page.engagementFormats.title}</h2>
+              <ul className="format-rows">
+                {page.engagementFormats.items.map((format) => (
+                  <li key={format.title}><h3>{format.title}</h3><p>{format.text}</p></li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {page.teamModel && (
+          <section className="content-section content-section--ink">
+            <div className="container team-model-layout">
+              <div>
+                <h2>{page.teamModel.title}</h2>
+                <p>{page.teamModel.text}</p>
+              </div>
+              <ul className="team-points">
+                {page.teamModel.points.map((point) => <li key={point}>{point}</li>)}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {page.clientWorkflow && (
+          <section className="content-section">
+            <div className="container">
+              <h2>{page.clientWorkflow.title}</h2>
+              <ul className="workflow-rows">
+                {page.clientWorkflow.items.map((step) => (
+                  <li key={step.title}><h3>{step.title}</h3><p>{step.text}</p></li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {page.bullets && (
           <section className="content-section content-section--porcelain"><div className="container list-layout">
             <h2>{page.bulletTitle}</h2>
@@ -230,11 +313,39 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
           </div></section>
         )}
 
+        {page.relatedExperience && relatedProjects.length > 0 && (
+          <section className="content-section content-section--porcelain">
+            <div className="container">
+              <h2>{page.relatedExperience.title}</h2>
+              <p className="attribution-note">{site.navigation.priorExperienceNote}</p>
+              <ul className="evidence-rows">
+                {relatedProjects.map((project) => (
+                  <li key={project.title} className="evidence-row">
+                    <div className="evidence-row__head">
+                      <h3>{project.title}</h3>
+                      <p className="evidence-meta"><span>{project.sector}</span><span>{project.location}</span></p>
+                    </div>
+                    <p className="evidence-scope">{project.scope}</p>
+                    <p className="evidence-role">{project.role}</p>
+                  </li>
+                ))}
+              </ul>
+              <Link className="text-link" href={`/${locale}/experience`}>{site.navigation.experience}<Arrow /></Link>
+            </div>
+          </section>
+        )}
+
         {page.contact && (
           <section className="content-section"><div className="container contact-page-grid">
             <div className="contact-details">
               <p className="eyebrow">{page.contact.eyebrow}</p><h2>{page.contact.title}</h2><p>{page.contact.intro}</p>
               <address><span>{page.contact.address}</span><a href={`mailto:${page.contact.email}`}>{page.contact.email}</a><a href={phoneHref}>{page.contact.phone}</a><a href={whatsappHref} target="_blank" rel="noreferrer">{whatsappLabels[locale]}</a></address>
+              {page.whatToSend && (
+                <div className="what-to-send">
+                  <h3>{page.whatToSend.title}</h3>
+                  <ul>{page.whatToSend.items.map((item) => <li key={item}>{item}</li>)}</ul>
+                </div>
+              )}
             </div>
             <form className="project-form" name="project-enquiry" method="POST" action={`/${locale}/contact/`} data-netlify="true" netlify-honeypot="company-website">
               <input type="hidden" name="form-name" value="project-enquiry" />
@@ -245,6 +356,11 @@ export function ContentPage({ locale, page, site }: { locale: Locale; page: Site
               <label><span>{page.contact.form.service}</span><select name="service" required defaultValue=""><option value="" disabled>—</option>{page.contact.form.services.map((service) => <option key={service}>{service}</option>)}</select></label>
               <label className="form-wide"><span>{page.contact.form.message}</span><textarea name="message" rows={7} required /></label>
               <button className="button form-wide" type="submit">{page.contact.form.submit}<Arrow /></button>
+              {page.privacyNote && (
+                <p className="privacy-note form-wide">
+                  {page.privacyNote} <Link href={`/${locale}/privacy-policy`}>{site.navigation.privacy}</Link>
+                </p>
+              )}
             </form>
           </div></section>
         )}

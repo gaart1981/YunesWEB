@@ -18,7 +18,8 @@
     "email": "info@salimiengineering.com",
     "phone": "+212 663 056 547",
     "skip": "Aller au contenu",
-    "illustrativeImage": "Image d’illustration — pas le projet réel"
+    "illustrativeImage": "Image d’illustration — pas le projet réel",
+    "priorExperienceNote": "Expérience professionnelle antérieure du fondateur."
   },
   "pages": {
     "services": {
@@ -107,6 +108,65 @@
         "text": "Décrivez le problème. Yunes identifiera l’intervention minimale utile et les informations nécessaires pour démarrer.",
         "button": "Appeler Yunes",
         "href": "tel:+212663056547"
+      },
+      "engagementRoles": {
+        "title": "Comment intervenir avec Salimi Engineering",
+        "items": [
+          {
+            "title": "Conseil côté maître d’ouvrage",
+            "text": "Nous portons votre intérêt technique : revue des études, remise en question du périmètre, vérification des offres."
+          },
+          {
+            "title": "Ressource d’ingénierie",
+            "text": "Nous produisons les notes de calcul, plans et spécifications nécessaires au chiffrage et à l’exécution."
+          },
+          {
+            "title": "Coordination de projet",
+            "text": "Nous traitons les interfaces entre disciplines, bureaux d’études et entreprises avant le chantier."
+          },
+          {
+            "title": "Partenaire d’exécution local",
+            "text": "Nous assurons inspections, coordination des entreprises et représentation technique au Maroc."
+          }
+        ]
+      },
+      "engagementFormats": {
+        "title": "Formats d’intervention",
+        "items": [
+          {
+            "title": "Mission technique ciblée",
+            "text": "Une revue, une visite de site ou un second avis sur une question précise."
+          },
+          {
+            "title": "Lot d’études défini",
+            "text": "Un périmètre d’ingénierie livré au niveau de détail convenu."
+          },
+          {
+            "title": "Représentation locale récurrente",
+            "text": "Visites programmées et reporting pour un client basé à l’étranger."
+          },
+          {
+            "title": "Mission par phase",
+            "text": "Appui en études, appel d’offres, travaux ou mise en service."
+          },
+          {
+            "title": "Périmètre de taille moyenne",
+            "text": "Un périmètre élargi porté par une équipe constituée pour la mission."
+          }
+        ]
+      },
+      "teamModel": {
+        "title": "Une capacité adaptée au périmètre",
+        "text": "Le bureau fonctionne avec un noyau resserré et mobilise ingénieurs de discipline et spécialistes selon la mission. La responsabilité technique senior reste portée par l’ingénieur référent.",
+        "points": [
+          "Périmètre, interfaces et reporting convenus avant mobilisation",
+          "Ingénieurs de discipline engagés selon les besoins de la mission",
+          "Présence sur site définie par le projet, non par un modèle figé",
+          "Un interlocuteur technique responsable du début à la fin"
+        ]
+      },
+      "relatedExperience": {
+        "title": "L’expérience derrière ces prestations"
       }
     },
     "owners-engineering-amo": {
@@ -198,6 +258,19 @@
         "text": "Transmettez le plan, l’offre ou le problème chantier qui vous inquiète. Yunes peut commencer par une revue indépendante ciblée.",
         "button": "Présenter le problème",
         "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Cette mission est utile lorsque",
+        "items": [
+          "Vous investissez dans un projet sans disposer de votre propre service d’ingénierie.",
+          "Une offre d’entreprise paraît complète mais vous ne pouvez pas vérifier ce qui manque.",
+          "Des variantes ou substitutions sont proposées et leurs conséquences restent floues.",
+          "Les travaux avancent sans contrôle indépendant par rapport aux plans approuvés.",
+          "Les essais et la réception approchent avec une documentation incomplète."
+        ]
+      },
+      "relatedExperience": {
+        "title": "Expérience antérieure liée"
       }
     },
     "electrical-mep-engineering": {
@@ -289,6 +362,29 @@
         "text": "Transmettez les plans, la liste d’équipements et la phase actuelle. Yunes définira les calculs, documents et coordinations manquants.",
         "button": "Demander un échange technique",
         "href": "contact"
+      },
+      "clientSituation": {
+        "title": "Cette mission est utile lorsque",
+        "items": [
+          "Vous avez besoin de documents électriques et MEP exploitables pour chiffrer et construire.",
+          "Les disciplines ont été étudiées séparément et se heurtent sur le chantier.",
+          "Les puissances, la distribution ou le secours doivent être établis.",
+          "Détection incendie, évacuation et courants faibles doivent être coordonnés.",
+          "Une entreprise attend des réponses techniques pendant les travaux."
+        ]
+      },
+      "teamModel": {
+        "title": "Constitution de l’équipe d’études",
+        "text": "Les périmètres électricité/MEP mobilisent souvent plusieurs disciplines. Les spécialistes sont engagés selon les systèmes concernés, l’ingénieur référent garantissant la coordination et la responsabilité de l’ensemble.",
+        "points": [
+          "Ingénieurs de discipline mobilisés selon les systèmes du périmètre",
+          "Un jeu de documents coordonné plutôt que des études parallèles",
+          "Décisions d’interface tracées, non renvoyées au chantier",
+          "Ingénieur référent responsable du lot complet"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Expérience antérieure liée"
       }
     },
     "local-engineering-partner-morocco": {
@@ -379,6 +475,29 @@
         "text": "Un échange court permet de définir ce que Yunes doit vérifier, la fréquence des visites et le reporting attendu.",
         "button": "WhatsApp Yunes",
         "href": "https://wa.me/212663056547"
+      },
+      "clientSituation": {
+        "title": "Cette mission est utile lorsque",
+        "items": [
+          "Votre projet est au Maroc et votre équipe ne l’est pas.",
+          "Des constats de terrain doivent être vérifiés avant une décision d’investissement.",
+          "Les entreprises ont besoin d’un interlocuteur technique local mandaté.",
+          "Les rapports d’avancement et de qualité doivent parvenir à un siège à l’étranger.",
+          "Les essais et la réception exigent une présence que vous ne pouvez pas assurer."
+        ]
+      },
+      "teamModel": {
+        "title": "Capacité locale",
+        "text": "La présence locale est dimensionnée par la mission : intervention ponctuelle, rythme programmé ou appui continu pendant une phase de travaux, avec des ingénieurs supplémentaires engagés si la charge du chantier l’exige.",
+        "points": [
+          "Mandat, ligne de reporting et escalade convenus par écrit",
+          "Fréquence des visites définie par la phase du projet",
+          "Ingénieurs supplémentaires engagés selon la charge de chantier",
+          "Constats appuyés par photographies et rapports écrits"
+        ]
+      },
+      "relatedExperience": {
+        "title": "Expérience antérieure liée"
       }
     },
     "sectors": {
@@ -445,6 +564,9 @@
         "text": "Yunes identifiera les calculs, contrôles, coordinations et présence chantier nécessaires.",
         "button": "Discuter du projet",
         "href": "contact"
+      },
+      "relatedExperience": {
+        "title": "Expérience antérieure par environnement de projet"
       }
     },
     "experience": {
@@ -622,6 +744,53 @@
         "text": "Un échange court permettra de vérifier si Yunes correspond au besoin d’études, revue, chantier ou AMO.",
         "button": "Appeler Yunes",
         "href": "tel:+212663056547"
+      },
+      "companyModel": {
+        "title": "Ce qu’est Salimi Engineering",
+        "text": "Un bureau d’ingénierie de taille réduite, dirigé par son fondateur et basé au Maroc. Il prend en charge des missions techniques ciblées et des périmètres de taille moyenne, en constituant l’équipe autour du travail réel plutôt qu’en maintenant une structure dont le projet n’a pas besoin.",
+        "points": [
+          {
+            "title": "Dirigé par son fondateur, pas une personne seule",
+            "text": "Un noyau resserré, la responsabilité technique senior portée par l’ingénieur référent."
+          },
+          {
+            "title": "Des équipes constituées par périmètre",
+            "text": "Ingénieurs de discipline et spécialistes engagés ou recrutés pour la mission."
+          },
+          {
+            "title": "Missions ciblées et périmètres moyens",
+            "text": "D’une revue unique à une phase de projet portée par une équipe mobilisée."
+          },
+          {
+            "title": "Responsabilité directe",
+            "text": "La relation client et la responsabilité technique ne sont pas déléguées."
+          }
+        ]
+      },
+      "clientWorkflow": {
+        "title": "Comment travailler avec le bureau",
+        "items": [
+          {
+            "title": "Accès direct",
+            "text": "Vous échangez avec l’ingénieur responsable, pas avec un commercial."
+          },
+          {
+            "title": "Périmètre défini",
+            "text": "Livrables, mandat, interfaces et reporting sont convenus avant mobilisation."
+          },
+          {
+            "title": "Décisions tracées",
+            "text": "Constats, risques et actions sont consignés et vérifiables."
+          },
+          {
+            "title": "Reporting adapté",
+            "text": "Les rapports sont exploitables par un siège situé à l’étranger."
+          },
+          {
+            "title": "Présence sur site adaptée",
+            "text": "Les visites sont définies par la phase, non par un forfait standard."
+          }
+        ]
       }
     },
     "contact": {
@@ -677,7 +846,18 @@
         "text": "Envoyez le lieu du projet et le point à traiter. Yunes demandera ensuite les bons documents ou proposera un appel.",
         "button": "WhatsApp Yunes",
         "href": "https://wa.me/212663056547"
-      }
+      },
+      "whatToSend": {
+        "title": "Éléments utiles",
+        "items": [
+          "Localisation du projet et type d’ouvrage",
+          "Phase en cours : concept, études, appel d’offres, travaux ou réception",
+          "Plans, spécifications ou offres d’entreprises déjà disponibles",
+          "La décision ou le problème de chantier nécessitant un avis technique",
+          "Votre calendrier et les autres intervenants"
+        ]
+      },
+      "privacyNote": "Les informations transmises via ce formulaire servent uniquement à examiner et à répondre à votre demande. Merci de ne pas joindre de plans confidentiels ni de données commerciales sensibles lors d’une première prise de contact."
     },
     "legal-notice": {
       "seo": {
